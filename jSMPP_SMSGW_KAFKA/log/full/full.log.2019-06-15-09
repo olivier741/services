@@ -1,7 +1,0 @@
-15/06/2019 09:33:51.332  INFO [EnquireLinkSender: org.jsmpp.session.SMPPSession@54a7079e] SMSGateway: Session 193f44ab closed
-15/06/2019 09:33:52.394  INFO [Thread-8] SMSGateway: Schedule reconnect after 5000 millis
-15/06/2019 09:33:57.402  INFO [Thread-8] SMSGateway: Reconnecting attempt #1 ...
-15/06/2019 09:33:59.776  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
-15/06/2019 09:34:00.120  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[]
-15/06/2019 09:39:00.561  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
-15/06/2019 09:39:00.561  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-0]

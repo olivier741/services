@@ -1,9 +1,0 @@
-04/03/2019 16:00:39.966  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
-04/03/2019 16:00:39.972  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo_pubdate | 4477665544 --> 8965 [msg = ON ]
-04/03/2019 16:00:40.105  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo_pubdate -- Partition: 5 -- offset: 0
-04/03/2019 16:01:00.722  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
-04/03/2019 16:01:00.723  WARN [pool-1-thread-1] ReceiveSMS: No Service provide to process this SMS
-04/03/2019 16:01:00.723  WARN [pool-1-thread-1] ReceiveSMS: Lossing SMS: 4477665544 --> 8965 [msg = O ]
-04/03/2019 16:01:35.637  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
-04/03/2019 16:01:35.638  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo_pubdate | 4477665544 --> 8965 [msg = on ]
-04/03/2019 16:01:35.765  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo_pubdate -- Partition: 8 -- offset: 0

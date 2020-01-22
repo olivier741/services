@@ -1,2 +1,0 @@
-15/06/2019 10:59:36.296  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-flash-0]
-15/06/2019 10:59:36.780  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-0]
