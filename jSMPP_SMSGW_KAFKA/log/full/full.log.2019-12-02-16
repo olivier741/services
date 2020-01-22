@@ -1,0 +1,38 @@
+02/12/2019 16:48:02.637  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+02/12/2019 16:48:02.649  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+02/12/2019 16:51:38.943  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+02/12/2019 16:51:38.958  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "a082d3d8-151b-11ea-8007-d7a2ee8329e7",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+02/12/2019 16:51:38.959  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 661000504 --> 8755 [msg = CHO1 ]
+02/12/2019 16:51:39.233  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-chocho -- Partition: 9 -- offset: 0
+02/12/2019 16:52:01.511  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+02/12/2019 16:52:01.513  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "adf64749-151b-11ea-8007-fd182c9dc7f9",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+02/12/2019 16:52:01.513  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 661000504 --> 8755 [msg = CHO1 ]
+02/12/2019 16:52:01.658  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-chocho -- Partition: 1 -- offset: 0
+02/12/2019 16:52:06.482  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+02/12/2019 16:52:06.483  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "b0eca3ea-151b-11ea-8007-359e9b6dbcb7",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+02/12/2019 16:52:06.484  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 661000504 --> 8755 [msg = CHO1 ]
+02/12/2019 16:52:06.618  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-chocho -- Partition: 4 -- offset: 0

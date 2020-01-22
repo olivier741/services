@@ -1,0 +1,40 @@
+05/03/2019 11:17:26.441  INFO [main] SMSGW: Load log4j config file done.
+05/03/2019 11:17:26.443  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+05/03/2019 11:17:26.597  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+05/03/2019 11:17:32.286  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+05/03/2019 11:17:36.825  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+05/03/2019 11:17:41.357  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+05/03/2019 11:17:45.883  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+05/03/2019 11:17:50.432  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+05/03/2019 11:17:54.974  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+05/03/2019 11:17:59.526  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+05/03/2019 11:17:59.988  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/03/2019 11:18:00.308  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+05/03/2019 11:18:18.042  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+05/03/2019 11:18:18.190  INFO [pool-1-thread-2] ReceiveSMS: Message Send : service_id:pubdatemessage_id:nullsender:4477665544receiver:8965content:on
+05/03/2019 11:18:18.190  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo_pubdate | 4477665544 --> 8965 [msg = on ]
+05/03/2019 11:18:18.494  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo_pubdate -- Partition: 1 -- offset: 0
+05/03/2019 11:23:36.203  INFO [main] SMSGW: Load log4j config file done.
+05/03/2019 11:23:36.203  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+05/03/2019 11:23:36.351  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+05/03/2019 11:23:41.819  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+05/03/2019 11:23:46.377  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+05/03/2019 11:23:50.943  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+05/03/2019 11:23:55.493  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+05/03/2019 11:24:00.078  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+05/03/2019 11:24:04.618  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+05/03/2019 11:24:09.194  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+05/03/2019 11:24:09.489  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/03/2019 11:24:09.502  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+05/03/2019 11:24:15.425  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+05/03/2019 11:24:15.513  INFO [pool-1-thread-3] ReceiveSMS: Message Send : {  service_id:pubdate message_id:null sender:4477665544 receiver:8965 content:on }
+05/03/2019 11:24:15.515  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo_pubdate | 4477665544 --> 8965 [msg = on ]
+05/03/2019 11:24:15.749  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo_pubdate -- Partition: 2 -- offset: 0
+05/03/2019 11:24:16.622  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+05/03/2019 11:24:16.623  INFO [pool-1-thread-1] ReceiveSMS: Message Send : {  service_id:pubdate message_id:null sender:4477665544 receiver:8965 content:on }
+05/03/2019 11:24:16.623  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo_pubdate | 4477665544 --> 8965 [msg = on ]
+05/03/2019 11:24:16.771  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo_pubdate -- Partition: 9 -- offset: 0
+05/03/2019 11:59:52.744  INFO [main] SMSGW: Load log4j config file done.
+05/03/2019 11:59:52.745  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+05/03/2019 11:59:52.909  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+05/03/2019 11:59:58.370  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################

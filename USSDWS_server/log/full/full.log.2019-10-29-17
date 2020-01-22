@@ -1,0 +1,158 @@
+29/10/2019 17:01:04.195  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 17:01:17.020  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 17:01:21.571  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 17:01:26.136  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 17:01:30.669  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 17:01:35.202  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 17:01:39.736  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 17:01:44.269  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 17:02:20.563  INFO [qtp1705281026-42] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 17:02:20.563  INFO [qtp1705281026-42] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572364940213,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=1,
+ timeout=300,
+ sendRecvTime=1572364940222}
+29/10/2019 17:02:20.568  INFO [qtp1705281026-42] USSDService: CURRENT USSD MENU : State{state_id=2, content=Bienvenue au service de Promotion des boissons.
+pour avoir plus d'information, veillercontacter le service client., bizId=0, state_level=TERMINATE_RESP}
+ Of this Transaction : W1-0-1572364940213
+29/10/2019 17:03:22.499  INFO [qtp1705281026-37] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 17:03:22.499  INFO [qtp1705281026-37] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572365002475,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=2,
+ timeout=300,
+ sendRecvTime=1572365002485}
+29/10/2019 17:03:22.499  INFO [qtp1705281026-37] USSDService: CURRENT USSD MENU : State{state_id=2, content=Bienvenue au service de Promotion des boissons.
+pour avoir plus d'information, veillercontacter le service client., bizId=0, state_level=TERMINATE_RESP}
+ Of this Transaction : W1-0-1572365002475
+29/10/2019 17:03:27.967  INFO [qtp1705281026-41] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 17:03:27.968  INFO [qtp1705281026-41] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572365007943,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=3,
+ timeout=300,
+ sendRecvTime=1572365007945}
+29/10/2019 17:03:27.968  INFO [qtp1705281026-41] USSDService: CURRENT USSD MENU : State{state_id=2, content=Bienvenue au service de Promotion des boissons.
+pour avoir plus d'information, veillercontacter le service client., bizId=0, state_level=TERMINATE_RESP}
+ Of this Transaction : W1-0-1572365007943
+29/10/2019 17:14:45.164  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 17:14:54.655  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 17:14:59.192  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 17:15:03.725  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 17:15:08.259  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 17:15:12.793  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 17:15:17.358  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 17:15:21.891  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 17:15:31.720  INFO [qtp1705281026-42] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 17:15:31.720  INFO [qtp1705281026-42] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572365731410,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=4,
+ timeout=300,
+ sendRecvTime=1572365731419}
+29/10/2019 17:15:31.724  INFO [qtp1705281026-42] USSDService: CURRENT USSD MENU : State{state_id=2, content=Bienvenue au service de Promotion des boissons.
+pour avoir plus d'information, veillercontacter le service client., bizId=0, state_level=TERMINATE_RESP} -----> Transaction : W1-0-1572365731410
+29/10/2019 17:15:38.782  INFO [qtp1705281026-37] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 17:15:38.782  INFO [qtp1705281026-37] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572365738764,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=5,
+ timeout=300,
+ sendRecvTime=1572365738767}
+29/10/2019 17:15:38.782  INFO [qtp1705281026-37] USSDService: CURRENT USSD MENU : State{state_id=2, content=Bienvenue au service de Promotion des boissons.
+pour avoir plus d'information, veillercontacter le service client., bizId=0, state_level=TERMINATE_RESP} -----> Transaction : W1-0-1572365738764
+29/10/2019 17:18:49.896  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 17:19:03.556  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 17:19:08.092  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 17:19:12.625  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 17:19:17.167  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 17:19:21.700  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 17:19:26.241  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 17:19:30.783  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 17:21:37.726  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 17:21:47.771  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 17:21:52.312  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 17:21:56.853  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 17:22:01.386  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 17:22:05.936  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 17:22:10.469  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 17:22:15.011  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 17:23:50.451  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 17:23:59.949  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 17:24:04.499  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 17:24:09.040  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 17:24:13.574  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 17:24:18.106  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 17:24:22.640  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 17:24:27.174  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 17:24:27.764  INFO [main] USSGW: ############# USSD APPLICATION IS UP ##############
+29/10/2019 17:24:53.490  INFO [qtp680306160-38] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 17:24:53.490  INFO [qtp680306160-38] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572366293178,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=6,
+ timeout=300,
+ sendRecvTime=1572366293187}
+29/10/2019 17:24:53.494  INFO [qtp680306160-38] USSDService: CURRENT USSD MENU : State{state_id=2, content=Bienvenue au service de Promotion des boissons.
+pour avoir plus d'information, veillercontacter le service client., bizId=0, state_level=TERMINATE_RESP} -----> Transaction : W1-0-1572366293178
+29/10/2019 17:25:06.631  INFO [qtp680306160-37] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 17:25:06.631  INFO [qtp680306160-37] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572366306615,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654*1#,
+ charSet=1,
+ loggedString=*654*1#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=7,
+ timeout=300,
+ sendRecvTime=1572366306618}
+29/10/2019 17:25:06.631  INFO [qtp680306160-37] USSDService: CURRENT USSD MENU : State{state_id=3, content=1- CITRON
+2- ANANAS
+3- ORANGE
+0-retour, bizId=0, state_level=INTERMEDIATE} -----> Transaction : W1-0-1572366306615

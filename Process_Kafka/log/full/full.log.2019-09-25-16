@@ -1,0 +1,112 @@
+25/09/2019 16:02:51.936  INFO [main] Start_Process: Load log4j config file done.
+25/09/2019 16:02:51.940  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+25/09/2019 16:02:51.946  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+25/09/2019 16:02:51.947  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+25/09/2019 16:02:51.952  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+25/09/2019 16:02:51.953  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+25/09/2019 16:02:52.048  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+25/09/2019 16:04:10.518  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "ba829b03-dfa5-11e9-8555-5f1e076815ce",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+25/09/2019 16:04:10.658  INFO [pool-7-thread-1] Receiver: transaction_id   : ba829b03-dfa5-11e9-8555-5f1e076815ce
+25/09/2019 16:04:10.658  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+25/09/2019 16:04:10.663  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+25/09/2019 16:04:10.663  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+25/09/2019 16:04:10.663  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=ba829b03-dfa5-11e9-8555-5f1e076815ce,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-09-25 16:04:10.518,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+25/09/2019 16:04:10.663  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=ba829b03-dfa5-11e9-8555-5f1e076815ce,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-09-25 16:04:10.518,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+25/09/2019 16:04:10.663  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+25/09/2019 16:04:10.713  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    573780 nanoseconds spent acquiring 2 JDBC connections;
+    673791 nanoseconds spent releasing 2 JDBC connections;
+    81920 nanoseconds spent preparing 1 JDBC statements;
+    1102505 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1745576 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+25/09/2019 16:04:10.713  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    573780 nanoseconds spent acquiring 2 JDBC connections;
+    673791 nanoseconds spent releasing 2 JDBC connections;
+    81920 nanoseconds spent preparing 1 JDBC statements;
+    1102505 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1745576 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+25/09/2019 16:04:10.713  INFO [pool-7-thread-1] Receiver: insert into mo_his 
+25/09/2019 16:05:50.812  INFO [main] Start_Process: Load log4j config file done.
+25/09/2019 16:05:50.818  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+25/09/2019 16:05:50.826  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+25/09/2019 16:05:50.827  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+25/09/2019 16:05:50.827  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+25/09/2019 16:05:50.828  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+25/09/2019 16:05:50.921  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+25/09/2019 16:09:34.488  INFO [main] Start_Process: Load log4j config file done.
+25/09/2019 16:09:34.493  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+25/09/2019 16:09:34.504  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+25/09/2019 16:09:34.504  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+25/09/2019 16:09:34.505  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+25/09/2019 16:09:34.505  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+25/09/2019 16:09:34.594  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+25/09/2019 16:16:04.947  INFO [main] Start_Process: Load log4j config file done.
+25/09/2019 16:16:04.952  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+25/09/2019 16:16:04.959  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+25/09/2019 16:16:04.959  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+25/09/2019 16:16:04.964  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+25/09/2019 16:16:04.966  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+25/09/2019 16:16:05.062  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+25/09/2019 16:27:09.311  INFO [main] Start_Process: Load log4j config file done.
+25/09/2019 16:27:09.322  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+25/09/2019 16:27:09.331  INFO [main] Receiver: LIST OF COMMAND : 
+25/09/2019 16:27:09.332  INFO [main] Receiver: Request_Conf{command_id=1, command_name=REG_Flash1, command_code=FLASH1, split_separator=, action_name=REG_Flash1, action_type=REGISTER, action_description=action to register Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+25/09/2019 16:27:09.333  INFO [main] Receiver: Request_Conf{command_id=2, command_name=Del_Flash1, command_code=OFF, split_separator=, action_name=Del_Flash1, action_type=DELETE, action_description=action to delete Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+25/09/2019 16:27:09.333  INFO [main] Receiver: Request_Conf{command_id=3, command_name=Check_Flash1, command_code=CHECK, split_separator=, action_name=Check_Flash1, action_type=CHECK, action_description=action to check Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+25/09/2019 16:27:09.333  INFO [main] Receiver: Request_Conf{command_id=4, command_name=Guide_Flash1, command_code=GUIDE, split_separator=, action_name=Guide_Flash1, action_type=GUIDE, action_description=action to get guide of Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+25/09/2019 16:27:09.338  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+25/09/2019 16:27:09.339  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+25/09/2019 16:27:09.341  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+25/09/2019 16:27:09.341  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+25/09/2019 16:27:09.439  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################

@@ -1,0 +1,104 @@
+09/05/2019 08:55:34.291  INFO [main] Start_Process: Load log4j config file done.
+09/05/2019 08:55:34.398  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+09/05/2019 08:55:34.559  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+09/05/2019 08:55:34.559  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+09/05/2019 08:55:34.671  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+09/05/2019 08:55:34.671  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+09/05/2019 08:55:34.673  INFO [main] Environment: HHH000206: hibernate.properties not found
+09/05/2019 08:55:34.673  INFO [main] Environment: HHH000206: hibernate.properties not found
+09/05/2019 08:55:34.706  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+09/05/2019 08:55:34.706  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+09/05/2019 08:55:34.836  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+09/05/2019 08:55:34.836  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+09/05/2019 08:55:35.997  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+09/05/2019 08:55:35.997  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+09/05/2019 08:55:38.455  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+09/05/2019 08:55:38.455  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+09/05/2019 08:55:38.649  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+09/05/2019 08:55:38.649  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+09/05/2019 08:55:38.651 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8
+09/05/2019 08:55:38.651 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8
+09/05/2019 08:55:38.653  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    642048 nanoseconds spent acquiring 1 JDBC connections;
+    16726 nanoseconds spent releasing 1 JDBC connections;
+    13083660 nanoseconds spent preparing 1 JDBC statements;
+    37983605 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+09/05/2019 08:55:38.653  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    642048 nanoseconds spent acquiring 1 JDBC connections;
+    16726 nanoseconds spent releasing 1 JDBC connections;
+    13083660 nanoseconds spent preparing 1 JDBC statements;
+    37983605 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+09/05/2019 08:58:39.563  INFO [main] Start_Process: Load log4j config file done.
+09/05/2019 08:58:39.699  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+09/05/2019 08:58:39.935  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+09/05/2019 08:58:39.935  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+09/05/2019 08:58:40.054  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+09/05/2019 08:58:40.054  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+09/05/2019 08:58:40.056  INFO [main] Environment: HHH000206: hibernate.properties not found
+09/05/2019 08:58:40.056  INFO [main] Environment: HHH000206: hibernate.properties not found
+09/05/2019 08:58:40.089  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+09/05/2019 08:58:40.089  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+09/05/2019 08:58:40.232  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+09/05/2019 08:58:40.232  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+09/05/2019 08:58:40.575  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+09/05/2019 08:58:40.575  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+09/05/2019 08:58:41.816  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+09/05/2019 08:58:41.816  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+09/05/2019 08:58:42.002  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+09/05/2019 08:58:42.002  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+09/05/2019 08:58:42.003 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8
+09/05/2019 08:58:42.003 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8
+09/05/2019 08:58:42.012  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    30038 nanoseconds spent acquiring 1 JDBC connections;
+    17408 nanoseconds spent releasing 1 JDBC connections;
+    14671202 nanoseconds spent preparing 1 JDBC statements;
+    10764638 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+09/05/2019 08:58:42.012  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    30038 nanoseconds spent acquiring 1 JDBC connections;
+    17408 nanoseconds spent releasing 1 JDBC connections;
+    14671202 nanoseconds spent preparing 1 JDBC statements;
+    10764638 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}

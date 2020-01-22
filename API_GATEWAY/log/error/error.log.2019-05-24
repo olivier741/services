@@ -1,0 +1,7 @@
+24/05/2019 15:58:12.889  WARN [main] ContextHandler: Empty contextPath
+24/05/2019 16:01:41.054  WARN [main] AbstractHandler: No Server set for org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine$1@6dfcffb5
+24/05/2019 16:01:41.073  WARN [main] ContextHandler: Empty contextPath
+24/05/2019 16:03:58.674  WARN [main] AbstractHandler: No Server set for org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine$1@6dfcffb5
+24/05/2019 16:03:58.694  WARN [main] ContextHandler: Empty contextPath
+24/05/2019 16:14:29.041  WARN [main] ContextHandler: Empty contextPath
+24/05/2019 16:19:37.817  WARN [main] ContextHandler: Empty contextPath

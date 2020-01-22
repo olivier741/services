@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Receiver_SMSInterfaceService" targetNamespace="http://com.tatsinktechnologic.Receiver_SMS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.tatsinktechnologic.Receiver_SMS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<xs:schema xmlns:tns="http://com.tatsinktechnologic.Receiver_SMS" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://com.tatsinktechnologic.Receiver_SMS" version="1.0">
+
+  <xs:element name="DeliveryMessage" type="tns:deliveryMessage"/>
+
+  <xs:element name="Response" type="tns:responseMsg"/>
+
+  <xs:element name="receive_delivery" type="tns:receive_delivery"/>
+
+  <xs:element name="receive_deliveryResponse" type="tns:receive_deliveryResponse"/>
+
+  <xs:element name="receive_sms" type="tns:receive_sms"/>
+
+  <xs:element name="receive_smsResponse" type="tns:receive_smsResponse"/>
+
+  <xs:complexType name="receive_delivery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="delivery" type="tns:deliveryMessage"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deliveryMessage">
+    <xs:sequence>
+      <xs:element name="message_id" type="xs:string"/>
+      <xs:element name="sender" type="xs:string"/>
+      <xs:element name="receiver" type="xs:string"/>
+      <xs:element name="delivery_id" type="xs:string"/>
+      <xs:element name="delivery_sub" type="xs:string"/>
+      <xs:element name="delivery_dlvrd" type="xs:string"/>
+      <xs:element name="delivery_submitDate" type="xs:string"/>
+      <xs:element name="delivery_doneDate" type="xs:string"/>
+      <xs:element name="delivery_status" type="xs:string"/>
+      <xs:element name="delivery_err" type="xs:string"/>
+      <xs:element name="delivery_text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="receive_deliveryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:responseMsg"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="responseMsg">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" name="response" type="xs:string"/>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="receive_sms">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Sender" type="xs:string"/>
+      <xs:element minOccurs="0" name="Receiver" type="xs:string"/>
+      <xs:element minOccurs="0" name="MsgContent" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="receive_smsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:responseMsg"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="receive_delivery">
+    <wsdl:part name="parameters" element="tns:receive_delivery">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="receive_smsResponse">
+    <wsdl:part name="parameters" element="tns:receive_smsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="receive_sms">
+    <wsdl:part name="parameters" element="tns:receive_sms">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="receive_deliveryResponse">
+    <wsdl:part name="parameters" element="tns:receive_deliveryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Receiver_SMSInterface">
+    <wsdl:operation name="receive_delivery">
+      <wsdl:input name="receive_delivery" message="tns:receive_delivery">
+    </wsdl:input>
+      <wsdl:output name="receive_deliveryResponse" message="tns:receive_deliveryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receive_sms">
+      <wsdl:input name="receive_sms" message="tns:receive_sms">
+    </wsdl:input>
+      <wsdl:output name="receive_smsResponse" message="tns:receive_smsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Receiver_SMSInterfaceServiceSoapBinding" type="tns:Receiver_SMSInterface">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="receive_delivery">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="receive_delivery">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="receive_deliveryResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receive_sms">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="receive_sms">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="receive_smsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Receiver_SMSInterfaceService">
+    <wsdl:port name="RECEIVE_SMSPort" binding="tns:Receiver_SMSInterfaceServiceSoapBinding">
+      <soap:address location="http://127.0.0.1:8935/receiver_sms?wsdl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

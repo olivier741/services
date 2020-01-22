@@ -1,0 +1,23 @@
+<application>
+
+    <kafka>
+	   <numberRecord>100</numberRecord>
+	   <producer_topic>mt-flash</producer_topic>
+   </kafka>
+
+  
+   <sender_thread>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>20</sleep_duration>
+	 <maxQueue>100</maxQueue>
+   </sender_thread>
+   
+   <process_thread_extend>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>20</sleep_duration>
+	 <maxQueue>100</maxQueue>
+   </process_thread_extend>
+   
+</application>

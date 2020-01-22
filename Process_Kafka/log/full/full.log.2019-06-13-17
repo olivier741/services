@@ -1,0 +1,291 @@
+13/06/2019 17:09:17.271  INFO [main] Start_Process: Load log4j config file done.
+13/06/2019 17:09:17.279  INFO [pool-1-thread-1] Sender: ################################## START SENDER ###########################
+13/06/2019 17:09:17.297  INFO [pool-2-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+13/06/2019 17:09:17.308  INFO [pool-3-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+13/06/2019 17:09:17.309  INFO [pool-4-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+13/06/2019 17:09:17.309  INFO [pool-5-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+13/06/2019 17:09:17.406  INFO [pool-6-thread-1] Receiver: ################################## START RECEIVER ###########################
+13/06/2019 17:22:00.101  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "5e354a54-8df7-11e9-897e-83da4e3845fd",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+13/06/2019 17:22:00.321  INFO [pool-6-thread-1] Receiver: transaction_id   : 5e354a54-8df7-11e9-897e-83da4e3845fd
+13/06/2019 17:22:00.321  INFO [pool-6-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+13/06/2019 17:22:00.321  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:22:00.321  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:22:00.322  INFO [pool-6-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=5e354a54-8df7-11e9-897e-83da4e3845fd,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=null,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+13/06/2019 17:22:00.322  INFO [pool-1-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=5e354a54-8df7-11e9-897e-83da4e3845fd,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=null,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+13/06/2019 17:22:00.322  INFO [pool-1-thread-1] Sender: Sender Queue size :0
+13/06/2019 17:22:00.386  INFO [pool-6-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    567296 nanoseconds spent acquiring 2 JDBC connections;
+    431788 nanoseconds spent releasing 2 JDBC connections;
+    457387 nanoseconds spent preparing 1 JDBC statements;
+    1054038 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3486722 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+13/06/2019 17:22:00.386  INFO [pool-6-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    567296 nanoseconds spent acquiring 2 JDBC connections;
+    431788 nanoseconds spent releasing 2 JDBC connections;
+    457387 nanoseconds spent preparing 1 JDBC statements;
+    1054038 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3486722 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+13/06/2019 17:22:00.386  INFO [pool-6-thread-1] Receiver: insert into mo_his 
+13/06/2019 17:24:10.597  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "abb783b5-8df7-11e9-897e-f77ad5422268",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1"
+}
+13/06/2019 17:24:10.598  INFO [pool-6-thread-1] Receiver: transaction_id   : abb783b5-8df7-11e9-897e-f77ad5422268
+13/06/2019 17:24:10.598  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1
+13/06/2019 17:24:10.598  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:24:10.598  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:24:10.598  INFO [pool-6-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=abb783b5-8df7-11e9-897e-f77ad5422268,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=null,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+13/06/2019 17:24:10.598  INFO [pool-1-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=abb783b5-8df7-11e9-897e-f77ad5422268,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=null,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+13/06/2019 17:24:10.599  INFO [pool-1-thread-1] Sender: Sender Queue size :0
+13/06/2019 17:24:10.631  INFO [pool-6-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    551937 nanoseconds spent acquiring 2 JDBC connections;
+    455339 nanoseconds spent releasing 2 JDBC connections;
+    270336 nanoseconds spent preparing 1 JDBC statements;
+    789846 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    172374 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+13/06/2019 17:24:10.631  INFO [pool-6-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    551937 nanoseconds spent acquiring 2 JDBC connections;
+    455339 nanoseconds spent releasing 2 JDBC connections;
+    270336 nanoseconds spent preparing 1 JDBC statements;
+    789846 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    172374 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+13/06/2019 17:24:10.631  INFO [pool-6-thread-1] Receiver: insert into mo_his 
+13/06/2019 17:26:18.744  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "f831ea06-8df7-11e9-897e-a59833301f55",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:26:18.745  INFO [pool-6-thread-1] Receiver: transaction_id   : f831ea06-8df7-11e9-897e-a59833301f55
+13/06/2019 17:26:18.745  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+13/06/2019 17:26:18.745  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:26:18.745  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:26:18.745  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=f831ea06-8df7-11e9-897e-a59833301f55,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-06-13 17:26:18.744,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+13/06/2019 17:26:18.745  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+13/06/2019 17:35:27.772  INFO [main] Start_Process: Load log4j config file done.
+13/06/2019 17:35:27.777  INFO [pool-1-thread-1] Sender: ################################## START SENDER ###########################
+13/06/2019 17:35:27.786  INFO [pool-2-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+13/06/2019 17:35:27.787  INFO [pool-3-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+13/06/2019 17:35:27.787  INFO [pool-4-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+13/06/2019 17:35:27.787  INFO [pool-5-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+13/06/2019 17:35:27.875  INFO [pool-6-thread-1] Receiver: ################################## START RECEIVER ###########################
+13/06/2019 17:35:36.044  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "44ed5b87-8df9-11e9-897e-25508785b4d8",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:35:36.244  INFO [pool-6-thread-1] Receiver: transaction_id   : 44ed5b87-8df9-11e9-897e-25508785b4d8
+13/06/2019 17:35:36.245  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+13/06/2019 17:35:36.245  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:35:36.245  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:35:36.246  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=44ed5b87-8df9-11e9-897e-25508785b4d8,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-06-13 17:35:36.044,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+13/06/2019 17:35:36.246  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+13/06/2019 17:36:49.724  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "70bfeca8-8df9-11e9-897e-c127d12080b7",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:36:49.725  INFO [pool-6-thread-1] Receiver: transaction_id   : 70bfeca8-8df9-11e9-897e-c127d12080b7
+13/06/2019 17:36:49.725  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+13/06/2019 17:36:49.725  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:36:49.725  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:36:51.727  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "714dfbd9-8df9-11e9-897e-63a20b945756",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:36:51.728  INFO [pool-6-thread-1] Receiver: transaction_id   : 714dfbd9-8df9-11e9-897e-63a20b945756
+13/06/2019 17:36:51.729  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+13/06/2019 17:36:51.729  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:36:51.729  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:37:27.362  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "868a147a-8df9-11e9-897e-4145123eab5d",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:37:27.363  INFO [pool-6-thread-1] Receiver: transaction_id   : 868a147a-8df9-11e9-897e-4145123eab5d
+13/06/2019 17:37:27.363  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+13/06/2019 17:37:27.363  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:37:27.363  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:41:06.963  INFO [main] Start_Process: Load log4j config file done.
+13/06/2019 17:41:06.991  INFO [pool-1-thread-1] Sender: ################################## START SENDER ###########################
+13/06/2019 17:41:06.991  INFO [pool-2-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+13/06/2019 17:41:06.992  INFO [pool-3-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+13/06/2019 17:41:06.992  INFO [pool-4-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+13/06/2019 17:41:06.992  INFO [pool-5-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+13/06/2019 17:41:07.085  INFO [pool-6-thread-1] Receiver: ################################## START RECEIVER ###########################
+13/06/2019 17:41:15.074  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "0ed9408b-8dfa-11e9-897e-2fc1b809a5ef",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:41:15.327  INFO [pool-6-thread-1] Receiver: transaction_id   : 0ed9408b-8dfa-11e9-897e-2fc1b809a5ef
+13/06/2019 17:41:15.328  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+13/06/2019 17:41:15.328  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+13/06/2019 17:41:15.328  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+13/06/2019 17:41:15.330  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=0ed9408b-8dfa-11e9-897e-2fc1b809a5ef,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-06-13 17:41:15.074,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+13/06/2019 17:41:15.330  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0

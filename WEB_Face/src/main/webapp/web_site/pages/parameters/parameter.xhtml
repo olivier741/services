@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    PARAMETER MANAGEMENT
+                    <small>Parameters informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+                                    <p:panel header="Operate on the Parameter / List Parameters" > 
+                                        <p:panelGrid id="rolecrud"  columns="2">
+
+                                            <h:outputLabel value="Parameter Name :" />
+                                            <p:inputText  value="#{parameterMB.selectedParameter.param_name}" disabled="#{parameterMB.do_view}" required="true" style="width:500px"/>
+
+                                            <h:outputLabel value="Number of Parameters :"/> 
+                                            <p:inputText  value="#{parameterMB.selectedParameter.param_length}" disabled="#{parameterMB.do_view}" style="width:500px"/>
+
+                                            <h:outputLabel value="Parameter Regex  :"/> 
+                                            <p:inputText  value="#{parameterMB.selectedParameter.param_pattern}" disabled="#{parameterMB.do_view}" style="width:500px"/>
+
+
+                                            <h:outputLabel value="Description :"/>                 
+                                            <p:inputTextarea value="#{parameterMB.selectedParameter.description}"  rows="5" cols="45" 
+                                                                     disabled="#{parameterMB.do_view}"
+                                                                     counterTemplate="{0} characters remaining." 
+                                                                     autoResize="false"  style="width:500px"/>
+
+                                           
+                                           <f:facet name="footer">
+                                                 <h:commandButton value="Enable Edit" action="#{parameterMB.enableEdit}" rendered="#{parameterMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{parameterMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{parameterMB.delete}" rendered="#{parameterMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                 </h:commandButton>
+                                                <h:commandButton value="Add" action="#{parameterMB.onAddNew}" rendered="#{parameterMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{parameterMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{parameterMB.edit}" rendered="#{parameterMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{parameterMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{parameterMB.clear}" rendered="#{parameterMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                 </h:commandButton> 
+                                              </f:facet>
+                                          
+                                        </p:panelGrid>
+                                        <p:spacer height="30px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{parameterMB.listParameter}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+
+                                            <p:column headerText="ID" filterBy="#{o.parameter_id}" sortBy="#{o.parameter_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.parameter_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="Parameter Name" filterBy="#{o.param_name}" sortBy="#{o.param_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.param_name}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Number of Parameters" filterBy="#{o.param_length}" sortBy="#{o.param_length}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.param_length}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Parameter Regex" filterBy="#{o.param_pattern}" sortBy="#{o.param_pattern}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.param_pattern}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Description" filterBy="#{o.description}" sortBy="#{o.description}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.description}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Create date" filterBy="#{o.create_time}" sortBy="#{o.create_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.create_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.update_time}" sortBy="#{o.update_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.update_time}"/> 
+                                            </p:column>
+
+                                              <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{parameterMB.view(o)}" update="datatable_grid,:form1:rolecrud,:form1:messages"  process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   
+

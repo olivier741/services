@@ -1,0 +1,168 @@
+13/06/2019 17:11:49.056  INFO [main] SMSGW: Load log4j config file done.
+13/06/2019 17:11:49.059  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+13/06/2019 17:11:49.204  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+13/06/2019 17:12:06.331 ERROR [main] SMSGW: cannot create topic : report_SMS_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:68)
+13/06/2019 17:12:19.727 ERROR [main] SMSGW: cannot create topic : mo_pubdate
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)
+13/06/2019 17:12:32.131 ERROR [main] SMSGW: cannot create topic : mt_pubdate
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:75)
+13/06/2019 17:12:44.664 ERROR [main] SMSGW: cannot create topic : mo-flash
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)
+13/06/2019 17:12:57.064 ERROR [main] SMSGW: cannot create topic : mt-flash
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:75)
+13/06/2019 17:13:09.564 ERROR [main] SMSGW: cannot create topic : mo_gameshow
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)
+13/06/2019 17:13:21.935 ERROR [main] SMSGW: cannot create topic : mt_gameshow
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:75)
+13/06/2019 17:13:54.002  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+13/06/2019 17:13:56.689  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+13/06/2019 17:15:04.177  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:15:04.188  WARN [pool-1-thread-1] ReceiveSMS: No Service provide to process this SMS
+13/06/2019 17:15:04.188  WARN [pool-1-thread-1] ReceiveSMS: Lossing SMS: 4477665544 --> 7854 [msg = Hello from SMPPSim ]
+13/06/2019 17:20:09.068  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:20:09.069  WARN [pool-1-thread-2] ReceiveSMS: No Service provide to process this SMS
+13/06/2019 17:20:09.069  WARN [pool-1-thread-2] ReceiveSMS: Lossing SMS: 4477665544 --> 7854 [msg = Hello from SMPPSim ]
+13/06/2019 17:20:09.563  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:20:09.564  WARN [pool-1-thread-3] ReceiveSMS: No Service provide to process this SMS
+13/06/2019 17:20:09.564  WARN [pool-1-thread-3] ReceiveSMS: Lossing SMS: 4477665544 --> 7854 [msg = Hello from SMPPSim ]
+13/06/2019 17:21:58.831  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:21:59.093  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "5e354a54-8df7-11e9-897e-83da4e3845fd",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+13/06/2019 17:21:59.093  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+13/06/2019 17:21:59.416  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 0 -- offset: 27
+13/06/2019 17:24:08.888  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:24:08.891  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "abb783b5-8df7-11e9-897e-f77ad5422268",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1"
+}
+13/06/2019 17:24:08.891  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 ]
+13/06/2019 17:24:09.082  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 5 -- offset: 27
+13/06/2019 17:26:17.197  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:26:17.198  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "f831ea06-8df7-11e9-897e-a59833301f55",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:26:17.199  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+13/06/2019 17:26:17.335  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 2 -- offset: 27
+13/06/2019 17:34:14.740  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+13/06/2019 17:34:14.746  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+13/06/2019 17:35:29.755  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+13/06/2019 17:35:29.761  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+13/06/2019 17:35:35.428  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:35:35.431  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "44ed5b87-8df9-11e9-897e-25508785b4d8",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:35:35.431  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+13/06/2019 17:35:35.571  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 8 -- offset: 27
+13/06/2019 17:36:48.951  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:36:48.952  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "70bfeca8-8df9-11e9-897e-c127d12080b7",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:36:48.952  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+13/06/2019 17:36:49.093  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 9 -- offset: 27
+13/06/2019 17:36:49.882  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:36:49.883  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "714dfbd9-8df9-11e9-897e-63a20b945756",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:36:49.883  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+13/06/2019 17:36:50.019  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 4 -- offset: 26
+13/06/2019 17:37:25.507  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:37:25.509  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "868a147a-8df9-11e9-897e-4145123eab5d",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:37:25.509  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+13/06/2019 17:37:25.659  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 1 -- offset: 25
+13/06/2019 17:39:44.777  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+13/06/2019 17:39:44.781  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+13/06/2019 17:40:29.762  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+13/06/2019 17:40:29.765  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+13/06/2019 17:41:08.768  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+13/06/2019 17:41:08.773  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+13/06/2019 17:41:14.196  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+13/06/2019 17:41:14.198  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "0ed9408b-8dfa-11e9-897e-2fc1b809a5ef",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+13/06/2019 17:41:14.198  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+13/06/2019 17:41:14.330  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 6 -- offset: 26

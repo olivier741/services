@@ -1,0 +1,2814 @@
+10/05/2019 12:22:03.508  INFO [main] Start_Process: Load log4j config file done.
+10/05/2019 12:22:03.634  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+10/05/2019 12:22:03.762  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:22:03.762  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:22:03.876  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:22:03.876  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:22:03.878  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:22:03.878  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:22:03.918  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:22:03.918  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:22:04.053  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:22:04.053  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:22:04.382  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:22:04.382  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:22:05.450  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:22:05.450  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:22:05.582  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    29013 nanoseconds spent acquiring 1 JDBC connections;
+    15360 nanoseconds spent releasing 1 JDBC connections;
+    13705214 nanoseconds spent preparing 1 JDBC statements;
+    6104745 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:22:05.582  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    29013 nanoseconds spent acquiring 1 JDBC connections;
+    15360 nanoseconds spent releasing 1 JDBC connections;
+    13705214 nanoseconds spent preparing 1 JDBC statements;
+    6104745 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:22:05.697  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    2085546 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    2374656 nanoseconds spent preparing 1 JDBC statements;
+    1728512 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:22:05.697  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    2085546 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    2374656 nanoseconds spent preparing 1 JDBC statements;
+    1728512 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:22:05.720  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+10/05/2019 12:24:18.893  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "2573ee95-7316-11e9-83c7-41cdc23a8319",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:19.081  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:19.082  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:19.082  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:19.098  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:19.517  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    492544 nanoseconds spent acquiring 2 JDBC connections;
+    707242 nanoseconds spent releasing 2 JDBC connections;
+    679594 nanoseconds spent preparing 1 JDBC statements;
+    210680114 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2159957 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:19.517  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    492544 nanoseconds spent acquiring 2 JDBC connections;
+    707242 nanoseconds spent releasing 2 JDBC connections;
+    679594 nanoseconds spent preparing 1 JDBC statements;
+    210680114 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2159957 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:19.517  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:24:21.521  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "2675f54c-7316-11e9-83c7-9533208d0f2d",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:21.521  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:21.522  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:21.522  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:21.523  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:21.562  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    436223 nanoseconds spent acquiring 2 JDBC connections;
+    431104 nanoseconds spent releasing 2 JDBC connections;
+    215040 nanoseconds spent preparing 1 JDBC statements;
+    1825792 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115371 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.562  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    436223 nanoseconds spent acquiring 2 JDBC connections;
+    431104 nanoseconds spent releasing 2 JDBC connections;
+    215040 nanoseconds spent preparing 1 JDBC statements;
+    1825792 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115371 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.562  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:24:21.562  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "25cf06e8-7316-11e9-83c7-b9e80a35333a",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:21.563  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:21.563  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:21.563  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:21.564  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:21.621  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23552 nanoseconds spent acquiring 2 JDBC connections;
+    460801 nanoseconds spent releasing 2 JDBC connections;
+    229376 nanoseconds spent preparing 1 JDBC statements;
+    24640507 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115712 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.621  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23552 nanoseconds spent acquiring 2 JDBC connections;
+    460801 nanoseconds spent releasing 2 JDBC connections;
+    229376 nanoseconds spent preparing 1 JDBC statements;
+    24640507 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115712 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.622  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:24:21.622  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "2595ce76-7316-11e9-83c7-6d6eeec828ec",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:21.623  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:21.623  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:21.623  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:21.624  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:21.638  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    22186 nanoseconds spent acquiring 2 JDBC connections;
+    421547 nanoseconds spent releasing 2 JDBC connections;
+    233472 nanoseconds spent preparing 1 JDBC statements;
+    705536 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    116736 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.638  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    22186 nanoseconds spent acquiring 2 JDBC connections;
+    421547 nanoseconds spent releasing 2 JDBC connections;
+    233472 nanoseconds spent preparing 1 JDBC statements;
+    705536 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    116736 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.638  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:24:21.638  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "2651082b-7316-11e9-83c7-5f5f72a9ce60",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:21.639  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:21.639  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:21.639  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:21.640  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:21.696  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    33452 nanoseconds spent acquiring 2 JDBC connections;
+    468650 nanoseconds spent releasing 2 JDBC connections;
+    208896 nanoseconds spent preparing 1 JDBC statements;
+    22031356 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    121856 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.696  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    33452 nanoseconds spent acquiring 2 JDBC connections;
+    468650 nanoseconds spent releasing 2 JDBC connections;
+    208896 nanoseconds spent preparing 1 JDBC statements;
+    22031356 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    121856 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:21.696  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:24:23.700  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "273c2a82-7316-11e9-83c7-3be490564260",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:23.701  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:23.702  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:23.702  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:23.704  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:23.737  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    440320 nanoseconds spent acquiring 2 JDBC connections;
+    441345 nanoseconds spent releasing 2 JDBC connections;
+    198656 nanoseconds spent preparing 1 JDBC statements;
+    762538 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    146432 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:23.737  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    440320 nanoseconds spent acquiring 2 JDBC connections;
+    441345 nanoseconds spent releasing 2 JDBC connections;
+    198656 nanoseconds spent preparing 1 JDBC statements;
+    762538 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    146432 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:23.738  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:24:23.738  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "26f7f590-7316-11e9-83c7-f56e9b8b48f6",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:23.739  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:23.739  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:23.739  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:23.740  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:23.788  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24918 nanoseconds spent acquiring 2 JDBC connections;
+    461825 nanoseconds spent releasing 2 JDBC connections;
+    198314 nanoseconds spent preparing 1 JDBC statements;
+    19514706 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    133120 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:23.788  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24918 nanoseconds spent acquiring 2 JDBC connections;
+    461825 nanoseconds spent releasing 2 JDBC connections;
+    198314 nanoseconds spent preparing 1 JDBC statements;
+    19514706 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    133120 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:23.788  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:24:23.788  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "26ceeabf-7316-11e9-83c7-43932c621ddf",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:24:23.789  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:24:23.789  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:24:23.789  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:24:23.790  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:24:23.846  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    26283 nanoseconds spent acquiring 2 JDBC connections;
+    420182 nanoseconds spent releasing 2 JDBC connections;
+    466261 nanoseconds spent preparing 1 JDBC statements;
+    19984381 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    165547 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:23.846  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    26283 nanoseconds spent acquiring 2 JDBC connections;
+    420182 nanoseconds spent releasing 2 JDBC connections;
+    466261 nanoseconds spent preparing 1 JDBC statements;
+    19984381 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    165547 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:24:23.846  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:32:38.519  INFO [main] Start_Process: Load log4j config file done.
+10/05/2019 12:32:38.658  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+10/05/2019 12:32:38.776  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:32:38.776  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:32:38.887  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:32:38.887  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:32:38.889  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:32:38.889  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:32:38.928  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:32:38.928  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:32:39.064  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:32:39.064  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:32:39.386  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:32:39.386  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:32:40.406  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:32:40.406  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:32:40.532  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    30379 nanoseconds spent acquiring 1 JDBC connections;
+    16384 nanoseconds spent releasing 1 JDBC connections;
+    14957224 nanoseconds spent preparing 1 JDBC statements;
+    5286569 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:32:40.532  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    30379 nanoseconds spent acquiring 1 JDBC connections;
+    16384 nanoseconds spent releasing 1 JDBC connections;
+    14957224 nanoseconds spent preparing 1 JDBC statements;
+    5286569 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:32:40.650  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    1096021 nanoseconds spent preparing 1 JDBC statements;
+    1761621 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:32:40.650  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    1096021 nanoseconds spent preparing 1 JDBC statements;
+    1761621 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:32:40.653  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+10/05/2019 12:34:15.453  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "894393f4-7317-11e9-98ad-115de9ede370",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:34:15.663  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:34:15.663  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:34:15.663  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:34:15.680  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:34:15.733  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    509951 nanoseconds spent acquiring 2 JDBC connections;
+    527701 nanoseconds spent releasing 2 JDBC connections;
+    723968 nanoseconds spent preparing 1 JDBC statements;
+    896682 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2138112 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:34:15.733  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    509951 nanoseconds spent acquiring 2 JDBC connections;
+    527701 nanoseconds spent releasing 2 JDBC connections;
+    723968 nanoseconds spent preparing 1 JDBC statements;
+    896682 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2138112 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:34:15.733  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:36:51.152  INFO [main] Start_Process: Load log4j config file done.
+10/05/2019 12:36:51.309  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+10/05/2019 12:36:51.453  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:36:51.453  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:36:51.623  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:36:51.623  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:36:51.625  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:36:51.625  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:36:51.673  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:36:51.673  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:36:51.857  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:36:51.857  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:36:52.250  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:36:52.250  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:36:53.495  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:36:53.495  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:36:53.636  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    33451 nanoseconds spent acquiring 1 JDBC connections;
+    17067 nanoseconds spent releasing 1 JDBC connections;
+    14391293 nanoseconds spent preparing 1 JDBC statements;
+    6544042 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:36:53.636  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    33451 nanoseconds spent acquiring 1 JDBC connections;
+    17067 nanoseconds spent releasing 1 JDBC connections;
+    14391293 nanoseconds spent preparing 1 JDBC statements;
+    6544042 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:36:53.799  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17408 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    702464 nanoseconds spent preparing 1 JDBC statements;
+    1806336 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:36:53.799  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17408 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    702464 nanoseconds spent preparing 1 JDBC statements;
+    1806336 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:36:53.802  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+10/05/2019 12:45:24.436  INFO [main] Start_Process: Load log4j config file done.
+10/05/2019 12:45:24.558  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+10/05/2019 12:45:24.683  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:45:24.683  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 12:45:24.802  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:45:24.802  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 12:45:24.803  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:45:24.803  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 12:45:24.843  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:45:24.843  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 12:45:24.973  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:45:24.973  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 12:45:25.311  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:45:25.311  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 12:45:26.670  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:45:26.670  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 12:45:26.840  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    22187 nanoseconds spent acquiring 1 JDBC connections;
+    15018 nanoseconds spent releasing 1 JDBC connections;
+    13364222 nanoseconds spent preparing 1 JDBC statements;
+    5824169 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:26.840  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    22187 nanoseconds spent acquiring 1 JDBC connections;
+    15018 nanoseconds spent releasing 1 JDBC connections;
+    13364222 nanoseconds spent preparing 1 JDBC statements;
+    5824169 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:27.347  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    473770 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    730453 nanoseconds spent preparing 1 JDBC statements;
+    1718614 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:27.347  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    473770 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    730453 nanoseconds spent preparing 1 JDBC statements;
+    1718614 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:27.348  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+10/05/2019 12:45:32.071  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "068e5b07-7319-11e9-8d92-6942b5087f8c",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:45:32.235  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:45:32.235  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:45:32.235  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:45:32.251  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:45:32.324  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    480256 nanoseconds spent acquiring 2 JDBC connections;
+    742059 nanoseconds spent releasing 2 JDBC connections;
+    969387 nanoseconds spent preparing 1 JDBC statements;
+    878591 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2023082 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:32.324  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    480256 nanoseconds spent acquiring 2 JDBC connections;
+    742059 nanoseconds spent releasing 2 JDBC connections;
+    969387 nanoseconds spent preparing 1 JDBC statements;
+    878591 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2023082 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:32.324  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:45:44.844  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "24120cd8-7319-11e9-8d92-4157f54c8b71",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:45:44.845  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:45:44.845  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:45:44.845  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:45:44.846  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:45:44.881  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    457045 nanoseconds spent acquiring 2 JDBC connections;
+    454656 nanoseconds spent releasing 2 JDBC connections;
+    234496 nanoseconds spent preparing 1 JDBC statements;
+    799744 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    116053 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:44.881  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    457045 nanoseconds spent acquiring 2 JDBC connections;
+    454656 nanoseconds spent releasing 2 JDBC connections;
+    234496 nanoseconds spent preparing 1 JDBC statements;
+    799744 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    116053 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:44.882  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:45:51.092  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "2805dc49-7319-11e9-8d92-8fa69b4e3262",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:45:51.093  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:45:51.094  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:45:51.094  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:45:51.095  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:45:51.148  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    447828 nanoseconds spent acquiring 2 JDBC connections;
+    519850 nanoseconds spent releasing 2 JDBC connections;
+    217429 nanoseconds spent preparing 1 JDBC statements;
+    16591528 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    118784 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:51.148  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    447828 nanoseconds spent acquiring 2 JDBC connections;
+    519850 nanoseconds spent releasing 2 JDBC connections;
+    217429 nanoseconds spent preparing 1 JDBC statements;
+    16591528 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    118784 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:45:51.148  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:07.870  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "3221722a-7319-11e9-8d92-ff771c3f457a",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:07.871  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:07.871  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:07.871  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:07.872  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:07.922  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    430763 nanoseconds spent acquiring 2 JDBC connections;
+    438272 nanoseconds spent releasing 2 JDBC connections;
+    247125 nanoseconds spent preparing 1 JDBC statements;
+    17040039 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    123904 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:07.922  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    430763 nanoseconds spent acquiring 2 JDBC connections;
+    438272 nanoseconds spent releasing 2 JDBC connections;
+    247125 nanoseconds spent preparing 1 JDBC statements;
+    17040039 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    123904 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:07.922  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:14.129  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "35ad30fb-7319-11e9-8d92-2f12a65cdf00",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:14.130  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:14.131  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:14.131  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:14.132  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:14.236  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    445098 nanoseconds spent acquiring 2 JDBC connections;
+    458070 nanoseconds spent releasing 2 JDBC connections;
+    260096 nanoseconds spent preparing 1 JDBC statements;
+    696319 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    119808 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:14.236  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    445098 nanoseconds spent acquiring 2 JDBC connections;
+    458070 nanoseconds spent releasing 2 JDBC connections;
+    260096 nanoseconds spent preparing 1 JDBC statements;
+    696319 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    119808 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:14.236  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:22.548  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "3b83a31d-7319-11e9-8d92-335643157ea0",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:22.550  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:22.550  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:22.550  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:22.552  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:22.597  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    478208 nanoseconds spent acquiring 2 JDBC connections;
+    460800 nanoseconds spent releasing 2 JDBC connections;
+    197973 nanoseconds spent preparing 1 JDBC statements;
+    12257278 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    150187 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:22.597  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    478208 nanoseconds spent acquiring 2 JDBC connections;
+    460800 nanoseconds spent releasing 2 JDBC connections;
+    197973 nanoseconds spent preparing 1 JDBC statements;
+    12257278 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    150187 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:22.597  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:24.600  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "3bbe3b1e-7319-11e9-8d92-7758883fa97b",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:24.600  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:24.600  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:24.600  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:24.601  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:24.655  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    423595 nanoseconds spent acquiring 2 JDBC connections;
+    457728 nanoseconds spent releasing 2 JDBC connections;
+    196608 nanoseconds spent preparing 1 JDBC statements;
+    16900093 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115029 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:24.655  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    423595 nanoseconds spent acquiring 2 JDBC connections;
+    457728 nanoseconds spent releasing 2 JDBC connections;
+    196608 nanoseconds spent preparing 1 JDBC statements;
+    16900093 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115029 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:24.655  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:24.655  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "3b4a91bc-7319-11e9-8d92-ad322f5e8eca",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:24.656  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:24.656  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:24.656  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:24.657  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:24.705  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    22187 nanoseconds spent acquiring 2 JDBC connections;
+    459093 nanoseconds spent releasing 2 JDBC connections;
+    210603 nanoseconds spent preparing 1 JDBC statements;
+    19222183 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    122197 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:24.705  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    22187 nanoseconds spent acquiring 2 JDBC connections;
+    459093 nanoseconds spent releasing 2 JDBC connections;
+    210603 nanoseconds spent preparing 1 JDBC statements;
+    19222183 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    122197 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:24.705  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:43.527  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "47e9500f-7319-11e9-8d92-d938a40fb8ee",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:43.528  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:43.528  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:43.528  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:43.529  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:43.629  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1260886 nanoseconds spent acquiring 2 JDBC connections;
+    453291 nanoseconds spent releasing 2 JDBC connections;
+    217429 nanoseconds spent preparing 1 JDBC statements;
+    57418401 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115029 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:43.629  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1260886 nanoseconds spent acquiring 2 JDBC connections;
+    453291 nanoseconds spent releasing 2 JDBC connections;
+    217429 nanoseconds spent preparing 1 JDBC statements;
+    57418401 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    115029 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:43.629  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:45.632  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "483414b0-7319-11e9-8d92-ab34c873e925",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:45.632  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:45.632  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:45.633  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:45.633  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:45.679  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    433493 nanoseconds spent acquiring 2 JDBC connections;
+    442710 nanoseconds spent releasing 2 JDBC connections;
+    235178 nanoseconds spent preparing 1 JDBC statements;
+    12128254 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    110251 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:45.679  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    433493 nanoseconds spent acquiring 2 JDBC connections;
+    442710 nanoseconds spent releasing 2 JDBC connections;
+    235178 nanoseconds spent preparing 1 JDBC statements;
+    12128254 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    110251 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:45.679  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:47.682  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "49af6a11-7319-11e9-8d92-51d8eb1090b0",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:47.683  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:47.683  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:47.683  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:47.684  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:47.720  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    443050 nanoseconds spent acquiring 2 JDBC connections;
+    432128 nanoseconds spent releasing 2 JDBC connections;
+    168278 nanoseconds spent preparing 1 JDBC statements;
+    1081002 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    104448 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:47.720  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    443050 nanoseconds spent acquiring 2 JDBC connections;
+    432128 nanoseconds spent releasing 2 JDBC connections;
+    168278 nanoseconds spent preparing 1 JDBC statements;
+    1081002 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    104448 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:47.721  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:49.723  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "4a1caad3-7319-11e9-8d92-a1b0d371c934",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:49.723  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:49.723  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:49.723  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:49.724  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:49.762  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    439296 nanoseconds spent acquiring 2 JDBC connections;
+    455680 nanoseconds spent releasing 2 JDBC connections;
+    156672 nanoseconds spent preparing 1 JDBC statements;
+    1098410 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    108885 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:49.762  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    439296 nanoseconds spent acquiring 2 JDBC connections;
+    455680 nanoseconds spent releasing 2 JDBC connections;
+    156672 nanoseconds spent preparing 1 JDBC statements;
+    1098410 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    108885 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:49.762  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:49.762  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "49ed3662-7319-11e9-8d92-2919542d4226",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:49.763  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:49.763  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:49.763  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:49.764  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:49.821  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 2 JDBC connections;
+    463531 nanoseconds spent releasing 2 JDBC connections;
+    146773 nanoseconds spent preparing 1 JDBC statements;
+    22477138 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    108885 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:49.821  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 2 JDBC connections;
+    463531 nanoseconds spent releasing 2 JDBC connections;
+    146773 nanoseconds spent preparing 1 JDBC statements;
+    22477138 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    108885 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:49.821  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:51.826  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "4cc53594-7319-11e9-8d92-bf16938822eb",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:51.826  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:51.827  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:51.827  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:51.827  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:51.862  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    414038 nanoseconds spent acquiring 2 JDBC connections;
+    418475 nanoseconds spent releasing 2 JDBC connections;
+    152918 nanoseconds spent preparing 1 JDBC statements;
+    1203200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    109568 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:51.862  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    414038 nanoseconds spent acquiring 2 JDBC connections;
+    418475 nanoseconds spent releasing 2 JDBC connections;
+    152918 nanoseconds spent preparing 1 JDBC statements;
+    1203200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    109568 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:51.862  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:46:53.867  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "4e0de235-7319-11e9-8d92-1d392d59abab",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:46:53.868  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:46:53.868  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:46:53.868  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:46:53.869  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:46:53.887  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    435540 nanoseconds spent acquiring 2 JDBC connections;
+    432810 nanoseconds spent releasing 2 JDBC connections;
+    153599 nanoseconds spent preparing 1 JDBC statements;
+    674133 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    118101 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:53.887  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    435540 nanoseconds spent acquiring 2 JDBC connections;
+    432810 nanoseconds spent releasing 2 JDBC connections;
+    153599 nanoseconds spent preparing 1 JDBC statements;
+    674133 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    118101 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:46:53.887  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:47:00.093  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "50e740f6-7319-11e9-8d92-33a3828253e6",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:47:00.095  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:47:00.096  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:47:00.096  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:47:00.099  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:47:00.120  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    421205 nanoseconds spent acquiring 2 JDBC connections;
+    436564 nanoseconds spent releasing 2 JDBC connections;
+    144384 nanoseconds spent preparing 1 JDBC statements;
+    724309 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    116395 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:00.120  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    421205 nanoseconds spent acquiring 2 JDBC connections;
+    436564 nanoseconds spent releasing 2 JDBC connections;
+    144384 nanoseconds spent preparing 1 JDBC statements;
+    724309 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    116395 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:00.120  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:47:02.194  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "5353ad17-7319-11e9-8d92-77fdc83d4c9f",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:47:02.195  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:47:02.195  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:47:02.195  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:47:02.196  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:47:02.228  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    419499 nanoseconds spent acquiring 2 JDBC connections;
+    440320 nanoseconds spent releasing 2 JDBC connections;
+    149845 nanoseconds spent preparing 1 JDBC statements;
+    700415 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    158379 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:02.228  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    419499 nanoseconds spent acquiring 2 JDBC connections;
+    440320 nanoseconds spent releasing 2 JDBC connections;
+    149845 nanoseconds spent preparing 1 JDBC statements;
+    700415 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    158379 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:02.228  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:47:06.335  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "550eca98-7319-11e9-8d92-6339d7b93b88",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:47:06.336  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:47:06.336  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:47:06.336  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:47:06.337  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:47:06.386  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    410282 nanoseconds spent acquiring 2 JDBC connections;
+    433835 nanoseconds spent releasing 2 JDBC connections;
+    145408 nanoseconds spent preparing 1 JDBC statements;
+    14283432 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    125952 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:06.386  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    410282 nanoseconds spent acquiring 2 JDBC connections;
+    433835 nanoseconds spent releasing 2 JDBC connections;
+    145408 nanoseconds spent preparing 1 JDBC statements;
+    14283432 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    125952 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:06.387  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:47:12.594  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "58ca4bf9-7319-11e9-8d92-8d103f9bde66",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:47:12.595  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:47:12.595  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:47:12.595  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:47:12.596  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:47:12.628  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    437589 nanoseconds spent acquiring 2 JDBC connections;
+    420523 nanoseconds spent releasing 2 JDBC connections;
+    152917 nanoseconds spent preparing 1 JDBC statements;
+    736597 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    130048 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:12.628  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    437589 nanoseconds spent acquiring 2 JDBC connections;
+    420523 nanoseconds spent releasing 2 JDBC connections;
+    152917 nanoseconds spent preparing 1 JDBC statements;
+    736597 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    130048 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:12.628  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:47:14.633  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "5a7feb3a-7319-11e9-8d92-9f3eba616ea5",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:47:14.634  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:47:14.634  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:47:14.634  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:47:14.635  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:47:14.669  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    412671 nanoseconds spent acquiring 2 JDBC connections;
+    425301 nanoseconds spent releasing 2 JDBC connections;
+    164181 nanoseconds spent preparing 1 JDBC statements;
+    750933 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    118784 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:14.669  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    412671 nanoseconds spent acquiring 2 JDBC connections;
+    425301 nanoseconds spent releasing 2 JDBC connections;
+    164181 nanoseconds spent preparing 1 JDBC statements;
+    750933 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    118784 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:14.670  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:47:18.776  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "5c5bd72b-7319-11e9-8d92-6702ad2443c2",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:47:18.776  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:47:18.776  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:47:18.777  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:47:18.777  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:47:18.828  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    406186 nanoseconds spent acquiring 2 JDBC connections;
+    435883 nanoseconds spent releasing 2 JDBC connections;
+    153941 nanoseconds spent preparing 1 JDBC statements;
+    17352701 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    117418 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:18.828  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    406186 nanoseconds spent acquiring 2 JDBC connections;
+    435883 nanoseconds spent releasing 2 JDBC connections;
+    153941 nanoseconds spent preparing 1 JDBC statements;
+    17352701 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    117418 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:18.828  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:47:31.342  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "63d65c5c-7319-11e9-8d92-e72d3331a789",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:47:31.343  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:47:31.343  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:47:31.343  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:47:31.344  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:47:31.402  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    407894 nanoseconds spent acquiring 2 JDBC connections;
+    482986 nanoseconds spent releasing 2 JDBC connections;
+    148480 nanoseconds spent preparing 1 JDBC statements;
+    23446524 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    149163 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:31.402  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    407894 nanoseconds spent acquiring 2 JDBC connections;
+    482986 nanoseconds spent releasing 2 JDBC connections;
+    148480 nanoseconds spent preparing 1 JDBC statements;
+    23446524 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    149163 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:47:31.402  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:17.560  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "7f221f8d-7319-11e9-8d92-11f5d0350bb0",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:17.561  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:17.561  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:17.561  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:17.562  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:17.609  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    468309 nanoseconds spent acquiring 2 JDBC connections;
+    431445 nanoseconds spent releasing 2 JDBC connections;
+    167936 nanoseconds spent preparing 1 JDBC statements;
+    15206056 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    121856 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:17.609  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    468309 nanoseconds spent acquiring 2 JDBC connections;
+    431445 nanoseconds spent releasing 2 JDBC connections;
+    167936 nanoseconds spent preparing 1 JDBC statements;
+    15206056 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    121856 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:17.609  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:21.716  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "82a8ae3f-7319-11e9-8d92-ed29e0c3f7af",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:21.716  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:21.716  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:21.716  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:21.717  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:21.750  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    470358 nanoseconds spent acquiring 2 JDBC connections;
+    490837 nanoseconds spent releasing 2 JDBC connections;
+    164522 nanoseconds spent preparing 1 JDBC statements;
+    782678 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    108885 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:21.750  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    470358 nanoseconds spent acquiring 2 JDBC connections;
+    490837 nanoseconds spent releasing 2 JDBC connections;
+    164522 nanoseconds spent preparing 1 JDBC statements;
+    782678 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    108885 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:21.750  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:23.753  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "82839a0e-7319-11e9-8d92-8f8907a41d6f",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:23.753  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:23.753  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:23.753  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:23.754  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:23.784  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    415403 nanoseconds spent acquiring 2 JDBC connections;
+    442368 nanoseconds spent releasing 2 JDBC connections;
+    152576 nanoseconds spent preparing 1 JDBC statements;
+    727381 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    98304 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:23.784  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    415403 nanoseconds spent acquiring 2 JDBC connections;
+    442368 nanoseconds spent releasing 2 JDBC connections;
+    152576 nanoseconds spent preparing 1 JDBC statements;
+    727381 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    98304 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:23.784  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:25.787  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "83141a41-7319-11e9-8d92-e93ac480f636",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:25.788  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:25.788  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:25.788  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:25.789  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:25.834  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    444417 nanoseconds spent acquiring 2 JDBC connections;
+    687786 nanoseconds spent releasing 2 JDBC connections;
+    147798 nanoseconds spent preparing 1 JDBC statements;
+    1054037 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    107520 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:25.834  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    444417 nanoseconds spent acquiring 2 JDBC connections;
+    687786 nanoseconds spent releasing 2 JDBC connections;
+    147798 nanoseconds spent preparing 1 JDBC statements;
+    1054037 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    107520 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:25.834  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:25.834  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "82dc1a50-7319-11e9-8d92-49d829ac81b4",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:25.835  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:25.835  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:25.835  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:25.835  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:25.883  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 2 JDBC connections;
+    442027 nanoseconds spent releasing 2 JDBC connections;
+    150528 nanoseconds spent preparing 1 JDBC statements;
+    18963111 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    109909 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:25.883  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 2 JDBC connections;
+    442027 nanoseconds spent releasing 2 JDBC connections;
+    150528 nanoseconds spent preparing 1 JDBC statements;
+    18963111 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    109909 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:25.884  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:27.886  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "84adf423-7319-11e9-8d92-0b5fa9280779",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:27.887  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:27.887  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:27.887  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:27.888  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:27.908  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    439637 nanoseconds spent acquiring 2 JDBC connections;
+    413354 nanoseconds spent releasing 2 JDBC connections;
+    158379 nanoseconds spent preparing 1 JDBC statements;
+    727040 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    100693 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:27.908  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    439637 nanoseconds spent acquiring 2 JDBC connections;
+    413354 nanoseconds spent releasing 2 JDBC connections;
+    158379 nanoseconds spent preparing 1 JDBC statements;
+    727040 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    100693 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:27.908  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:27.908  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "8504c6b4-7319-11e9-8d92-f1002bbff100",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:27.909  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:27.909  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:27.909  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:27.910  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:27.925  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24234 nanoseconds spent acquiring 2 JDBC connections;
+    416427 nanoseconds spent releasing 2 JDBC connections;
+    205142 nanoseconds spent preparing 1 JDBC statements;
+    684032 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    103083 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:27.925  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24234 nanoseconds spent acquiring 2 JDBC connections;
+    416427 nanoseconds spent releasing 2 JDBC connections;
+    205142 nanoseconds spent preparing 1 JDBC statements;
+    684032 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    103083 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:27.925  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:27.925  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "8451f172-7319-11e9-8d92-3b64a225e291",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:27.926  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:27.926  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:27.926  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:27.927  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:27.941  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23552 nanoseconds spent acquiring 2 JDBC connections;
+    444075 nanoseconds spent releasing 2 JDBC connections;
+    174080 nanoseconds spent preparing 1 JDBC statements;
+    1077589 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    105131 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:27.941  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    23552 nanoseconds spent acquiring 2 JDBC connections;
+    444075 nanoseconds spent releasing 2 JDBC connections;
+    174080 nanoseconds spent preparing 1 JDBC statements;
+    1077589 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    105131 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:27.941  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:32.139  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "88f058c5-7319-11e9-8d92-07c89267ca33",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:32.140  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:32.140  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:32.140  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:32.141  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:32.216  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    498688 nanoseconds spent acquiring 2 JDBC connections;
+    456021 nanoseconds spent releasing 2 JDBC connections;
+    167595 nanoseconds spent preparing 1 JDBC statements;
+    9555966 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    114688 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:32.216  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    498688 nanoseconds spent acquiring 2 JDBC connections;
+    456021 nanoseconds spent releasing 2 JDBC connections;
+    167595 nanoseconds spent preparing 1 JDBC statements;
+    9555966 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    114688 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:32.216  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:36.323  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "8a9d9396-7319-11e9-8d92-1defde0cde9e",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:36.323  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:36.324  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:36.324  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:36.324  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:36.375  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    431445 nanoseconds spent acquiring 2 JDBC connections;
+    431105 nanoseconds spent releasing 2 JDBC connections;
+    162816 nanoseconds spent preparing 1 JDBC statements;
+    15970301 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    142336 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:36.375  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    431445 nanoseconds spent acquiring 2 JDBC connections;
+    431105 nanoseconds spent releasing 2 JDBC connections;
+    162816 nanoseconds spent preparing 1 JDBC statements;
+    15970301 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    142336 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:36.375  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:38.403  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "8cab3de7-7319-11e9-8d92-1b81d0cbe060",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:38.403  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:38.404  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:38.404  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:38.404  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:38.441  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    417450 nanoseconds spent acquiring 2 JDBC connections;
+    404480 nanoseconds spent releasing 2 JDBC connections;
+    154624 nanoseconds spent preparing 1 JDBC statements;
+    7201108 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    100352 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:38.441  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    417450 nanoseconds spent acquiring 2 JDBC connections;
+    404480 nanoseconds spent releasing 2 JDBC connections;
+    154624 nanoseconds spent preparing 1 JDBC statements;
+    7201108 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    100352 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:38.441  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:48:48.852  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "92013568-7319-11e9-8d92-2b91c7b113d3",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:48:48.853  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:48:48.853  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:48:48.853  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:48:48.853  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:48:48.891  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    453632 nanoseconds spent acquiring 2 JDBC connections;
+    424960 nanoseconds spent releasing 2 JDBC connections;
+    153258 nanoseconds spent preparing 1 JDBC statements;
+    7342420 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    102400 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:48.891  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    453632 nanoseconds spent acquiring 2 JDBC connections;
+    424960 nanoseconds spent releasing 2 JDBC connections;
+    153258 nanoseconds spent preparing 1 JDBC statements;
+    7342420 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    102400 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:48:48.891  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:49:24.522  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "a73e3869-7319-11e9-8d92-31bd08dfd4c0",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:49:24.523  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:49:24.523  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:49:24.523  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:49:24.523  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:49:24.557  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    468309 nanoseconds spent acquiring 2 JDBC connections;
+    433152 nanoseconds spent releasing 2 JDBC connections;
+    152235 nanoseconds spent preparing 1 JDBC statements;
+    744789 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    114347 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:49:24.557  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    468309 nanoseconds spent acquiring 2 JDBC connections;
+    433152 nanoseconds spent releasing 2 JDBC connections;
+    152235 nanoseconds spent preparing 1 JDBC statements;
+    744789 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    114347 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:49:24.557  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:49:39.170  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "b098530a-7319-11e9-8d92-5bb9b423cbb3",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:49:39.171  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:49:39.171  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:49:39.171  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:49:39.171  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:49:39.206  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    742058 nanoseconds spent acquiring 2 JDBC connections;
+    456703 nanoseconds spent releasing 2 JDBC connections;
+    146091 nanoseconds spent preparing 1 JDBC statements;
+    1043456 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    100694 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:49:39.206  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    742058 nanoseconds spent acquiring 2 JDBC connections;
+    456703 nanoseconds spent releasing 2 JDBC connections;
+    146091 nanoseconds spent preparing 1 JDBC statements;
+    1043456 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    100694 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:49:39.206  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:50:33.756  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "d08a6ccb-7319-11e9-8d92-fbcdda86b2af",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:50:33.757  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:50:33.757  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:50:33.757  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:50:33.757  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:50:33.811  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    433494 nanoseconds spent acquiring 2 JDBC connections;
+    433493 nanoseconds spent releasing 2 JDBC connections;
+    187734 nanoseconds spent preparing 1 JDBC statements;
+    791210 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    103423 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:50:33.811  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    433494 nanoseconds spent acquiring 2 JDBC connections;
+    433493 nanoseconds spent releasing 2 JDBC connections;
+    187734 nanoseconds spent preparing 1 JDBC statements;
+    791210 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    103423 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:50:33.812  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+10/05/2019 12:51:15.746  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "e99fc7fc-7319-11e9-8d92-45d1dbdd963c",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+10/05/2019 12:51:15.746  INFO [pool-1-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+10/05/2019 12:51:15.746  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+10/05/2019 12:51:15.746  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+10/05/2019 12:51:15.747  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "HELLO FROM SMPPSIM",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : 0,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+10/05/2019 12:51:15.814  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    467627 nanoseconds spent acquiring 2 JDBC connections;
+    444416 nanoseconds spent releasing 2 JDBC connections;
+    169643 nanoseconds spent preparing 1 JDBC statements;
+    16684370 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    103083 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:51:15.814  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    467627 nanoseconds spent acquiring 2 JDBC connections;
+    444416 nanoseconds spent releasing 2 JDBC connections;
+    169643 nanoseconds spent preparing 1 JDBC statements;
+    16684370 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    103083 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 12:51:15.814  INFO [pool-1-thread-1] Receiver: insert into mo_his 

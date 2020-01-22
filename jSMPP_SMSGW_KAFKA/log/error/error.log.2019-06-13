@@ -1,0 +1,62 @@
+13/06/2019 17:12:06.331 ERROR [main] SMSGW: cannot create topic : report_SMS_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:68)
+13/06/2019 17:12:19.727 ERROR [main] SMSGW: cannot create topic : mo_pubdate
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)
+13/06/2019 17:12:32.131 ERROR [main] SMSGW: cannot create topic : mt_pubdate
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:75)
+13/06/2019 17:12:44.664 ERROR [main] SMSGW: cannot create topic : mo-flash
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)
+13/06/2019 17:12:57.064 ERROR [main] SMSGW: cannot create topic : mt-flash
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:75)
+13/06/2019 17:13:09.564 ERROR [main] SMSGW: cannot create topic : mo_gameshow
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)
+13/06/2019 17:13:21.935 ERROR [main] SMSGW: cannot create topic : mt_gameshow
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:75)
+13/06/2019 17:15:04.188  WARN [pool-1-thread-1] ReceiveSMS: No Service provide to process this SMS
+13/06/2019 17:15:04.188  WARN [pool-1-thread-1] ReceiveSMS: Lossing SMS: 4477665544 --> 7854 [msg = Hello from SMPPSim ]
+13/06/2019 17:20:09.069  WARN [pool-1-thread-2] ReceiveSMS: No Service provide to process this SMS
+13/06/2019 17:20:09.069  WARN [pool-1-thread-2] ReceiveSMS: Lossing SMS: 4477665544 --> 7854 [msg = Hello from SMPPSim ]
+13/06/2019 17:20:09.564  WARN [pool-1-thread-3] ReceiveSMS: No Service provide to process this SMS
+13/06/2019 17:20:09.564  WARN [pool-1-thread-3] ReceiveSMS: Lossing SMS: 4477665544 --> 7854 [msg = Hello from SMPPSim ]

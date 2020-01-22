@@ -1,0 +1,1534 @@
+10/06/2019 15:11:53.129  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:11:53.326  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:11:53.351  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:11:53.361  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:11:53.495  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:11:53.495  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:11:53.607  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:11:53.607  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:11:53.608  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:11:53.608  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:11:53.640  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:11:53.640  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:11:53.790  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:11:53.790  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:11:54.104  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:11:54.104  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:11:55.078  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:11:55.078  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:11:55.225  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    44374 nanoseconds spent acquiring 1 JDBC connections;
+    13654 nanoseconds spent releasing 1 JDBC connections;
+    12903746 nanoseconds spent preparing 2 JDBC statements;
+    5736440 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:11:55.225  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    44374 nanoseconds spent acquiring 1 JDBC connections;
+    13654 nanoseconds spent releasing 1 JDBC connections;
+    12903746 nanoseconds spent preparing 2 JDBC statements;
+    5736440 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:11:55.231  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    73728 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    223232 nanoseconds spent preparing 1 JDBC statements;
+    816810 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:11:55.231  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    73728 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    223232 nanoseconds spent preparing 1 JDBC statements;
+    816810 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:11:55.238  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    12970 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    240981 nanoseconds spent preparing 2 JDBC statements;
+    1819987 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:11:55.238  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    12970 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    240981 nanoseconds spent preparing 2 JDBC statements;
+    1819987 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:11:55.247  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16042 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    267605 nanoseconds spent preparing 1 JDBC statements;
+    2535079 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:11:55.247  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16042 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    267605 nanoseconds spent preparing 1 JDBC statements;
+    2535079 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:09.774  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:15:09.951  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:15:09.973  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:15:09.983  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:15:10.113  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:15:10.113  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:15:10.227  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:15:10.227  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:15:10.228  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:15:10.228  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:15:10.258  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:15:10.258  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:15:10.405  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:15:10.405  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:15:10.717  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:15:10.717  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:15:11.685  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:15:11.685  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:15:11.836  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23552 nanoseconds spent acquiring 1 JDBC connections;
+    14678 nanoseconds spent releasing 1 JDBC connections;
+    22888072 nanoseconds spent preparing 2 JDBC statements;
+    5623459 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:11.836  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23552 nanoseconds spent acquiring 1 JDBC connections;
+    14678 nanoseconds spent releasing 1 JDBC connections;
+    22888072 nanoseconds spent preparing 2 JDBC statements;
+    5623459 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:11.843  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    59392 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    197631 nanoseconds spent preparing 1 JDBC statements;
+    863572 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:11.843  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    59392 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    197631 nanoseconds spent preparing 1 JDBC statements;
+    863572 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:11.850  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    7510 nanoseconds spent releasing 1 JDBC connections;
+    252929 nanoseconds spent preparing 2 JDBC statements;
+    1755134 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:11.850  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    7510 nanoseconds spent releasing 1 JDBC connections;
+    252929 nanoseconds spent preparing 2 JDBC statements;
+    1755134 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:11.858  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13994 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    274773 nanoseconds spent preparing 1 JDBC statements;
+    1839102 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:15:11.858  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13994 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    274773 nanoseconds spent preparing 1 JDBC statements;
+    1839102 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:07.314  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:25:07.529  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:25:07.551  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:25:07.570  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:25:07.707  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:25:07.707  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:25:07.820  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:25:07.820  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:25:07.821  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:25:07.821  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:25:07.853  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:25:07.853  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:25:08.011  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:25:08.011  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:25:08.322  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:25:08.322  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:25:09.351  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:25:09.351  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:25:09.497  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    20822 nanoseconds spent acquiring 1 JDBC connections;
+    15360 nanoseconds spent releasing 1 JDBC connections;
+    13838657 nanoseconds spent preparing 2 JDBC statements;
+    6460406 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:09.497  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    20822 nanoseconds spent acquiring 1 JDBC connections;
+    15360 nanoseconds spent releasing 1 JDBC connections;
+    13838657 nanoseconds spent preparing 2 JDBC statements;
+    6460406 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:09.503  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    111275 nanoseconds spent preparing 1 JDBC statements;
+    788478 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:09.503  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    111275 nanoseconds spent preparing 1 JDBC statements;
+    788478 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:09.512  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13654 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    245760 nanoseconds spent preparing 2 JDBC statements;
+    3435173 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:09.512  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13654 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    245760 nanoseconds spent preparing 2 JDBC statements;
+    3435173 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:09.523  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    252586 nanoseconds spent preparing 1 JDBC statements;
+    1676286 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:25:09.523  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    252586 nanoseconds spent preparing 1 JDBC statements;
+    1676286 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:55.803  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:27:55.991  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:27:56.017  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:27:56.029  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:27:56.168  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:27:56.168  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:27:56.287  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:27:56.287  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:27:56.288  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:27:56.288  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:27:56.319  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:27:56.319  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:27:56.459  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:27:56.459  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:27:56.771  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:27:56.771  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:27:57.764  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:27:57.764  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:27:57.909  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    27648 nanoseconds spent acquiring 1 JDBC connections;
+    16725 nanoseconds spent releasing 1 JDBC connections;
+    19614689 nanoseconds spent preparing 2 JDBC statements;
+    5660322 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:57.909  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    27648 nanoseconds spent acquiring 1 JDBC connections;
+    16725 nanoseconds spent releasing 1 JDBC connections;
+    19614689 nanoseconds spent preparing 2 JDBC statements;
+    5660322 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:57.915  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    113323 nanoseconds spent preparing 1 JDBC statements;
+    1181011 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:57.915  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    113323 nanoseconds spent preparing 1 JDBC statements;
+    1181011 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:57.922  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16042 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    247126 nanoseconds spent preparing 2 JDBC statements;
+    1813502 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:57.922  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16042 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    247126 nanoseconds spent preparing 2 JDBC statements;
+    1813502 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:57.931  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13994 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    246442 nanoseconds spent preparing 1 JDBC statements;
+    2601638 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:27:57.931  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13994 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    246442 nanoseconds spent preparing 1 JDBC statements;
+    2601638 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:17.753  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:30:17.948  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:30:17.972  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:30:17.985  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:30:18.117  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:30:18.117  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:30:18.235  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:30:18.235  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:30:18.236  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:30:18.236  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:30:18.268  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:30:18.268  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:30:18.405  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:30:18.405  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:30:18.741  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:30:18.741  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:30:19.816  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:30:19.816  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:30:19.987  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    22528 nanoseconds spent acquiring 1 JDBC connections;
+    15702 nanoseconds spent releasing 1 JDBC connections;
+    29269971 nanoseconds spent preparing 2 JDBC statements;
+    6381899 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:19.987  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    22528 nanoseconds spent acquiring 1 JDBC connections;
+    15702 nanoseconds spent releasing 1 JDBC connections;
+    29269971 nanoseconds spent preparing 2 JDBC statements;
+    6381899 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:19.992  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    16725 nanoseconds spent releasing 1 JDBC connections;
+    109909 nanoseconds spent preparing 1 JDBC statements;
+    814761 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:19.992  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    16725 nanoseconds spent releasing 1 JDBC connections;
+    109909 nanoseconds spent preparing 1 JDBC statements;
+    814761 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:20.000  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    437247 nanoseconds spent preparing 2 JDBC statements;
+    1920338 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:20.000  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23893 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    437247 nanoseconds spent preparing 2 JDBC statements;
+    1920338 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:20.010  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8534 nanoseconds spent releasing 1 JDBC connections;
+    262485 nanoseconds spent preparing 1 JDBC statements;
+    2039805 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:20.010  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8534 nanoseconds spent releasing 1 JDBC connections;
+    262485 nanoseconds spent preparing 1 JDBC statements;
+    2039805 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:30:57.840  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:30:58.054  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:30:58.077  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:30:58.091  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:30:58.234  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:30:58.234  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:30:58.365  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:30:58.365  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:30:58.366  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:30:58.366  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:30:58.400  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:30:58.400  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:30:58.566  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:30:58.566  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:30:58.887  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:30:58.887  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:30:59.993  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:30:59.993  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:31:00.148  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    105130 nanoseconds spent acquiring 1 JDBC connections;
+    14336 nanoseconds spent releasing 1 JDBC connections;
+    22298249 nanoseconds spent preparing 2 JDBC statements;
+    5963766 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:31:00.148  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    105130 nanoseconds spent acquiring 1 JDBC connections;
+    14336 nanoseconds spent releasing 1 JDBC connections;
+    22298249 nanoseconds spent preparing 2 JDBC statements;
+    5963766 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:31:00.153  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14677 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    115711 nanoseconds spent preparing 1 JDBC statements;
+    832852 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:31:00.153  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14677 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    115711 nanoseconds spent preparing 1 JDBC statements;
+    832852 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:31:00.161  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    844117 nanoseconds spent preparing 2 JDBC statements;
+    1768445 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:31:00.161  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    844117 nanoseconds spent preparing 2 JDBC statements;
+    1768445 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:31:00.173  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    25600 nanoseconds spent acquiring 1 JDBC connections;
+    10240 nanoseconds spent releasing 1 JDBC connections;
+    301738 nanoseconds spent preparing 1 JDBC statements;
+    3000998 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:31:00.173  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    25600 nanoseconds spent acquiring 1 JDBC connections;
+    10240 nanoseconds spent releasing 1 JDBC connections;
+    301738 nanoseconds spent preparing 1 JDBC statements;
+    3000998 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:24.451  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:32:24.662  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:32:24.684  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:32:24.694  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:32:24.827  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:32:24.827  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:32:24.948  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:32:24.948  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:32:24.949  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:32:24.949  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:32:24.981  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:32:24.981  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:32:25.134  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:32:25.134  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:32:25.444  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:32:25.444  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:32:26.549  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:32:26.549  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:32:26.712  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    21846 nanoseconds spent acquiring 1 JDBC connections;
+    18432 nanoseconds spent releasing 1 JDBC connections;
+    15074964 nanoseconds spent preparing 2 JDBC statements;
+    5946359 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:26.712  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    21846 nanoseconds spent acquiring 1 JDBC connections;
+    18432 nanoseconds spent releasing 1 JDBC connections;
+    15074964 nanoseconds spent preparing 2 JDBC statements;
+    5946359 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:26.718  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    24917 nanoseconds spent acquiring 1 JDBC connections;
+    9557 nanoseconds spent releasing 1 JDBC connections;
+    125610 nanoseconds spent preparing 1 JDBC statements;
+    897705 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:26.718  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    24917 nanoseconds spent acquiring 1 JDBC connections;
+    9557 nanoseconds spent releasing 1 JDBC connections;
+    125610 nanoseconds spent preparing 1 JDBC statements;
+    897705 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:26.725  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13653 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    243029 nanoseconds spent preparing 2 JDBC statements;
+    1776297 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:26.725  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13653 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    243029 nanoseconds spent preparing 2 JDBC statements;
+    1776297 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:26.736  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    25942 nanoseconds spent acquiring 1 JDBC connections;
+    7850 nanoseconds spent releasing 1 JDBC connections;
+    747861 nanoseconds spent preparing 1 JDBC statements;
+    1979047 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:32:26.736  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    25942 nanoseconds spent acquiring 1 JDBC connections;
+    7850 nanoseconds spent releasing 1 JDBC connections;
+    747861 nanoseconds spent preparing 1 JDBC statements;
+    1979047 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:29.846  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:33:30.038  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:33:30.063  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:33:30.074  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:33:30.204  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:33:30.204  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:33:30.336  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:33:30.336  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:33:30.337  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:33:30.337  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:33:30.372  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:33:30.372  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:33:30.528  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:33:30.528  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:33:30.859  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:33:30.859  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:33:31.973  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:33:31.973  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:33:32.144  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    21845 nanoseconds spent acquiring 1 JDBC connections;
+    15360 nanoseconds spent releasing 1 JDBC connections;
+    14072127 nanoseconds spent preparing 2 JDBC statements;
+    8727198 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:32.144  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    21845 nanoseconds spent acquiring 1 JDBC connections;
+    15360 nanoseconds spent releasing 1 JDBC connections;
+    14072127 nanoseconds spent preparing 2 JDBC statements;
+    8727198 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:32.151  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    9216 nanoseconds spent releasing 1 JDBC connections;
+    191488 nanoseconds spent preparing 1 JDBC statements;
+    812713 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:32.151  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    9216 nanoseconds spent releasing 1 JDBC connections;
+    191488 nanoseconds spent preparing 1 JDBC statements;
+    812713 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:32.157  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    239956 nanoseconds spent preparing 2 JDBC statements;
+    1791997 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:32.157  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    239956 nanoseconds spent preparing 2 JDBC statements;
+    1791997 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:32.167  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15701 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    267946 nanoseconds spent preparing 1 JDBC statements;
+    1534632 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:33:32.167  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15701 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    267946 nanoseconds spent preparing 1 JDBC statements;
+    1534632 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:23.757  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:34:23.956  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:34:23.978  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:34:23.991  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:34:24.133  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:34:24.133  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:34:24.251  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:34:24.251  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:34:24.253  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:34:24.253  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:34:24.285  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:34:24.285  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:34:24.434  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:34:24.434  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:34:24.775  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:34:24.775  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:34:25.853  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:34:25.853  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:34:26.012  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    26282 nanoseconds spent acquiring 1 JDBC connections;
+    14336 nanoseconds spent releasing 1 JDBC connections;
+    21885918 nanoseconds spent preparing 2 JDBC statements;
+    6050807 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:26.012  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    26282 nanoseconds spent acquiring 1 JDBC connections;
+    14336 nanoseconds spent releasing 1 JDBC connections;
+    21885918 nanoseconds spent preparing 2 JDBC statements;
+    6050807 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:26.018  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14677 nanoseconds spent acquiring 1 JDBC connections;
+    8534 nanoseconds spent releasing 1 JDBC connections;
+    112640 nanoseconds spent preparing 1 JDBC statements;
+    781311 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:26.018  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14677 nanoseconds spent acquiring 1 JDBC connections;
+    8534 nanoseconds spent releasing 1 JDBC connections;
+    112640 nanoseconds spent preparing 1 JDBC statements;
+    781311 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:26.027  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    242687 nanoseconds spent preparing 2 JDBC statements;
+    1952765 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:26.027  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    242687 nanoseconds spent preparing 2 JDBC statements;
+    1952765 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:26.038  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17749 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    311637 nanoseconds spent preparing 1 JDBC statements;
+    2582865 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:34:26.038  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17749 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    311637 nanoseconds spent preparing 1 JDBC statements;
+    2582865 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:04.998  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:45:05.205  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:45:05.226  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:45:05.236  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:45:05.376  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:45:05.376  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:45:05.505  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:45:05.505  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:45:05.506  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:45:05.506  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:45:05.540  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:45:05.540  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:45:05.705  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:45:05.705  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:45:06.031  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:45:06.031  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:45:07.084  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:45:07.084  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:45:07.274  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    24917 nanoseconds spent acquiring 1 JDBC connections;
+    17408 nanoseconds spent releasing 1 JDBC connections;
+    13638294 nanoseconds spent preparing 2 JDBC statements;
+    9599303 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:07.274  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    24917 nanoseconds spent acquiring 1 JDBC connections;
+    17408 nanoseconds spent releasing 1 JDBC connections;
+    13638294 nanoseconds spent preparing 2 JDBC statements;
+    9599303 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:07.281  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14678 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    193194 nanoseconds spent preparing 1 JDBC statements;
+    972116 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:07.281  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14678 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    193194 nanoseconds spent preparing 1 JDBC statements;
+    972116 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:07.288  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    245759 nanoseconds spent preparing 2 JDBC statements;
+    2533713 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:07.288  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    245759 nanoseconds spent preparing 2 JDBC statements;
+    2533713 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:07.301  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16726 nanoseconds spent acquiring 1 JDBC connections;
+    32427 nanoseconds spent releasing 1 JDBC connections;
+    280576 nanoseconds spent preparing 1 JDBC statements;
+    3393531 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:45:07.301  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16726 nanoseconds spent acquiring 1 JDBC connections;
+    32427 nanoseconds spent releasing 1 JDBC connections;
+    280576 nanoseconds spent preparing 1 JDBC statements;
+    3393531 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:02.781  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:46:02.997  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:46:03.019  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:46:03.031  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:46:03.190  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:46:03.190  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:46:03.313  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:46:03.313  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:46:03.315  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:46:03.315  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:46:03.349  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:46:03.349  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:46:03.504  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:46:03.504  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:46:03.858  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:46:03.858  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:46:05.002  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:46:05.002  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:46:05.167  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    24576 nanoseconds spent acquiring 1 JDBC connections;
+    14677 nanoseconds spent releasing 1 JDBC connections;
+    16189074 nanoseconds spent preparing 2 JDBC statements;
+    14064618 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:05.167  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    24576 nanoseconds spent acquiring 1 JDBC connections;
+    14677 nanoseconds spent releasing 1 JDBC connections;
+    16189074 nanoseconds spent preparing 2 JDBC statements;
+    14064618 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:05.175  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15018 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    197973 nanoseconds spent preparing 1 JDBC statements;
+    819199 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:05.175  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15018 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    197973 nanoseconds spent preparing 1 JDBC statements;
+    819199 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:05.182  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14678 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    239615 nanoseconds spent preparing 2 JDBC statements;
+    2198866 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:05.182  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14678 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    239615 nanoseconds spent preparing 2 JDBC statements;
+    2198866 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:05.191  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    274773 nanoseconds spent preparing 1 JDBC statements;
+    1627134 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:46:05.191  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    274773 nanoseconds spent preparing 1 JDBC statements;
+    1627134 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:21.763  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:47:21.959  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:47:21.984  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:47:21.995  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:47:22.137  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:47:22.137  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:47:22.263  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:47:22.263  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:47:22.264  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:47:22.264  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:47:22.301  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:47:22.301  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:47:22.450  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:47:22.450  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:47:22.818  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:47:22.818  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:47:23.992  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:47:23.992  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:47:24.194  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    20821 nanoseconds spent acquiring 1 JDBC connections;
+    19115 nanoseconds spent releasing 1 JDBC connections;
+    26516779 nanoseconds spent preparing 2 JDBC statements;
+    7259808 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:24.194  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    20821 nanoseconds spent acquiring 1 JDBC connections;
+    19115 nanoseconds spent releasing 1 JDBC connections;
+    26516779 nanoseconds spent preparing 2 JDBC statements;
+    7259808 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:24.201  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16043 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    118442 nanoseconds spent preparing 1 JDBC statements;
+    854697 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:24.201  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16043 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    118442 nanoseconds spent preparing 1 JDBC statements;
+    854697 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:24.209  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    244394 nanoseconds spent preparing 2 JDBC statements;
+    2646012 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:24.209  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    244394 nanoseconds spent preparing 2 JDBC statements;
+    2646012 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:24.221  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    83627 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    616105 nanoseconds spent preparing 1 JDBC statements;
+    1545555 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:24.221  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    83627 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    616105 nanoseconds spent preparing 1 JDBC statements;
+    1545555 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:42.947  INFO [main] NewMain: Load log4j config file done.
+10/06/2019 15:47:43.170  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+10/06/2019 15:47:43.191  INFO [main] Load_Configuration: successfull load : etc\api_charging.xml
+10/06/2019 15:47:43.200  INFO [main] Load_Configuration: successfull load : etc\api_viewinfo.xml
+10/06/2019 15:47:43.344  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:47:43.344  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/06/2019 15:47:43.485  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:47:43.485  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/06/2019 15:47:43.487  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:47:43.487  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/06/2019 15:47:43.520  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:47:43.520  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/06/2019 15:47:43.680  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:47:43.680  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/06/2019 15:47:43.998  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:47:43.998  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/06/2019 15:47:45.065  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:47:45.065  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/06/2019 15:47:45.213  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23211 nanoseconds spent acquiring 1 JDBC connections;
+    14677 nanoseconds spent releasing 1 JDBC connections;
+    18894136 nanoseconds spent preparing 2 JDBC statements;
+    5716642 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:45.213  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    23211 nanoseconds spent acquiring 1 JDBC connections;
+    14677 nanoseconds spent releasing 1 JDBC connections;
+    18894136 nanoseconds spent preparing 2 JDBC statements;
+    5716642 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:45.220  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16042 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    202410 nanoseconds spent preparing 1 JDBC statements;
+    1234942 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:45.220  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16042 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    202410 nanoseconds spent preparing 1 JDBC statements;
+    1234942 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:45.227  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    247806 nanoseconds spent preparing 2 JDBC statements;
+    1766739 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:45.227  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    247806 nanoseconds spent preparing 2 JDBC statements;
+    1766739 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:45.236  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    255317 nanoseconds spent preparing 1 JDBC statements;
+    1560915 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/06/2019 15:47:45.236  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    15360 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    255317 nanoseconds spent preparing 1 JDBC statements;
+    1560915 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}

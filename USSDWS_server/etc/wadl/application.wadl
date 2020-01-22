@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://wadl.dev.java.net/2009/02"><doc
+        jersey:generatedBy="Jersey: 1.19.4 05/24/2017 03:20 PM"
+        xmlns:jersey="http://jersey.java.net/"/><doc
+        title="A message in the WADL"
+            xml:lang="en"><![CDATA[This is added to the start of the generated application.wadl]]></doc><grammars><include
+            href="schema.xsd"/><include
+        href="xsd0.xsd"><doc/></include></grammars><resources
+            base="http://127.0.0.1:8190/"><resource
+                path="/categoryservice"><resource
+                    path="/category/book"><method id="addBooks"
+                            name="POST"><request><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                xmlns=""/></request></method></resource><resource
+                    path="/category/{id}/books/{userName}"><param
+                    name="id" style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><param
+                    name="userName" style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><method
+                    id="getBooks"
+                            name="GET"><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                xmlns=""/></response></method></resource><resource
+                    path="/category/{id}"><param name="id"
+                    style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><method
+                    id="getCategory"
+                            name="GET"><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                    xmlns=""/></response></method><method
+                    id="deleteCategory"
+                name="DELETE"/></resource><resource
+                    path="/category"><method id="addCategory"
+                            name="POST"><request><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                            xmlns=""/></request><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                    xmlns=""/></response></method><method
+                    id="updateCategory"
+                            name="PUT"><request><ns2:representation
+                            element="Category" mediaType="*/*"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+            xmlns=""/></request></method></resource></resource><resource
+                path="/categoryservice"><resource
+                    path="/category/book"><method id="addBooks"
+                            name="POST"><request><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                xmlns=""/></request></method></resource><resource
+                    path="/category/{id}/books"><param name="id"
+                    style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><method
+                    id="getBooks"
+                            name="GET"><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                xmlns=""/></response></method></resource><resource
+                    path="/category/{id}"><param name="id"
+                    style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><method
+                    id="getCategory"
+                            name="GET"><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                    xmlns=""/></response></method><method
+                    id="deleteCategory"
+                name="DELETE"/></resource><resource
+                    path="/category"><method id="addCategory"
+                            name="POST"><request><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                            xmlns=""/></request><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                    xmlns=""/></response></method><method
+                    id="updateCategory"
+                            name="PUT"><request><ns2:representation
+                            element="Category" mediaType="*/*"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+            xmlns=""/></request></method></resource></resource><resource
+                path="/categoryservice"><resource
+                    path="/category/book"><method id="addBooks"
+                            name="POST"><request><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                xmlns=""/></request></method></resource><resource
+                    path="/category/{id}/books/{userName}"><param
+                    name="id" style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><param
+                    name="userName" style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><method
+                    id="getBooks"
+                            name="GET"><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                xmlns=""/></response></method></resource><resource
+                    path="/category/{id}"><param name="id"
+                    style="template" type="xs:string"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"/><method
+                    id="getCategory"
+                            name="GET"><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                    xmlns=""/></response></method><method
+                    id="deleteCategory"
+                name="DELETE"/></resource><resource
+                    path="/category"><method id="addCategory"
+                            name="POST"><request><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                            xmlns=""/></request><response><ns2:representation
+                            element="Category"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                    xmlns=""/></response></method><method
+                    id="updateCategory"
+                            name="PUT"><request><ns2:representation
+                            element="Category" mediaType="*/*"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+            xmlns=""/></request></method></resource></resource><resource
+                path="/authentication"><resource path="/auth"><method
+                    id="authenticateUser"
+                            name="POST"><request><ns2:representation
+                            element="account"
+                            mediaType="application/xml"
+                            xmlns:ns2="http://wadl.dev.java.net/2009/02"
+                            xmlns=""/></request><response><representation mediaType="application/xml"/></response></method></resource></resource></resources></application>

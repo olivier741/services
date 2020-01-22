@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    BLOCK API MANAGEMENT
+                    <small>Block api informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+                                    <p:panel header="List of Block API and related Webservice" > 
+                                        <p:panelGrid id="rolecrud"  columns="2">
+
+                                            <h:outputLabel value="Block API Name :" />
+                                            <p:inputText  value="#{wS_Block_ApiMB.selectedWS_Block_API.block_api_name}" required="true" disabled="#{wS_Block_ApiMB.do_view}" style="width:500px"/>
+
+                                            <h:outputLabel value="List of Webservices :" />
+                                            <p:pickList  value="#{wS_Block_ApiMB.dualListModelws_Webservices}" var="val" 
+                                                             itemLabel="#{val.webservice_name}" 
+                                                             itemValue="#{val}" 
+                                                             responsive="true"
+                                                             showTargetControls="true" showCheckbox="true" 
+                                                             showSourceFilter="true" showTargetFilter="true" filterMatchMode="contains"
+                                                             converter="ws_webserviceConverter"
+                                                             disabled="#{wS_Block_ApiMB.do_view}" >
+
+                                                        <f:facet name="sourceCaption">Available</f:facet>
+                                                        <f:facet name="targetCaption">Starting</f:facet>
+
+                                                        <p:ajax event="transfer" listener="#{wS_Block_ApiMB.onTransfer}" update="messages" />
+                                                        <p:ajax event="select" listener="#{wS_Block_ApiMB.onSelect}" update="messages"/>
+                                                        <p:ajax event="unselect" listener="#{wS_Block_ApiMB.onUnselect}" update="messages"/>
+                                                        <p:ajax event="reorder" listener="#{wS_Block_ApiMB.onReorder}" update="messages"/>
+
+                                                        <p:column style="width:85%;">
+                                                            <h:outputText value="#{val.webservice_name}" />
+                                                        </p:column>
+                                                 </p:pickList>
+                                            
+                                             <h:outputLabel value="Description :"/>                          
+                                             <p:inputTextarea value="#{wS_Block_ApiMB.selectedWS_Block_API.description}"  rows="5" cols="35" 
+                                                                     disabled="#{wS_Block_ApiMB.do_view}"
+                                                                     autoResize="false"  style="width:500px"/>
+                                           
+                                            <f:facet name="footer">
+                                                 <h:commandButton value="Enable Edit" action="#{wS_Block_ApiMB.enableEdit}" rendered="#{wS_Block_ApiMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{wS_Block_ApiMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{wS_Block_ApiMB.delete}" rendered="#{wS_Block_ApiMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                 </h:commandButton>
+                                                <h:commandButton value="Add" action="#{wS_Block_ApiMB.onAddNew}" rendered="#{wS_Block_ApiMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{WS_Block_ApiMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{WS_Block_ApiMB.edit}" rendered="#{WS_Block_ApiMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{wS_Block_ApiMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{wS_Block_ApiMB.clear}" rendered="#{wS_Block_ApiMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                 </h:commandButton> 
+                                              </f:facet>
+                                        </p:panelGrid>
+                                        <p:spacer height="30px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{wS_Block_ApiMB.listWS_Block_API}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+
+                                            <p:column headerText="ID" filterBy="#{o.ws_block_api_id}" sortBy="#{o.ws_block_api_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.ws_block_api_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="User Name" filterBy="#{o.block_api_name}" sortBy="#{o.block_api_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.block_api_name}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="List Webservices" filterBy="#{wS_Block_ApiMB.ws_Webservice_string}" sortBy="#{wS_Block_ApiMB.ws_Webservice_string}" filterMatchMode="contains">
+                                                <h:outputText value="#{wS_Block_ApiMB.getWebservice(o.block_api_name)}" escape="false" style="white-space: pre-wrap;word-wrap: break-word; " /> 
+                                            </p:column>
+
+                                            <p:column headerText="Description" filterBy="#{o.description}" sortBy="#{o.description}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.description}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Create date" filterBy="#{o.create_time}" sortBy="#{o.create_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.create_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.update_time}" sortBy="#{o.update_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.update_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{wS_Block_ApiMB.view(o)}"  update="datatable_grid,:form1:rolecrud,:form1:messages" process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                               
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   
+

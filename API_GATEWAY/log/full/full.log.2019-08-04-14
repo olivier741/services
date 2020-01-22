@@ -1,0 +1,916 @@
+04/08/2019 12:13:03.761  INFO [main] Rest_API_Server: Load log4j config file done.
+04/08/2019 12:13:04.279  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+04/08/2019 12:13:04.369  INFO [main] log: Logging initialized @5276ms to org.eclipse.jetty.util.log.Slf4jLog
+04/08/2019 12:13:04.626  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+04/08/2019 12:13:04.708  INFO [main] AbstractConnector: Started ServerConnector@64f16277{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+04/08/2019 12:13:04.710  INFO [main] Server: Started @5617ms
+04/08/2019 12:13:04.718  WARN [main] ContextHandler: Empty contextPath
+04/08/2019 12:13:04.737  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@79d06bbd{/,null,AVAILABLE}
+04/08/2019 12:51:37.146  INFO [main] ClientAPI: Load log4j config file done.
+04/08/2019 12:51:38.180  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>game_sms_OCM_Charging</user_name></account>
+--------------------------------------
+04/08/2019 12:51:38.426  INFO [qtp1003737182-19] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[146], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>game_sms_OCM_Charging</user_name></account>
+--------------------------------------
+04/08/2019 12:51:38.450  WARN [qtp1003737182-19] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 12:51:38.705  INFO [qtp1003737182-19] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 12:51:38.724  INFO [qtp1003737182-19] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 403
+Content-Type: application/xml
+Headers: {WWW-Authenticate=[ERROR  Message="null"], Date=[Sun, 04 Aug 2019 11:51:38 GMT], Content-Length=[0]}
+--------------------------------------
+04/08/2019 12:51:38.852  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 403
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Content-Length=[0], Date=[Sun, 04 Aug 2019 11:51:38 GMT], Server=[Jetty(9.4.18.v20190429)], WWW-Authenticate=[ERROR  Message="null"]}
+--------------------------------------
+04/08/2019 12:51:38.881  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>gamesms</password>
+    <user_name>game_sms_OCM_Charging</user_name>
+</account>
+
+04/08/2019 12:51:38.882  INFO [main] ClientAPI: Auth token : 
+04/08/2019 12:51:38.929  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</Request>
+
+04/08/2019 12:51:38.940  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer ], Account=[game_sms_OCM_Charging]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 12:51:38.954  INFO [qtp1003737182-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[game_sms_OCM_Charging], Authorization=[Bearer], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[168], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 12:51:38.959  WARN [qtp1003737182-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 12:51:38.966  INFO [qtp1003737182-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 401
+Content-Type: 
+Headers: {WWW-Authenticate=[Bearer realm="Not Bearer Authentication in the Header request"], Date=[Sun, 04 Aug 2019 11:51:38 GMT], Content-Length=[0]}
+--------------------------------------
+04/08/2019 12:51:39.001  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 401
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Content-Length=[0], Date=[Sun, 04 Aug 2019 11:51:38 GMT], Server=[Jetty(9.4.18.v20190429)], WWW-Authenticate=[Bearer realm="Not Bearer Authentication in the Header request"]}
+--------------------------------------
+04/08/2019 12:51:39.005  WARN [main] AbstractJAXBProvider: Message body is empty
+04/08/2019 12:51:39.005 ERROR [main] JAXRSUtils: Problem with reading the data, class com.tatsinktechnologic.resfull.bean.WS_Response, ContentType: */*.
+04/08/2019 13:51:53.365  INFO [main] Rest_API_Server: Load log4j config file done.
+04/08/2019 13:51:54.016  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+04/08/2019 13:51:54.089  INFO [main] log: Logging initialized @4695ms to org.eclipse.jetty.util.log.Slf4jLog
+04/08/2019 13:51:54.259  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+04/08/2019 13:51:54.325  INFO [main] AbstractConnector: Started ServerConnector@75fc1992{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+04/08/2019 13:51:54.326  INFO [main] Server: Started @4931ms
+04/08/2019 13:51:54.336  WARN [main] ContextHandler: Empty contextPath
+04/08/2019 13:51:54.352  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@618ad2aa{/,null,AVAILABLE}
+04/08/2019 13:52:15.536  INFO [main] ClientAPI: Load log4j config file done.
+04/08/2019 13:52:16.959  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 13:52:17.131  INFO [qtp1436944861-20] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[226], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 13:52:17.252  WARN [qtp1436944861-20] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 13:52:17.447  INFO [qtp1436944861-20] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 13:52:17.902  INFO [qtp1436944861-20] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 12:52:17 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIwYTFkNjM4OS1jYTMyLTQ5ZjAtYTQyMi05Yjg2YTRhOTAyOTQiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyMzE5N30.-4ACMh4WS8xfpIbTc2GoL8VDXK-qgyECLQKdHCQ4inE
+--------------------------------------
+04/08/2019 13:52:17.968  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Sun, 04 Aug 2019 12:52:17 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIwYTFkNjM4OS1jYTMyLTQ5ZjAtYTQyMi05Yjg2YTRhOTAyOTQiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyMzE5N30.-4ACMh4WS8xfpIbTc2GoL8VDXK-qgyECLQKdHCQ4inE
+--------------------------------------
+04/08/2019 13:52:18.002  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>gamesms</password>
+    <user_name>gamesms</user_name>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</account>
+
+04/08/2019 13:52:18.003  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIwYTFkNjM4OS1jYTMyLTQ5ZjAtYTQyMi05Yjg2YTRhOTAyOTQiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyMzE5N30.-4ACMh4WS8xfpIbTc2GoL8VDXK-qgyECLQKdHCQ4inE
+04/08/2019 13:52:18.231  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</Request>
+
+04/08/2019 13:52:18.240  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIwYTFkNjM4OS1jYTMyLTQ5ZjAtYTQyMi05Yjg2YTRhOTAyOTQiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyMzE5N30.-4ACMh4WS8xfpIbTc2GoL8VDXK-qgyECLQKdHCQ4inE], Account=[gamesms]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 13:52:18.252  INFO [qtp1436944861-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[gamesms], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIwYTFkNjM4OS1jYTMyLTQ5ZjAtYTQyMi05Yjg2YTRhOTAyOTQiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyMzE5N30.-4ACMh4WS8xfpIbTc2GoL8VDXK-qgyECLQKdHCQ4inE], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[168], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 13:52:18.256  WARN [qtp1436944861-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 13:52:18.262  INFO [qtp1436944861-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 401
+Content-Type: 
+Headers: {WWW-Authenticate=[Bearer realm="Not Configuration for this Account"], Date=[Sun, 04 Aug 2019 12:52:18 GMT], Content-Length=[0]}
+--------------------------------------
+04/08/2019 13:52:18.270  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 401
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Content-Length=[0], Date=[Sun, 04 Aug 2019 12:52:18 GMT], Server=[Jetty(9.4.18.v20190429)], WWW-Authenticate=[Bearer realm="Not Configuration for this Account"]}
+--------------------------------------
+04/08/2019 13:52:18.272  WARN [main] AbstractJAXBProvider: Message body is empty
+04/08/2019 13:52:18.273 ERROR [main] JAXRSUtils: Problem with reading the data, class com.tatsinktechnologic.resfull.bean.WS_Response, ContentType: */*.
+04/08/2019 14:08:54.149  INFO [main] Rest_API_Server: Load log4j config file done.
+04/08/2019 14:08:55.091  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+04/08/2019 14:08:55.333  INFO [main] log: Logging initialized @14309ms to org.eclipse.jetty.util.log.Slf4jLog
+04/08/2019 14:08:55.423  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+04/08/2019 14:08:55.527  INFO [main] AbstractConnector: Started ServerConnector@33ec2c0c{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+04/08/2019 14:08:55.528  INFO [main] Server: Started @14504ms
+04/08/2019 14:08:55.543  WARN [main] ContextHandler: Empty contextPath
+04/08/2019 14:08:55.565  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@3457cc8d{/,null,AVAILABLE}
+04/08/2019 14:09:21.883  INFO [main] ClientAPI: Load log4j config file done.
+04/08/2019 14:09:22.863  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:09:23.096  INFO [qtp1337347604-22] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[226], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:09:23.118  WARN [qtp1337347604-22] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:09:23.450  INFO [qtp1337347604-22] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 14:09:23.948  INFO [qtp1337347604-22] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 13:09:23 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyNmZlMjM0MS01YzcwLTRmMDEtYThiNS1iYjE0NjJkYjJjYjgiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyNDIyM30.fxVauASxVhhpc2KSDrFi_gJn8VuU64pWxXK0BWeEco8
+--------------------------------------
+04/08/2019 14:09:23.994  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Sun, 04 Aug 2019 13:09:23 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyNmZlMjM0MS01YzcwLTRmMDEtYThiNS1iYjE0NjJkYjJjYjgiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyNDIyM30.fxVauASxVhhpc2KSDrFi_gJn8VuU64pWxXK0BWeEco8
+--------------------------------------
+04/08/2019 14:09:24.021  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>gamesms</password>
+    <user_name>gamesms</user_name>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</account>
+
+04/08/2019 14:09:24.021  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyNmZlMjM0MS01YzcwLTRmMDEtYThiNS1iYjE0NjJkYjJjYjgiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyNDIyM30.fxVauASxVhhpc2KSDrFi_gJn8VuU64pWxXK0BWeEco8
+04/08/2019 14:09:24.067  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</Request>
+
+04/08/2019 14:09:24.073  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyNmZlMjM0MS01YzcwLTRmMDEtYThiNS1iYjE0NjJkYjJjYjgiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyNDIyM30.fxVauASxVhhpc2KSDrFi_gJn8VuU64pWxXK0BWeEco8], Account=[gamesms]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:09:24.084  INFO [qtp1337347604-19] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[gamesms], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyNmZlMjM0MS01YzcwLTRmMDEtYThiNS1iYjE0NjJkYjJjYjgiLCJ1c2VyX25hbWUiOiJnYW1lc21zIiwiaXNzIjoiZ2FtZXNtcyIsImV4cCI6MTU2NDkyNDIyM30.fxVauASxVhhpc2KSDrFi_gJn8VuU64pWxXK0BWeEco8], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[168], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:09:24.087  WARN [qtp1337347604-19] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:09:24.679  WARN [main] PhaseInterceptorChain: Interceptor for {http://127.0.0.1:9125}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not receive Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:65)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:649)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1093)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:894)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:865)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:428)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:458)
+	at com.tatsinktechnologic.main.ClientAPI.main(ClientAPI.java:99)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking http://127.0.0.1:9125/api_service/sendRequest: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:377)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:373)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.getResponseCode(URLConnectionHTTPConduit.java:373)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.doProcessResponseCode(HTTPConduit.java:1597)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:1625)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:1570)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1371)
+	... 13 more
+04/08/2019 14:21:10.447  INFO [main] Rest_API_Server: Load log4j config file done.
+04/08/2019 14:21:11.019  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+04/08/2019 14:21:11.109  INFO [main] log: Logging initialized @4587ms to org.eclipse.jetty.util.log.Slf4jLog
+04/08/2019 14:21:11.268  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+04/08/2019 14:21:11.360  INFO [main] AbstractConnector: Started ServerConnector@75fc1992{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+04/08/2019 14:21:11.368  INFO [main] Server: Started @4839ms
+04/08/2019 14:21:11.381  WARN [main] ContextHandler: Empty contextPath
+04/08/2019 14:21:11.402  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@618ad2aa{/,null,AVAILABLE}
+04/08/2019 14:21:25.206  INFO [main] ClientAPI: Load log4j config file done.
+04/08/2019 14:21:26.197  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:21:26.366  INFO [qtp1436944861-20] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[226], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:21:26.383  WARN [qtp1436944861-20] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:21:26.597  INFO [qtp1436944861-20] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 14:21:27.033  INFO [qtp1436944861-20] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 13:21:27 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJjN2NiODk5Yy04NjJjLTQwM2EtYTU5MC01ODJlZmQ1YjBkMDAiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI0OTQ2fQ.gxyW6SWds1VgQ6zHxNjA8LUvSEh18m_lRGNijJFIz0w
+--------------------------------------
+04/08/2019 14:21:27.067  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Sun, 04 Aug 2019 13:21:27 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJjN2NiODk5Yy04NjJjLTQwM2EtYTU5MC01ODJlZmQ1YjBkMDAiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI0OTQ2fQ.gxyW6SWds1VgQ6zHxNjA8LUvSEh18m_lRGNijJFIz0w
+--------------------------------------
+04/08/2019 14:21:27.092  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>gamesms</password>
+    <user_name>gamesms</user_name>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</account>
+
+04/08/2019 14:21:27.092  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJjN2NiODk5Yy04NjJjLTQwM2EtYTU5MC01ODJlZmQ1YjBkMDAiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI0OTQ2fQ.gxyW6SWds1VgQ6zHxNjA8LUvSEh18m_lRGNijJFIz0w
+04/08/2019 14:21:27.138  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</Request>
+
+04/08/2019 14:21:27.144  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJjN2NiODk5Yy04NjJjLTQwM2EtYTU5MC01ODJlZmQ1YjBkMDAiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI0OTQ2fQ.gxyW6SWds1VgQ6zHxNjA8LUvSEh18m_lRGNijJFIz0w], Account=[game_sms_OCM_Charging]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:21:27.157  INFO [qtp1436944861-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[game_sms_OCM_Charging], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJjN2NiODk5Yy04NjJjLTQwM2EtYTU5MC01ODJlZmQ1YjBkMDAiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI0OTQ2fQ.gxyW6SWds1VgQ6zHxNjA8LUvSEh18m_lRGNijJFIz0w], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[168], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:21:27.160  WARN [qtp1436944861-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:21:27.166  INFO [qtp1436944861-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 14:21:27.294  INFO [qtp1436944861-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 13:21:27 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : OCM_Charging</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent></WS_ResponseContent><WS_request_time>2019-08-04 14:21:27</WS_request_time></Response>
+--------------------------------------
+04/08/2019 14:21:27.297  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Sun, 04 Aug 2019 13:21:27 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : OCM_Charging</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent></WS_ResponseContent><WS_request_time>2019-08-04 14:21:27</WS_request_time></Response>
+--------------------------------------
+04/08/2019 14:21:27.406  INFO [main] ClientAPI: duration to request OCM_Charging : 162 ms
+04/08/2019 14:21:27.406  INFO [main] ClientAPI: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : OCM_Charging</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent></WS_ResponseContent>
+    <WS_request_time>2019-08-04 14:21:27</WS_request_time>
+</Response>
+
+04/08/2019 14:49:11.951  INFO [main] Rest_API_Server: Load log4j config file done.
+04/08/2019 14:49:12.471  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+04/08/2019 14:49:12.551  INFO [main] log: Logging initialized @3694ms to org.eclipse.jetty.util.log.Slf4jLog
+04/08/2019 14:49:12.731  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+04/08/2019 14:49:12.807  INFO [main] AbstractConnector: Started ServerConnector@75fc1992{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+04/08/2019 14:49:12.808  INFO [main] Server: Started @3951ms
+04/08/2019 14:49:12.818  WARN [main] ContextHandler: Empty contextPath
+04/08/2019 14:49:12.833  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@618ad2aa{/,null,AVAILABLE}
+04/08/2019 14:51:12.164  INFO [main] ClientAPI: Load log4j config file done.
+04/08/2019 14:51:12.970  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:51:13.101  INFO [qtp1436944861-22] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[226], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:51:13.119  WARN [qtp1436944861-22] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:51:13.322  INFO [qtp1436944861-22] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 14:51:13.647  INFO [qtp1436944861-22] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 13:51:13 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJhZDQ0MjAxOS00MzVkLTRhYTMtODQyYy1jYWU2ZDMwMzExMGQiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2NzMzfQ.5nnsPoMAf6r0XyJluPuK1VcMW3c43AHwdB7Q5dwTGb4
+--------------------------------------
+04/08/2019 14:51:13.682  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Sun, 04 Aug 2019 13:51:13 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJhZDQ0MjAxOS00MzVkLTRhYTMtODQyYy1jYWU2ZDMwMzExMGQiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2NzMzfQ.5nnsPoMAf6r0XyJluPuK1VcMW3c43AHwdB7Q5dwTGb4
+--------------------------------------
+04/08/2019 14:51:13.750  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>gamesms</password>
+    <user_name>gamesms</user_name>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</account>
+
+04/08/2019 14:51:13.750  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJhZDQ0MjAxOS00MzVkLTRhYTMtODQyYy1jYWU2ZDMwMzExMGQiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2NzMzfQ.5nnsPoMAf6r0XyJluPuK1VcMW3c43AHwdB7Q5dwTGb4
+04/08/2019 14:51:13.785  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</Request>
+
+04/08/2019 14:51:13.790  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJhZDQ0MjAxOS00MzVkLTRhYTMtODQyYy1jYWU2ZDMwMzExMGQiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2NzMzfQ.5nnsPoMAf6r0XyJluPuK1VcMW3c43AHwdB7Q5dwTGb4], Account=[game_sms_OCM_Charging]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:51:13.799  INFO [qtp1436944861-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[game_sms_OCM_Charging], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJhZDQ0MjAxOS00MzVkLTRhYTMtODQyYy1jYWU2ZDMwMzExMGQiLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2NzMzfQ.5nnsPoMAf6r0XyJluPuK1VcMW3c43AHwdB7Q5dwTGb4], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[168], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:51:13.801  WARN [qtp1436944861-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:51:13.805  INFO [qtp1436944861-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 14:51:14.398  WARN [main] PhaseInterceptorChain: Interceptor for {http://127.0.0.1:9125}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not receive Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:65)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:431)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:461)
+	at com.tatsinktechnologic.main.ClientAPI.main(ClientAPI.java:99)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking http://127.0.0.1:9125/api_service/sendRequest: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:377)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:373)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.getResponseCode(URLConnectionHTTPConduit.java:373)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.doProcessResponseCode(HTTPConduit.java:1597)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:1625)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:1570)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1371)
+	... 14 more
+04/08/2019 14:51:15.005 ERROR [qtp1436944861-16] API_GatewayService_userTokenAuth: ERROR to process Remote API
+com.sun.xml.internal.messaging.saaj.SOAPExceptionImpl: com.sun.xml.internal.messaging.saaj.SOAPExceptionImpl: Message send failed
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.call(HttpSOAPConnection.java:149)
+	at com.tatsinktechnologic.client.soap.RemoteAPI_Soap.consumSoap_1_1(RemoteAPI_Soap.java:68)
+	at com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth.sendRequest(API_GatewayService_userTokenAuth.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:247)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:79)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:205)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.sun.xml.internal.messaging.saaj.SOAPExceptionImpl: Message send failed
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.post(HttpSOAPConnection.java:282)
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.call(HttpSOAPConnection.java:145)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.post(HttpSOAPConnection.java:237)
+	... 39 more
+
+CAUSE:
+
+com.sun.xml.internal.messaging.saaj.SOAPExceptionImpl: Message send failed
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.post(HttpSOAPConnection.java:282)
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.call(HttpSOAPConnection.java:145)
+	at com.tatsinktechnologic.client.soap.RemoteAPI_Soap.consumSoap_1_1(RemoteAPI_Soap.java:68)
+	at com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth.sendRequest(API_GatewayService_userTokenAuth.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:247)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:79)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:205)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.post(HttpSOAPConnection.java:237)
+	... 39 more
+
+CAUSE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.post(HttpSOAPConnection.java:237)
+	at com.sun.xml.internal.messaging.saaj.client.p2p.HttpSOAPConnection.call(HttpSOAPConnection.java:145)
+	at com.tatsinktechnologic.client.soap.RemoteAPI_Soap.consumSoap_1_1(RemoteAPI_Soap.java:68)
+	at com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth.sendRequest(API_GatewayService_userTokenAuth.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:179)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:201)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:104)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:247)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:79)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:205)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Thread.java:745)
+04/08/2019 14:51:15.094  INFO [qtp1436944861-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 13:51:15 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : OCM_Charging</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent></WS_ResponseContent><WS_request_time>2019-08-04 14:51:13</WS_request_time></Response>
+--------------------------------------
+04/08/2019 14:54:36.895  INFO [main] ClientAPI: Load log4j config file done.
+04/08/2019 14:54:37.692  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:54:37.714  INFO [qtp1436944861-21] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 3
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[226], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>gamesms</password><user_name>gamesms</user_name><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></account>
+--------------------------------------
+04/08/2019 14:54:37.715  WARN [qtp1436944861-21] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:54:37.717  INFO [qtp1436944861-21] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 14:54:37.728  INFO [qtp1436944861-21] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 13:54:37 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmM2U0NDU5ZC02OGZjLTRjMWItODliYi1iYTQ1MWEwN2EwOTciLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2OTM3fQ.R52rIw2PRmagCUqOeBHN_52oK0_nhwKYnry12fx1ZAI
+--------------------------------------
+04/08/2019 14:54:37.759  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Sun, 04 Aug 2019 13:54:37 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmM2U0NDU5ZC02OGZjLTRjMWItODliYi1iYTQ1MWEwN2EwOTciLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2OTM3fQ.R52rIw2PRmagCUqOeBHN_52oK0_nhwKYnry12fx1ZAI
+--------------------------------------
+04/08/2019 14:54:37.799  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>gamesms</password>
+    <user_name>gamesms</user_name>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</account>
+
+04/08/2019 14:54:37.800  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmM2U0NDU5ZC02OGZjLTRjMWItODliYi1iYTQ1MWEwN2EwOTciLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2OTM3fQ.R52rIw2PRmagCUqOeBHN_52oK0_nhwKYnry12fx1ZAI
+04/08/2019 14:54:37.840  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>game_sms</ws_client_name>
+    <ws_webservice_name>OCM_Charging</ws_webservice_name>
+</Request>
+
+04/08/2019 14:54:37.845  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmM2U0NDU5ZC02OGZjLTRjMWItODliYi1iYTQ1MWEwN2EwOTciLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2OTM3fQ.R52rIw2PRmagCUqOeBHN_52oK0_nhwKYnry12fx1ZAI], Account=[game_sms_OCM_Charging]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:54:37.850  INFO [qtp1436944861-15] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 4
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[game_sms_OCM_Charging], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmM2U0NDU5ZC02OGZjLTRjMWItODliYi1iYTQ1MWEwN2EwOTciLCJ1c2VyX25hbWUiOiI1KzBnbVowK0Z1MDZ1L1phMThMdEdVSFNnUytyRXYwTE0xN001bGRybGNNPSIsImlzcyI6IjUrMGdtWjArRnUwNnUvWmExOEx0R1VIU2dTK3JFdjBMTTE3TTVsZHJsY009IiwiZXhwIjoxNTY0OTI2OTM3fQ.R52rIw2PRmagCUqOeBHN_52oK0_nhwKYnry12fx1ZAI], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[168], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>game_sms</ws_client_name><ws_webservice_name>OCM_Charging</ws_webservice_name></Request>
+--------------------------------------
+04/08/2019 14:54:37.852  WARN [qtp1436944861-15] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+04/08/2019 14:54:37.852  INFO [qtp1436944861-15] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+04/08/2019 14:54:38.449  WARN [main] PhaseInterceptorChain: Interceptor for {http://127.0.0.1:9125}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not receive Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:65)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:431)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:461)
+	at com.tatsinktechnologic.main.ClientAPI.main(ClientAPI.java:99)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking http://127.0.0.1:9125/api_service/sendRequest: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:377)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:373)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.getResponseCode(URLConnectionHTTPConduit.java:373)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.doProcessResponseCode(HTTPConduit.java:1597)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:1625)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:1570)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1371)
+	... 14 more
+04/08/2019 14:54:38.840  INFO [qtp1436944861-15] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Sun, 04 Aug 2019 13:54:38 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : OCM_Charging</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent></WS_ResponseContent><WS_request_time>2019-08-04 14:54:37</WS_request_time></Response>
+--------------------------------------

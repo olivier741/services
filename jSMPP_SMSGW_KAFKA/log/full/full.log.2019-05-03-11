@@ -1,0 +1,510 @@
+03/05/2019 11:39:53.366  INFO [main] SMSGW: Load log4j config file done.
+03/05/2019 11:39:53.367  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+03/05/2019 11:39:53.512  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+03/05/2019 11:40:07.875  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+03/05/2019 11:40:12.415  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+03/05/2019 11:40:17.007  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+03/05/2019 11:40:21.532  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+03/05/2019 11:40:26.083  INFO [main] SMSGW: ############ Topic mt-topic already exists #################
+03/05/2019 11:40:30.616  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+03/05/2019 11:40:35.138  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+03/05/2019 11:40:38.657  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+03/05/2019 11:40:40.604  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+03/05/2019 11:40:40.766  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:40:40.775  WARN [pool-1-thread-3] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:40:40.777  WARN [pool-1-thread-3] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:42:29.613  INFO [main] SMSGW: Load log4j config file done.
+03/05/2019 11:42:29.613  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+03/05/2019 11:42:29.740  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+03/05/2019 11:42:39.413  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+03/05/2019 11:42:43.937  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+03/05/2019 11:42:48.504  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+03/05/2019 11:42:53.053  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+03/05/2019 11:42:57.604  INFO [main] SMSGW: ############ Topic mt-topic already exists #################
+03/05/2019 11:43:02.120  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+03/05/2019 11:43:06.672  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+03/05/2019 11:43:06.939  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+03/05/2019 11:43:07.053  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+03/05/2019 11:43:30.494  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:43:30.498  WARN [pool-1-thread-3] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:43:30.498  WARN [pool-1-thread-3] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:17.427  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:17.428  WARN [pool-1-thread-1] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:17.428  WARN [pool-1-thread-1] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:17.629  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:17.629  WARN [pool-1-thread-2] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:17.636  WARN [pool-1-thread-2] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:17.826  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:17.827  WARN [pool-1-thread-3] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:17.828  WARN [pool-1-thread-3] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:18.016  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:18.016  WARN [pool-1-thread-1] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:18.016  WARN [pool-1-thread-1] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:18.209  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:18.209  WARN [pool-1-thread-2] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:18.209  WARN [pool-1-thread-2] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:18.400  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:18.401  WARN [pool-1-thread-3] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:18.401  WARN [pool-1-thread-3] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:18.591  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:18.591  WARN [pool-1-thread-1] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:18.591  WARN [pool-1-thread-1] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:18.774  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:18.774  WARN [pool-1-thread-2] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:18.774  WARN [pool-1-thread-2] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:18.954  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:18.954  WARN [pool-1-thread-3] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:18.954  WARN [pool-1-thread-3] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:44:19.168  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:44:19.169  WARN [pool-1-thread-1] ReceiveSMS: No Service provide to process this SMS
+03/05/2019 11:44:19.169  WARN [pool-1-thread-1] ReceiveSMS: Lossing SMS: 4477665544 --> 8906 [msg = Hello from SMPPSim ]
+03/05/2019 11:45:37.737  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:45:37.905  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:45:38.015  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:45:38.015  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:45:38.015  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:45:38.015  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:45:38.173  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:45:38.178  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:45:38.178  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:45:38.375  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:45:38.377  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:45:38.378  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:45:38.577  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:45:38.578  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:45:38.579  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:45:40.099  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 2 -- offset: 228
+03/05/2019 11:45:40.100  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 8 -- offset: 135
+03/05/2019 11:45:40.350  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 1 -- offset: 228
+03/05/2019 11:45:40.350  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 4 -- offset: 306
+03/05/2019 11:45:40.350  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 9 -- offset: 189
+03/05/2019 11:46:08.058  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:08.060  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:08.060  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:08.225  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 6 -- offset: 190
+03/05/2019 11:46:08.287  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:08.288  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:08.288  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:08.422  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 7 -- offset: 427
+03/05/2019 11:46:08.626  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:08.627  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:08.628  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:08.768  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 3 -- offset: 230
+03/05/2019 11:46:08.866  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:08.867  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:08.868  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:09.015  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 0 -- offset: 314
+03/05/2019 11:46:09.090  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:09.091  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:09.091  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:09.242  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 5 -- offset: 265
+03/05/2019 11:46:09.471  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:09.473  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:09.473  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:09.577  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 2 -- offset: 229
+03/05/2019 11:46:09.703  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:09.705  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:09.705  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:09.807  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 8 -- offset: 136
+03/05/2019 11:46:09.984  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:09.985  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:09.985  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:10.089  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 9 -- offset: 190
+03/05/2019 11:46:10.294  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:10.295  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:10.295  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:10.399  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 1 -- offset: 229
+03/05/2019 11:46:10.551  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:10.552  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:10.552  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:10.657  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 4 -- offset: 307
+03/05/2019 11:46:10.819  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:10.821  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:10.821  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:10.926  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 6 -- offset: 191
+03/05/2019 11:46:11.104  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:11.109  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:11.109  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:11.212  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 7 -- offset: 428
+03/05/2019 11:46:11.382  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:11.383  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:11.383  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:11.488  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 3 -- offset: 231
+03/05/2019 11:46:11.737  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:11.738  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:11.738  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:11.842  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 0 -- offset: 315
+03/05/2019 11:46:12.482  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:12.483  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:12.483  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:12.587  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 5 -- offset: 266
+03/05/2019 11:46:12.744  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:12.746  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:12.746  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:12.851  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 2 -- offset: 230
+03/05/2019 11:46:13.309  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:13.310  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:13.310  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:13.413  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 8 -- offset: 137
+03/05/2019 11:46:13.531  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:13.532  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:13.532  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:13.637  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 9 -- offset: 191
+03/05/2019 11:46:13.774  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:13.776  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:13.776  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:13.893  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 1 -- offset: 230
+03/05/2019 11:46:13.984  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:13.985  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:13.985  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:14.090  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 4 -- offset: 308
+03/05/2019 11:46:14.201  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:14.202  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:14.202  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:14.308  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 6 -- offset: 192
+03/05/2019 11:46:14.464  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:14.465  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:14.465  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:14.570  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 7 -- offset: 429
+03/05/2019 11:46:14.972  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:14.973  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:14.973  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:15.104  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 3 -- offset: 232
+03/05/2019 11:46:15.246  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:15.247  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:15.247  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:15.350  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 0 -- offset: 316
+03/05/2019 11:46:15.464  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:15.466  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:15.466  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:15.569  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 5 -- offset: 267
+03/05/2019 11:46:15.694  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:15.695  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:15.695  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:15.799  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 2 -- offset: 231
+03/05/2019 11:46:15.958  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:15.959  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:15.960  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:16.067  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 8 -- offset: 138
+03/05/2019 11:46:16.198  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:16.199  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:16.199  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:16.305  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 9 -- offset: 192
+03/05/2019 11:46:16.551  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:16.552  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:16.553  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:16.658  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 1 -- offset: 231
+03/05/2019 11:46:16.834  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:16.835  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:16.835  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:16.941  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 4 -- offset: 309
+03/05/2019 11:46:17.157  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:17.160  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:17.161  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:17.266  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 6 -- offset: 193
+03/05/2019 11:46:17.437  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:17.439  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:17.439  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:17.543  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 7 -- offset: 430
+03/05/2019 11:46:18.065  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:18.066  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:18.066  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:18.172  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 3 -- offset: 233
+03/05/2019 11:46:18.326  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:18.327  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:18.327  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:18.434  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 0 -- offset: 317
+03/05/2019 11:46:18.641  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:18.642  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:18.642  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:18.748  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 5 -- offset: 268
+03/05/2019 11:46:18.922  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:18.923  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:18.923  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:19.029  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 2 -- offset: 232
+03/05/2019 11:46:19.160  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:19.161  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:19.161  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:19.279  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 8 -- offset: 139
+03/05/2019 11:46:19.403  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:19.404  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:19.404  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:19.509  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 9 -- offset: 193
+03/05/2019 11:46:19.628  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:19.630  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:19.630  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:19.735  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 1 -- offset: 232
+03/05/2019 11:46:19.860  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+03/05/2019 11:46:19.861  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+03/05/2019 11:46:19.861  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+03/05/2019 11:46:19.967  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 4 -- offset: 310

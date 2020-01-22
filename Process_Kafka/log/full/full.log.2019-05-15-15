@@ -1,0 +1,615 @@
+15/05/2019 15:36:48.902  INFO [main] Start_Process: Load log4j config file done.
+15/05/2019 15:36:49.028  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+15/05/2019 15:36:49.156  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+15/05/2019 15:36:49.156  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+15/05/2019 15:36:49.270  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+15/05/2019 15:36:49.270  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+15/05/2019 15:36:49.271  INFO [main] Environment: HHH000206: hibernate.properties not found
+15/05/2019 15:36:49.271  INFO [main] Environment: HHH000206: hibernate.properties not found
+15/05/2019 15:36:49.319  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15/05/2019 15:36:49.319  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15/05/2019 15:36:49.455  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+15/05/2019 15:36:49.455  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+15/05/2019 15:36:50.036  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+15/05/2019 15:36:50.036  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+15/05/2019 15:36:51.356  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+15/05/2019 15:36:51.356  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+15/05/2019 15:36:51.575  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    471723 nanoseconds spent acquiring 1 JDBC connections;
+    13994 nanoseconds spent releasing 1 JDBC connections;
+    12244315 nanoseconds spent preparing 1 JDBC statements;
+    95602737 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:36:51.575  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    471723 nanoseconds spent acquiring 1 JDBC connections;
+    13994 nanoseconds spent releasing 1 JDBC connections;
+    12244315 nanoseconds spent preparing 1 JDBC statements;
+    95602737 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:36:51.775  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    20138 nanoseconds spent acquiring 1 JDBC connections;
+    9558 nanoseconds spent releasing 1 JDBC connections;
+    1992705 nanoseconds spent preparing 1 JDBC statements;
+    1725441 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:36:51.775  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    20138 nanoseconds spent acquiring 1 JDBC connections;
+    9558 nanoseconds spent releasing 1 JDBC connections;
+    1992705 nanoseconds spent preparing 1 JDBC statements;
+    1725441 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:36:51.799  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    19797 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    904875 nanoseconds spent preparing 2 JDBC statements;
+    2373292 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:36:51.799  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    19797 nanoseconds spent acquiring 1 JDBC connections;
+    7509 nanoseconds spent releasing 1 JDBC connections;
+    904875 nanoseconds spent preparing 2 JDBC statements;
+    2373292 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:36:51.801  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+15/05/2019 15:38:14.860  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "11531675-771f-11e9-af02-352243015270",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:15.072  INFO [pool-1-thread-1] Receiver: content send by customer   : CAN1 LIST
+15/05/2019 15:38:15.072  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+15/05/2019 15:38:15.072  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+15/05/2019 15:38:15.089  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : null,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+15/05/2019 15:38:15.410  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    530773 nanoseconds spent acquiring 2 JDBC connections;
+    577195 nanoseconds spent releasing 2 JDBC connections;
+    1122305 nanoseconds spent preparing 1 JDBC statements;
+    176699824 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2018646 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:15.410  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    530773 nanoseconds spent acquiring 2 JDBC connections;
+    577195 nanoseconds spent releasing 2 JDBC connections;
+    1122305 nanoseconds spent preparing 1 JDBC statements;
+    176699824 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2018646 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:15.411  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+15/05/2019 15:38:32.129  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "1b7f7536-771f-11e9-af02-6966976c2155",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:32.129  INFO [pool-1-thread-1] Receiver: content send by customer   : CAN1 LIST
+15/05/2019 15:38:32.130  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+15/05/2019 15:38:32.130  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+15/05/2019 15:38:32.131  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : null,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+15/05/2019 15:38:32.184  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    458753 nanoseconds spent acquiring 2 JDBC connections;
+    454655 nanoseconds spent releasing 2 JDBC connections;
+    249856 nanoseconds spent preparing 1 JDBC statements;
+    17733641 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    126293 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:32.184  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    458753 nanoseconds spent acquiring 2 JDBC connections;
+    454655 nanoseconds spent releasing 2 JDBC connections;
+    249856 nanoseconds spent preparing 1 JDBC statements;
+    17733641 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    126293 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:32.184  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+15/05/2019 15:38:34.186  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "1beb2f57-771f-11e9-af02-9f90f458eed2",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:34.187  INFO [pool-1-thread-1] Receiver: content send by customer   : CAN1 LIST
+15/05/2019 15:38:34.187  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+15/05/2019 15:38:34.187  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+15/05/2019 15:38:34.189  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : null,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+15/05/2019 15:38:34.234  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    453973 nanoseconds spent acquiring 2 JDBC connections;
+    460460 nanoseconds spent releasing 2 JDBC connections;
+    226646 nanoseconds spent preparing 1 JDBC statements;
+    15335090 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    124928 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:34.234  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    453973 nanoseconds spent acquiring 2 JDBC connections;
+    460460 nanoseconds spent releasing 2 JDBC connections;
+    226646 nanoseconds spent preparing 1 JDBC statements;
+    15335090 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    124928 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:34.234  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+15/05/2019 15:38:36.235  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "1e038808-771f-11e9-af02-61aab5e61161",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:36.236  INFO [pool-1-thread-1] Receiver: content send by customer   : CAN1 LIST
+15/05/2019 15:38:36.236  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+15/05/2019 15:38:36.236  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+15/05/2019 15:38:36.238  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : null,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+15/05/2019 15:38:36.283  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    438614 nanoseconds spent acquiring 2 JDBC connections;
+    447489 nanoseconds spent releasing 2 JDBC connections;
+    219136 nanoseconds spent preparing 1 JDBC statements;
+    12183217 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    123563 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:36.283  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    438614 nanoseconds spent acquiring 2 JDBC connections;
+    447489 nanoseconds spent releasing 2 JDBC connections;
+    219136 nanoseconds spent preparing 1 JDBC statements;
+    12183217 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    123563 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:38:36.283  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+15/05/2019 15:41:30.887  INFO [main] Start_Process: Load log4j config file done.
+15/05/2019 15:41:31.021  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+15/05/2019 15:41:31.154  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+15/05/2019 15:41:31.154  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+15/05/2019 15:41:31.284  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+15/05/2019 15:41:31.284  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+15/05/2019 15:41:31.286  INFO [main] Environment: HHH000206: hibernate.properties not found
+15/05/2019 15:41:31.286  INFO [main] Environment: HHH000206: hibernate.properties not found
+15/05/2019 15:41:31.326  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15/05/2019 15:41:31.326  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15/05/2019 15:41:31.477  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+15/05/2019 15:41:31.477  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+15/05/2019 15:41:31.823  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+15/05/2019 15:41:31.823  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+15/05/2019 15:41:32.988  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+15/05/2019 15:41:32.988  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+15/05/2019 15:41:33.151  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    32086 nanoseconds spent acquiring 1 JDBC connections;
+    15018 nanoseconds spent releasing 1 JDBC connections;
+    16082952 nanoseconds spent preparing 1 JDBC statements;
+    5945005 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:41:33.151  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    32086 nanoseconds spent acquiring 1 JDBC connections;
+    15018 nanoseconds spent releasing 1 JDBC connections;
+    16082952 nanoseconds spent preparing 1 JDBC statements;
+    5945005 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:41:33.287  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17067 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    2347350 nanoseconds spent preparing 1 JDBC statements;
+    1691649 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:41:33.287  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17067 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    2347350 nanoseconds spent preparing 1 JDBC statements;
+    1691649 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:41:33.309  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16043 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    480257 nanoseconds spent preparing 2 JDBC statements;
+    2734082 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:41:33.309  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    16043 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    480257 nanoseconds spent preparing 2 JDBC statements;
+    2734082 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:41:33.311  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+15/05/2019 15:41:45.395  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "8d71fd79-771f-11e9-af02-1371b6be6458",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:45:41.951  INFO [main] Start_Process: Load log4j config file done.
+15/05/2019 15:45:42.074  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+15/05/2019 15:45:42.199  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+15/05/2019 15:45:42.199  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+15/05/2019 15:45:42.298  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+15/05/2019 15:45:42.298  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+15/05/2019 15:45:42.299  INFO [main] Environment: HHH000206: hibernate.properties not found
+15/05/2019 15:45:42.299  INFO [main] Environment: HHH000206: hibernate.properties not found
+15/05/2019 15:45:42.337  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15/05/2019 15:45:42.337  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15/05/2019 15:45:42.454  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+15/05/2019 15:45:42.454  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+15/05/2019 15:45:42.833  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+15/05/2019 15:45:42.833  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+15/05/2019 15:45:43.999  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+15/05/2019 15:45:43.999  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+15/05/2019 15:45:44.134  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    31061 nanoseconds spent acquiring 1 JDBC connections;
+    14678 nanoseconds spent releasing 1 JDBC connections;
+    12900017 nanoseconds spent preparing 1 JDBC statements;
+    4970498 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:44.134  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    31061 nanoseconds spent acquiring 1 JDBC connections;
+    14678 nanoseconds spent releasing 1 JDBC connections;
+    12900017 nanoseconds spent preparing 1 JDBC statements;
+    4970498 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:44.251  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17408 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    320171 nanoseconds spent preparing 1 JDBC statements;
+    1647617 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:44.251  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    17408 nanoseconds spent acquiring 1 JDBC connections;
+    8874 nanoseconds spent releasing 1 JDBC connections;
+    320171 nanoseconds spent preparing 1 JDBC statements;
+    1647617 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:44.272  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13994 nanoseconds spent acquiring 1 JDBC connections;
+    8534 nanoseconds spent releasing 1 JDBC connections;
+    437932 nanoseconds spent preparing 2 JDBC statements;
+    2183169 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:44.272  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13994 nanoseconds spent acquiring 1 JDBC connections;
+    8534 nanoseconds spent releasing 1 JDBC connections;
+    437932 nanoseconds spent preparing 2 JDBC statements;
+    2183169 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:44.275  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+15/05/2019 15:45:47.145  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "8d71fd79-771f-11e9-af02-1371b6be6458",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:45:47.316  INFO [pool-1-thread-1] Receiver: content send by customer   : CAN1 LIST
+15/05/2019 15:45:47.316  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+15/05/2019 15:45:47.316  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+15/05/2019 15:45:47.332  INFO [pool-1-thread-1] Receiver: Emitte to Sender : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST",
+  "command_code" : null,
+  "split_separate" : null,
+  "param_name" : null,
+  "param_length" : null,
+  "param_pattern" : null,
+  "param_value" : null,
+  "channel" : null,
+  "action_type" : null,
+  "action_description" : null,
+  "receive_time" : null,
+  "product_name" : null,
+  "notification_code" : "RECEIVER-WRONG-SYNTAX",
+  "language" : null
+}
+15/05/2019 15:45:47.387  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    439638 nanoseconds spent acquiring 2 JDBC connections;
+    546817 nanoseconds spent releasing 2 JDBC connections;
+    448512 nanoseconds spent preparing 1 JDBC statements;
+    927745 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2078038 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:47.387  INFO [pool-1-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    439638 nanoseconds spent acquiring 2 JDBC connections;
+    546817 nanoseconds spent releasing 2 JDBC connections;
+    448512 nanoseconds spent preparing 1 JDBC statements;
+    927745 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2078038 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/05/2019 15:45:47.387  INFO [pool-1-thread-1] Receiver: insert into mo_his 
+15/05/2019 15:45:51.497  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "225dec0a-7720-11e9-af02-47188bc710e2",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+15/05/2019 15:45:51.498  INFO [pool-1-thread-1] Receiver: content send by customer   : CAN1 INFO
+15/05/2019 15:45:51.498  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+15/05/2019 15:45:51.498  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+15/05/2019 15:45:51.504  INFO [pool-1-thread-1] Receiver: Emitte to Register Process : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1557931551497,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}
+15/05/2019 15:46:16.634  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "3134c00b-7720-11e9-af02-770ae2cee34c",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+15/05/2019 15:46:16.635  INFO [pool-1-thread-1] Receiver: content send by customer   : CAN1 INFO
+15/05/2019 15:46:16.635  INFO [pool-1-thread-1] Receiver: customer phone number      : 4477665544
+15/05/2019 15:46:16.635  INFO [pool-1-thread-1] Receiver: short code                 : 8966
+15/05/2019 15:46:16.637  INFO [pool-1-thread-1] Receiver: Emitte to Register Process : {
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1557931576634,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}

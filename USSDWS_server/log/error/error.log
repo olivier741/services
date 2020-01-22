@@ -1,0 +1,4 @@
+30/10/2019 09:22:10.226  WARN [qtp245298614-43] USSDService: Command not define in MO_Fake : 
+ ussd Message =  1
+  Short Code = 654
+  Msisdn = 84

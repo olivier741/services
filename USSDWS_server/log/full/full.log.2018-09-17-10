@@ -1,0 +1,231 @@
+17/09/2018 10:32:40.585  INFO [main] Resfull_Server: Load log4j config file done.
+17/09/2018 10:32:40.966  INFO [main] ServerImpl: Setting the server's publish address to be http://localhost:8190/
+17/09/2018 10:32:41.017  INFO [main] log: Logging initialized @2002ms
+17/09/2018 10:32:41.055  INFO [main] Server: jetty-9.2.15.v20160210
+17/09/2018 10:32:41.065  WARN [main] AbstractHandler: No Server set for org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine$1@1b26f7b2
+17/09/2018 10:32:41.249  INFO [main] ServerConnector: Started ServerConnector@43a0cee9{HTTP/1.1}{localhost:8190}
+17/09/2018 10:32:41.249  INFO [main] Server: Started @2235ms
+17/09/2018 10:32:41.253  WARN [main] ContextHandler: Empty contextPath
+17/09/2018 10:32:41.259  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@7364985f{/,null,AVAILABLE}
+17/09/2018 10:33:23.347  INFO [qtp640363654-16 - /ussdservice/ussdMessage] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8190/ussdservice/ussdMessage
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[346], content-type=[application/xml], Host=[localhost:8190], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>0</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537176802787</sendRecvTime><timeout>300</timeout><transId>W1-0-1537176802742</transId><type>100</type><ussdString>*654#</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:33:23.360  WARN [qtp640363654-16 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results
+17/09/2018 10:33:23.475  INFO [qtp640363654-16 - /ussdservice/ussdMessage] USSDService: message receive from USSDGW
+17/09/2018 10:33:23.475  INFO [qtp640363654-16 - /ussdservice/ussdMessage] USSDService: UssdMessage{type=100,
+ transId=W1-0-1537176802742,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=0,
+ timeout=300,
+ sendRecvTime=1537176802787}
+17/09/2018 10:33:23.491  INFO [qtp640363654-16 - /ussdservice/ussdMessage] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Sep 2018 09:33:23 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>0</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537176802787</sendRecvTime><timeout>90</timeout><transId>W1-0-1537176802742</transId><type>202</type><ussdString>List of Service : 
+1- BONBON service
+2- TOMATOS service
+3- BANANA service
+0- check registration</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:41:12.890  INFO [qtp640363654-16 - /ussdservice/ussdMessage] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:8190/ussdservice/ussdMessage
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[346], content-type=[application/xml], Host=[localhost:8190], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>1</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177272537</sendRecvTime><timeout>300</timeout><transId>W1-0-1537177272511</transId><type>100</type><ussdString>*654#</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:41:12.891  WARN [qtp640363654-16 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results
+17/09/2018 10:41:12.894  INFO [qtp640363654-16 - /ussdservice/ussdMessage] USSDService: message receive from USSDGW
+17/09/2018 10:41:12.894  INFO [qtp640363654-16 - /ussdservice/ussdMessage] USSDService: UssdMessage{type=100,
+ transId=W1-0-1537177272511,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=1,
+ timeout=300,
+ sendRecvTime=1537177272537}
+17/09/2018 10:41:12.896  INFO [qtp640363654-16 - /ussdservice/ussdMessage] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Sep 2018 09:41:12 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>1</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177272537</sendRecvTime><timeout>90</timeout><transId>W1-0-1537177272511</transId><type>202</type><ussdString>List of Service : 
+1- BONBON service
+2- TOMATOS service
+3- BANANA service
+0- check registration</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:41:32.929  INFO [qtp640363654-20 - /ussdservice/ussdMessage] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:8190/ussdservice/ussdMessage
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[346], content-type=[application/xml], Host=[localhost:8190], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>2</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177292893</sendRecvTime><timeout>300</timeout><transId>W1-0-1537177292888</transId><type>100</type><ussdString>*654#</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:41:32.930  WARN [qtp640363654-20 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results
+17/09/2018 10:41:32.932  INFO [qtp640363654-20 - /ussdservice/ussdMessage] USSDService: message receive from USSDGW
+17/09/2018 10:41:32.932  INFO [qtp640363654-20 - /ussdservice/ussdMessage] USSDService: UssdMessage{type=100,
+ transId=W1-0-1537177292888,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=2,
+ timeout=300,
+ sendRecvTime=1537177292893}
+17/09/2018 10:41:32.934  INFO [qtp640363654-20 - /ussdservice/ussdMessage] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Sep 2018 09:41:32 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>2</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177292893</sendRecvTime><timeout>90</timeout><transId>W1-0-1537177292888</transId><type>202</type><ussdString>List of Service : 
+1- BONBON service
+2- TOMATOS service
+3- BANANA service
+0- check registration</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:49:19.223  INFO [qtp640363654-17 - /ussdservice/ussdMessage] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:8190/ussdservice/ussdMessage
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[346], content-type=[application/xml], Host=[localhost:8190], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>3</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177758875</sendRecvTime><timeout>300</timeout><transId>W1-0-1537177758834</transId><type>100</type><ussdString>*654#</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:49:19.224  WARN [qtp640363654-17 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results
+17/09/2018 10:49:19.225  INFO [qtp640363654-17 - /ussdservice/ussdMessage] USSDService: message receive from USSDGW
+17/09/2018 10:49:19.225  INFO [qtp640363654-17 - /ussdservice/ussdMessage] USSDService: UssdMessage{type=100,
+ transId=W1-0-1537177758834,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=3,
+ timeout=300,
+ sendRecvTime=1537177758875}
+17/09/2018 10:49:19.227  INFO [qtp640363654-17 - /ussdservice/ussdMessage] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Sep 2018 09:49:19 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>3</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177758875</sendRecvTime><timeout>90</timeout><transId>W1-0-1537177758834</transId><type>202</type><ussdString>List of Service : 
+1- BONBON service
+2- TOMATOS service
+3- BANANA service
+0- check registration</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:49:23.517  INFO [qtp640363654-20 - /ussdservice/ussdMessage] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 5
+Address: http://localhost:8190/ussdservice/ussdMessage
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[346], content-type=[application/xml], Host=[localhost:8190], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>4</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177763499</sendRecvTime><timeout>300</timeout><transId>W1-0-1537177763498</transId><type>100</type><ussdString>*654#</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:49:23.518  WARN [qtp640363654-20 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results
+17/09/2018 10:49:23.520  INFO [qtp640363654-20 - /ussdservice/ussdMessage] USSDService: message receive from USSDGW
+17/09/2018 10:49:23.520  INFO [qtp640363654-20 - /ussdservice/ussdMessage] USSDService: UssdMessage{type=100,
+ transId=W1-0-1537177763498,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=4,
+ timeout=300,
+ sendRecvTime=1537177763499}
+17/09/2018 10:49:23.521  INFO [qtp640363654-20 - /ussdservice/ussdMessage] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Sep 2018 09:49:23 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>4</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177763499</sendRecvTime><timeout>90</timeout><transId>W1-0-1537177763498</transId><type>202</type><ussdString>List of Service : 
+1- BONBON service
+2- TOMATOS service
+3- BANANA service
+0- check registration</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:49:27.166  INFO [qtp640363654-19 - /ussdservice/ussdMessage] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 6
+Address: http://localhost:8190/ussdservice/ussdMessage
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[346], content-type=[application/xml], Host=[localhost:8190], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>5</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177767148</sendRecvTime><timeout>300</timeout><transId>W1-0-1537177767146</transId><type>100</type><ussdString>*654#</ussdString></UssdMessage>
+--------------------------------------
+17/09/2018 10:49:27.167  WARN [qtp640363654-19 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results
+17/09/2018 10:49:27.168  INFO [qtp640363654-19 - /ussdservice/ussdMessage] USSDService: message receive from USSDGW
+17/09/2018 10:49:27.168  INFO [qtp640363654-19 - /ussdservice/ussdMessage] USSDService: UssdMessage{type=100,
+ transId=W1-0-1537177767146,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=5,
+ timeout=300,
+ sendRecvTime=1537177767148}
+17/09/2018 10:49:27.169  INFO [qtp640363654-19 - /ussdservice/ussdMessage] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Sep 2018 09:49:27 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><UssdMessage><charSet>1</charSet><connectorId>1</connectorId><dlgId>5</dlgId><loggedString>*654#</loggedString><msisdn>84</msisdn><sendRecvTime>1537177767148</sendRecvTime><timeout>90</timeout><transId>W1-0-1537177767146</transId><type>202</type><ussdString>List of Service : 
+1- BONBON service
+2- TOMATOS service
+3- BANANA service
+0- check registration</ussdString></UssdMessage>
+--------------------------------------

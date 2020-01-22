@@ -1,0 +1,20 @@
+<application>
+
+   <url>http://127.0.0.1:9125/</url>
+   
+   <method>Post</method>
+   
+   <!--  
+		REST_BASIC_AUTH,REST_TOKEN_AUTH,REST_TOKEN_AUTH_ROLE,REST_OAUTH1,REST_OAUTH2 
+         default value is REST_TOKEN_AUTH
+	-->
+   <security_mode>REST_TOKEN_AUTH</security_mode>
+   
+   <!-- tokenSecret provide secret word to generate token -->
+   <tokenSecret>secret@1254778</tokenSecret>
+   
+   <!-- tokenDuration in seconde provide duration of one token -->
+   <tokenDuration>100</tokenDuration>
+   
+
+</application>

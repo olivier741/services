@@ -1,0 +1,457 @@
+16/05/2019 14:50:41.373  INFO [main] Start_Process: Load log4j config file done.
+16/05/2019 14:50:41.388  INFO [pool-1-thread-1] Sender: ################################## START SENDER ###########################
+16/05/2019 14:50:41.393  INFO [pool-2-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+16/05/2019 14:50:41.393  INFO [pool-3-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+16/05/2019 14:50:41.393  INFO [pool-4-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+16/05/2019 14:50:41.394  INFO [pool-5-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+16/05/2019 14:50:41.482  INFO [pool-6-thread-1] Receiver: ################################## START RECEIVER ###########################
+16/05/2019 14:50:51.083  INFO [pool-6-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "9db0629b-77e1-11e9-b317-436e40787d9b",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 14:50:51.244  INFO [pool-6-thread-1] Receiver: transaction_id   : 9db0629b-77e1-11e9-b317-436e40787d9b
+16/05/2019 14:50:51.244  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 14:50:51.244  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 14:50:51.244  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 14:50:51.266  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=9db0629b-77e1-11e9-b317-436e40787d9b,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:51.083,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:51.266  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 14:50:51.266  INFO [pool-6-thread-1] Process_Reg: ADD message in the queue :Process_Request{transaction_id=9db0629b-77e1-11e9-b317-436e40787d9b,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:51.083,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:51.266  INFO [pool-6-thread-1] Receiver: Emitte to Register Process : {
+  "transaction_id" : "9db0629b-77e1-11e9-b317-436e40787d9b",
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1558014651083,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}
+16/05/2019 14:50:51.266  INFO [pool-6-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "9cdd341a-77e1-11e9-b317-8dd8c770cbe4",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 14:50:51.267  INFO [pool-6-thread-1] Receiver: transaction_id   : 9cdd341a-77e1-11e9-b317-8dd8c770cbe4
+16/05/2019 14:50:51.267  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 14:50:51.267  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 14:50:51.267  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 14:50:51.269  INFO [pool-6-thread-1] Process_Reg: ADD message in the queue :Process_Request{transaction_id=9cdd341a-77e1-11e9-b317-8dd8c770cbe4,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:51.266,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:51.269  INFO [pool-6-thread-1] Receiver: Emitte to Register Process : {
+  "transaction_id" : "9cdd341a-77e1-11e9-b317-8dd8c770cbe4",
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1558014651266,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}
+16/05/2019 14:50:51.286  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=9cdd341a-77e1-11e9-b317-8dd8c770cbe4,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:51.266,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:51.286  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 14:50:55.376  INFO [pool-6-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "9f64c95c-77e1-11e9-b317-c12a44b1223e",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 14:50:55.377  INFO [pool-6-thread-1] Receiver: transaction_id   : 9f64c95c-77e1-11e9-b317-c12a44b1223e
+16/05/2019 14:50:55.377  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 14:50:55.377  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 14:50:55.377  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 14:50:55.379  INFO [pool-6-thread-1] Process_Reg: ADD message in the queue :Process_Request{transaction_id=9f64c95c-77e1-11e9-b317-c12a44b1223e,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:55.376,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:55.379  INFO [pool-6-thread-1] Receiver: Emitte to Register Process : {
+  "transaction_id" : "9f64c95c-77e1-11e9-b317-c12a44b1223e",
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1558014655376,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}
+16/05/2019 14:50:55.379  INFO [pool-6-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "9f980e5d-77e1-11e9-b317-8b647509b383",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 14:50:55.379  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=9f64c95c-77e1-11e9-b317-c12a44b1223e,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:55.376,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:55.380  INFO [pool-6-thread-1] Receiver: transaction_id   : 9f980e5d-77e1-11e9-b317-8b647509b383
+16/05/2019 14:50:55.381  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 14:50:55.381  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 14:50:55.381  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 14:50:55.382  INFO [pool-6-thread-1] Process_Reg: ADD message in the queue :Process_Request{transaction_id=9f980e5d-77e1-11e9-b317-8b647509b383,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:55.379,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:55.383  INFO [pool-6-thread-1] Receiver: Emitte to Register Process : {
+  "transaction_id" : "9f980e5d-77e1-11e9-b317-8b647509b383",
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1558014655379,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}
+16/05/2019 14:50:55.383  INFO [pool-2-thread-1] Process_Reg: Register Queue size :1
+16/05/2019 14:50:55.404  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=9f980e5d-77e1-11e9-b317-8b647509b383,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:55.379,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:55.404  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 14:50:57.387  INFO [pool-6-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "a13a259e-77e1-11e9-b317-edaeb163d95f",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 14:50:57.388  INFO [pool-6-thread-1] Receiver: transaction_id   : a13a259e-77e1-11e9-b317-edaeb163d95f
+16/05/2019 14:50:57.388  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 14:50:57.388  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 14:50:57.389  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 14:50:57.390  INFO [pool-6-thread-1] Process_Reg: ADD message in the queue :Process_Request{transaction_id=a13a259e-77e1-11e9-b317-edaeb163d95f,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:57.387,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:57.390  INFO [pool-6-thread-1] Receiver: Emitte to Register Process : {
+  "transaction_id" : "a13a259e-77e1-11e9-b317-edaeb163d95f",
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1558014657387,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}
+16/05/2019 14:50:57.390  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=a13a259e-77e1-11e9-b317-edaeb163d95f,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:57.387,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:57.391  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 14:50:59.392  INFO [pool-6-thread-1] Receiver: request in receiver    : {
+  "transaction_id" : "a182793f-77e1-11e9-b317-2f809b382631",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 14:50:59.394  INFO [pool-6-thread-1] Receiver: transaction_id   : a182793f-77e1-11e9-b317-2f809b382631
+16/05/2019 14:50:59.394  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 14:50:59.395  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 14:50:59.395  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 14:50:59.397  INFO [pool-6-thread-1] Process_Reg: ADD message in the queue :Process_Request{transaction_id=a182793f-77e1-11e9-b317-2f809b382631,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:59.392,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:59.397  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=a182793f-77e1-11e9-b317-2f809b382631,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:50:59.392,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:50:59.398  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 14:50:59.398  INFO [pool-6-thread-1] Receiver: Emitte to Register Process : {
+  "transaction_id" : "a182793f-77e1-11e9-b317-2f809b382631",
+  "msisdn" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO",
+  "command_code" : "CAN1",
+  "split_separate" : null,
+  "param_name" : "param_can",
+  "param_length" : 1,
+  "param_pattern" : "INFO|GOAL|TEAM",
+  "param_value" : "INFO",
+  "channel" : "9696",
+  "action_type" : "REG",
+  "action_description" : null,
+  "receive_time" : 1558014659392,
+  "product_name" : "CAN1",
+  "notification_code" : null,
+  "language" : null
+}
+16/05/2019 14:56:28.494  INFO [main] Start_Process: Load log4j config file done.
+16/05/2019 14:56:28.500  INFO [pool-1-thread-1] Sender: ################################## START SENDER ###########################
+16/05/2019 14:56:28.500  INFO [pool-2-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+16/05/2019 14:56:28.501  INFO [pool-3-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+16/05/2019 14:56:28.501  INFO [pool-4-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+16/05/2019 14:56:28.501  INFO [pool-5-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+16/05/2019 14:56:28.584  INFO [pool-6-thread-1] Receiver: ################################## START RECEIVER ###########################
+16/05/2019 14:56:37.027  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "6af0f0e0-77e2-11e9-b317-87bb36150e7a",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 14:56:37.194  INFO [pool-6-thread-1] Receiver: transaction_id   : 6af0f0e0-77e2-11e9-b317-87bb36150e7a
+16/05/2019 14:56:37.194  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 14:56:37.194  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 14:56:37.194  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 14:56:37.195  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=6af0f0e0-77e2-11e9-b317-87bb36150e7a,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:56:37.027,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 14:56:37.195  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 14:56:37.195  INFO [pool-6-thread-1] Receiver: Emitte to Register Process : Process_Request{transaction_id=6af0f0e0-77e2-11e9-b317-87bb36150e7a,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 14:56:37.027,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}

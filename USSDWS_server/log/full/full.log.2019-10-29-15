@@ -1,0 +1,89 @@
+29/10/2019 15:29:15.300  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 15:29:28.367  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 15:29:32.920  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 15:29:37.467  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 15:29:42.008  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 15:29:46.542  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 15:29:51.098  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 15:29:55.633  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 15:30:09.452  INFO [qtp435626542-43] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 15:30:09.452  INFO [qtp435626542-43] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572359408257,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=0,
+ timeout=300,
+ sendRecvTime=1572359408307}
+29/10/2019 15:38:09.482  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 15:38:19.570  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 15:38:24.113  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 15:38:28.688  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 15:38:33.221  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 15:38:37.755  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 15:38:42.295  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 15:38:46.829  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 15:39:47.705  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 15:39:57.791  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 15:40:02.335  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 15:40:06.868  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 15:40:11.434  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 15:40:15.967  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 15:40:20.517  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 15:40:25.051  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 15:40:36.216  INFO [qtp435626542-42] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 15:40:36.217  INFO [qtp435626542-42] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572360035427,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=2,
+ timeout=300,
+ sendRecvTime=1572360035461}
+29/10/2019 15:40:54.258  INFO [qtp435626542-37] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 15:40:54.258  INFO [qtp435626542-37] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572360054225,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=3,
+ timeout=300,
+ sendRecvTime=1572360054235}
+29/10/2019 15:54:14.971  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 15:54:28.559  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 15:54:33.101  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 15:54:37.634  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 15:54:42.201  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 15:54:46.734  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 15:54:51.276  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 15:54:55.809  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 15:54:58.947  INFO [qtp435626542-42] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 15:54:58.947  INFO [qtp435626542-42] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572360898562,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=4,
+ timeout=300,
+ sendRecvTime=1572360898575}
+29/10/2019 15:54:58.951  INFO [qtp435626542-42] USSDService: Not State Define for this Transaction : W1-0-1572360898562

@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 juil. 2019, 11:20:23
+    Author     : olivier.tatsinkou
+*/
+
+.modal-header .btnGrp{
+position: absolute;
+top: 8px;
+right: 10px;
+}
+ 
+.min-modal{
+width: 250px;
+height: 35px;
+overflow: hidden !important;
+padding: 0px !important;
+margin: 0px;
+ 
+float: left;
+position: static !important;
+}
+ 
+.min-modal .modal-dialog, .min .modal-content{
+height: 100%;
+width: 100%;
+margin: 0px !important;
+padding: 0px !important;
+}
+ 
+.min-modal .modal-header{
+height: 100%;
+width: 100%;
+margin: 0px !important;
+padding: 3px 5px !important;
+}
+ 
+.display-none{display: none;}
+ 
+button .fa{
+font-size: 16px;
+margin-left: 10px;
+}
+ 
+.min-modal .fa{
+font-size: 14px;
+}
+ 
+.min-modal .menuTab{display: none;}
+ 
+button:focus { outline: none; }
+ 
+.optminmaxCon{
+height: 35px;
+bottom: 1px;
+left: 1px;
+position: fixed;
+right: 1px;
+z-index: 9999;
+}
+/*Properties for setting height and width of modal */
+.modal-dialog {
+width: 70%;
+height:50% !important;
+}
+
+.modal-body{
+height: 100%;
+}
+
+.modal-content {
+background-color:#D5FFD5;
+}
+ 
+.modal-footer{
+    background-color:#006666;   
+}
+
+.modal-header {
+background-color: #FFD8B0;
+padding:16px 16px;
+color:#003500;
+border-bottom:2px dotted #002200;
+}
+
+.header-right.ui-datatable .ui-datatable-header {
+    text-align: right !important;
+}
+
+.ui-button-text-only .ui-button-text {
+    padding: 0.3em 0.4em;
+}
+
+.without-selectall .ui-selectcheckboxmenu-header .ui-chkbox {
+    display: all; 
+}

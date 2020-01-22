@@ -1,0 +1,74 @@
+16/05/2019 15:02:17.122  INFO [main] Start_Process: Load log4j config file done.
+16/05/2019 15:02:17.135  INFO [pool-1-thread-1] Sender: ################################## START SENDER ###########################
+16/05/2019 15:02:17.137  INFO [pool-2-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+16/05/2019 15:02:17.138  INFO [pool-3-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+16/05/2019 15:02:17.138  INFO [pool-4-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+16/05/2019 15:02:17.139  INFO [pool-5-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+16/05/2019 15:02:17.226  INFO [pool-6-thread-1] Receiver: ################################## START RECEIVER ###########################
+16/05/2019 15:02:37.664  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "41c399b1-77e3-11e9-b317-f3671443698f",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 15:02:37.814  INFO [pool-6-thread-1] Receiver: transaction_id   : 41c399b1-77e3-11e9-b317-f3671443698f
+16/05/2019 15:02:37.815  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 15:02:37.815  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 15:02:37.815  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 15:02:37.816  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=41c399b1-77e3-11e9-b317-f3671443698f,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 15:02:37.664,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 15:02:37.816  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 15:02:58.737  INFO [pool-6-thread-1] Receiver: request receive   : {
+  "transaction_id" : "4e9faf22-77e3-11e9-b317-eb33fe50601f",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 15:02:58.738  INFO [pool-6-thread-1] Receiver: transaction_id   : 4e9faf22-77e3-11e9-b317-eb33fe50601f
+16/05/2019 15:02:58.738  INFO [pool-6-thread-1] Receiver: content send by customer   : CAN1 INFO
+16/05/2019 15:02:58.738  INFO [pool-6-thread-1] Receiver: customer phone number      : 4477665544
+16/05/2019 15:02:58.738  INFO [pool-6-thread-1] Receiver: short code                 : 8966
+16/05/2019 15:02:58.738  INFO [pool-2-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=4e9faf22-77e3-11e9-b317-eb33fe50601f,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REG,
+ action_description=null,
+ receive_time=2019-05-16 15:02:58.737,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+16/05/2019 15:02:58.738  INFO [pool-2-thread-1] Process_Reg: Register Queue size :0
+16/05/2019 15:18:38.027  INFO [main] Start_Process: Load log4j config file done.
+16/05/2019 15:18:38.030  INFO [pool-1-thread-1] Sender: ################################## START SENDER ###########################
+16/05/2019 15:18:38.030  INFO [pool-2-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+16/05/2019 15:18:38.031  INFO [pool-4-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+16/05/2019 15:18:38.032  INFO [pool-3-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+16/05/2019 15:18:38.032  INFO [pool-5-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+16/05/2019 15:18:38.133  INFO [pool-6-thread-1] Receiver: ################################## START RECEIVER ###########################

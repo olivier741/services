@@ -1,0 +1,287 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.stormadvance</groupId>
+	<artifactId>Receiver_Process_Sender-kafka-topology</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Receiver_Process_Sender-kafka-topology</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+        
+        <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+            
+		<dependency>
+			<groupId>org.apache.storm</groupId>
+			<artifactId>storm-kafka</artifactId>
+			<version>1.2.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.kafka</groupId>
+					<artifactId>kafka-clients</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+                
+                 <dependency>
+                    <groupId>com.fasterxml.uuid</groupId>
+                    <artifactId>java-uuid-generator</artifactId>
+                    <version>3.2.0</version>
+                </dependency>
+
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka_2.11</artifactId>
+			<version>0.9.0.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.sun.jdmk</groupId>
+					<artifactId>jmxtools</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jmx</groupId>
+					<artifactId>jmxri</artifactId>
+				</exclusion>
+			 <exclusion>
+			  <groupId>org.slf4j</groupId>
+			  <artifactId>slf4j-log4j12</artifactId>
+			 </exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.storm</groupId>
+			<artifactId>storm-core</artifactId>
+			<version>1.2.2</version>
+			<scope>provided</scope>
+		 <exclusions>
+		  <exclusion>
+		   <groupId>org.apache.logging.log4j</groupId>
+		   <artifactId>log4j-slf4j-impl</artifactId>
+		  </exclusion>
+		 </exclusions>
+		</dependency>
+                
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>23.0</version>
+		</dependency>
+                
+                 <!-- JSON -->
+                
+                <dependency>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                    <version>2.9.8</version>
+                </dependency>
+                
+              <!-- HikariCP Database Pool-->  
+                <dependency>
+                    <groupId>com.zaxxer</groupId>
+                    <artifactId>HikariCP</artifactId>
+                    <version>3.3.1</version>
+                </dependency>
+                
+                <dependency>
+                    <groupId>com.github.StubbornJava.StubbornJava</groupId>
+                    <artifactId>stubbornjava-common</artifactId>
+                    <version>0.1.33</version>
+                </dependency>
+                
+                <dependency>
+                    <groupId>org.mariadb.jdbc</groupId>
+                    <artifactId>mariadb-java-client</artifactId>
+                    <version>2.4.1</version>
+                </dependency>
+
+
+
+	</dependencies>
+
+       
+        
+	<build>
+            <plugins>
+
+                <plugin>
+                      <artifactId>maven-assembly-plugin</artifactId>
+                      <version>2.2.1</version>
+                      <configuration>
+                          <descriptorRefs>
+                              <descriptorRef>jar-with-dependencies</descriptorRef>
+                          </descriptorRefs>
+                          <archive>
+                             <manifest>
+                                  <mainClass />
+                             </manifest>
+                          </archive>
+                       </configuration>
+                       <executions>
+                          <execution>
+                              <id>make-assembly</id>
+                              <phase>package</phase>
+                              <goals>
+                                  <goal>single</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+               </plugin>
+               
+              
+               <plugin>
+                  <groupId>org.codehaus.mojo</groupId>
+                  <artifactId>appassembler-maven-plugin</artifactId>
+                  <version>2.0.0</version>
+                  <executions>
+                    <execution>
+                      <id>generate-jsw-scripts</id>
+                      <phase>package</phase>
+                      <goals>
+                        <goal>generate-daemons</goal>
+                      </goals>
+                      <configuration>
+                        <repositoryLayout>flat</repositoryLayout>
+                        <target>${project.build.directory}/daemon</target>
+
+                        <configurationDirectory>etc</configurationDirectory>
+                        <configurationSourceDirectory>etc</configurationSourceDirectory>
+                        <copyConfigurationDirectory>true</copyConfigurationDirectory>
+
+                        <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
+                        <logsDirectory>logs</logsDirectory>
+                        <daemons>
+                          <daemon>
+                            <id>Storm_KafkaTopology</id>
+                            <!-- the next line is added by default if you don't have wrapperMainClass's setting -->
+                            <wrapperMainClass>org.tanukisoftware.wrapper.WrapperSimpleApp</wrapperMainClass>
+                            <mainClass>com.tatsinktechnologic.stormTopology.main.KafkaTopology</mainClass>
+                            <!-- <commandLineArguments> 
+                                    <commandLineArgument>start</commandLineArgument> 
+                            </commandLineArguments> -->
+                            <jvmSettings> 
+                                    <initialMemorySize>20M</initialMemorySize> 
+                                    <maxMemorySize>200M</maxMemorySize> 
+                                    <maxStackSize>128M</maxStackSize> 
+                                    
+                                    <extraArguments>
+                                        <extraArgument>-Dlog4j.configuration=etc/log4j.cfg</extraArgument>
+                                        <!--
+                                        <extraArgument>-Dcom.sun.management.jmxremote</extraArgument>
+                                        <extraArgument>-Dcom.sun.management.jmxremote.ssl=false</extraArgument>
+                                        <extraArgument>-Dcom.sun.management.jmxremote.authenticate=false</extraArgument>
+                                        <extraArgument>-Dcom.sun.management.jmxremote.port=2101</extraArgument>
+                                        -->
+                                    </extraArguments>
+                            </jvmSettings>
+
+                            <platforms>
+                              <platform>jsw</platform>
+                            </platforms>
+
+                            <generatorConfigurations>
+                                <generatorConfiguration>
+                                  <generator>jsw</generator>
+                                  <includes>
+                                    <include>aix-ppc-32</include>
+                                    <include>aix-ppc-64</include>
+                                    <include>hpux-parisc-64</include>                               
+                                    <include>solaris-sparc-32</include>
+                                    <include>solaris-sparc-64</include>
+                                    <include>linux-x86-32</include>
+                                    <include>linux-x86-64</include>
+                                    <include>linux-ppc-32</include>
+                                    <include>linux-ppc-64</include>
+                                    <include>macosx-universal-32</include>
+                                    <include>macosx-universal-64</include>
+                                    <include>windows-x86-32</include>
+                                    <include>windows-x86-64</include>
+                                    <include>windows-ppc-32</include>
+                                    <include>windows-ppc-64</include>
+                                  </includes>
+                                  
+                                  <configuration>
+                                      <property>
+                                            <name>wrapper.pidfile</name>
+                                            <value>../bin</value>
+                                        </property>
+                                        <property>
+                                            <name>wrapper.logfile</name>
+                                            <value>log/wrapper/wrapper.log.YYYYMMDD</value>
+                                        </property>
+                                        <property>
+                                            <name>wrapper.logfile.rollmode</name>
+                                            <value>DATE</value>
+                                        </property>
+                                    </configuration>                                 
+                                </generatorConfiguration>
+                               </generatorConfigurations> 
+                          </daemon>
+                        </daemons>
+                      </configuration>
+                    </execution>
+                  </executions>
+                </plugin> 
+                
+                <plugin>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                    <executions>
+                            <execution>
+                                    <phase>package</phase>
+                                    <configuration>
+                                            <target>
+                                                    <mkdir dir="${project.build.directory}/daemon/jsw/Storm_KafkaTopology/log/wrapper"/>
+                                            </target>
+                                    </configuration>
+                                    <goals>
+                                            <goal>run</goal>
+                                    </goals>
+                            </execution>
+                    </executions>
+            </plugin> 
+
+			
+            <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.2.1</version>
+                    <executions>
+                            <execution>
+                                    <goals>
+                                            <goal>exec</goal>
+                                    </goals>
+                            </execution>
+                    </executions>
+                    <configuration>
+                            <executable>java</executable>
+                            <includeProjectDependencies>true</includeProjectDependencies>
+                            <includePluginDependencies>false</includePluginDependencies>
+                            <classpathScope>compile</classpathScope>
+                            <mainClass>${main.class}</mainClass>
+                    </configuration>
+            </plugin>
+
+
+        </plugins>
+   </build>
+
+</project>

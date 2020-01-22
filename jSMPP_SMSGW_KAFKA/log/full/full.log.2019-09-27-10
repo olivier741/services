@@ -1,0 +1,12 @@
+27/09/2019 10:47:36.915  INFO [main] SMSGW: Load log4j config file done.
+27/09/2019 10:47:36.921  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+27/09/2019 10:47:37.187  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+27/09/2019 10:47:50.987  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+27/09/2019 10:47:55.533  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+27/09/2019 10:48:00.075  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+27/09/2019 10:48:04.608  INFO [main] SMSGW: ############ Topic mo-flash already exists #################
+27/09/2019 10:48:09.141  INFO [main] SMSGW: ############ Topic mt-flash already exists #################
+27/09/2019 10:48:13.699  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+27/09/2019 10:48:18.232  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+27/09/2019 10:48:18.592  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+27/09/2019 10:48:21.558  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]

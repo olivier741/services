@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Book" type="book"/>
+
+  <xs:element name="Category" type="category"/>
+
+  <xs:element name="account" type="credential"/>
+
+  <xs:complexType name="category">
+    <xs:sequence>
+      <xs:element name="books" type="book" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="categoryId" type="xs:string" minOccurs="0"/>
+      <xs:element name="categoryName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="book">
+    <xs:sequence>
+      <xs:element name="author" type="xs:string" minOccurs="0"/>
+      <xs:element name="bookISBNnumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="bookId" type="xs:string" minOccurs="0"/>
+      <xs:element name="bookName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="credential">
+    <xs:sequence>
+      <xs:element name="password" type="xs:string" minOccurs="0"/>
+      <xs:element name="roles" type="xs:string" minOccurs="0"/>
+      <xs:element name="token" type="xs:string" minOccurs="0"/>
+      <xs:element name="user_name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

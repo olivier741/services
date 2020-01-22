@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div onload="initWebSocket()" class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    CHAT PROCESS
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <p:panel style="width:75%" header="SMS CHAT">
+                                    <h:form id="chatPanel">
+
+                                        <h:panelGrid columns="2" columnClasses="col1,col2" styleClass="topPanelGrid, tablePanelGrid">
+
+                                            <h:panelGrid id="chatArea" styleClass="tableChatMSG">
+                                                Welcome to the chat. Use <b> #{chatController.nickname} </b> to send a direct message
+                                                <p:spacer  Height="30px;" />
+                                            </h:panelGrid>
+
+
+                                            <p:panel header="Users" styleClass="panelOnlineScroll">
+                                                <h:panelGrid id="allOnlines">
+                                                    <ui:repeat var="user" value="#{chatController.allNicknames}" varStatus="status">
+                                                        <tr id="#{user}">
+                                                            <td>#{user}</td>
+                                                        </tr>
+                                                    </ui:repeat>
+                                                </h:panelGrid>
+                                            </p:panel>	
+
+                                            <h:inputTextarea id="insertMSG" value="#{chatController.textMessage}"
+                                                             scrollHeight="4" rows="6" 
+                                                             style="width:98%; resize: none;" />
+                                            <h:panelGrid columns="1" cellpadding="4">
+                                                <h:commandButton id="sendMsg" type="button" value="Send" onclick="sendText();" styleClass="btn btn-success btn-large btn-lg" /> 
+                                                <p:spacer  Height="10px;" />
+                                                <h:outputLabel id="myNickName" value="#{chatController.nickname}" />
+                                            </h:panelGrid>
+
+                                        </h:panelGrid>
+
+                                    </h:form>
+
+                                </p:panel>
+
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   
+

@@ -1,0 +1,7 @@
+25/09/2019 08:05:32.131  INFO [main] Start_Process: Load log4j config file done.
+25/09/2019 08:05:32.173  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+25/09/2019 08:05:32.174  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+25/09/2019 08:05:32.178  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+25/09/2019 08:05:32.180  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+25/09/2019 08:05:32.180  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+25/09/2019 08:05:32.297  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################

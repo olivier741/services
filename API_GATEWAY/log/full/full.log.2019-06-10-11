@@ -1,0 +1,225 @@
+10/06/2019 11:07:38.788  INFO [main] Rest_API_Server: Load log4j config file done.
+10/06/2019 11:07:39.210  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+10/06/2019 11:07:39.261  INFO [main] log: Logging initialized @2483ms to org.eclipse.jetty.util.log.Slf4jLog
+10/06/2019 11:07:39.317  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+10/06/2019 11:07:39.370  INFO [main] AbstractConnector: Started ServerConnector@4867ab9f{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+10/06/2019 11:07:39.370  INFO [main] Server: Started @2592ms
+10/06/2019 11:07:39.377  WARN [main] ContextHandler: Empty contextPath
+10/06/2019 11:07:39.395  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@41b1f51e{/,null,AVAILABLE}
+10/06/2019 11:08:10.148  INFO [main] Rest_API_Server: Load log4j config file done.
+10/06/2019 11:16:20.662  INFO [main] Rest_API_Server: Load log4j config file done.
+10/06/2019 11:16:21.076  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+10/06/2019 11:16:21.125  INFO [main] log: Logging initialized @2905ms to org.eclipse.jetty.util.log.Slf4jLog
+10/06/2019 11:16:21.184  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+10/06/2019 11:16:21.255  INFO [main] AbstractConnector: Started ServerConnector@4867ab9f{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+10/06/2019 11:16:21.255  INFO [main] Server: Started @3035ms
+10/06/2019 11:16:21.260  WARN [main] ContextHandler: Empty contextPath
+10/06/2019 11:16:21.272  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@3a543f31{/,null,AVAILABLE}
+10/06/2019 11:24:25.934  INFO [main] Rest_API_Server: Load log4j config file done.
+10/06/2019 11:24:26.369  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+10/06/2019 11:24:26.424  INFO [main] log: Logging initialized @2625ms to org.eclipse.jetty.util.log.Slf4jLog
+10/06/2019 11:24:26.488  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+10/06/2019 11:24:26.544  INFO [main] AbstractConnector: Started ServerConnector@4867ab9f{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+10/06/2019 11:24:26.544  INFO [main] Server: Started @2746ms
+10/06/2019 11:24:26.550  WARN [main] ContextHandler: Empty contextPath
+10/06/2019 11:24:26.566  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@2b9f74d0{/,null,AVAILABLE}
+10/06/2019 11:24:42.229  INFO [qtp1606272155-19] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[138], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>demo</password><user_name>flash_sms_charge</user_name></account>
+--------------------------------------
+10/06/2019 11:24:42.243  WARN [qtp1606272155-19] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+10/06/2019 11:24:42.561  INFO [qtp1606272155-19] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 401
+Content-Type: application/xml
+Headers: {WWW-Authenticate=[ERROR : MESSAGE=" Not Configuration for this Account "], Date=[Mon, 10 Jun 2019 10:24:42 GMT], Content-Length=[0]}
+--------------------------------------
+10/06/2019 11:26:56.396  INFO [qtp1606272155-24] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+10/06/2019 11:26:56.398  WARN [qtp1606272155-24] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+10/06/2019 11:26:56.407  INFO [qtp1606272155-24] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+10/06/2019 11:26:56.408  INFO [qtp1606272155-24] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 401
+Content-Type: application/xml
+Headers: {WWW-Authenticate=[ERROR : MESSAGE=" IP address of this Client is not allow "], Date=[Mon, 10 Jun 2019 10:26:56 GMT], Content-Length=[0]}
+--------------------------------------
+10/06/2019 11:28:18.044  INFO [qtp1606272155-18] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 3
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+10/06/2019 11:28:18.045  WARN [qtp1606272155-18] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+10/06/2019 11:28:18.046  INFO [qtp1606272155-18] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+10/06/2019 11:28:18.046  INFO [qtp1606272155-18] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 3
+Response-Code: 401
+Content-Type: application/xml
+Headers: {WWW-Authenticate=[ERROR : MESSAGE=" IP address of this Client is not allow "], Date=[Mon, 10 Jun 2019 10:28:18 GMT], Content-Length=[0]}
+--------------------------------------
+10/06/2019 11:29:40.820  INFO [main] Rest_API_Server: Load log4j config file done.
+10/06/2019 11:30:02.738  INFO [main] Rest_API_Server: Load log4j config file done.
+10/06/2019 11:30:03.239  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+10/06/2019 11:30:03.331  INFO [main] log: Logging initialized @8473ms to org.eclipse.jetty.util.log.Slf4jLog
+10/06/2019 11:30:03.419  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+10/06/2019 11:30:03.535  INFO [main] AbstractConnector: Started ServerConnector@41def031{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+10/06/2019 11:30:03.535  INFO [main] Server: Started @8678ms
+10/06/2019 11:30:03.542  WARN [main] ContextHandler: Empty contextPath
+10/06/2019 11:30:03.553  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@1cd2ff5b{/,null,AVAILABLE}
+10/06/2019 11:30:21.978  INFO [qtp421293587-23] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+10/06/2019 11:30:21.994  WARN [qtp421293587-23] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+10/06/2019 11:30:47.040  INFO [qtp421293587-23] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+10/06/2019 11:31:18.391  INFO [qtp421293587-23] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+10/06/2019 11:32:07.340  INFO [qtp421293587-23] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 10 Jun 2019 10:32:07 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI5MzNhNDEyNS1iZTRlLTRhMDUtODJhNS05OGUwMzRlOGQ4ZDAiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDE2Mjc2N30.ojXNfIaGzFTNwC5WZ3EUJzZaf2EV_QcbaNx3QacUVto
+--------------------------------------
+10/06/2019 11:33:19.894  INFO [main] Rest_API_Server: Load log4j config file done.
+10/06/2019 11:33:20.297  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+10/06/2019 11:33:20.354  INFO [main] log: Logging initialized @2654ms to org.eclipse.jetty.util.log.Slf4jLog
+10/06/2019 11:33:20.405  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+10/06/2019 11:33:20.453  INFO [main] AbstractConnector: Started ServerConnector@4867ab9f{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+10/06/2019 11:33:20.454  INFO [main] Server: Started @2754ms
+10/06/2019 11:33:20.464  WARN [main] ContextHandler: Empty contextPath
+10/06/2019 11:33:20.480  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@2b9f74d0{/,null,AVAILABLE}
+10/06/2019 11:52:56.446  INFO [qtp1606272155-24] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+10/06/2019 11:52:56.456  WARN [qtp1606272155-24] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+10/06/2019 11:52:56.662  INFO [qtp1606272155-24] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+10/06/2019 11:52:57.064  INFO [qtp1606272155-24] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 10 Jun 2019 10:52:57 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI0YjI3OTAxNC00MWQ2LTQyZTctODY1ZS1jYWViNmM0MDUwYWIiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDE2NDAzNn0.-ByniQZ779f7riZKkf6H8zu10D-jE2vvOgAz6V5scrA
+--------------------------------------
+10/06/2019 11:53:47.429  INFO [qtp1606272155-21] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+10/06/2019 11:53:47.432  WARN [qtp1606272155-21] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+10/06/2019 11:53:47.433  INFO [qtp1606272155-21] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+10/06/2019 11:53:47.436  INFO [qtp1606272155-21] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 10 Jun 2019 10:53:47 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI3OWNmZDA1ZC0wMjk5LTRhN2UtYjBhOC02MGYyMDA4ZGM4MDgiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDE2NDA4N30.yNQG7OlsYL9IL0Vtb7BkcSTPpMVFtaWe0PonuaY4DT4
+--------------------------------------
+10/06/2019 11:59:00.734  INFO [qtp1606272155-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 3
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: text/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[text/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+10/06/2019 11:59:00.744  WARN [qtp1606272155-16] WebApplicationExceptionMapper: javax.ws.rs.ClientErrorException: HTTP 415 Unsupported Media Type
+	at org.apache.cxf.jaxrs.utils.SpecExceptions.toHttpException(SpecExceptions.java:117)
+	at org.apache.cxf.jaxrs.utils.ExceptionUtils.toHttpException(ExceptionUtils.java:167)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.findTargetMethod(JAXRSUtils.java:513)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSInInterceptor.processRequest(JAXRSInInterceptor.java:181)
+	at org.apache.cxf.jaxrs.interceptor.JAXRSInInterceptor.handleMessage(JAXRSInInterceptor.java:78)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.doService(JettyHTTPDestination.java:247)
+	at org.apache.cxf.transport.http_jetty.JettyHTTPHandler.handle(JettyHTTPHandler.java:79)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:205)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Thread.java:748)
+
+10/06/2019 11:59:00.745  INFO [qtp1606272155-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 3
+Response-Code: 415
+Content-Type: 
+Headers: {Date=[Mon, 10 Jun 2019 10:59:00 GMT], Content-Length=[0]}
+--------------------------------------
+10/06/2019 11:59:20.478  INFO [qtp1606272155-21] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 4
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+10/06/2019 11:59:20.479  WARN [qtp1606272155-21] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+10/06/2019 11:59:20.481  INFO [qtp1606272155-21] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+10/06/2019 11:59:20.483  INFO [qtp1606272155-21] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 10 Jun 2019 10:59:20 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJkMjE5OWU4ZS03ZThmLTQ2MGEtODZiMi04NWZmMzZhZjRmZTYiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDE2NDQyMH0.HxxSL3_XY66zV5doh_dTqK8dZPb4WXyBt82Bcu5rtfo
+--------------------------------------

@@ -1,0 +1,105 @@
+<service_listener>
+    <fault_msg>system is in maintenance, please contact call center </fault_msg>
+	
+	<kafka_topic_crud>
+		<!-- zookeeper_addr format is IP:Port  If multiple zookeeper then -> "192.168.1.1:2181,192.168.1.2:2181" -->
+		<zookeeper_addr>10.124.160.67:2181</zookeeper_addr>  
+	  
+		<replication>2</replication>
+	  
+		<partitions>10</partitions>
+		
+		<!-- by seconde-->
+		<sessionTimeOutInMs>15</sessionTimeOutInMs>
+		<connectionTimeOutInMs>10</connectionTimeOutInMs>
+	</kafka_topic_crud>
+	
+	<delivery_topic>report_SMS_topic</delivery_topic>
+	<smpp_report>1</smpp_report>
+	
+	<service service_id = "pubdate">
+	   <description>service allow to register on pubdate </description>
+	   <poolthread>2</poolthread>
+	  <!-- Mean all the content start by ON, OFF, LIST,GUIDE , ADD [param] and DEL [param] 
+		   from customer that phone number end by 88 to short code 8965 are process by receiver listen user1. 
+		   to check, we can reffer to https://www.freeformatter.com/java-regex-tester.html 
+	    -->
+	   <mofilterSMS>
+		   <content>ON|OFF|LIST|ADD .*|DEL .*|GUIDE</content> 
+		   <receiver>8965</receiver>
+		   <sender>.*</sender>
+		   <topic>mo_pubdate</topic>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>.*</sender>
+		   <topic>mt_pubdate</topic>
+		   <numberRecord>10</numberRecord>
+	   </mtfilterSMS>
+	   
+	</service>  
+
+   <service service_id = "onlineflash">
+	   <description>service allow to register on onlineflash </description>
+	   <poolthread>2</poolthread>
+	   <mofilterSMS>
+		   <content>.*</content> 
+		   <receiver>8966</receiver>
+		   <sender>.*</sender>
+		   <topic>mo-flash</topic>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>8966</sender>
+		   <topic>mt-flash</topic>
+		   <numberRecord>10</numberRecord>
+	   </mtfilterSMS>
+	</service>  
+	
+	<service service_id = "CHOCHO">
+	   <description>service allow to register on onlineflash </description>
+	   <poolthread>2</poolthread>
+	   <mofilterSMS>
+		   <content>.*</content> 
+		   <receiver>8755</receiver>
+		   <sender>.*</sender>
+		   <topic>mo-chocho</topic>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>8755</sender>
+		   <topic>mt-chocho</topic>
+		   <numberRecord>10</numberRecord>
+	   </mtfilterSMS>
+	</service>  
+	
+	<service service_id = "gameshow">
+	   <description>service allow to register on gameshow </description>
+	   <poolthread>2</poolthread>
+	   <!-- Mean all the content start by ON, OFF, LIST,GUIDE , ADD [param] and DEL [param] 
+		   from customer that phone number end by 88 to short code 8965 are process by receiver listen user1. 
+		   to check, we can reffer to https://www.freeformatter.com/java-regex-tester.html 
+	    -->
+	   <mofilterSMS>
+		   <content>ON|OFF|LIST|ADD .*|DEL .*|GUIDE</content> 
+		   <receiver>8967</receiver>
+		   <sender>(237)[0-9].*88$</sender>
+		   <topic>mo_gameshow</topic>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>8967</sender>
+		   <topic>mt_gameshow</topic>
+		   <numberRecord>10</numberRecord>
+	   </mtfilterSMS>
+   </service>  
+	
+</service_listener>

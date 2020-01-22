@@ -1,0 +1,105 @@
+<application>
+
+    <kafka>
+	   <numberRecord>100</numberRecord>
+	   <consumer_topic>mo-chocho</consumer_topic>
+	   <producer_topic>mt-chocho</producer_topic>
+   </kafka>
+   
+   <receiver_thread>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>2000</sleep_duration>
+   </receiver_thread>
+   
+  
+   <sender_thread>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>20</sleep_duration>
+	 <maxQueue>100</maxQueue>
+   </sender_thread>
+   
+   <chat_process type = "NOTIFICATION" regx_label="8755">
+	 <service_name>CHOCHO</service_name>
+	 <list_product_name>CHO1</list_product_name>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>5000</sleep_duration>
+	 <maxQueue>100</maxQueue>
+   </chat_process>
+   
+   
+   <chat_process type = "PUSH" >
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>5000</sleep_duration>
+	 <maxQueue>100</maxQueue>
+   </chat_process>
+   
+   <!-- 
+   type = "ONE_TO_ONE" mean chat from customer A to one customer B.
+   regx_label = format regex of short code that customer will use to send SMS during the chat. example  regx_label="(7854)([0-9])*" mean all short which match with java regex (7854)([0-9])*
+   service_name = the name of service related of this configuration
+   list_product_name = list of product name which allow to make chat
+    msg_format = format of message which exchange: _alias_ 	= provide variable of customer alias in the systemitem
+												  _tab_ 	= go to new line
+												  _content_ = message send
+  
+   
+   <chat_process type = "ONE_TO_ONE" regx_label="(7854)([0-9])*" >
+	 <service_name>WA</service_name>
+	 <list_product_name>WA1|WA2|WA3</list_product_name>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>20</sleep_duration>
+	 <maxQueue>100</maxQueue>
+	 <msg_format>MR : _alias_ .................. _tab_ _content_</msg_format>
+   </chat_process>
+   
+    -->
+   
+   <!-- 
+   type = "MANY_TO_ONE" mean chat from entity A to many customer and many customer to entity A. example people guy chat with is followers.
+   regx_label = format regex of short code that customer will use to send SMS during the chat. example  regx_label="(7854)([0-9])*" mean all short which match with java regex (7854)([0-9])*
+   service_name = the name of service related of this configuration
+   list_product_name = list of product name which allow to make chat
+   msg_format = format of message which exchange: _alias_ 	= provide variable of customer alias in the systemitem
+												  _tab_ 	= go to new line
+												  _content_ = message send
+   
+   <chat_process type = "MANY_TO_ONE" regx_label="(7854)([0-9])*" >
+	 <service_name>WA</service_name>
+	 <list_product_name>WA1|WA2|WA3</list_product_name>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>20</sleep_duration>
+	 <maxQueue>100</maxQueue>
+	 <msg_format>MR : _alias_ ................. _tab_ _content_</msg_format>
+   </chat_process>
+   
+   -->
+   
+     <!-- 
+   type = "MANY_TO_MANY" mean chat from any register customer A to many customer. example group of forum where any customer can give its point of vue
+   regx_label = format regex of short code that customer will use to send SMS during the chat. example  regx_label="(7854)([0-9])*" mean all short which match with java regex (7854)([0-9])*
+   service_name = the name of service related of this configuration
+   list_product_name = list of product name which allow to make chat
+    msg_format = format of message which exchange: _alias_ 	= provide variable of customer alias in the systemitem
+												  _tab_ 	= go to new line
+												  _content_ = message send
+  
+   
+   <chat_process type = "MANY_TO_MANY" regx_label="(7854)([0-9])*" >
+	 <service_name>WA</service_name>	
+	 <list_product_name>WA1|WA2|WA3</list_product_name>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <sleep_duration>20</sleep_duration>
+	 <maxQueue>100</maxQueue>
+	 <msg_format>MR : _alias_ -.................. _tab_ _content_</msg_format>
+   </chat_process>
+   
+    -->
+
+</application>

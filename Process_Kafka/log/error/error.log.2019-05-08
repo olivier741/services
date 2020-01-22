@@ -1,0 +1,20 @@
+08/05/2019 16:46:47.051  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+08/05/2019 16:46:47.053 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.action.product.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.' at line 8
+08/05/2019 16:48:53.985  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+08/05/2019 16:48:53.985 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8
+08/05/2019 16:53:26.610  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+08/05/2019 16:53:26.610 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8
+08/05/2019 16:55:34.205  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+08/05/2019 16:55:34.205 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8
+08/05/2019 17:12:01.679  WARN [main] SqlExceptionHelper: SQL Error: 1064, SQLState: 42000
+08/05/2019 17:12:01.679 ERROR [main] SqlExceptionHelper: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.end_date, 
+	   cmd.action.product.end_reg_time, 
+	   cmd.action.product.extend_' at line 8

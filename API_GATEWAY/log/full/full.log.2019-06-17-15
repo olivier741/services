@@ -1,0 +1,136 @@
+17/06/2019 15:01:37.514  INFO [qtp1744579245-20] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+17/06/2019 15:01:37.532  WARN [qtp1744579245-20] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+17/06/2019 15:01:37.724  INFO [qtp1744579245-20] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+17/06/2019 15:01:38.129  INFO [qtp1744579245-20] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Jun 2019 14:01:38 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIwODFlZDhhYi1lOGMwLTRiYjQtYjcxNi04YjlmNzdlMzAwM2EiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDc4MDE1N30.czDScdTZWwvynC6oSWHj8D4hUUFvdpE1xRkgPhla_Oc
+--------------------------------------
+17/06/2019 15:01:38.209  INFO [qtp1744579245-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[flash_sms_CHARGE], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIwODFlZDhhYi1lOGMwLTRiYjQtYjcxNi04YjlmNzdlMzAwM2EiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDc4MDE1N30.czDScdTZWwvynC6oSWHj8D4hUUFvdpE1xRkgPhla_Oc], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[549], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><tag_name>param</tag_name><tag_value>charge CAN1 on the service onlineflash</tag_value><WSTag_Attr><attr_name>name</attr_name><attr_value>input</attr_value></WSTag_Attr><WSTag_Attr><attr_name>value</attr_name><attr_value>2376650002558|PROFESSIONAL_NUMBER|charge CAN1 on the service onlineflash|10|50|26|charge CAN1 on the service onlineflash</attr_value></WSTag_Attr></WSparam><ws_client_name>flash_sms</ws_client_name><ws_webservice_name>CHARGE</ws_webservice_name></Request>
+--------------------------------------
+17/06/2019 15:01:38.210  WARN [qtp1744579245-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+17/06/2019 15:01:38.213  INFO [qtp1744579245-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+17/06/2019 15:01:38.293  INFO [qtp1744579245-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Jun 2019 14:01:38 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : CHARGE</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent></WS_ResponseContent><WS_request_time>2019-06-17 15:01:38</WS_request_time></Response>
+--------------------------------------
+17/06/2019 15:04:04.468  INFO [main] Rest_API_Server: Load log4j config file done.
+17/06/2019 15:04:04.872  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+17/06/2019 15:04:04.921  INFO [main] log: Logging initialized @2719ms to org.eclipse.jetty.util.log.Slf4jLog
+17/06/2019 15:04:04.969  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+17/06/2019 15:04:05.011  INFO [main] AbstractConnector: Started ServerConnector@b835727{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+17/06/2019 15:04:05.012  INFO [main] Server: Started @2811ms
+17/06/2019 15:04:05.017  WARN [main] ContextHandler: Empty contextPath
+17/06/2019 15:04:05.029  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@49206065{/,null,AVAILABLE}
+17/06/2019 15:04:09.868  INFO [qtp1744579245-19] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+17/06/2019 15:04:09.879  WARN [qtp1744579245-19] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+17/06/2019 15:04:10.037  INFO [qtp1744579245-19] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+17/06/2019 15:04:10.426  INFO [qtp1744579245-19] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Jun 2019 14:04:10 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI3MmJjOGE0Mi05OWI0LTQ1ZTEtOTY0NC00MzBkMmNjY2FkM2UiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDc4MDMxMH0.Le7mQLQhLvPO-2FnWYzfbay99oegD-Nbq1YumKZLPbU
+--------------------------------------
+17/06/2019 15:04:10.451  INFO [qtp1744579245-19] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[flash_sms_CHARGE], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI3MmJjOGE0Mi05OWI0LTQ1ZTEtOTY0NC00MzBkMmNjY2FkM2UiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDc4MDMxMH0.Le7mQLQhLvPO-2FnWYzfbay99oegD-Nbq1YumKZLPbU], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[549], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><tag_name>param</tag_name><tag_value>charge CAN1 on the service onlineflash</tag_value><WSTag_Attr><attr_name>name</attr_name><attr_value>input</attr_value></WSTag_Attr><WSTag_Attr><attr_name>value</attr_name><attr_value>2376650002558|PROFESSIONAL_NUMBER|charge CAN1 on the service onlineflash|10|50|26|charge CAN1 on the service onlineflash</attr_value></WSTag_Attr></WSparam><ws_client_name>flash_sms</ws_client_name><ws_webservice_name>CHARGE</ws_webservice_name></Request>
+--------------------------------------
+17/06/2019 15:04:10.452  WARN [qtp1744579245-19] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+17/06/2019 15:04:10.456  INFO [qtp1744579245-19] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+17/06/2019 15:04:10.536  INFO [qtp1744579245-19] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Jun 2019 14:04:10 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : CHARGE</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent></WS_ResponseContent><WS_request_time>2019-06-17 15:04:10</WS_request_time></Response>
+--------------------------------------
+17/06/2019 15:31:17.970  INFO [main] Rest_API_Server: Load log4j config file done.
+17/06/2019 15:31:18.423  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+17/06/2019 15:31:18.472  INFO [main] log: Logging initialized @2847ms to org.eclipse.jetty.util.log.Slf4jLog
+17/06/2019 15:31:18.548  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+17/06/2019 15:31:18.651  INFO [main] AbstractConnector: Started ServerConnector@b835727{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+17/06/2019 15:31:18.652  INFO [main] Server: Started @3027ms
+17/06/2019 15:31:18.659  WARN [main] ContextHandler: Empty contextPath
+17/06/2019 15:31:18.669  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@6438a7fe{/,null,AVAILABLE}
+17/06/2019 15:31:40.791  INFO [qtp1744579245-20] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[143], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>flash@123</password><user_name>flash_sms_CHARGE</user_name></account>
+--------------------------------------
+17/06/2019 15:31:40.801  WARN [qtp1744579245-20] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+17/06/2019 15:31:40.968  INFO [qtp1744579245-20] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+17/06/2019 15:31:41.395  INFO [qtp1744579245-20] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Jun 2019 14:31:41 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI0ZmEzYTBlZi1hMTcwLTRkYTUtOTY1YS0xY2NjNTE0NTQwZWYiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDc4MTk2MH0.yaJTU3O6lR-n5YnuCePp7DVgr5uet9_SSfCxSGiciV0
+--------------------------------------
+17/06/2019 15:31:41.464  INFO [qtp1744579245-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[flash_sms_CHARGE], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI0ZmEzYTBlZi1hMTcwLTRkYTUtOTY1YS0xY2NjNTE0NTQwZWYiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDc4MTk2MH0.yaJTU3O6lR-n5YnuCePp7DVgr5uet9_SSfCxSGiciV0], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[549], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><tag_name>param</tag_name><tag_value>charge CAN1 on the service onlineflash</tag_value><WSTag_Attr><attr_name>name</attr_name><attr_value>input</attr_value></WSTag_Attr><WSTag_Attr><attr_name>value</attr_name><attr_value>2376650002558|PROFESSIONAL_NUMBER|charge CAN1 on the service onlineflash|10|50|26|charge CAN1 on the service onlineflash</attr_value></WSTag_Attr></WSparam><ws_client_name>flash_sms</ws_client_name><ws_webservice_name>CHARGE</ws_webservice_name></Request>
+--------------------------------------
+17/06/2019 15:31:41.465  WARN [qtp1744579245-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+17/06/2019 15:31:41.468  INFO [qtp1744579245-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+17/06/2019 15:31:41.545  INFO [qtp1744579245-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 17 Jun 2019 14:31:41 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : CHARGE</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent></WS_ResponseContent><WS_request_time>2019-06-17 15:31:41</WS_request_time></Response>
+--------------------------------------

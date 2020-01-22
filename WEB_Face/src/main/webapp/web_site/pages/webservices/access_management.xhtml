@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    API ACCESS MANAGEMENT
+                    <small>Api Access informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+                                    <p:panel header="List of API Access " > 
+                                        <p:panelGrid id="rolecrud" columns="2">
+
+                                            <h:outputLabel value="Access Name :" />
+                                            <p:inputText  value="#{wS_AccessManagementMB.selectedWS_AccessManagement.access_name}" required="true" disabled="#{wS_AccessManagementMB.do_view}" style="width:250px"/>
+
+                                            <h:outputLabel value="Max Connexion Allocate :"/> 
+                                            <p:inputText  value="#{wS_AccessManagementMB.selectedWS_AccessManagement.max_connexion_allocate}" disabled="#{wS_AccessManagementMB.do_view}" style="width:250px"/>
+
+                                            <h:outputLabel value="Max TPS Allocate :"/> 
+                                            <p:inputText  value="#{wS_AccessManagementMB.selectedWS_AccessManagement.max_request_allocate}" disabled="#{wS_AccessManagementMB.do_view}" style="width:250px"/>
+
+                                            <h:outputLabel value="Start Time :"/> 
+                                             <p:calendar id="datetime1" value="#{wS_AccessManagementMB.start_time}" 
+                                                                mode="popup" 
+                                                                pattern="MM/dd/yyyy" 
+                                                                placeholder="__/__/____" 
+                                                                disabled="#{productMB.do_view}" 
+                                                                style="width:250px" />
+
+                                            <h:outputLabel value="End Time :"/> 
+                                              <p:calendar id="datetime2" value="#{wS_AccessManagementMB.end_time}" 
+                                                                mode="popup" 
+                                                                pattern="MM/dd/yyyy" 
+                                                                placeholder="__/__/____" 
+                                                                disabled="#{productMB.do_view}" 
+                                                                style="width:250px" />
+
+                                            <h:outputLabel value="Client :" />
+                                            <h:selectOneMenu  label="client" value="#{wS_AccessManagementMB.selectedWS_Client}" multiple="true" filter="true" 
+                                                                  filterMatchMode="startsWith"
+                                                                  converter="ws_clientConverter"
+                                                                   disabled="#{wS_AccessManagementMB.do_view}" 
+                                                                   style="width:250px">
+                                                <f:selectItems value="#{wS_AccessManagementMB.listws_client}" var="client" itemLabel="#{client.client_name}" itemValue="#{client}"/>
+
+                                            </h:selectOneMenu>
+                                            
+                                            <h:outputLabel value="Block API :" />
+                                            <h:selectOneMenu  label="block_api" value="#{wS_AccessManagementMB.selectedWS_Block_API}" multiple="true" filter="true" 
+                                                                  filterMatchMode="startsWith"
+                                                                  disabled="#{wS_AccessManagementMB.do_view}" 
+                                                                  converter="ws_block_apiConverter"
+                                                                  style="width:250px">
+                                                <f:selectItems value="#{wS_AccessManagementMB.listWS_Block_API}" var="block_api" itemLabel="#{block_api.block_api_name}" itemValue="#{block_api}"/>
+
+                                            </h:selectOneMenu>
+                                            
+                                            <h:outputLabel value="Description :" />
+                                            <p:inputTextarea value="#{wS_AccessManagementMB.selectedWS_AccessManagement.description}"  rows="5" cols="35" 
+                                                                     disabled="#{wS_AccessManagementMB.do_view}"
+                                                                     autoResize="false" />
+                                           
+                                             <f:facet name="footer">
+                                                 <h:commandButton value="Enable Edit" action="#{wS_AccessManagementMB.enableEdit}" rendered="#{wS_AccessManagementMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{wS_AccessManagementMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{wS_AccessManagementMB.delete}" rendered="#{wS_AccessManagementMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                 </h:commandButton>
+                                                <h:commandButton value="Add" action="#{wS_AccessManagementMB.onAddNew}" rendered="#{wS_AccessManagementMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{wS_AccessManagementMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{wS_AccessManagementMB.edit}" rendered="#{wS_AccessManagementMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{wS_AccessManagementMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{wS_AccessManagementMB.clear}" rendered="#{wS_AccessManagementMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                 </h:commandButton> 
+                                              </f:facet>
+                                        </p:panelGrid>
+                                        <p:spacer height="30px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{wS_AccessManagementMB.listWS_AccessManagement}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+                               
+                                            <p:column headerText="ID" filterBy="#{o.ws_access_mng_id}" sortBy="#{o.ws_access_mng_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.ws_access_mng_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="Access Name" filterBy="#{o.access_name}" sortBy="#{o.access_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.access_name}"/> 
+                                            </p:column>
+
+                                          
+                                            <p:column headerText="Start Time" filterBy="#{o.start_time}" sortBy="#{o.start_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.start_time}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="End Time" filterBy="#{o.expire_time}" sortBy="#{o.expire_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.expire_time}"/> 
+                                            </p:column>
+                                            
+                                            
+                                            <p:column headerText="Client" filterBy="#{o.ws_client.client_name}" sortBy="#{o.ws_client.client_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.ws_client.client_name}"/> 
+                                            </p:column>
+                                            
+                                            <p:column headerText="Webservice" filterBy="#{wS_AccessManagementMB.allWebservice}" sortBy="#{wS_AccessManagementMB.allWebservice}" filterMatchMode="contains">
+                                                <h:outputText value="#{wS_AccessManagementMB.getWebservice(o.access_name)}" escape="false" style="white-space: pre-wrap;word-wrap: break-word; " /> 
+                                            </p:column>
+                                                           
+                                             <p:column headerText="Description" filterBy="#{o.description}" sortBy="#{o.description}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.description}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Create date" filterBy="#{o.create_time}" sortBy="#{o.create_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.create_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.update_time}" sortBy="#{o.update_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.update_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{wS_AccessManagementMB.view(o)}" update="datatable_grid,:form1:rolecrud,:form1:messages"  process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   
+

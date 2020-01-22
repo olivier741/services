@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+
+<h:head>
+        <title>Login</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="#{request.contextPath}/Login/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/vendor/bootstrap/css/bootstrap.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/fonts/iconic/css/material-design-iconic-font.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/vendor/animate/animate.css"/>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/vendor/css-hamburgers/hamburgers.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/vendor/animsition/css/animsition.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/vendor/select2/select2.min.css"/>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/vendor/daterangepicker/daterangepicker.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/css/util.css"/>
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/Login/css/main.css"/>
+<!--===============================================================================================-->
+    </h:head>
+    <h:body style="background-color: #999999;">
+        	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url('#{request.contextPath}/Login/images/bg-01.jpg');"></div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<h:form prependId="false" styleClass="login100-form validate-form">
+					<span class="login100-form-title p-b-59">
+						LOGIN
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email or username is required ">
+						<span class="label-input100">Username / Email</span>
+                                                
+                                                 <h:inputText value="#{logonMB.email}"  styleClass="input100" required="true" requiredMessage="Login is required."/>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+                                                <h:inputSecret value="#{logonMB.password}"  styleClass="input100" required="true" requiredMessage="Password is required."/>
+						<span class="focus-input100"></span>
+					</div>
+
+
+					<div class="flex-m w-full p-b-33">
+						<div class="contact100-form-checkbox">
+                                                    <h:selectBooleanCheckbox  label="Remember Me" value="#{logonMB.remember}"/>
+                                                    Remember Me
+                                                    <br/>
+                                                    <h:selectBooleanCheckbox label="contract" value="#{logonMB.contract}"/>
+									I agree to the
+									<a href="#" class="txt2 hov1">
+										Terms of User
+									</a>
+							
+						</div>
+
+						
+					</div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+                                                         
+                                                         <h:commandButton action="#{logonMB.login()}" value="CONNECT" styleClass="login100-form-btn"/>
+							
+						</div>
+					</div>
+				</h:form>
+			</div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="#{request.contextPath}/Login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="#{request.contextPath}/Login/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="#{request.contextPath}/Login/vendor/bootstrap/js/popper.js"></script>
+	<script src="#{request.contextPath}/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="#{request.contextPath}/Login/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="#{request.contextPath}/Login/vendor/daterangepicker/moment.min.js"></script>
+	<script src="#{request.contextPath}/Login/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="#{request.contextPath}/Login/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="#{request.contextPath}/Login/js/main.js"></script>
+    </h:body>
+</html>
+

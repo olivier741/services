@@ -1,0 +1,11 @@
+27/09/2019 11:09:07.325  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+27/09/2019 11:09:07.982  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "d7926d5e-e10e-11e9-b8d7-a51688935f6f",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "FLASH1"
+}
+27/09/2019 11:09:07.982  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = FLASH1 ]
+27/09/2019 11:09:08.210  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 5 -- offset: 3

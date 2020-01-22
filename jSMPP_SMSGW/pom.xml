@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jsmpp-pom</artifactId>
+        <groupId>org.jsmpp</groupId>
+        <version>2.3.6</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jSMPP_SMSGW</artifactId>
+
+    <name>jSMPP_SMSGW</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jsmpp</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>25.1-jre</version>
+        </dependency>
+        
+        
+        
+         <!-- logging -->
+
+                <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                    <version>1.7.5</version>
+                </dependency>
+                
+                <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-simple</artifactId>
+                    <version>1.6.4</version>
+                </dependency>
+              
+                <dependency>
+                    <groupId>org.perf4j</groupId>
+                    <artifactId>perf4j</artifactId>
+                    <version>0.9.14</version>
+                </dependency>
+                
+                <!--Log4j2 API -->
+                 <dependency>
+                    <groupId>commons-configuration</groupId>
+                    <artifactId>commons-configuration</artifactId>
+                    <version>1.4</version>
+                    <!--force usage of log4j2-->
+                    <exclusions>
+                        <exclusion>
+                            <groupId>log4j</groupId>
+                            <artifactId>log4j</artifactId>
+                        </exclusion>
+                          <exclusion>
+                                <groupId>javax.servlet</groupId>
+                                <artifactId>servlet-api</artifactId>
+                          </exclusion>
+                    </exclusions>
+                </dependency>
+                
+                
+                <dependency>
+                    <groupId>org.apache.kafka</groupId>
+                    <artifactId>kafka_2.10</artifactId>
+                    <version>0.8.2.0</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.apache.logging.log4j</groupId>
+                            <artifactId>log4j-core</artifactId>                
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.apache.log4j</groupId>
+                            <artifactId>log4j-core</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>log4j</groupId>
+                            <artifactId>log4j</artifactId>
+                        </exclusion>          
+                    </exclusions>
+                </dependency>
+
+                
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-api</artifactId>
+                    <version>2.3</version>
+                </dependency>
+                
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
+                    <version>2.3</version>
+                </dependency>
+                
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-1.2-api</artifactId>
+                    <version>2.3</version>
+                </dependency>
+                
+                <dependency>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-web</artifactId>
+                    <version>2.3</version>
+                </dependency>
+                
+                
+                <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                    <version>1.7.25</version>
+                </dependency>
+                
+                 <!-- xml -->
+                <dependency>
+                    <groupId>org.simpleframework</groupId>
+                    <artifactId>simple-xml</artifactId>
+                    <version>2.7.1</version>
+                </dependency>
+                 
+                <!-- email -->                 
+                                                              
+                <dependency>
+                    <groupId>javax.mail</groupId>
+                    <artifactId>mail</artifactId>
+                    <version>1.4.7</version>
+                </dependency>
+                
+                 <!-- Filter-->
+                <dependency>
+                    <groupId>commons-collections</groupId>
+                    <artifactId>commons-collections</artifactId>
+                    <version>3.2.2</version>
+                </dependency>
+                
+                <!-- pooling object-->
+               <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>2.5.0</version>
+              </dependency>
+                
+                <!-- web service cxf --> 
+                
+                
+                <dependency>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-collections4</artifactId>
+                    <version>4.0</version>
+                </dependency>
+
+
+                <dependency>
+                    <groupId>commons-lang</groupId>
+                    <artifactId>commons-lang</artifactId>
+                    <version>2.6</version>
+                </dependency>
+
+               <dependency>
+                    <groupId>org.apache.cxf</groupId>
+                    <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                    <version>${cxf.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.cxf</groupId>
+                    <artifactId>cxf-rt-transports-http</artifactId>
+                    <version>${cxf.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.cxf</groupId>
+                    <artifactId>cxf-rt-transports-http-jetty</artifactId>
+                    <version>${cxf.version}</version>
+               </dependency>
+
+                <dependency>
+                    <groupId>org.apache.wss4j</groupId>
+                    <artifactId>wss4j</artifactId>
+                    <version>2.2.1</version>
+                    <type>pom</type>
+                </dependency>
+
+               <dependency>
+                    <groupId>org.apache.cxf</groupId>
+                    <artifactId>cxf-rt-ws-security</artifactId>
+                    <version>${cxf.version}</version>
+                </dependency>
+                
+                 <dependency>
+                    <groupId>com.github.jaceko.cxf</groupId>
+                    <artifactId>cxf-circuit-switcher</artifactId>
+                    <version>1.0</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>commons-codec</groupId>
+                    <artifactId>commons-codec</artifactId>
+                    <version>1.2</version>
+                </dependency>
+                
+                <dependency>
+                  <groupId>javax.servlet</groupId>
+                  <artifactId>javax.servlet-api</artifactId>
+                  <version>3.1.0</version>
+                </dependency>
+
+            <!-- wrapper -->
+                 <dependency>
+                    <groupId>tanukisoft</groupId>
+                    <artifactId>wrapper</artifactId>
+                    <version>3.2.3</version>
+                    <scope>provided</scope>
+                </dependency>
+
+
+    </dependencies>
+    
+       <build>
+         <finalName>SMSGW</finalName>
+       
+        <plugins>
+            <!-- Set a JDK compiler level -->
+              <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                            <source>1.8</source>
+                            <target>1.8</target>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                  <groupId>org.codehaus.mojo</groupId>
+                  <artifactId>appassembler-maven-plugin</artifactId>
+                  <version>1.10</version>
+                  <executions>
+                    <execution>
+                      <id>generate-jsw-scripts</id>
+                      <phase>package</phase>
+                      <goals>
+                        <goal>generate-daemons</goal>
+                      </goals>
+                      <configuration>
+                        <repositoryLayout>flat</repositoryLayout>
+                        <target>${project.build.directory}/daemon</target>
+
+                        <configurationDirectory>etc</configurationDirectory>
+                        <configurationSourceDirectory>etc</configurationSourceDirectory>
+                        <copyConfigurationDirectory>true</copyConfigurationDirectory>
+
+                        <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
+                        <logsDirectory>logs</logsDirectory>
+                        <daemons>
+                          <daemon>
+                            <id>SMSGW</id>
+                            <!-- the next line is added by default if you don't have wrapperMainClass's setting -->
+                            <wrapperMainClass>org.tanukisoftware.wrapper.WrapperSimpleApp</wrapperMainClass>
+                            <mainClass>com.tatsinktechnologic.main.SMSGW</mainClass>
+                            <!-- <commandLineArguments> 
+                                    <commandLineArgument>start</commandLineArgument> 
+                            </commandLineArguments> -->
+                            <jvmSettings> 
+                                    <initialMemorySize>20M</initialMemorySize> 
+                                    <maxMemorySize>200M</maxMemorySize> 
+                                    <maxStackSize>128M</maxStackSize> 
+                                    
+                                    <extraArguments>
+                                        <extraArgument>-Dlog4j.configuration=etc/log4j.cfg</extraArgument>
+                                        <extraArgument>-Dcom.sun.management.jmxremote</extraArgument>
+                                        <extraArgument>-Dcom.sun.management.jmxremote.ssl=false</extraArgument>
+                                        <extraArgument>-Dcom.sun.management.jmxremote.authenticate=false</extraArgument>
+                                        <extraArgument>-Dcom.sun.management.jmxremote.port=2101</extraArgument>
+                                    </extraArguments>
+                            </jvmSettings>
+
+                            <platforms>
+                              <platform>jsw</platform>
+                            </platforms>
+
+                            <generatorConfigurations>
+                                <generatorConfiguration>
+                                  <generator>jsw</generator>
+                                  <includes>
+                                    <include>aix-ppc-32</include>
+                                    <include>aix-ppc-64</include>
+                                    <include>hpux-parisc-64</include>                               
+                                    <include>solaris-sparc-32</include>
+                                    <include>solaris-sparc-64</include>
+                                    <include>linux-x86-32</include>
+                                    <include>linux-x86-64</include>
+                                    <include>linux-ppc-32</include>
+                                    <include>linux-ppc-64</include>
+                                    <include>macosx-universal-32</include>
+                                    <include>macosx-universal-64</include>
+                                    <include>windows-x86-32</include>
+                                    <include>windows-x86-64</include>
+                                    <include>windows-ppc-32</include>
+                                    <include>windows-ppc-64</include>
+                                  </includes>
+                                  
+                                  <configuration>
+                                      <property>
+                                            <name>wrapper.pidfile</name>
+                                            <value>../bin</value>
+                                        </property>
+                                        <property>
+                                            <name>wrapper.logfile</name>
+                                            <value>log/wrapper/wrapper.log.YYYYMMDD</value>
+                                        </property>
+                                        <property>
+                                            <name>wrapper.logfile.rollmode</name>
+                                            <value>DATE</value>
+                                        </property>
+                                    </configuration>                                 
+                                </generatorConfiguration>
+                               </generatorConfigurations> 
+                          </daemon>
+                        </daemons>
+                      </configuration>
+                    </execution>
+                  </executions>
+                </plugin> 
+                <plugin>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.8</version>
+                    <executions>
+                            <execution>
+                                    <phase>package</phase>
+                                    <configuration>
+                                            <target>
+                                                    <mkdir dir="${project.build.directory}/daemon/jsw/SMSGW/log/wrapper"/>
+                                            </target>
+                                    </configuration>
+                                    <goals>
+                                            <goal>run</goal>
+                                    </goals>
+                            </execution>
+                    </executions>
+            </plugin>
+         
+         <!-- GENERATE WSDL -->  
+         <plugin>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-java2ws-plugin</artifactId>
+            <version>${cxf.version}</version>
+            <dependencies>
+                <dependency>
+                    <groupId>org.apache.cxf</groupId>
+                    <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                    <version>${cxf.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.apache.cxf</groupId>
+                    <artifactId>cxf-rt-frontend-simple</artifactId>
+                    <version>${cxf.version}</version>
+                </dependency>
+            </dependencies>
+
+            <executions>
+                <execution>
+                    <id>process-classes</id>
+                    <phase>process-classes</phase>
+                    <configuration>
+                        <className>com.tatsinktechnologic.ws.interfaces.Sender_SMSInterface</className>
+                        <genWsdl>true</genWsdl>
+                        <verbose>true</verbose>
+                        <outputFile>${project.build.directory}/../etc/wsdl/Sender_SMSInterface.wsdl</outputFile>   
+                        <address>http://127.0.0.1:8935/sender_sms?wsdl</address> 
+                        <!--
+                            <className>...</className>
+                            <classpath>...</classpath>
+                            <outputFile>...</outputFile>
+                            <genWsdl>true</genWsdl>
+                            <genServer>false</genServer>
+                            <genClient>false</genClient>
+                            <genWrapperbean>false</genWrapperbean>
+                            <frontend>jaxws</frontend>
+                            <databinding>jaxb</databinding>
+                            <serviceName>...</serviceName>
+                            <soap12>false</soap12>
+                            <targetNameSpace>...</targetNameSpace>
+                            <verbose>false</verbose>
+                            <quiet>false</quiet>
+                            <attachWsdl>true</attachWsdl>
+                            <address>...</address>                  
+                       -->                                                       
+                    </configuration>
+                    <goals>
+                        <goal>java2ws</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>                                                                                                                                                                                                                                                                                                                              
+       </plugins>
+ </build> 
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <cxf.version>3.2.4</cxf.version>
+    </properties>
+
+</project>

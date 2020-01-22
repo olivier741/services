@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    PROMOTION MANAGEMENT
+                    <small>Promotion informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+                                                                        
+                                    <p:panel header="Operate on the Promotion / List Promotions" > 
+                                        <p:panelGrid id="rolecrud" cellpadding="5" columns="3">
+                                                                                   
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Promotion Name :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{promotionMB.selectedPromotion.promotion_name}" required="true" disabled="#{promotionMB.do_view}" />
+                                                </p:column>
+                                            </p:row>
+                                            
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Start Time :" style="width:100px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:calendar id="datetime1" value="#{promotionMB.start_time}" 
+                                                                mode="popup" 
+                                                                pattern="MM/dd/yyyy" 
+                                                                placeholder="__/__/____" 
+                                                                disabled="#{promotionMB.do_view}" 
+                                                                />
+                                                </p:column>
+                                                <br/>
+                                                <br/>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Hour " />
+                                                </p:column>
+                                                :
+                                                <p:column style="font-weight: bold;">
+                                                    <p:spinner value="#{promotionMB.start_hour}" min="0" max="23" disabled="#{promotionMB.do_view}" style="width:50px"/>
+                                                </p:column>
+                                                <p:spacer width="15px;" />
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Min " />
+                                                </p:column>
+                                                :
+                                                <p:column style="font-weight: bold;">
+                                                    <p:spinner value="#{promotionMB.start_min}" min="0" max="59" disabled="#{promotionMB.do_view}" style="width:50px"/>
+                                                </p:column>
+                                               <p:spacer width="15px;" />
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Sec " />
+                                                </p:column>
+                                               :
+                                                <p:column style="font-weight: bold;">
+                                                    <p:spinner  value="#{promotionMB.start_sec}" min="0" max="59" disabled="#{promotionMB.do_view}" style="width:50px"/>
+                                                </p:column>
+                                            </p:row>
+                                            
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="End Time :" style="width:100px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:calendar id="datetime2" value="#{promotionMB.end_time}" mode="popup" pattern="MM/dd/yyyy" placeholder="__/__/____" disabled="#{promotionMB.do_view}" />
+                                                </p:column>
+                                                <br/>
+                                                <br/>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Hour  " />
+                                                </p:column>
+                                                :
+                                                <p:column style="font-weight: bold;">
+                                                    <p:spinner value="#{promotionMB.end_hour}" min="0" max="23" disabled="#{promotionMB.do_view}" style="width:50px"/>
+                                                </p:column>
+                                                <p:spacer width="15px;" />
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Min " />
+                                                </p:column>
+                                                :
+                                                <p:column style="font-weight: bold;">
+                                                    <p:spinner value="#{promotionMB.end_min}" min="0" max="59" disabled="#{promotionMB.do_view}" style="width:50px"/>
+                                                </p:column>
+                                               <p:spacer width="15px;" />
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Sec  " />
+                                                </p:column>
+                                                :
+                                                <p:column style="font-weight: bold;">
+                                                    <p:spinner  value="#{promotionMB.end_sec}" min="0" max="59" disabled="#{promotionMB.do_view}" style="width:50px"/>
+                                                </p:column>
+                                            </p:row>
+                                            
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Filter Mode :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:selectOneMenu value="#{promotionMB.selectedPromotion.promotion_filter}" disabled="#{promotionMB.do_view}" style="width:180px">
+                                                        <f:selectItem itemValue="TABLE" itemLabel="TABLE" />
+                                                        <f:selectItem itemValue="REGEX" itemLabel="REGEX" />
+                                                    </h:selectOneMenu>
+                                                </p:column>
+                                            </p:row>
+
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Msisdn Table :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{promotionMB.selectedPromotion.msisdn_table}" disabled="#{promotionMB.do_view}" />
+                                                </p:column>
+                                            </p:row>
+                                            
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Msisdn Regex  :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{promotionMB.selectedPromotion.msisdn_regex}" disabled="#{promotionMB.do_view}"/>
+                                                </p:column>
+                                            </p:row>
+                                            
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Enable Extend :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputSwitch value="#{promotionMB.selectedPromotion.isExtend}" onLabel="EXT" offLabel="NOT EXT" disabled="#{promotionMB.do_view}" style="width:180px"/>
+                                                </p:column>
+                                            </p:row>
+                                            
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Registration Amount :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{promotionMB.selectedPromotion.promotion_reg_fee}" disabled="#{promotionMB.do_view}" />
+                                                </p:column>
+                                            </p:row>
+
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Extend Amount :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{promotionMB.selectedPromotion.promotion_ext_fee}" disabled="#{promotionMB.do_view}" />
+                                                </p:column>
+                                            </p:row>
+                                            
+                                            
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Redunction Mode :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:selectOneMenu value="#{promotionMB.selectedPromotion.reduction_mode}" disabled="#{promotionMB.do_view}" style="width:180px">
+                                                        <f:selectItem itemValue="PERCENTAGE" itemLabel="PERCENTAGE" />
+                                                        <f:selectItem itemValue="VALUE" itemLabel="VALUE" />
+                                                    </h:selectOneMenu>
+                                                </p:column>
+                                            </p:row>
+                                            
+                                           <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Reduction Reg Amount :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                     <p:inputText  value="#{promotionMB.selectedPromotion.percentage_reg}" disabled="#{promotionMB.do_view}" />
+                                                </p:column>
+                                            </p:row>
+
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Redunction Ext Amount :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                     <p:inputText  value="#{promotionMB.selectedPromotion.percentage_ext}" disabled="#{promotionMB.do_view}" />
+                                                </p:column>
+
+                                            </p:row>
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Description :" style="width:150px"/>
+                                                </p:column>
+                                                <br/>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputTextarea value="#{promotionMB.selectedPromotion.description}"  rows="5" cols="45" 
+                                                                     disabled="#{promotionMB.do_view}"
+                                                                     counterTemplate="{0} characters remaining." 
+                                                                     autoResize="false" />
+                                                </p:column>
+                                            </p:row>
+                                               
+                                            
+                                            
+                                            <f:facet name="footer">
+                                                 <h:commandButton value="Enable Edit" action="#{productMB.enableEdit}" rendered="#{productMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{promotionMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{promotionMB.delete}" rendered="#{promotionMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                 </h:commandButton>
+                                                <h:commandButton value="Add" action="#{promotionMB.onAddNew}" rendered="#{promotionMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{promotionMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{promotionMB.edit}" rendered="#{promotionMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{promotionMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{promotionMB.clear}" rendered="#{promotionMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                 </h:commandButton> 
+                                              </f:facet>
+        
+                                         
+                                        </p:panelGrid>
+                                        <p:spacer height="30px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{promotionMB.listPromotion}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+
+                                            <p:column headerText="ID" filterBy="#{o.promotion_id}" sortBy="#{o.promotion_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.promotion_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="Promotion Name" filterBy="#{o.promotion_name}" sortBy="#{o.promotion_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.promotion_name}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Filter Mode" filterBy="#{o.promotion_filter}" sortBy="#{o.promotion_filter}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.promotion_filter}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Start Time" filterBy="#{o.start_time}" sortBy="#{o.start_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.start_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="End Time" filterBy="#{o.end_time}" sortBy="#{o.end_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.end_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Reduction Mode" filterBy="#{o.reduction_mode}" sortBy="#{o.reduction_mode}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.reduction_mode}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Enable Extend" filterBy="#{o.isExtend}" sortBy="#{o.isExtend}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.isExtend}"/> 
+                                            </p:column>
+                                            
+                                            <p:column headerText="Create date" filterBy="#{o.create_time}" sortBy="#{o.create_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.create_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.update_time}" sortBy="#{o.update_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.update_time}"/> 
+                                            </p:column>
+
+
+                                              <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{promotionMB.view(o)}" update="datatable_grid,:form1:rolecrud,:form1:messages"  process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+    
+     <!-- Page script -->
+        <script>
+          $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Datemask dd/mm/yyyy
+            $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+            //Datemask2 mm/dd/yyyy
+            $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+            //Money Euro
+            $('[data-mask]').inputmask()
+
+            //Date range picker
+            $('#reservation').daterangepicker()
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, locale: { format: 'MM/DD/YYYY hh:mm A' }})
+            //Date range as a button
+            $('#daterange-btn').daterangepicker(
+              {
+                ranges   : {
+                  'Today'       : [moment(), moment()],
+                  'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+                  'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                  'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+                  'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                startDate: moment().subtract(29, 'days'),
+                endDate  : moment()
+              },
+              function (start, end) {
+                $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+              }
+            )
+
+            //Date picker
+            $('#datepicker').datepicker({
+              autoclose: true
+            })
+
+            //iCheck for checkbox and radio inputs
+            $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+              checkboxClass: 'icheckbox_minimal-blue',
+              radioClass   : 'iradio_minimal-blue'
+            })
+            //Red color scheme for iCheck
+            $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+              checkboxClass: 'icheckbox_minimal-red',
+              radioClass   : 'iradio_minimal-red'
+            })
+            //Flat red color scheme for iCheck
+            $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+              checkboxClass: 'icheckbox_flat-green',
+              radioClass   : 'iradio_flat-green'
+            })
+
+            //Colorpicker
+            $('.my-colorpicker1').colorpicker()
+            //color picker with addon
+            $('.my-colorpicker2').colorpicker()
+
+            //Timepicker
+            $('.timepicker').timepicker({
+              showInputs: false
+            })
+          })
+       </script>
+</ui:composition>   
+

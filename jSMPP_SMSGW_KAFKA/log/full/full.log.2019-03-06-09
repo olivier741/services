@@ -1,0 +1,42 @@
+06/03/2019 09:31:42.829  INFO [main] SMSGW: Load log4j config file done.
+06/03/2019 09:31:42.831  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+06/03/2019 09:31:42.990  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+06/03/2019 09:31:56.275  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+06/03/2019 09:32:00.845  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+06/03/2019 09:32:05.373  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+06/03/2019 09:32:09.907  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+06/03/2019 09:32:14.452  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+06/03/2019 09:32:19.002  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+06/03/2019 09:32:23.541  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+06/03/2019 09:32:23.950  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+06/03/2019 09:32:24.014  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+06/03/2019 09:33:00.398  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+06/03/2019 09:33:00.754  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "service_id" : "pubdate",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8965",
+  "content" : "on"
+}
+06/03/2019 09:33:00.754  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo_pubdate | 4477665544 --> 8965 [msg = on ]
+06/03/2019 09:33:00.972  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo_pubdate -- Partition: 8 -- offset: 1
+06/03/2019 09:50:07.200  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+06/03/2019 09:50:42.888  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mo-topic-1, mo-topic-0, mo-topic-5, mo-topic-4, mo-topic-3, mo-topic-2, mo-topic-9, mo-topic-8, mo-topic-7, mo-topic-6]
+06/03/2019 09:50:56.014 ERROR [pool-3-thread-2] SMSGW_Thread: cannot convert message to Oject
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Producer_test_0': was expecting ('true', 'false' or 'null')
+ at [Source: (String)"Producer_test_0 send message - 1"; line: 1, column: 16]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:703)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2853)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1899)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:757)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at com.tatsinktechnologic.ws.server.SMSGW_Thread.convertJSON(SMSGW_Thread.java:124)
+	at com.tatsinktechnologic.ws.server.SMSGW_Thread.run(SMSGW_Thread.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06/03/2019 09:50:59.982  INFO [pool-3-thread-3] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+06/03/2019 09:56:03.181  INFO [pool-3-thread-3] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9, mt_gameshow-0]

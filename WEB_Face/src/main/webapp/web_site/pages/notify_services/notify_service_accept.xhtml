@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    NOTIFY SERVICE
+                    <small>Provided SMS</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+                                    <p:panel header="ACCEPT SMS " > 
+                                        <p:panelGrid id="rolecrud" columns="2">
+
+                                            <h:outputLabel value="Notify Name :" />
+                                            <p:inputText  value="#{contentMessage_AcceptMB.selectedContentMessage.content_label}" required="true" disabled="true" style="width:400px"/>
+
+                                            <h:outputLabel value="Message Status :"  />                                       
+                                            <h:selectOneMenu value="#{contentMessage_AcceptMB.selectedContentMessage.message_status}" disabled="#{contentMessage_AcceptMB.do_view}" style="width:400px">
+                                                <f:selectItem itemValue="CONFIRM" itemLabel="CONFIRM" />
+                                                 <f:selectItem itemValue="ACCEPT" itemLabel="ACCEPT" />
+
+                                            </h:selectOneMenu>
+
+                                            <h:outputLabel value="Service :"  /> 
+                                            <h:selectOneMenu  label="Service" value="#{contentMessage_AcceptMB.selectedService}" 
+                                                              disabled="true" 
+                                                              converter="serviceConverter"
+                                                              style="width:400px">                                                        
+                                                <f:selectItems value="#{contentMessage_AcceptMB.listservice}" var="service" itemLabel="#{service.service_name}" itemValue="#{service}"/>
+
+                                            </h:selectOneMenu>
+                                            
+                                            <h:outputLabel value="Launch Time :"  />  
+                                            <p:inputText  value="#{contentMessage_AcceptMB.selectedContentMessage.launch_time}" required="true" disabled="true" style="width:400px"/>
+                                            
+
+                                            <h:outputLabel value="Expire Time :"  /> 
+                                            <p:inputText  value="#{contentMessage_AcceptMB.selectedContentMessage.expire_time}" required="true" disabled="true" style="width:400px"/>
+
+                                            <h:outputLabel value="Submit Time :"  />  
+                                            <p:inputText  value="#{contentMessage_AcceptMB.selectedContentMessage.submit_time}" required="true" disabled="true" style="width:400px"/>
+                                            
+                                       
+                                            <h:outputLabel value="Confirm Time :"  />  
+                                            <p:inputText  value="#{contentMessage_AcceptMB.selectedContentMessage.confirm_time}" required="true" disabled="true" style="width:400px"/>
+                                            
+                                       
+                                            <h:outputLabel value="Message :"  />   
+                                             <p:inputTextarea  value="#{contentMessage_AcceptMB.selectedContentMessage.message}"   rows="10" cols="55" 
+                                                             disabled="true"
+                                                             autoResize="false" />
+                                           
+
+                                            <h:outputLabel value="Description :" />
+                                            <p:inputTextarea value="#{contentMessage_AcceptMB.selectedContentMessage.description}"  rows="3" cols="55" 
+                                                             disabled="true"
+                                                             autoResize="false" />
+
+                                            <f:facet name="footer">
+                                                <h:commandButton value="Enable Edit" action="#{contentMessage_AcceptMB.enableEdit}" rendered="#{contentMessage_AcceptMB.do_enable}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{contentMessage_AcceptMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{contentMessage_AcceptMB.edit}" rendered="#{contentMessage_AcceptMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{contentMessage_AcceptMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{contentMessage_AcceptMB.clear}" rendered="#{contentMessage_AcceptMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                </h:commandButton> 
+                                            </f:facet>
+                                        </p:panelGrid>
+                                        <p:spacer height="30px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{contentMessage_AcceptMB.listContentMessage}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+
+                                            <p:column headerText="ID" filterBy="#{o.content_id}" sortBy="#{o.content_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.content_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="Content Name" filterBy="#{o.content_label}" sortBy="#{o.content_label}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.content_label}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Message Status" filterBy="#{o.message_status}" sortBy="#{o.message_status}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.message_status}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Submit Time" filterBy="#{o.submit_time}" sortBy="#{o.submit_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.submit_time}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Confirm Time" filterBy="#{o.confirm_time}" sortBy="#{o.confirm_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.confirm_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Accept Time" filterBy="#{o.accpt_time}" sortBy="#{o.accpt_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.accpt_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Launch Time" filterBy="#{o.launch_time}" sortBy="#{o.launch_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.launch_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Expire Time" filterBy="#{o.expire_time}" sortBy="#{o.expire_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.expire_time}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Description" filterBy="#{o.description}" sortBy="#{o.description}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.description}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.update_time}" sortBy="#{o.update_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.update_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{contentMessage_AcceptMB.view(o)}" update="datatable_grid,:form1:rolecrud,:form1:messages"  process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   

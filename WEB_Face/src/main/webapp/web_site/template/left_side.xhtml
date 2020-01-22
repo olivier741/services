@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition> 
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="#{request.contextPath}/web_site/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                    </div>
+                    <div class="pull-left info">
+                        <p>#{logonMB.user.firstname}  #{logonMB.user.lastname}</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>SYSTEM MANAGEMENT</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/permissions/permission.xhtml')) }" outcome="/web_site/pages/permissions/permission.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>List Permissions or URLs</span>
+                                </h:link>
+                            </li>
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/roles/role.xhtml')) }" outcome="/web_site/pages/roles/role.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Roles Management</span>
+                                </h:link>
+                            </li>
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/contacts/contact.xhtml')) }" outcome="/web_site/pages/contacts/contact.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Contacts Management</span>
+                                </h:link>
+                            </li>
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/users/user.xhtml')) }" outcome="/web_site/pages/users/user.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Users Management</span>
+                                </h:link>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="active treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>SERVICES SETTING</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/services/service.xhtml')) }" outcome="/web_site/pages/services/service.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Service Management</span>
+                                </h:link>
+                            </li>
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/promotions/promotion.xhtml')) }" outcome="/web_site/pages/promotions/promotion.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Promotion Management</span>
+                                </h:link>
+                            </li>
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/products/product.xhtml')) }" outcome="/web_site/pages/products/product.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Product Management</span>
+                                </h:link>
+                            </li>
+
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/actions/action.xhtml')) }" outcome="/web_site/pages/actions/action.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Action Management</span>
+                                </h:link>
+                            </li>
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/parameters/parameter.xhtml')) }" outcome="/web_site/pages/parameters/parameter.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Parameter Management</span>
+                                </h:link>
+                            </li>
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/commands/command.xhtml')) }" outcome="/web_site/pages/commands/command.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Command Management</span>
+                                </h:link>
+                            </li>
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/notifications/notification.xhtml')) }" outcome="/web_site/pages/notifications/notification.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>SMS Management</span>
+                                </h:link>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="active treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>API GATEWAY SETTING</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/webservices/api_client.xhtml')) }" outcome="/web_site/pages/webservices/api_client.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>API Client Management</span>
+                                </h:link>
+                            </li>
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/webservices/api_webservice.xhtml')) }" outcome="/web_site/pages/webservices/api_webservice.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Webservice Management</span>
+                                </h:link>
+                            </li>
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/webservices/block_api.xhtml')) }" outcome="/web_site/pages/webservices/block_api.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>API Block Management</span>
+                                </h:link>
+                            </li>
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/webservices/access_management.xhtml')) }" outcome="/web_site/pages/webservices/access_management.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Access Management</span>
+                                </h:link>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <li class="active treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>USSD MANAGEMENT</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/ussd/ussd_menu.xhtml')) }" outcome="/web_site/pages/ussd/ussd_menu.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>USSD MENU</span>
+                                </h:link>
+                            </li>
+                           
+
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class="active treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>NOTIFY SERVICE</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/notify_services/notify_service_submit.xhtml')) }" outcome="/web_site/pages/notify_services/notify_service_submit.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Submit</span>
+                                </h:link>
+                            </li>
+                            
+                             <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/notify_services/notify_service_confirm.xhtml')) }" outcome="/web_site/pages/notify_services/notify_service_confirm.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Confirm</span>
+                                </h:link>
+                            </li>
+                            
+                             <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/notify_services/notify_service_accept.xhtml')) }" outcome="/web_site/pages/notify_services/notify_service_accept.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>Accept</span>
+                                </h:link>
+                            </li>
+                           
+
+                        </ul>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                          <li class="active treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>CHAT SERVICE</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/chat/chat_group.xhtml')) }" outcome="/web_site/pages/chat/chat_group.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>CHAT GROUP</span>
+                                </h:link>
+                            </li>
+
+                            <li>
+                                <h:link rendered="#{logonMB.subject.hasRole(logonMB.getRoleByUserAndPermission(logonMB.currentUser,'/web_site/pages/chat/chat.xhtml')) }" outcome="/web_site/pages/chat/chat.xhtml">                              
+                                    <i class="fa fa-circle-o"></i>
+                                    <span>SMS CHAT</span>
+                                </h:link>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+    </ui:composition>
+</ui:composition>
+

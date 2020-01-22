@@ -1,0 +1,4 @@
+05/12/2019 09:27:38.508 ERROR [pool-3-thread-1] Process_Register: API-GATEWAY Authentication issue 
+05/12/2019 09:27:38.604  WARN [pool-2-thread-1] Sender: Msisdn :661000504 --> Channel : 8755 --> Notification Code : REG-PRODUCT-SUCCESS-OVERIDE-CHO1 --> Message Not provide in DB
+05/12/2019 10:11:39.506 ERROR [pool-3-thread-1] Process_Register: API-GATEWAY Authentication issue 
+05/12/2019 10:11:39.558  WARN [pool-2-thread-1] Sender: Msisdn :661000504 --> Channel : 8755 --> Notification Code : REG-PRODUCT-SUCCESS-OVERIDE-CHO1 --> Message Not provide in DB

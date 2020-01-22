@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    WEBSERVICE API GATEWAY MANAGEMENT
+                    <small>Webservice Api Gateway informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" sticky="true" showDetail="true"/>
+                                    <p:panel header="Operate on the Webservice Api Gateway / List Webservice Api Gateway" > 
+                                        
+                                        <p:wizard flowListener="#{wS_webserviceMB.onFlowProcess}">
+                                            <p:tab id="api_commun" title="API Identity">
+                                                <p:panel header="Provide Detail Informaion about  API Identity">
+                                                   <p:messages />
+                                                    <p:panelGrid id="rolecrud1" columns="2" >
+                                                        <h:outputLabel value="Webservice Name :" style="width:200px"/>
+                                                        <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.webservice_name}" disabled="#{wS_webserviceMB.do_view}" required="true" style="width:500px"/>
+                                                         
+                                                         <h:outputLabel value="Operator  :"/> 
+                                                         <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_operator}" disabled="#{wS_webserviceMB.do_view}" style="width:500px"/>
+
+                                                        <h:outputLabel value="API Type  :"/> 
+                                                        <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.webservice_type}" disabled="#{wS_webserviceMB.do_view}" style="width:500px">
+                                                            <f:selectItem itemValue="REST" itemLabel="REST" />
+                                                            <f:selectItem itemValue="SOAP" itemLabel="SOAP" />
+                                                        </h:selectOneMenu>
+
+                                                        <h:outputLabel value="Max Connextion  :"/> 
+                                                        <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_max_connexion}" disabled="#{wS_webserviceMB.do_view}" style="width:500px"/>
+
+                                                        <h:outputLabel value="Max TPS  :"/> 
+                                                        <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_max_request}" disabled="#{wS_webserviceMB.do_view}" style="width:500px"/>
+
+                                                        <h:outputLabel value="Connextion Timeout :"/> 
+                                                        <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_con_timeout}" disabled="#{wS_webserviceMB.do_view}" style="width:500px"/>
+
+                                                        <h:outputLabel value="Request Timeout  :"/> 
+                                                        <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_req_timeout}" disabled="#{wS_webserviceMB.do_view}" style="width:500px"/>
+
+                                                        <h:outputLabel value="Function  :"/> 
+                                                        <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.api_function}" disabled="#{wS_webserviceMB.do_view}" style="width:500px">
+                                                            <f:selectItem itemValue="BILLING" itemLabel="BILLING" />
+                                                            <f:selectItem itemValue="VIEW_INFO" itemLabel="VIEW_INFO" />
+                                                            <f:selectItem itemValue="OTHER" itemLabel="OTHER" />
+                                                        </h:selectOneMenu>
+                                                        
+                                                        <h:outputLabel value="Description :"/>                          
+                                                        <p:inputTextarea value="#{wS_webserviceMB.selectedWS_Webservice.description}"  rows="5" cols="35" 
+                                                                                 disabled="#{wS_webserviceMB.do_view}"
+                                                                                 autoResize="false"  style="width:500px"/>
+
+                                                        <h:outputLabel value="Skip to last: "/> 
+                                                        <h:selectBooleanCheckbox value="#{wS_webserviceMB.skip}" />
+                                                    </p:panelGrid>
+                                                </p:panel>
+                                              
+                                            </p:tab>
+
+                                            <p:tab id="api_connexion" title="API Connexion">
+                                                <p:panel header="Provide Detail Information about API Connexion">
+                                                    <p:messages />
+                                                    <p:panelGrid id="rolecrud2" columns="2" >
+                                                        <h:outputLabel value="Webservice URL :"/> 
+                                                        <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.api_url}" disabled="#{wS_webserviceMB.do_view}" required="true" style="width:500px"/>
+
+                                                        
+                                                         <h:outputLabel value="Content Type :" /> 
+                                                        <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.content_type}" disabled="#{wS_webserviceMB.do_view}" style="width:500px">
+                                                            <f:selectItem itemValue="application/xml" itemLabel="APPLICATION_XML" />
+                                                            <f:selectItem itemValue="charset" itemLabel="CHARSET_PARAMETER" />
+                                                            <f:selectItem itemValue="*" itemLabel="MEDIA_TYPE_WILDCARD" />
+                                                            <f:selectItem itemValue="*/*" itemLabel="WILDCARD" />
+                                                            <f:selectItem itemValue="application/atom+xml" itemLabel="APPLICATION_ATOM_XML" />
+                                                            <f:selectItem itemValue="application/xhtml+xml" itemLabel="APPLICATION_XHTML_XML" />
+                                                            <f:selectItem itemValue="application/svg+xml" itemLabel="APPLICATION_SVG_XML" />
+                                                            <f:selectItem itemValue="application/json" itemLabel="APPLICATION_JSON" />
+                                                            <f:selectItem itemValue="application/x-www-form-urlencoded" itemLabel="APPLICATION_FORM_URLENCODED" />
+                                                            <f:selectItem itemValue="multipart/form-data" itemLabel="MULTIPART_FORM_DATA" />
+                                                            <f:selectItem itemValue="application/octet-stream" itemLabel="APPLICATION_OCTET_STREAM" />
+                                                            <f:selectItem itemValue="text/plain" itemLabel="TEXT_PLAIN" />
+                                                            <f:selectItem itemValue="text/xml" itemLabel="TEXT_XML" />
+                                                            <f:selectItem itemValue="text/html" itemLabel="TEXT_HTML" />
+                                                            <f:selectItem itemValue="text/event-stream" itemLabel="SERVER_SENT_EVENTS" />
+                                                            <f:selectItem itemValue="application/json-patch+json" itemLabel="APPLICATION_JSON_PATCH_JSON" />
+
+                                                        </h:selectOneMenu>
+
+                                                        <h:outputLabel value="SOAP API WSDL :" rendered="#{wS_webserviceMB.isSoap_Rest}" />                          
+                                                        <p:inputTextarea value="#{wS_webserviceMB.selectedWS_Webservice.api_soap_wsdl}"  rows="5" cols="35" 
+                                                                                 disabled="#{wS_webserviceMB.do_view}"
+                                                                                 rendered="#{wS_webserviceMB.isSoap_Rest}"
+                                                                                 autoResize="false"  style="width:500px"/>
+
+                                                        <h:outputLabel value="SOAP API XSD :" rendered="#{wS_webserviceMB.isSoap_Rest}" />                          
+                                                        <p:inputTextarea value="#{wS_webserviceMB.selectedWS_Webservice.api_soap_xsd}"  rows="5" cols="35" 
+                                                                                 disabled="#{wS_webserviceMB.do_view}"
+                                                                                 rendered="#{wS_webserviceMB.isSoap_Rest}"
+                                                                                 autoResize="false"  style="width:500px"/>
+                                            
+                                                        <h:outputLabel value="SOAP API Request :" rendered="#{wS_webserviceMB.isSoap_Rest}" />                          
+                                                        <p:inputTextarea value="#{wS_webserviceMB.selectedWS_Webservice.api_soap_request}"  rows="5" cols="35" 
+                                                                                 disabled="#{wS_webserviceMB.do_view}"
+                                                                                 rendered="#{wS_webserviceMB.isSoap_Rest}"
+                                                                                 autoResize="false"  style="width:500px"/>
+                                                        
+                                                        
+                                                        
+                                                        <h:outputLabel value="REST URI :" rendered="#{not wS_webserviceMB.isSoap_Rest}" /> 
+                                                        <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.api_rest_uri}" disabled="#{wS_webserviceMB.do_view}" rendered="#{not wS_webserviceMB.isSoap_Rest}" style="width:500px"/>
+
+                                                        <h:outputLabel value="REST Methode :" rendered="#{not wS_webserviceMB.isSoap_Rest}" />                                       
+                                                        <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.api_rest_method}" disabled="#{wS_webserviceMB.do_view}" rendered="#{not wS_webserviceMB.isSoap_Rest}" style="width:500px">
+                                                            <f:selectItem itemValue="GET" itemLabel="GET" />
+                                                            <f:selectItem itemValue="POST" itemLabel="POST" />
+                                                            <f:selectItem itemValue="DELETE" itemLabel="DELETE" />
+                                                            <f:selectItem itemValue="HEAD" itemLabel="HEAD" />
+                                                            <f:selectItem itemValue="PATCH" itemLabel="PATCH" />                                                            
+                                                            <f:selectItem itemValue="PUT" itemLabel="PUT" />
+                                                           
+                                                            
+                                                        </h:selectOneMenu>
+
+                                                        <h:outputLabel value="REST Bind Parameter :" rendered="#{not wS_webserviceMB.isSoap_Rest}" />                                       
+                                                        <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.rest_bind_param}" disabled="#{wS_webserviceMB.do_view}" rendered="#{not wS_webserviceMB.isSoap_Rest}" style="width:500px">
+                                                            <f:selectItem itemValue="NONE" itemLabel="--none--" />
+                                                            <f:selectItem itemValue="CONTEXT" itemLabel="CONTEXT" />
+                                                            <f:selectItem itemValue="COOKIEPARAM" itemLabel="COOKIEPARAM" />
+                                                            <f:selectItem itemValue="DEFAULTVALUE" itemLabel="DEFAULTVALUE" />
+                                                            <f:selectItem itemValue="FORMPARAM"   itemLabel="FORMPARAM" />
+                                                            <f:selectItem itemValue="HEADERPARAM" itemLabel="HEADERPARAM" />
+                                                            <f:selectItem itemValue="MATRIXPARAM" itemLabel="MATRIXPARAM" />
+                                                            <f:selectItem itemValue="PATHPARAM" itemLabel="PATHPARAM" />
+                                                            <f:selectItem itemValue="QUERYPARAM" itemLabel="QUERYPARAM" />
+                                                            
+                                                            
+                                                        </h:selectOneMenu>
+
+                                                        <h:outputLabel value="REST Media Type :" rendered="#{not wS_webserviceMB.isSoap_Rest}" /> 
+                                                        <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.rest_media_type}" disabled="#{wS_webserviceMB.do_view}" rendered="#{not wS_webserviceMB.isSoap_Rest}" style="width:500px">
+                                                            <f:selectItem itemValue="NONE" itemLabel="--none--" />
+                                                            <f:selectItem itemValue="application/xml" itemLabel="APPLICATION_XML" />
+                                                            <f:selectItem itemValue="charset" itemLabel="CHARSET_PARAMETER" />
+                                                            <f:selectItem itemValue="*" itemLabel="MEDIA_TYPE_WILDCARD" />
+                                                            <f:selectItem itemValue="*/*" itemLabel="WILDCARD" />
+                                                            <f:selectItem itemValue="application/atom+xml" itemLabel="APPLICATION_ATOM_XML" />
+                                                            <f:selectItem itemValue="application/xhtml+xml" itemLabel="APPLICATION_XHTML_XML" />
+                                                            <f:selectItem itemValue="application/svg+xml" itemLabel="APPLICATION_SVG_XML" />
+                                                            <f:selectItem itemValue="application/json" itemLabel="APPLICATION_JSON" />
+                                                            <f:selectItem itemValue="application/x-www-form-urlencoded" itemLabel="APPLICATION_FORM_URLENCODED" />
+                                                            <f:selectItem itemValue="multipart/form-data" itemLabel="MULTIPART_FORM_DATA" />
+                                                            <f:selectItem itemValue="application/octet-stream" itemLabel="APPLICATION_OCTET_STREAM" />
+                                                            <f:selectItem itemValue="text/plain" itemLabel="TEXT_PLAIN" />
+                                                            <f:selectItem itemValue="text/xml" itemLabel="TEXT_XML" />
+                                                            <f:selectItem itemValue="text/html" itemLabel="TEXT_HTML" />
+                                                            <f:selectItem itemValue="text/event-stream" itemLabel="SERVER_SENT_EVENTS" />
+                                                            <f:selectItem itemValue="application/json-patch+json" itemLabel="APPLICATION_JSON_PATCH_JSON" />
+
+                                                        </h:selectOneMenu>
+                                                        
+                                                       
+                                                        
+                                                         <h:outputLabel value="REST API Request :" rendered="#{not wS_webserviceMB.isSoap_Rest}" />                          
+                                                        <p:inputTextarea value="#{wS_webserviceMB.selectedWS_Webservice.api_rest_request}"  rows="5" cols="35" 
+                                                                                 disabled="#{wS_webserviceMB.do_view}"
+                                                                                 rendered="#{not wS_webserviceMB.isSoap_Rest}"
+                                                                                 autoResize="false"  style="width:500px"/>
+                                                        
+                                                        <h:outputLabel value="List Header Parameter :" /> 
+                                                         <p:row>
+                                                            
+
+                                                           <p:column colspan="2" style="width:1500px">
+                                                                    <p:pickList  value="#{wS_webserviceMB.dualListModelheader_params}" var="val" 
+                                                                         itemLabel="#{val.param_key} | #{val.param_value}" 
+                                                                         itemValue="#{val}" 
+                                                                         responsive="true"
+                                                                         showSourceFilter="true" showTargetFilter="true" filterMatchMode="contains"
+                                                                         converter="headerParamPickListConverter"
+                                                                         disabled="#{wS_webserviceMB.do_view}" >
+
+                                                                    <f:facet name="sourceCaption">Available</f:facet>
+                                                                    <f:facet name="targetCaption">Starting</f:facet>
+
+                                                                    <p:ajax event="transfer" listener="#{wS_webserviceMB.onTransfer}" update="messages" />
+                                                                    <p:ajax event="select" listener="#{wS_webserviceMB.onSelect}" update="messages"/>
+                                                                    <p:ajax event="unselect" listener="#{wS_webserviceMB.onUnselect}" update="messages"/>
+                                                                    <p:ajax event="reorder" listener="#{wS_webserviceMB.onReorder}" update="messages"/>
+
+                                                                    <p:column style="width:85%;">
+                                                                        <h:outputText value="#{val.param_key} | #{val.param_value}" />
+                                                                    </p:column>
+                                                             </p:pickList>
+
+                                                                <br/>
+                                                           </p:column>
+                                                             
+                                                             <p:column >
+                                                                <h:outputLabel value="Header Param Key :" style="width:200px"/>
+                                                                <p:inputText  value="#{wS_webserviceMB.header_param.param_key}" disabled="#{wS_webserviceMB.do_view}"/> 
+                                                            </p:column> 
+                                                            <br/>
+                                                             <p:column >
+                                                                <h:outputLabel value="Header Param Value :" style="width:200px" />
+                                                                <p:inputText  value="#{wS_webserviceMB.header_param.param_value}" disabled="#{wS_webserviceMB.do_view}"/> 
+                                                            </p:column> 
+                                                            <br/>
+                                                            <p:column >
+                                                                <h:commandButton value="ADD Header Param" action="#{wS_webserviceMB.addHeaderParam}"   update=":form1:rolecrud3" process="@this" disabled="#{wS_webserviceMB.do_view}"/> 
+                                                            </p:column>
+                                                        </p:row>  
+
+
+                                                        <h:outputLabel value="Skip to last: "/> 
+                                                        <h:selectBooleanCheckbox value="#{wS_webserviceMB.skip}" />
+                                                    </p:panelGrid>
+                                                </p:panel>
+                                            </p:tab>
+
+                                            <p:tab id="api_security" title="API Security">
+                                                <p:panel header="Provide Detail Information about Security">
+                                                    <p:messages />
+                                                    <p:panelGrid id="rolecrud3" columns="2" >
+                                                            <h:outputLabel value="Security Mode  :" rendered="#{wS_webserviceMB.isSoap_Rest}"/> 
+                                                            <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.remote_secutity_mode}" disabled="#{wS_webserviceMB.do_view}" rendered="#{wS_webserviceMB.isSoap_Rest}" style="width:400px">
+                                                                <f:selectItem itemValue="NONE" itemLabel="--none--" />
+                                                                <f:selectItem itemValue="SOAP_BASIC_AUTH" itemLabel="SOAP_BASIC_AUTH" />
+                                                                <f:selectItem itemValue="SOAP_HEAD_TOKEN" itemLabel="SOAP_HEAD_TOKEN" />
+                                                                <f:selectItem itemValue="SOAP_HEAD_AUTH" itemLabel="SOAP_HEAD_AUTH" />
+                                                            </h:selectOneMenu>
+                                                            
+                                                            <h:outputLabel value="Security Mode  :" rendered="#{not wS_webserviceMB.isSoap_Rest}"/> 
+                                                            <h:selectOneMenu value="#{wS_webserviceMB.selectedWS_Webservice.remote_secutity_mode}" disabled="#{wS_webserviceMB.do_view}" rendered="#{not wS_webserviceMB.isSoap_Rest}" style="width:400px">
+                                                                <f:selectItem itemValue="NONE" itemLabel="--none--" />
+                                                                <f:selectItem itemValue="REST_BASIC_AUTH" itemLabel="REST_BASIC_AUTH" />
+                                                                <f:selectItem itemValue="REST_TOKEN_AUTH" itemLabel="REST_TOKEN_AUTH" />
+                                                                <f:selectItem itemValue="REST_TOKEN_AUTH_ROLE" itemLabel="REST_TOKEN_AUTH_ROLE" />
+                                                                <f:selectItem itemValue="REST_OAUTH1" itemLabel="REST_OAUTH1" />
+                                                                <f:selectItem itemValue="REST_OAUTH2" itemLabel="REST_OAUTH2" />
+                                                            </h:selectOneMenu>
+                                                            
+                                                            <h:outputLabel value="Security Login  :" /> 
+                                                            <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.security_login}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                            <h:outputLabel value="Security Password :"/> 
+                                                            <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.security_password}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                            <h:outputLabel value="Authorization Type :"/> 
+                                                            <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.authorizationType}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                            <h:outputLabel value="Token :"/> 
+                                                            <p:inputText  value="#{wS_webserviceMB.selectedWS_Webservice.token}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                            
+                                                             <p:row>                                                      
+                                                                  <h:outputLabel value="Token Expire Time :" />                                                                
+                                                             </p:row>   
+                                                             <p:row>
+                                                                    
+                                                                    <p:column style="font-weight: bold;">
+                                                                        <p:calendar id="datetime1" value="#{wS_webserviceMB.expire_time}" 
+                                                                                    mode="popup" 
+                                                                                    pattern="MM/dd/yyyy" 
+                                                                                    placeholder="__/__/____" 
+                                                                                    disabled="#{wS_webserviceMB.do_view}" 
+                                                                                    />
+                                                                    </p:column>
+                                                                    <br/>
+                                                                    <br/>
+                                                                    <p:column style="font-weight: bold;">
+                                                                        <h:outputLabel value="Hour " />
+                                                                    </p:column>
+                                                                    :
+                                                                    <p:column style="font-weight: bold;">
+                                                                        <p:spinner value="#{wS_webserviceMB.start_hour}" min="0" max="23" disabled="#{wS_webserviceMB.do_view}" style="width:50px"/>
+                                                                    </p:column>
+                                                                    <p:spacer width="15px;" />
+                                                                    <p:column style="font-weight: bold;">
+                                                                        <h:outputLabel value="Min " />
+                                                                    </p:column>
+                                                                    :
+                                                                    <p:column style="font-weight: bold;">
+                                                                        <p:spinner value="#{wS_webserviceMB.start_min}" min="0" max="59" disabled="#{wS_webserviceMB.do_view}" style="width:50px"/>
+                                                                    </p:column>
+                                                                   <p:spacer width="15px;" />
+                                                                    <p:column style="font-weight: bold;">
+                                                                        <h:outputLabel value="Sec " />
+                                                                    </p:column>
+                                                                   :
+                                                                    <p:column style="font-weight: bold;">
+                                                                        <p:spinner  value="#{wS_webserviceMB.start_sec}" min="0" max="59" disabled="#{wS_webserviceMB.do_view}" style="width:50px"/>
+                                                                    </p:column>
+                                                                </p:row>
+                                                            
+                                                            <h:outputLabel value="Skip to last: "/> 
+                                                            <h:selectBooleanCheckbox value="#{wS_webserviceMB.skip}" />
+                                                    </p:panelGrid>
+                                                </p:panel>
+                                            </p:tab>
+
+                                            <p:tab id="confirm" title="Confirmation">
+                                                <p:panel header="Confirmation">
+                                                    <p:messages />
+                                                    <p:panelGrid id="rolecrud4" columns="2" >
+                                                     
+                                                           <h:outputLabel value="Webservice Name :" style="width:200px" />
+                                                           <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.webservice_name}"  styleClass="outputLabel" />
+                                                         
+                                                           <h:outputLabel value="Operator  :"/> 
+                                                           <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_operator}" />
+
+                                                            <h:outputLabel value="API Type  :"/> 
+                                                            <h:outputText value="#{wS_webserviceMB.selectedWS_Webservice.webservice_type}" styleClass="outputLabel"/>
+                                                            
+                                                            <h:outputLabel value="Max Connextion  :"/> 
+                                                            <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_max_connexion}" />
+
+                                                            <h:outputLabel value="Max TPS  :"/> 
+                                                            <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_max_request}" />
+
+                                                            <h:outputLabel value="Function  :"/> 
+                                                            <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.api_function}" />
+                                                            
+
+                                                            <h:outputLabel value="Description :"/> 
+                                                            <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.description}" />
+                                                            
+                                                    
+                                                            
+                                                          <h:outputLabel value="Webservice URL :"/> 
+                                                          <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.api_url}" />
+
+                                                          <h:outputLabel value="SOAP API WSDL :" rendered="#{wS_webserviceMB.isSoap_Rest}" />                          
+                                                          <h:outputText value="#{wS_webserviceMB.selectedWS_Webservice.api_soap_wsdl}" rendered="#{wS_webserviceMB.isSoap_Rest}" />
+
+                                                          <h:outputLabel value="SOAP API XSD :"  rendered="#{wS_webserviceMB.isSoap_Rest}"/>                          
+                                                          <h:outputText value="#{wS_webserviceMB.selectedWS_Webservice.api_soap_xsd}"  rendered="#{wS_webserviceMB.isSoap_Rest}"/>
+                                            
+                                                          <h:outputLabel value="SOAP API Request :"  rendered="#{wS_webserviceMB.isSoap_Rest}"/>                          
+                                                          <h:outputText value="#{wS_webserviceMB.selectedWS_Webservice.api_soap_request}" rendered="#{wS_webserviceMB.isSoap_Rest}"/>
+                                                        
+                                                        
+                                                        
+                                                        <h:outputLabel value="REST URI :" rendered="#{not wS_webserviceMB.isSoap_Rest}" /> 
+                                                        <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.api_rest_uri}"  rendered="#{not wS_webserviceMB.isSoap_Rest}" />
+
+                                                        <h:outputLabel value="REST Methode :" rendered="#{not wS_webserviceMB.isSoap_Rest}" />                                       
+                                                        <h:outputText value="#{wS_webserviceMB.selectedWS_Webservice.api_rest_method}"  rendered="#{not wS_webserviceMB.isSoap_Rest}"  />
+                                                         
+
+                                                        <h:outputLabel value="REST Bind Parameter :" rendered="#{not wS_webserviceMB.isSoap_Rest}" />                                       
+                                                        <h:outputText value="#{wS_webserviceMB.selectedWS_Webservice.rest_bind_param}"  rendered="#{not wS_webserviceMB.isSoap_Rest}"  />
+                                                           
+
+                                                        <h:outputLabel value="REST Media Type :" rendered="#{not wS_webserviceMB.isSoap_Rest}" /> 
+                                                        <h:outputText value="#{wS_webserviceMB.selectedWS_Webservice.rest_media_type}"  rendered="#{not wS_webserviceMB.isSoap_Rest}"  />
+                                                         
+                                                        
+                                                        <h:outputLabel value="Securiy Mode :"/> 
+                                                        <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.remote_secutity_mode}" />
+                                                        
+                                                        
+                                                        <h:outputLabel value="Security Login  :" /> 
+                                                        <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.security_login}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                        <h:outputLabel value="Security Password :"/> 
+                                                        <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.security_password}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                        <h:outputLabel value="Authorization Type :"/> 
+                                                        <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.authorizationType}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                        <h:outputLabel value="Token :"/> 
+                                                        <h:outputText  value="#{wS_webserviceMB.selectedWS_Webservice.token}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+
+                                                         <h:outputLabel value="Token Expire time :"/> 
+                                                         <p:row> 
+                                                            <h:outputText  value="#{wS_webserviceMB.expire_time}" disabled="#{wS_webserviceMB.do_view}" style="width:400px">
+                                                                   <f:convertDateTime pattern="dd/MM/yyyy"  />
+                                                            </h:outputText>
+                                                             <h:outputText  value="   #{wS_webserviceMB.start_hour}:#{wS_webserviceMB.start_min}:#{wS_webserviceMB.start_sec}" disabled="#{wS_webserviceMB.do_view}" style="width:400px"/>
+                                                          </p:row>      
+                                                         
+
+                                                        
+                                                        <h:outputLabel value="Skip to First: "/> 
+                                                        <h:selectBooleanCheckbox value="#{wS_webserviceMB.skip_first}" />
+                                                        
+                                                        
+
+                                                    </p:panelGrid>
+                                                  
+                                                </p:panel>
+                                            </p:tab>
+                                            
+                                       </p:wizard>
+                                      <p:spacer height="5px;"/>  
+                                      <p:panelGrid id="rolecrud" columns="3" >
+                                          <f:facet name="header" >
+                                                <h:commandButton value="Enable Edit" action="#{wS_webserviceMB.enableEdit}" rendered="#{wS_webserviceMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:rolecrud1,:form1:rolecrud2,:form1:rolecrud3,:form1:rolecrud4,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{wS_webserviceMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{wS_webserviceMB.delete}" rendered="#{wS_webserviceMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:rolecrud1,:form1:rolecrud2,:form1:rolecrud3,:form1:rolecrud4,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                 </h:commandButton>
+                                                <h:commandButton value="Add" action="#{wS_webserviceMB.onAddNew}" rendered="#{wS_webserviceMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:rolecrud1,:form1:rolecrud2,:form1:rolecrud3,:form1:rolecrud4,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{wS_webserviceMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{wS_webserviceMB.edit}" rendered="#{wS_webserviceMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:rolecrud1,:form1:rolecrud2,:form1:rolecrud3,:form1:rolecrud4,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{wS_webserviceMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{wS_webserviceMB.clear}" rendered="#{wS_webserviceMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:rolecrud1,:form1:rolecrud2,:form1:rolecrud3,:form1:rolecrud4,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                 </h:commandButton> 
+
+                                            </f:facet>
+                                         </p:panelGrid>
+                                        <p:spacer height="100px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{wS_webserviceMB.listWS_Webservice}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+                                           
+                                            <p:column headerText="ID" filterBy="#{o.ws_webservice_id}" sortBy="#{o.ws_webservice_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.ws_webservice_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="Webservice Name" filterBy="#{o.webservice_name}" sortBy="#{o.webservice_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.webservice_name}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Webservice URL" filterBy="#{o.api_url}" sortBy="#{o.api_url}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.api_url}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="API Type" filterBy="#{o.webservice_type}" sortBy="#{o.webservice_type}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.webservice_type}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Function" filterBy="#{o.api_function}" sortBy="#{o.api_function}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.api_function}"/> 
+                                            </p:column>
+                                            
+                                            <p:column headerText="Operator" filterBy="#{o.remote_operator}" sortBy="#{o.remote_operator}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.remote_operator}"/> 
+                                            </p:column>
+
+                                  
+                                            <p:column headerText="Description" filterBy="#{o.description}" sortBy="#{o.description}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.description}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Create date" filterBy="#{o.create_time}" sortBy="#{o.create_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.create_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.update_time}" sortBy="#{o.update_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.update_time}"/> 
+                                            </p:column>
+
+                                              <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{wS_webserviceMB.view(o)}" 
+                                                               update="datatable_grid,:form1:rolecrud,:form1:rolecrud1,:form1:rolecrud2,:form1:rolecrud3,:form1:rolecrud4,:form1:messages" 
+                                                               process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   
+

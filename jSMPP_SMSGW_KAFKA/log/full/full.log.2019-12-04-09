@@ -1,0 +1,99 @@
+04/12/2019 09:43:38.716  INFO [main] SMSGW: Load log4j config file done.
+04/12/2019 09:43:38.718  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+04/12/2019 09:43:38.868  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+04/12/2019 09:43:52.864  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+04/12/2019 09:43:57.403  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+04/12/2019 09:44:01.993  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+04/12/2019 09:44:06.519  INFO [main] SMSGW: ############ Topic mo-flash already exists #################
+04/12/2019 09:44:11.069  INFO [main] SMSGW: ############ Topic mt-flash already exists #################
+04/12/2019 09:44:15.610  INFO [main] SMSGW: ############ Topic mo-chocho already exists #################
+04/12/2019 09:44:20.160  INFO [main] SMSGW: ############ Topic mt-chocho already exists #################
+04/12/2019 09:44:24.718  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+04/12/2019 09:44:29.251  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+04/12/2019 09:44:29.560  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:29.560  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:29.561  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:29.565  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:29.568  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:29.568  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:29.573  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:29.579  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:44:32.607  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+04/12/2019 09:44:32.607  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+04/12/2019 09:44:32.608  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+04/12/2019 09:44:32.608  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+04/12/2019 09:44:32.609  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+04/12/2019 09:44:32.610  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[]
+04/12/2019 09:44:32.611  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+04/12/2019 09:44:32.613  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+04/12/2019 09:45:05.341  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+04/12/2019 09:45:05.743  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "5e5e42e0-1672-11ea-8a05-130e1c2e602d",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+04/12/2019 09:45:05.744  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 661000504 --> 8755 [msg = CHO1 ]
+04/12/2019 09:45:06.021  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-chocho -- Partition: 5 -- offset: 19
+04/12/2019 09:46:21.210  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+04/12/2019 09:46:21.215  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "8b951ef1-1672-11ea-8a05-1dc5204363e2",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+04/12/2019 09:46:21.215  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 661000504 --> 8755 [msg = CHO1 ]
+04/12/2019 09:46:21.350  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-chocho -- Partition: 2 -- offset: 18
+04/12/2019 09:47:59.798  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+04/12/2019 09:47:59.938  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+04/12/2019 09:47:59.950  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+04/12/2019 09:47:59.955  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+04/12/2019 09:47:59.960  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+04/12/2019 09:47:59.961  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+04/12/2019 09:48:02.735  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:48:02.736  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+04/12/2019 09:48:02.876  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+04/12/2019 09:48:02.876  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+04/12/2019 09:48:02.877  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+04/12/2019 09:48:02.877  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+04/12/2019 09:48:02.877  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+04/12/2019 09:48:02.878  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+04/12/2019 09:48:02.878  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+04/12/2019 09:48:02.878  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[]
+04/12/2019 09:48:02.911  INFO [pool-5-thread-1] SMSGateway: %%%%%%%%%%%%%%%%%% START SEND SMS %%%%%%%%%%%%%%%%%%%%%%
+04/12/2019 09:48:02.924  INFO [pool-5-thread-1] SMSGW_Thread: SUCCESS_SMS_CONTENT
+04/12/2019 09:48:02.924  INFO [pool-5-thread-1] SMSGW_Thread: SUCCESS Submition of : 8755 --> 661000504 ( msg =Bonjour les Jeunes, bienvenue au service de CHOCHO.  )
+04/12/2019 09:48:12.929  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+04/12/2019 09:48:12.934  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "ce2bef52-1672-11ea-8a05-1123b2f247e6",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "id:179 sub:001 dlvrd:001 submit date:1912040948 done date:1912040948 stat:DELIVRD err:000 Text:Bonjour les Jeunes, ",
+  "exchange_mode" : "SMS"
+}
+04/12/2019 09:48:12.935  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 661000504 --> 8755 [msg = id:179 sub:001 dlvrd:001 submit date:1912040948 done date:1912040948 stat:DELIVRD err:000 Text:Bonjour les Jeunes,  ]
+04/12/2019 09:48:13.057  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-chocho -- Partition: 9 -- offset: 17
+04/12/2019 09:51:38.900  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+04/12/2019 09:51:38.901  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+04/12/2019 09:51:38.914  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+04/12/2019 09:51:38.923  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+04/12/2019 09:51:38.936  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+04/12/2019 09:51:38.937  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+04/12/2019 09:51:38.939  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+04/12/2019 09:51:38.939  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+04/12/2019 09:51:41.475  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+04/12/2019 09:51:41.475  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[]
+04/12/2019 09:51:41.475  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+04/12/2019 09:51:41.475  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+04/12/2019 09:51:41.476  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+04/12/2019 09:51:41.476  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+04/12/2019 09:51:41.476  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+04/12/2019 09:51:41.477  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]

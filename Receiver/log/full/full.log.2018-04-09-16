@@ -1,0 +1,1112 @@
+09/04/2018 16:10:30.978  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:10:31.417  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:10:31.426  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:14:45.354  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:14:45.726  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:14:45.773  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:32:53.660  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:32:55.201  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:32:55.210  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:34:40.151  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:34:40.296  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:34:40.307  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:50:08.613  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:50:09.192  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:50:09.202  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:50:09.968  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:11.977  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:13.986  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:15.999  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:18.013  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:20.023  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:22.038  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:24.052  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:26.060  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:28.072  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:30.080  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:32.093  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:34.108  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:36.121  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:38.130  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:40.151  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:42.164  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:44.177  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:46.184  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:50:48.193  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:15.506  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:51:15.727  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:51:15.780  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:51:16.255  INFO [NioProcessor-5] LoggingFilter: CREATED
+09/04/2018 16:51:16.256  INFO [NioProcessor-5] LoggingFilter: OPENED
+09/04/2018 16:51:16.256  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:16.256  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000001: nio socket, client, /127.0.0.1:15420 => /127.0.0.1:8623)}
+09/04/2018 16:51:16.303  INFO [NioProcessor-5] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:16.304  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:18.269  INFO [NioProcessor-9] LoggingFilter: CREATED
+09/04/2018 16:51:18.269  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:18.269  INFO [NioProcessor-9] LoggingFilter: OPENED
+09/04/2018 16:51:18.270  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000002: nio socket, client, /127.0.0.1:15429 => /127.0.0.1:8623)}
+09/04/2018 16:51:18.270  INFO [NioProcessor-9] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:18.271  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:20.292  INFO [NioProcessor-10] LoggingFilter: CREATED
+09/04/2018 16:51:20.292  INFO [NioProcessor-10] LoggingFilter: OPENED
+09/04/2018 16:51:20.292  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:20.293  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000003: nio socket, client, /127.0.0.1:15439 => /127.0.0.1:8623)}
+09/04/2018 16:51:20.294  INFO [NioProcessor-10] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:20.295  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:22.302  INFO [NioProcessor-14] LoggingFilter: CREATED
+09/04/2018 16:51:22.303  INFO [NioProcessor-14] LoggingFilter: OPENED
+09/04/2018 16:51:22.303  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000004: nio socket, client, /127.0.0.1:15449 => /127.0.0.1:8623)}
+09/04/2018 16:51:22.303  INFO [NioProcessor-14] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:22.303  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:22.304  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:24.316  INFO [NioProcessor-18] LoggingFilter: CREATED
+09/04/2018 16:51:24.316  INFO [NioProcessor-18] LoggingFilter: OPENED
+09/04/2018 16:51:24.316  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000005: nio socket, client, /127.0.0.1:15464 => /127.0.0.1:8623)}
+09/04/2018 16:51:24.317  INFO [NioProcessor-18] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:24.318  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:24.318  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:26.327  INFO [NioProcessor-19] LoggingFilter: CREATED
+09/04/2018 16:51:26.327  INFO [NioProcessor-19] LoggingFilter: OPENED
+09/04/2018 16:51:26.327  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:26.328  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000006: nio socket, client, /127.0.0.1:15483 => /127.0.0.1:8623)}
+09/04/2018 16:51:26.328  INFO [NioProcessor-19] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:26.329  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:28.338  INFO [NioProcessor-23] LoggingFilter: CREATED
+09/04/2018 16:51:28.338  INFO [NioProcessor-23] LoggingFilter: OPENED
+09/04/2018 16:51:28.338  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000007: nio socket, client, /127.0.0.1:15493 => /127.0.0.1:8623)}
+09/04/2018 16:51:28.339  INFO [NioProcessor-23] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:28.339  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:28.339  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:30.348  INFO [NioProcessor-27] LoggingFilter: CREATED
+09/04/2018 16:51:30.349  INFO [NioProcessor-27] LoggingFilter: OPENED
+09/04/2018 16:51:30.349  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000008: nio socket, client, /127.0.0.1:15504 => /127.0.0.1:8623)}
+09/04/2018 16:51:30.350  INFO [NioProcessor-27] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:30.350  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:30.350  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:32.387  INFO [NioProcessor-28] LoggingFilter: CREATED
+09/04/2018 16:51:32.387  INFO [NioProcessor-28] LoggingFilter: OPENED
+09/04/2018 16:51:32.387  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:32.389  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000009: nio socket, client, /127.0.0.1:15513 => /127.0.0.1:8623)}
+09/04/2018 16:51:32.389  INFO [NioProcessor-28] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:32.389  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:34.400  INFO [NioProcessor-32] LoggingFilter: CREATED
+09/04/2018 16:51:34.400  INFO [NioProcessor-32] LoggingFilter: OPENED
+09/04/2018 16:51:34.400  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:34.400  INFO [NioProcessor-32] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000A: nio socket, client, /127.0.0.1:15524 => /127.0.0.1:8623)}
+09/04/2018 16:51:34.401  INFO [NioProcessor-32] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:34.401  INFO [NioProcessor-32] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:36.411  INFO [NioProcessor-36] LoggingFilter: CREATED
+09/04/2018 16:51:36.412  INFO [NioProcessor-36] LoggingFilter: OPENED
+09/04/2018 16:51:36.412  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:36.412  INFO [NioProcessor-36] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000B: nio socket, client, /127.0.0.1:15533 => /127.0.0.1:8623)}
+09/04/2018 16:51:36.413  INFO [NioProcessor-36] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:36.414  INFO [NioProcessor-36] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:38.424  INFO [NioProcessor-37] LoggingFilter: CREATED
+09/04/2018 16:51:38.424  INFO [NioProcessor-37] LoggingFilter: OPENED
+09/04/2018 16:51:38.424  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:38.425  INFO [NioProcessor-37] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000C: nio socket, client, /127.0.0.1:15543 => /127.0.0.1:8623)}
+09/04/2018 16:51:38.425  INFO [NioProcessor-37] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:38.425  INFO [NioProcessor-37] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:51:40.437  INFO [NioProcessor-41] LoggingFilter: CREATED
+09/04/2018 16:51:40.438  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:51:40.438  INFO [NioProcessor-41] LoggingFilter: OPENED
+09/04/2018 16:51:40.438  INFO [NioProcessor-41] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000D: nio socket, client, /127.0.0.1:15553 => /127.0.0.1:8623)}
+09/04/2018 16:51:40.439  INFO [NioProcessor-41] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:51:40.439  INFO [NioProcessor-41] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:00.732  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:53:00.979  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:53:00.989  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:53:01.148  INFO [NioProcessor-5] LoggingFilter: CREATED
+09/04/2018 16:53:01.150  INFO [NioProcessor-5] LoggingFilter: OPENED
+09/04/2018 16:53:01.151  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000001: nio socket, client, /127.0.0.1:15624 => /127.0.0.1:8623)}
+09/04/2018 16:53:01.151  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:01.163  INFO [NioProcessor-5] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:01.163  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:03.159  INFO [NioProcessor-9] LoggingFilter: CREATED
+09/04/2018 16:53:03.159  INFO [NioProcessor-9] LoggingFilter: OPENED
+09/04/2018 16:53:03.159  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:03.159  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000002: nio socket, client, /127.0.0.1:15633 => /127.0.0.1:8623)}
+09/04/2018 16:53:03.160  INFO [NioProcessor-9] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:03.160  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:05.178  INFO [NioProcessor-10] LoggingFilter: CREATED
+09/04/2018 16:53:05.178  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:05.178  INFO [NioProcessor-10] LoggingFilter: OPENED
+09/04/2018 16:53:05.179  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000003: nio socket, client, /127.0.0.1:15643 => /127.0.0.1:8623)}
+09/04/2018 16:53:05.180  INFO [NioProcessor-10] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:05.180  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:07.193  INFO [NioProcessor-14] LoggingFilter: CREATED
+09/04/2018 16:53:07.193  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:07.193  INFO [NioProcessor-14] LoggingFilter: OPENED
+09/04/2018 16:53:07.194  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000004: nio socket, client, /127.0.0.1:15652 => /127.0.0.1:8623)}
+09/04/2018 16:53:07.195  INFO [NioProcessor-14] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:07.195  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:09.211  INFO [NioProcessor-18] LoggingFilter: CREATED
+09/04/2018 16:53:09.211  INFO [NioProcessor-18] LoggingFilter: OPENED
+09/04/2018 16:53:09.211  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:09.213  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000005: nio socket, client, /127.0.0.1:15661 => /127.0.0.1:8623)}
+09/04/2018 16:53:09.214  INFO [NioProcessor-18] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:09.214  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:11.225  INFO [NioProcessor-19] LoggingFilter: CREATED
+09/04/2018 16:53:11.226  INFO [NioProcessor-19] LoggingFilter: OPENED
+09/04/2018 16:53:11.226  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:11.226  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000006: nio socket, client, /127.0.0.1:15671 => /127.0.0.1:8623)}
+09/04/2018 16:53:11.227  INFO [NioProcessor-19] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:11.227  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:13.235  INFO [NioProcessor-23] LoggingFilter: CREATED
+09/04/2018 16:53:13.235  INFO [NioProcessor-23] LoggingFilter: OPENED
+09/04/2018 16:53:13.235  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000007: nio socket, client, /127.0.0.1:15681 => /127.0.0.1:8623)}
+09/04/2018 16:53:13.236  INFO [NioProcessor-23] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:13.236  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:13.236  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:15.247  INFO [NioProcessor-27] LoggingFilter: CREATED
+09/04/2018 16:53:15.247  INFO [NioProcessor-27] LoggingFilter: OPENED
+09/04/2018 16:53:15.248  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000008: nio socket, client, /127.0.0.1:15690 => /127.0.0.1:8623)}
+09/04/2018 16:53:15.248  INFO [NioProcessor-27] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:15.249  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:53:15.249  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:17.257  INFO [NioProcessor-28] LoggingFilter: CREATED
+09/04/2018 16:53:17.257  INFO [NioProcessor-28] LoggingFilter: OPENED
+09/04/2018 16:53:17.257  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:53:17.258  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000009: nio socket, client, /127.0.0.1:15699 => /127.0.0.1:8623)}
+09/04/2018 16:53:17.260  INFO [NioProcessor-28] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:53:17.261  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:26.234  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:55:26.641  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:55:26.693  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:55:27.086  INFO [NioProcessor-5] LoggingFilter: CREATED
+09/04/2018 16:55:27.087  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:27.087  INFO [NioProcessor-5] LoggingFilter: OPENED
+09/04/2018 16:55:27.087  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000001: nio socket, client, /127.0.0.1:15784 => /127.0.0.1:8623)}
+09/04/2018 16:55:27.103  INFO [NioProcessor-5] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:27.104  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:27.104  INFO [NioProcessor-5] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:29.098  INFO [NioProcessor-9] LoggingFilter: CREATED
+09/04/2018 16:55:29.098  INFO [NioProcessor-9] LoggingFilter: OPENED
+09/04/2018 16:55:29.098  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:29.099  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000002: nio socket, client, /127.0.0.1:15793 => /127.0.0.1:8623)}
+09/04/2018 16:55:29.100  INFO [NioProcessor-9] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:29.100  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:29.101  INFO [NioProcessor-9] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:31.112  INFO [NioProcessor-10] LoggingFilter: CREATED
+09/04/2018 16:55:31.112  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:31.113  INFO [NioProcessor-10] LoggingFilter: OPENED
+09/04/2018 16:55:31.113  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000003: nio socket, client, /127.0.0.1:15802 => /127.0.0.1:8623)}
+09/04/2018 16:55:31.113  INFO [NioProcessor-10] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:31.114  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:31.114  INFO [NioProcessor-10] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:33.124  INFO [NioProcessor-14] LoggingFilter: CREATED
+09/04/2018 16:55:33.124  INFO [NioProcessor-14] LoggingFilter: OPENED
+09/04/2018 16:55:33.124  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:33.125  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000004: nio socket, client, /127.0.0.1:15813 => /127.0.0.1:8623)}
+09/04/2018 16:55:33.125  INFO [NioProcessor-14] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:33.125  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:33.126  INFO [NioProcessor-14] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:35.133  INFO [NioProcessor-18] LoggingFilter: CREATED
+09/04/2018 16:55:35.133  INFO [NioProcessor-18] LoggingFilter: OPENED
+09/04/2018 16:55:35.133  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:35.134  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000005: nio socket, client, /127.0.0.1:15822 => /127.0.0.1:8623)}
+09/04/2018 16:55:35.135  INFO [NioProcessor-18] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:35.135  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:35.135  INFO [NioProcessor-18] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:37.139  INFO [NioProcessor-19] LoggingFilter: CREATED
+09/04/2018 16:55:37.140  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:37.140  INFO [NioProcessor-19] LoggingFilter: OPENED
+09/04/2018 16:55:37.140  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000006: nio socket, client, /127.0.0.1:15831 => /127.0.0.1:8623)}
+09/04/2018 16:55:37.140  INFO [NioProcessor-19] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:37.140  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:37.141  INFO [NioProcessor-19] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:39.154  INFO [NioProcessor-23] LoggingFilter: CREATED
+09/04/2018 16:55:39.154  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:39.155  INFO [NioProcessor-23] LoggingFilter: OPENED
+09/04/2018 16:55:39.155  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000007: nio socket, client, /127.0.0.1:15841 => /127.0.0.1:8623)}
+09/04/2018 16:55:39.156  INFO [NioProcessor-23] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:39.156  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:39.157  INFO [NioProcessor-23] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:41.164  INFO [NioProcessor-27] LoggingFilter: CREATED
+09/04/2018 16:55:41.164  INFO [NioProcessor-27] LoggingFilter: OPENED
+09/04/2018 16:55:41.165  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000008: nio socket, client, /127.0.0.1:15850 => /127.0.0.1:8623)}
+09/04/2018 16:55:41.165  INFO [NioProcessor-27] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:41.165  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:41.165  INFO [NioProcessor-27] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:41.166  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:43.173  INFO [NioProcessor-28] LoggingFilter: CREATED
+09/04/2018 16:55:43.174  INFO [NioProcessor-28] LoggingFilter: OPENED
+09/04/2018 16:55:43.174  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:43.174  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000009: nio socket, client, /127.0.0.1:15859 => /127.0.0.1:8623)}
+09/04/2018 16:55:43.175  INFO [NioProcessor-28] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:43.175  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:43.175  INFO [NioProcessor-28] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:45.185  INFO [NioProcessor-32] LoggingFilter: CREATED
+09/04/2018 16:55:45.186  INFO [NioProcessor-32] LoggingFilter: OPENED
+09/04/2018 16:55:45.186  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:45.187  INFO [NioProcessor-32] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000A: nio socket, client, /127.0.0.1:15868 => /127.0.0.1:8623)}
+09/04/2018 16:55:45.188  INFO [NioProcessor-32] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:45.188  INFO [NioProcessor-32] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:45.188  INFO [NioProcessor-32] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:47.197  INFO [NioProcessor-36] LoggingFilter: CREATED
+09/04/2018 16:55:47.197  INFO [NioProcessor-36] LoggingFilter: OPENED
+09/04/2018 16:55:47.197  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:47.198  INFO [NioProcessor-36] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000B: nio socket, client, /127.0.0.1:15879 => /127.0.0.1:8623)}
+09/04/2018 16:55:47.198  INFO [NioProcessor-36] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:47.199  INFO [NioProcessor-36] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:47.199  INFO [NioProcessor-36] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:49.209  INFO [NioProcessor-37] LoggingFilter: CREATED
+09/04/2018 16:55:49.210  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:49.211  INFO [NioProcessor-37] LoggingFilter: OPENED
+09/04/2018 16:55:49.212  INFO [NioProcessor-37] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000C: nio socket, client, /127.0.0.1:15888 => /127.0.0.1:8623)}
+09/04/2018 16:55:49.213  INFO [NioProcessor-37] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:49.213  INFO [NioProcessor-37] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:49.213  INFO [NioProcessor-37] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:51.233  INFO [NioProcessor-41] LoggingFilter: CREATED
+09/04/2018 16:55:51.233  INFO [NioProcessor-41] LoggingFilter: OPENED
+09/04/2018 16:55:51.234  INFO [NioProcessor-41] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000D: nio socket, client, /127.0.0.1:15897 => /127.0.0.1:8623)}
+09/04/2018 16:55:51.235  INFO [NioProcessor-41] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:51.235  INFO [NioProcessor-41] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:51.235  INFO [NioProcessor-41] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:51.244  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:53.253  INFO [NioProcessor-45] LoggingFilter: CREATED
+09/04/2018 16:55:53.253  INFO [NioProcessor-45] LoggingFilter: OPENED
+09/04/2018 16:55:53.253  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:53.263  INFO [NioProcessor-45] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000E: nio socket, client, /127.0.0.1:15908 => /127.0.0.1:8623)}
+09/04/2018 16:55:53.264  INFO [NioProcessor-45] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:53.264  INFO [NioProcessor-45] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:53.264  INFO [NioProcessor-45] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:55.268  INFO [NioProcessor-46] LoggingFilter: CREATED
+09/04/2018 16:55:55.268  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:55.268  INFO [NioProcessor-46] LoggingFilter: OPENED
+09/04/2018 16:55:55.268  INFO [NioProcessor-46] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000F: nio socket, client, /127.0.0.1:15917 => /127.0.0.1:8623)}
+09/04/2018 16:55:55.270  INFO [NioProcessor-46] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:55.271  INFO [NioProcessor-46] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:55.271  INFO [NioProcessor-46] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:57.283  INFO [NioProcessor-50] LoggingFilter: CREATED
+09/04/2018 16:55:57.284  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:57.284  INFO [NioProcessor-50] LoggingFilter: OPENED
+09/04/2018 16:55:57.284  INFO [NioProcessor-50] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000010: nio socket, client, /127.0.0.1:15928 => /127.0.0.1:8623)}
+09/04/2018 16:55:57.286  INFO [NioProcessor-50] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:57.286  INFO [NioProcessor-50] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:57.286  INFO [NioProcessor-50] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:59.293  INFO [NioProcessor-54] LoggingFilter: CREATED
+09/04/2018 16:55:59.293  INFO [NioProcessor-54] LoggingFilter: OPENED
+09/04/2018 16:55:59.293  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:55:59.294  INFO [NioProcessor-54] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000011: nio socket, client, /127.0.0.1:15940 => /127.0.0.1:8623)}
+09/04/2018 16:55:59.295  INFO [NioProcessor-54] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:55:59.295  INFO [NioProcessor-54] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:55:59.295  INFO [NioProcessor-54] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:55:59.324  INFO [NioProcessor-54] LoggingFilter: RECEIVED: SMS_Message{user=user2, password=pass_user2, content=Hello from SMPPSim bonjour 8
+, receiver=8966, sender=4477665544}
+09/04/2018 16:55:59.324  INFO [NioProcessor-54] TCP_CLientHandler: pool-1-thread-1 - SMS Receive From SMSGW : 4477665544 --> 8966( msg =Hello from SMPPSim bonjour 8
+ | IP =127.0.0.1 )
+09/04/2018 16:56:01.303  INFO [NioProcessor-55] LoggingFilter: CREATED
+09/04/2018 16:56:01.304  INFO [NioProcessor-55] LoggingFilter: OPENED
+09/04/2018 16:56:01.304  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:01.305  INFO [NioProcessor-55] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000012: nio socket, client, /127.0.0.1:15950 => /127.0.0.1:8623)}
+09/04/2018 16:56:01.306  INFO [NioProcessor-55] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:01.306  INFO [NioProcessor-55] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:01.306  INFO [NioProcessor-55] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:03.319  INFO [NioProcessor-59] LoggingFilter: CREATED
+09/04/2018 16:56:03.319  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:03.319  INFO [NioProcessor-59] LoggingFilter: OPENED
+09/04/2018 16:56:03.320  INFO [NioProcessor-59] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000013: nio socket, client, /127.0.0.1:15959 => /127.0.0.1:8623)}
+09/04/2018 16:56:03.321  INFO [NioProcessor-59] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:03.321  INFO [NioProcessor-59] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:03.321  INFO [NioProcessor-59] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:05.349  INFO [NioProcessor-63] LoggingFilter: CREATED
+09/04/2018 16:56:05.349  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:05.349  INFO [NioProcessor-63] LoggingFilter: OPENED
+09/04/2018 16:56:05.350  INFO [NioProcessor-63] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000014: nio socket, client, /127.0.0.1:15968 => /127.0.0.1:8623)}
+09/04/2018 16:56:05.350  INFO [NioProcessor-63] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:05.351  INFO [NioProcessor-63] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:05.351  INFO [NioProcessor-63] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:07.361  INFO [NioProcessor-64] LoggingFilter: CREATED
+09/04/2018 16:56:07.361  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:07.361  INFO [NioProcessor-64] LoggingFilter: OPENED
+09/04/2018 16:56:07.362  INFO [NioProcessor-64] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000015: nio socket, client, /127.0.0.1:15978 => /127.0.0.1:8623)}
+09/04/2018 16:56:07.363  INFO [NioProcessor-64] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:07.364  INFO [NioProcessor-64] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:07.365  INFO [NioProcessor-64] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:09.369  INFO [NioProcessor-68] LoggingFilter: CREATED
+09/04/2018 16:56:09.370  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:09.370  INFO [NioProcessor-68] LoggingFilter: OPENED
+09/04/2018 16:56:09.370  INFO [NioProcessor-68] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000016: nio socket, client, /127.0.0.1:15987 => /127.0.0.1:8623)}
+09/04/2018 16:56:09.371  INFO [NioProcessor-68] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:09.371  INFO [NioProcessor-68] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:09.371  INFO [NioProcessor-68] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:11.379  INFO [NioProcessor-72] LoggingFilter: CREATED
+09/04/2018 16:56:11.379  INFO [NioProcessor-72] LoggingFilter: OPENED
+09/04/2018 16:56:11.379  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:11.380  INFO [NioProcessor-72] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000017: nio socket, client, /127.0.0.1:15996 => /127.0.0.1:8623)}
+09/04/2018 16:56:11.380  INFO [NioProcessor-72] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:11.381  INFO [NioProcessor-72] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:11.381  INFO [NioProcessor-72] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:13.389  INFO [NioProcessor-73] LoggingFilter: CREATED
+09/04/2018 16:56:13.389  INFO [NioProcessor-73] LoggingFilter: OPENED
+09/04/2018 16:56:13.389  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:13.390  INFO [NioProcessor-73] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000018: nio socket, client, /127.0.0.1:16005 => /127.0.0.1:8623)}
+09/04/2018 16:56:13.391  INFO [NioProcessor-73] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:13.392  INFO [NioProcessor-73] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:13.392  INFO [NioProcessor-73] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:15.400  INFO [NioProcessor-77] LoggingFilter: CREATED
+09/04/2018 16:56:15.400  INFO [NioProcessor-77] LoggingFilter: OPENED
+09/04/2018 16:56:15.400  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:15.403  INFO [NioProcessor-77] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000019: nio socket, client, /127.0.0.1:16015 => /127.0.0.1:8623)}
+09/04/2018 16:56:15.404  INFO [NioProcessor-77] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:15.404  INFO [NioProcessor-77] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:15.405  INFO [NioProcessor-77] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:17.412  INFO [NioProcessor-81] LoggingFilter: CREATED
+09/04/2018 16:56:17.412  INFO [NioProcessor-81] LoggingFilter: OPENED
+09/04/2018 16:56:17.412  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:17.413  INFO [NioProcessor-81] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001A: nio socket, client, /127.0.0.1:16025 => /127.0.0.1:8623)}
+09/04/2018 16:56:17.414  INFO [NioProcessor-81] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:17.414  INFO [NioProcessor-81] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:17.414  INFO [NioProcessor-81] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:19.423  INFO [NioProcessor-82] LoggingFilter: CREATED
+09/04/2018 16:56:19.423  INFO [NioProcessor-82] LoggingFilter: OPENED
+09/04/2018 16:56:19.423  INFO [NioProcessor-82] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001B: nio socket, client, /127.0.0.1:16034 => /127.0.0.1:8623)}
+09/04/2018 16:56:19.424  INFO [NioProcessor-82] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:19.424  INFO [NioProcessor-82] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:19.424  INFO [NioProcessor-82] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:19.424  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:21.439  INFO [NioProcessor-86] LoggingFilter: CREATED
+09/04/2018 16:56:21.440  INFO [NioProcessor-86] LoggingFilter: OPENED
+09/04/2018 16:56:21.440  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:21.440  INFO [NioProcessor-86] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001C: nio socket, client, /127.0.0.1:16044 => /127.0.0.1:8623)}
+09/04/2018 16:56:21.441  INFO [NioProcessor-86] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:21.441  INFO [NioProcessor-86] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:21.441  INFO [NioProcessor-86] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:23.447  INFO [NioProcessor-90] LoggingFilter: CREATED
+09/04/2018 16:56:23.447  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:23.447  INFO [NioProcessor-90] LoggingFilter: OPENED
+09/04/2018 16:56:23.447  INFO [NioProcessor-90] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001D: nio socket, client, /127.0.0.1:16054 => /127.0.0.1:8623)}
+09/04/2018 16:56:23.448  INFO [NioProcessor-90] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:23.448  INFO [NioProcessor-90] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:23.448  INFO [NioProcessor-90] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:25.455  INFO [NioProcessor-91] LoggingFilter: CREATED
+09/04/2018 16:56:25.455  INFO [NioProcessor-91] LoggingFilter: OPENED
+09/04/2018 16:56:25.455  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:25.455  INFO [NioProcessor-91] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001E: nio socket, client, /127.0.0.1:16064 => /127.0.0.1:8623)}
+09/04/2018 16:56:25.456  INFO [NioProcessor-91] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:25.456  INFO [NioProcessor-91] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:25.456  INFO [NioProcessor-91] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:27.467  INFO [NioProcessor-95] LoggingFilter: CREATED
+09/04/2018 16:56:27.468  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:27.468  INFO [NioProcessor-95] LoggingFilter: OPENED
+09/04/2018 16:56:27.468  INFO [NioProcessor-95] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001F: nio socket, client, /127.0.0.1:16073 => /127.0.0.1:8623)}
+09/04/2018 16:56:27.470  INFO [NioProcessor-95] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:27.470  INFO [NioProcessor-95] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:27.470  INFO [NioProcessor-95] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:29.476  INFO [NioProcessor-99] LoggingFilter: CREATED
+09/04/2018 16:56:29.476  INFO [NioProcessor-99] LoggingFilter: OPENED
+09/04/2018 16:56:29.476  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:29.477  INFO [NioProcessor-99] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000020: nio socket, client, /127.0.0.1:16084 => /127.0.0.1:8623)}
+09/04/2018 16:56:29.478  INFO [NioProcessor-99] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:29.478  INFO [NioProcessor-99] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:29.478  INFO [NioProcessor-99] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:31.490  INFO [NioProcessor-100] LoggingFilter: CREATED
+09/04/2018 16:56:31.490  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:31.490  INFO [NioProcessor-100] LoggingFilter: OPENED
+09/04/2018 16:56:31.491  INFO [NioProcessor-100] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000021: nio socket, client, /127.0.0.1:16097 => /127.0.0.1:8623)}
+09/04/2018 16:56:31.492  INFO [NioProcessor-100] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:31.492  INFO [NioProcessor-100] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:31.492  INFO [NioProcessor-100] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:33.496  INFO [NioProcessor-104] LoggingFilter: CREATED
+09/04/2018 16:56:33.497  INFO [NioProcessor-104] LoggingFilter: OPENED
+09/04/2018 16:56:33.497  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:33.497  INFO [NioProcessor-104] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000022: nio socket, client, /127.0.0.1:16107 => /127.0.0.1:8623)}
+09/04/2018 16:56:33.497  INFO [NioProcessor-104] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:33.498  INFO [NioProcessor-104] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:33.498  INFO [NioProcessor-104] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:35.511  INFO [NioProcessor-108] LoggingFilter: CREATED
+09/04/2018 16:56:35.511  INFO [NioProcessor-108] LoggingFilter: OPENED
+09/04/2018 16:56:35.511  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:35.512  INFO [NioProcessor-108] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000023: nio socket, client, /127.0.0.1:16117 => /127.0.0.1:8623)}
+09/04/2018 16:56:35.512  INFO [NioProcessor-108] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:35.512  INFO [NioProcessor-108] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:35.512  INFO [NioProcessor-108] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:37.553  INFO [NioProcessor-109] LoggingFilter: CREATED
+09/04/2018 16:56:37.553  INFO [NioProcessor-109] LoggingFilter: OPENED
+09/04/2018 16:56:37.553  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:37.554  INFO [NioProcessor-109] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000024: nio socket, client, /127.0.0.1:16127 => /127.0.0.1:8623)}
+09/04/2018 16:56:37.555  INFO [NioProcessor-109] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:37.555  INFO [NioProcessor-109] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:37.555  INFO [NioProcessor-109] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:39.566  INFO [NioProcessor-113] LoggingFilter: CREATED
+09/04/2018 16:56:39.566  INFO [NioProcessor-113] LoggingFilter: OPENED
+09/04/2018 16:56:39.567  INFO [NioProcessor-113] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000025: nio socket, client, /127.0.0.1:16137 => /127.0.0.1:8623)}
+09/04/2018 16:56:39.567  INFO [NioProcessor-113] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:39.568  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:39.568  INFO [NioProcessor-113] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:39.568  INFO [NioProcessor-113] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:41.577  INFO [NioProcessor-117] LoggingFilter: CREATED
+09/04/2018 16:56:41.578  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:41.578  INFO [NioProcessor-117] LoggingFilter: OPENED
+09/04/2018 16:56:41.578  INFO [NioProcessor-117] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000026: nio socket, client, /127.0.0.1:16158 => /127.0.0.1:8623)}
+09/04/2018 16:56:41.579  INFO [NioProcessor-117] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:41.579  INFO [NioProcessor-117] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:41.579  INFO [NioProcessor-117] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:43.584  INFO [NioProcessor-118] LoggingFilter: CREATED
+09/04/2018 16:56:43.584  INFO [NioProcessor-118] LoggingFilter: OPENED
+09/04/2018 16:56:43.584  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:43.585  INFO [NioProcessor-118] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000027: nio socket, client, /127.0.0.1:16169 => /127.0.0.1:8623)}
+09/04/2018 16:56:43.585  INFO [NioProcessor-118] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:43.585  INFO [NioProcessor-118] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:43.585  INFO [NioProcessor-118] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:45.593  INFO [NioProcessor-122] LoggingFilter: CREATED
+09/04/2018 16:56:45.593  INFO [NioProcessor-122] LoggingFilter: OPENED
+09/04/2018 16:56:45.593  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:45.594  INFO [NioProcessor-122] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000028: nio socket, client, /127.0.0.1:16179 => /127.0.0.1:8623)}
+09/04/2018 16:56:45.595  INFO [NioProcessor-122] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:45.595  INFO [NioProcessor-122] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:45.595  INFO [NioProcessor-122] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:47.602  INFO [NioProcessor-126] LoggingFilter: CREATED
+09/04/2018 16:56:47.602  INFO [NioProcessor-126] LoggingFilter: OPENED
+09/04/2018 16:56:47.602  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:47.602  INFO [NioProcessor-126] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000029: nio socket, client, /127.0.0.1:16188 => /127.0.0.1:8623)}
+09/04/2018 16:56:47.603  INFO [NioProcessor-126] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:47.603  INFO [NioProcessor-126] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:47.603  INFO [NioProcessor-126] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:49.611  INFO [NioProcessor-127] LoggingFilter: CREATED
+09/04/2018 16:56:49.611  INFO [NioProcessor-127] LoggingFilter: OPENED
+09/04/2018 16:56:49.611  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:49.611  INFO [NioProcessor-127] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002A: nio socket, client, /127.0.0.1:16199 => /127.0.0.1:8623)}
+09/04/2018 16:56:49.612  INFO [NioProcessor-127] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:49.612  INFO [NioProcessor-127] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:49.612  INFO [NioProcessor-127] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:51.624  INFO [NioProcessor-131] LoggingFilter: CREATED
+09/04/2018 16:56:51.624  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:51.625  INFO [NioProcessor-131] LoggingFilter: OPENED
+09/04/2018 16:56:51.625  INFO [NioProcessor-131] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002B: nio socket, client, /127.0.0.1:16208 => /127.0.0.1:8623)}
+09/04/2018 16:56:51.626  INFO [NioProcessor-131] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:51.626  INFO [NioProcessor-131] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:51.626  INFO [NioProcessor-131] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:53.633  INFO [NioProcessor-135] LoggingFilter: CREATED
+09/04/2018 16:56:53.634  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:53.634  INFO [NioProcessor-135] LoggingFilter: OPENED
+09/04/2018 16:56:53.634  INFO [NioProcessor-135] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002C: nio socket, client, /127.0.0.1:16217 => /127.0.0.1:8623)}
+09/04/2018 16:56:53.635  INFO [NioProcessor-135] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:53.635  INFO [NioProcessor-135] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:53.635  INFO [NioProcessor-135] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:55.649  INFO [NioProcessor-136] LoggingFilter: CREATED
+09/04/2018 16:56:55.649  INFO [NioProcessor-136] LoggingFilter: OPENED
+09/04/2018 16:56:55.650  INFO [NioProcessor-136] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002D: nio socket, client, /127.0.0.1:16228 => /127.0.0.1:8623)}
+09/04/2018 16:56:55.650  INFO [NioProcessor-136] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:55.650  INFO [NioProcessor-136] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:55.650  INFO [NioProcessor-136] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:55.650  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:57.671  INFO [NioProcessor-140] LoggingFilter: CREATED
+09/04/2018 16:56:57.672  INFO [NioProcessor-140] LoggingFilter: OPENED
+09/04/2018 16:56:57.672  INFO [NioProcessor-140] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002E: nio socket, client, /127.0.0.1:16237 => /127.0.0.1:8623)}
+09/04/2018 16:56:57.673  INFO [NioProcessor-140] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:57.673  INFO [NioProcessor-140] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:57.673  INFO [NioProcessor-140] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:56:57.673  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:59.682  INFO [NioProcessor-144] LoggingFilter: CREATED
+09/04/2018 16:56:59.682  INFO [NioProcessor-144] LoggingFilter: OPENED
+09/04/2018 16:56:59.682  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:56:59.683  INFO [NioProcessor-144] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002F: nio socket, client, /127.0.0.1:16246 => /127.0.0.1:8623)}
+09/04/2018 16:56:59.684  INFO [NioProcessor-144] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:56:59.684  INFO [NioProcessor-144] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:56:59.684  INFO [NioProcessor-144] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:01.694  INFO [NioProcessor-145] LoggingFilter: CREATED
+09/04/2018 16:57:01.695  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:01.695  INFO [NioProcessor-145] LoggingFilter: OPENED
+09/04/2018 16:57:01.695  INFO [NioProcessor-145] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000030: nio socket, client, /127.0.0.1:16255 => /127.0.0.1:8623)}
+09/04/2018 16:57:01.696  INFO [NioProcessor-145] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:01.697  INFO [NioProcessor-145] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:01.697  INFO [NioProcessor-145] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:03.706  INFO [NioProcessor-149] LoggingFilter: CREATED
+09/04/2018 16:57:03.706  INFO [NioProcessor-149] LoggingFilter: OPENED
+09/04/2018 16:57:03.706  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:03.707  INFO [NioProcessor-149] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000031: nio socket, client, /127.0.0.1:16265 => /127.0.0.1:8623)}
+09/04/2018 16:57:03.708  INFO [NioProcessor-149] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:03.708  INFO [NioProcessor-149] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:03.708  INFO [NioProcessor-149] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:05.725  INFO [NioProcessor-153] LoggingFilter: CREATED
+09/04/2018 16:57:05.726  INFO [NioProcessor-153] LoggingFilter: OPENED
+09/04/2018 16:57:05.726  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:05.727  INFO [NioProcessor-153] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000032: nio socket, client, /127.0.0.1:16274 => /127.0.0.1:8623)}
+09/04/2018 16:57:05.728  INFO [NioProcessor-153] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:05.728  INFO [NioProcessor-153] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:05.728  INFO [NioProcessor-153] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:07.743  INFO [NioProcessor-154] LoggingFilter: CREATED
+09/04/2018 16:57:07.743  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:07.744  INFO [NioProcessor-154] LoggingFilter: OPENED
+09/04/2018 16:57:07.744  INFO [NioProcessor-154] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000033: nio socket, client, /127.0.0.1:16284 => /127.0.0.1:8623)}
+09/04/2018 16:57:07.745  INFO [NioProcessor-154] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:07.745  INFO [NioProcessor-154] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:07.745  INFO [NioProcessor-154] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:09.754  INFO [NioProcessor-158] LoggingFilter: CREATED
+09/04/2018 16:57:09.754  INFO [NioProcessor-158] LoggingFilter: OPENED
+09/04/2018 16:57:09.755  INFO [NioProcessor-158] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000034: nio socket, client, /127.0.0.1:16294 => /127.0.0.1:8623)}
+09/04/2018 16:57:09.755  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:09.755  INFO [NioProcessor-158] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:09.755  INFO [NioProcessor-158] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:09.755  INFO [NioProcessor-158] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:11.767  INFO [NioProcessor-162] LoggingFilter: CREATED
+09/04/2018 16:57:11.767  INFO [NioProcessor-162] LoggingFilter: OPENED
+09/04/2018 16:57:11.767  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:11.768  INFO [NioProcessor-162] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000035: nio socket, client, /127.0.0.1:16305 => /127.0.0.1:8623)}
+09/04/2018 16:57:11.769  INFO [NioProcessor-162] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:11.769  INFO [NioProcessor-162] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:11.769  INFO [NioProcessor-162] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:13.781  INFO [NioProcessor-163] LoggingFilter: CREATED
+09/04/2018 16:57:13.781  INFO [NioProcessor-163] LoggingFilter: OPENED
+09/04/2018 16:57:13.781  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:13.783  INFO [NioProcessor-163] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000036: nio socket, client, /127.0.0.1:16316 => /127.0.0.1:8623)}
+09/04/2018 16:57:13.785  INFO [NioProcessor-163] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:13.785  INFO [NioProcessor-163] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:13.785  INFO [NioProcessor-163] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:15.789  INFO [NioProcessor-167] LoggingFilter: CREATED
+09/04/2018 16:57:15.789  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:15.789  INFO [NioProcessor-167] LoggingFilter: OPENED
+09/04/2018 16:57:15.790  INFO [NioProcessor-167] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000037: nio socket, client, /127.0.0.1:16326 => /127.0.0.1:8623)}
+09/04/2018 16:57:15.791  INFO [NioProcessor-167] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:15.791  INFO [NioProcessor-167] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:15.791  INFO [NioProcessor-167] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:17.805  INFO [NioProcessor-171] LoggingFilter: CREATED
+09/04/2018 16:57:17.805  INFO [NioProcessor-171] LoggingFilter: OPENED
+09/04/2018 16:57:17.805  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:17.807  INFO [NioProcessor-171] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000038: nio socket, client, /127.0.0.1:16337 => /127.0.0.1:8623)}
+09/04/2018 16:57:17.808  INFO [NioProcessor-171] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:17.808  INFO [NioProcessor-171] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:17.808  INFO [NioProcessor-171] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:19.818  INFO [NioProcessor-172] LoggingFilter: CREATED
+09/04/2018 16:57:19.818  INFO [NioProcessor-172] LoggingFilter: OPENED
+09/04/2018 16:57:19.818  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:19.819  INFO [NioProcessor-172] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000039: nio socket, client, /127.0.0.1:16346 => /127.0.0.1:8623)}
+09/04/2018 16:57:19.820  INFO [NioProcessor-172] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:19.821  INFO [NioProcessor-172] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:19.822  INFO [NioProcessor-172] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:21.827  INFO [NioProcessor-176] LoggingFilter: CREATED
+09/04/2018 16:57:21.827  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:21.828  INFO [NioProcessor-176] LoggingFilter: OPENED
+09/04/2018 16:57:21.828  INFO [NioProcessor-176] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000003A: nio socket, client, /127.0.0.1:16355 => /127.0.0.1:8623)}
+09/04/2018 16:57:21.829  INFO [NioProcessor-176] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:21.829  INFO [NioProcessor-176] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:21.829  INFO [NioProcessor-176] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:23.840  INFO [NioProcessor-180] LoggingFilter: CREATED
+09/04/2018 16:57:23.840  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:23.840  INFO [NioProcessor-180] LoggingFilter: OPENED
+09/04/2018 16:57:23.841  INFO [NioProcessor-180] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000003B: nio socket, client, /127.0.0.1:16365 => /127.0.0.1:8623)}
+09/04/2018 16:57:23.842  INFO [NioProcessor-180] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:23.842  INFO [NioProcessor-180] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:23.842  INFO [NioProcessor-180] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:25.846  INFO [NioProcessor-181] LoggingFilter: CREATED
+09/04/2018 16:57:25.847  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:25.847  INFO [NioProcessor-181] LoggingFilter: OPENED
+09/04/2018 16:57:25.847  INFO [NioProcessor-181] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000003C: nio socket, client, /127.0.0.1:16377 => /127.0.0.1:8623)}
+09/04/2018 16:57:25.848  INFO [NioProcessor-181] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:25.848  INFO [NioProcessor-181] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:25.848  INFO [NioProcessor-181] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:27.859  INFO [NioProcessor-185] LoggingFilter: CREATED
+09/04/2018 16:57:27.859  INFO [NioProcessor-185] LoggingFilter: OPENED
+09/04/2018 16:57:27.859  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:27.860  INFO [NioProcessor-185] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000003D: nio socket, client, /127.0.0.1:16386 => /127.0.0.1:8623)}
+09/04/2018 16:57:27.860  INFO [NioProcessor-185] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:27.860  INFO [NioProcessor-185] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:27.861  INFO [NioProcessor-185] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:29.871  INFO [NioProcessor-189] LoggingFilter: CREATED
+09/04/2018 16:57:29.871  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:29.871  INFO [NioProcessor-189] LoggingFilter: OPENED
+09/04/2018 16:57:29.872  INFO [NioProcessor-189] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000003E: nio socket, client, /127.0.0.1:16396 => /127.0.0.1:8623)}
+09/04/2018 16:57:29.872  INFO [NioProcessor-189] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:29.873  INFO [NioProcessor-189] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:29.873  INFO [NioProcessor-189] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:31.888  INFO [NioProcessor-190] LoggingFilter: CREATED
+09/04/2018 16:57:31.888  INFO [NioProcessor-190] LoggingFilter: OPENED
+09/04/2018 16:57:31.888  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:31.889  INFO [NioProcessor-190] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000003F: nio socket, client, /127.0.0.1:16408 => /127.0.0.1:8623)}
+09/04/2018 16:57:31.890  INFO [NioProcessor-190] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:31.890  INFO [NioProcessor-190] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:31.890  INFO [NioProcessor-190] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:33.944  INFO [NioProcessor-194] LoggingFilter: CREATED
+09/04/2018 16:57:33.944  INFO [NioProcessor-194] LoggingFilter: OPENED
+09/04/2018 16:57:33.944  INFO [NioProcessor-194] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000040: nio socket, client, /127.0.0.1:16418 => /127.0.0.1:8623)}
+09/04/2018 16:57:33.945  INFO [NioProcessor-194] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:33.945  INFO [NioProcessor-194] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:33.946  INFO [NioProcessor-194] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:33.946  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:35.958  INFO [NioProcessor-198] LoggingFilter: CREATED
+09/04/2018 16:57:35.958  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:35.959  INFO [NioProcessor-198] LoggingFilter: OPENED
+09/04/2018 16:57:35.959  INFO [NioProcessor-198] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000041: nio socket, client, /127.0.0.1:16428 => /127.0.0.1:8623)}
+09/04/2018 16:57:35.960  INFO [NioProcessor-198] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:35.960  INFO [NioProcessor-198] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:35.960  INFO [NioProcessor-198] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:37.970  INFO [NioProcessor-199] LoggingFilter: CREATED
+09/04/2018 16:57:37.970  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:37.970  INFO [NioProcessor-199] LoggingFilter: OPENED
+09/04/2018 16:57:37.971  INFO [NioProcessor-199] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000042: nio socket, client, /127.0.0.1:16438 => /127.0.0.1:8623)}
+09/04/2018 16:57:37.972  INFO [NioProcessor-199] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:37.972  INFO [NioProcessor-199] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:37.973  INFO [NioProcessor-199] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:39.983  INFO [NioProcessor-203] LoggingFilter: CREATED
+09/04/2018 16:57:39.983  INFO [NioProcessor-203] LoggingFilter: OPENED
+09/04/2018 16:57:39.983  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:39.987  INFO [NioProcessor-203] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000043: nio socket, client, /127.0.0.1:16447 => /127.0.0.1:8623)}
+09/04/2018 16:57:39.988  INFO [NioProcessor-203] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:39.988  INFO [NioProcessor-203] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:39.988  INFO [NioProcessor-203] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:42.000  INFO [NioProcessor-207] LoggingFilter: CREATED
+09/04/2018 16:57:42.000  INFO [NioProcessor-207] LoggingFilter: OPENED
+09/04/2018 16:57:42.000  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:42.001  INFO [NioProcessor-207] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000044: nio socket, client, /127.0.0.1:16456 => /127.0.0.1:8623)}
+09/04/2018 16:57:42.002  INFO [NioProcessor-207] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:42.002  INFO [NioProcessor-207] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:42.003  INFO [NioProcessor-207] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:44.018  INFO [NioProcessor-208] LoggingFilter: CREATED
+09/04/2018 16:57:44.018  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:44.018  INFO [NioProcessor-208] LoggingFilter: OPENED
+09/04/2018 16:57:44.019  INFO [NioProcessor-208] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000045: nio socket, client, /127.0.0.1:16465 => /127.0.0.1:8623)}
+09/04/2018 16:57:44.020  INFO [NioProcessor-208] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:44.020  INFO [NioProcessor-208] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:44.020  INFO [NioProcessor-208] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:46.030  INFO [NioProcessor-212] LoggingFilter: CREATED
+09/04/2018 16:57:46.030  INFO [NioProcessor-212] LoggingFilter: OPENED
+09/04/2018 16:57:46.030  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:46.031  INFO [NioProcessor-212] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000046: nio socket, client, /127.0.0.1:16475 => /127.0.0.1:8623)}
+09/04/2018 16:57:46.032  INFO [NioProcessor-212] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:46.032  INFO [NioProcessor-212] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:46.033  INFO [NioProcessor-212] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:48.040  INFO [NioProcessor-216] LoggingFilter: CREATED
+09/04/2018 16:57:48.040  INFO [NioProcessor-216] LoggingFilter: OPENED
+09/04/2018 16:57:48.041  INFO [NioProcessor-216] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000047: nio socket, client, /127.0.0.1:16484 => /127.0.0.1:8623)}
+09/04/2018 16:57:48.041  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:48.042  INFO [NioProcessor-216] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:48.042  INFO [NioProcessor-216] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:48.043  INFO [NioProcessor-216] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:50.050  INFO [NioProcessor-217] LoggingFilter: CREATED
+09/04/2018 16:57:50.050  INFO [NioProcessor-217] LoggingFilter: OPENED
+09/04/2018 16:57:50.050  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:50.050  INFO [NioProcessor-217] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000048: nio socket, client, /127.0.0.1:16493 => /127.0.0.1:8623)}
+09/04/2018 16:57:50.051  INFO [NioProcessor-217] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:50.051  INFO [NioProcessor-217] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:50.052  INFO [NioProcessor-217] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:52.064  INFO [NioProcessor-221] LoggingFilter: CREATED
+09/04/2018 16:57:52.064  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:52.064  INFO [NioProcessor-221] LoggingFilter: OPENED
+09/04/2018 16:57:52.065  INFO [NioProcessor-221] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000049: nio socket, client, /127.0.0.1:16504 => /127.0.0.1:8623)}
+09/04/2018 16:57:52.065  INFO [NioProcessor-221] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:52.066  INFO [NioProcessor-221] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:52.066  INFO [NioProcessor-221] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:54.073  INFO [NioProcessor-225] LoggingFilter: CREATED
+09/04/2018 16:57:54.073  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:54.073  INFO [NioProcessor-225] LoggingFilter: OPENED
+09/04/2018 16:57:54.074  INFO [NioProcessor-225] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000004A: nio socket, client, /127.0.0.1:16513 => /127.0.0.1:8623)}
+09/04/2018 16:57:54.075  INFO [NioProcessor-225] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:54.075  INFO [NioProcessor-225] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:54.075  INFO [NioProcessor-225] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:56.111  INFO [NioProcessor-226] LoggingFilter: CREATED
+09/04/2018 16:57:56.112  INFO [NioProcessor-226] LoggingFilter: OPENED
+09/04/2018 16:57:56.112  INFO [NioProcessor-226] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000004B: nio socket, client, /127.0.0.1:16522 => /127.0.0.1:8623)}
+09/04/2018 16:57:56.113  INFO [NioProcessor-226] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:56.113  INFO [NioProcessor-226] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:56.113  INFO [NioProcessor-226] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:57:56.114  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:58.125  INFO [NioProcessor-230] LoggingFilter: CREATED
+09/04/2018 16:57:58.126  INFO [NioProcessor-230] LoggingFilter: OPENED
+09/04/2018 16:57:58.126  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:57:58.126  INFO [NioProcessor-230] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000004C: nio socket, client, /127.0.0.1:16539 => /127.0.0.1:8623)}
+09/04/2018 16:57:58.127  INFO [NioProcessor-230] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:57:58.127  INFO [NioProcessor-230] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:57:58.127  INFO [NioProcessor-230] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:00.138  INFO [NioProcessor-234] LoggingFilter: CREATED
+09/04/2018 16:58:00.138  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:00.138  INFO [NioProcessor-234] LoggingFilter: OPENED
+09/04/2018 16:58:00.139  INFO [NioProcessor-234] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000004D: nio socket, client, /127.0.0.1:16549 => /127.0.0.1:8623)}
+09/04/2018 16:58:00.140  INFO [NioProcessor-234] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:00.140  INFO [NioProcessor-234] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:00.140  INFO [NioProcessor-234] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:02.148  INFO [NioProcessor-235] LoggingFilter: CREATED
+09/04/2018 16:58:02.148  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:02.149  INFO [NioProcessor-235] LoggingFilter: OPENED
+09/04/2018 16:58:02.149  INFO [NioProcessor-235] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000004E: nio socket, client, /127.0.0.1:16560 => /127.0.0.1:8623)}
+09/04/2018 16:58:02.156  INFO [NioProcessor-235] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:02.156  INFO [NioProcessor-235] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:02.156  INFO [NioProcessor-235] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:04.237  INFO [NioProcessor-239] LoggingFilter: CREATED
+09/04/2018 16:58:04.237  INFO [NioProcessor-239] LoggingFilter: OPENED
+09/04/2018 16:58:04.237  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:04.238  INFO [NioProcessor-239] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000004F: nio socket, client, /127.0.0.1:16580 => /127.0.0.1:8623)}
+09/04/2018 16:58:04.239  INFO [NioProcessor-239] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:04.239  INFO [NioProcessor-239] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:04.239  INFO [NioProcessor-239] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:06.250  INFO [NioProcessor-243] LoggingFilter: CREATED
+09/04/2018 16:58:06.250  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:06.250  INFO [NioProcessor-243] LoggingFilter: OPENED
+09/04/2018 16:58:06.251  INFO [NioProcessor-243] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000050: nio socket, client, /127.0.0.1:16590 => /127.0.0.1:8623)}
+09/04/2018 16:58:06.252  INFO [NioProcessor-243] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:06.252  INFO [NioProcessor-243] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:06.252  INFO [NioProcessor-243] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:08.257  INFO [NioProcessor-244] LoggingFilter: CREATED
+09/04/2018 16:58:08.258  INFO [NioProcessor-244] LoggingFilter: OPENED
+09/04/2018 16:58:08.258  INFO [NioProcessor-244] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000051: nio socket, client, /127.0.0.1:16601 => /127.0.0.1:8623)}
+09/04/2018 16:58:08.259  INFO [NioProcessor-244] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:08.259  INFO [NioProcessor-244] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:08.259  INFO [NioProcessor-244] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:08.259  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:10.270  INFO [NioProcessor-248] LoggingFilter: CREATED
+09/04/2018 16:58:10.270  INFO [NioProcessor-248] LoggingFilter: OPENED
+09/04/2018 16:58:10.270  INFO [NioProcessor-248] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000052: nio socket, client, /127.0.0.1:16611 => /127.0.0.1:8623)}
+09/04/2018 16:58:10.271  INFO [NioProcessor-248] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:10.271  INFO [NioProcessor-248] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:10.271  INFO [NioProcessor-248] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:10.271  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:12.281  INFO [NioProcessor-252] LoggingFilter: CREATED
+09/04/2018 16:58:12.281  INFO [NioProcessor-252] LoggingFilter: OPENED
+09/04/2018 16:58:12.281  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:12.282  INFO [NioProcessor-252] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000053: nio socket, client, /127.0.0.1:16620 => /127.0.0.1:8623)}
+09/04/2018 16:58:12.282  INFO [NioProcessor-252] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:12.282  INFO [NioProcessor-252] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:12.282  INFO [NioProcessor-252] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:14.291  INFO [NioProcessor-253] LoggingFilter: CREATED
+09/04/2018 16:58:14.292  INFO [NioProcessor-253] LoggingFilter: OPENED
+09/04/2018 16:58:14.292  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:14.292  INFO [NioProcessor-253] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000054: nio socket, client, /127.0.0.1:16630 => /127.0.0.1:8623)}
+09/04/2018 16:58:14.293  INFO [NioProcessor-253] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:14.294  INFO [NioProcessor-253] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:14.294  INFO [NioProcessor-253] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:16.302  INFO [NioProcessor-257] LoggingFilter: CREATED
+09/04/2018 16:58:16.303  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:16.303  INFO [NioProcessor-257] LoggingFilter: OPENED
+09/04/2018 16:58:16.304  INFO [NioProcessor-257] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000055: nio socket, client, /127.0.0.1:16639 => /127.0.0.1:8623)}
+09/04/2018 16:58:16.304  INFO [NioProcessor-257] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:16.304  INFO [NioProcessor-257] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:16.304  INFO [NioProcessor-257] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:26.057  INFO [main] TCP_clientMain: Load log4j config file done.
+09/04/2018 16:58:26.314  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+09/04/2018 16:58:26.346  INFO [main] TCP_clientMain: TCP Client is launch ........
+09/04/2018 16:58:26.563  INFO [NioProcessor-5] LoggingFilter: CREATED
+09/04/2018 16:58:26.565  INFO [NioProcessor-5] LoggingFilter: OPENED
+09/04/2018 16:58:26.565  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:26.580  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000001: nio socket, client, /127.0.0.1:16659 => /127.0.0.1:8623)}
+09/04/2018 16:58:26.592  INFO [NioProcessor-5] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:26.593  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:26.593  INFO [NioProcessor-5] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:28.587  INFO [NioProcessor-9] LoggingFilter: CREATED
+09/04/2018 16:58:28.588  INFO [NioProcessor-9] LoggingFilter: OPENED
+09/04/2018 16:58:28.588  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:28.588  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000002: nio socket, client, /127.0.0.1:16670 => /127.0.0.1:8623)}
+09/04/2018 16:58:28.589  INFO [NioProcessor-9] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:28.589  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:28.589  INFO [NioProcessor-9] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:30.604  INFO [NioProcessor-10] LoggingFilter: CREATED
+09/04/2018 16:58:30.604  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:30.604  INFO [NioProcessor-10] LoggingFilter: OPENED
+09/04/2018 16:58:30.605  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000003: nio socket, client, /127.0.0.1:16680 => /127.0.0.1:8623)}
+09/04/2018 16:58:30.606  INFO [NioProcessor-10] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:30.606  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:30.606  INFO [NioProcessor-10] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:32.613  INFO [NioProcessor-14] LoggingFilter: CREATED
+09/04/2018 16:58:32.613  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:32.613  INFO [NioProcessor-14] LoggingFilter: OPENED
+09/04/2018 16:58:32.613  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000004: nio socket, client, /127.0.0.1:16690 => /127.0.0.1:8623)}
+09/04/2018 16:58:32.614  INFO [NioProcessor-14] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:32.614  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:32.614  INFO [NioProcessor-14] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:34.621  INFO [NioProcessor-18] LoggingFilter: CREATED
+09/04/2018 16:58:34.622  INFO [NioProcessor-18] LoggingFilter: OPENED
+09/04/2018 16:58:34.622  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:34.622  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000005: nio socket, client, /127.0.0.1:16700 => /127.0.0.1:8623)}
+09/04/2018 16:58:34.623  INFO [NioProcessor-18] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:34.623  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:34.623  INFO [NioProcessor-18] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:36.639  INFO [NioProcessor-19] LoggingFilter: CREATED
+09/04/2018 16:58:36.640  INFO [NioProcessor-19] LoggingFilter: OPENED
+09/04/2018 16:58:36.640  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:36.640  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000006: nio socket, client, /127.0.0.1:16709 => /127.0.0.1:8623)}
+09/04/2018 16:58:36.642  INFO [NioProcessor-19] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:36.642  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:36.642  INFO [NioProcessor-19] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:38.648  INFO [NioProcessor-23] LoggingFilter: CREATED
+09/04/2018 16:58:38.648  INFO [NioProcessor-23] LoggingFilter: OPENED
+09/04/2018 16:58:38.648  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000007: nio socket, client, /127.0.0.1:16727 => /127.0.0.1:8623)}
+09/04/2018 16:58:38.649  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:38.649  INFO [NioProcessor-23] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:38.650  INFO [NioProcessor-23] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:38.650  INFO [NioProcessor-23] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:40.661  INFO [NioProcessor-27] LoggingFilter: CREATED
+09/04/2018 16:58:40.662  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:40.662  INFO [NioProcessor-27] LoggingFilter: OPENED
+09/04/2018 16:58:40.662  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000008: nio socket, client, /127.0.0.1:16739 => /127.0.0.1:8623)}
+09/04/2018 16:58:40.664  INFO [NioProcessor-27] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:40.664  INFO [NioProcessor-27] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:40.664  INFO [NioProcessor-27] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:42.671  INFO [NioProcessor-28] LoggingFilter: CREATED
+09/04/2018 16:58:42.671  INFO [NioProcessor-28] LoggingFilter: OPENED
+09/04/2018 16:58:42.671  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:42.678  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000009: nio socket, client, /127.0.0.1:16749 => /127.0.0.1:8623)}
+09/04/2018 16:58:42.678  INFO [NioProcessor-28] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:42.678  INFO [NioProcessor-28] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:42.678  INFO [NioProcessor-28] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:44.679  INFO [NioProcessor-32] LoggingFilter: CREATED
+09/04/2018 16:58:44.679  INFO [NioProcessor-32] LoggingFilter: OPENED
+09/04/2018 16:58:44.679  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:44.681  INFO [NioProcessor-32] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000A: nio socket, client, /127.0.0.1:16758 => /127.0.0.1:8623)}
+09/04/2018 16:58:44.681  INFO [NioProcessor-32] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:44.682  INFO [NioProcessor-32] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:44.682  INFO [NioProcessor-32] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:46.688  INFO [NioProcessor-36] LoggingFilter: CREATED
+09/04/2018 16:58:46.688  INFO [NioProcessor-36] LoggingFilter: OPENED
+09/04/2018 16:58:46.688  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:46.689  INFO [NioProcessor-36] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000B: nio socket, client, /127.0.0.1:16771 => /127.0.0.1:8623)}
+09/04/2018 16:58:46.689  INFO [NioProcessor-36] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:46.689  INFO [NioProcessor-36] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:46.690  INFO [NioProcessor-36] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:46.692  INFO [NioProcessor-36] LoggingFilter: RECEIVED: SMS_Message{user=user2, password=pass_user2, content=Hello from SMPPSim bonjour 8
+, receiver=8966, sender=4477665544}
+09/04/2018 16:58:46.692  INFO [NioProcessor-36] TCP_CLientHandler: pool-1-thread-1 - SMS Receive From SMSGW : 4477665544 --> 8966( msg =Hello from SMPPSim bonjour 8
+ | IP =127.0.0.1 )
+09/04/2018 16:58:46.693  INFO [NioProcessor-36] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:48.698  INFO [NioProcessor-37] LoggingFilter: CREATED
+09/04/2018 16:58:48.698  INFO [NioProcessor-37] LoggingFilter: OPENED
+09/04/2018 16:58:48.698  INFO [NioProcessor-37] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000C: nio socket, client, /127.0.0.1:16781 => /127.0.0.1:8623)}
+09/04/2018 16:58:48.699  INFO [NioProcessor-37] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:48.699  INFO [NioProcessor-37] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:48.699  INFO [NioProcessor-37] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:48.700  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:50.709  INFO [NioProcessor-41] LoggingFilter: CREATED
+09/04/2018 16:58:50.709  INFO [NioProcessor-41] LoggingFilter: OPENED
+09/04/2018 16:58:50.709  INFO [NioProcessor-41] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000D: nio socket, client, /127.0.0.1:16791 => /127.0.0.1:8623)}
+09/04/2018 16:58:50.710  INFO [NioProcessor-41] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:50.711  INFO [NioProcessor-41] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:50.711  INFO [NioProcessor-41] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:50.711  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:52.728  INFO [NioProcessor-45] LoggingFilter: CREATED
+09/04/2018 16:58:52.729  INFO [NioProcessor-45] LoggingFilter: OPENED
+09/04/2018 16:58:52.729  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:52.729  INFO [NioProcessor-45] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000E: nio socket, client, /127.0.0.1:16800 => /127.0.0.1:8623)}
+09/04/2018 16:58:52.730  INFO [NioProcessor-45] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:52.730  INFO [NioProcessor-45] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:52.731  INFO [NioProcessor-45] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:54.738  INFO [NioProcessor-46] LoggingFilter: CREATED
+09/04/2018 16:58:54.738  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:54.739  INFO [NioProcessor-46] LoggingFilter: OPENED
+09/04/2018 16:58:54.739  INFO [NioProcessor-46] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000000F: nio socket, client, /127.0.0.1:16809 => /127.0.0.1:8623)}
+09/04/2018 16:58:54.740  INFO [NioProcessor-46] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:54.740  INFO [NioProcessor-46] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:54.740  INFO [NioProcessor-46] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:56.752  INFO [NioProcessor-50] LoggingFilter: CREATED
+09/04/2018 16:58:56.752  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:56.752  INFO [NioProcessor-50] LoggingFilter: OPENED
+09/04/2018 16:58:56.753  INFO [NioProcessor-50] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000010: nio socket, client, /127.0.0.1:16819 => /127.0.0.1:8623)}
+09/04/2018 16:58:56.754  INFO [NioProcessor-50] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:56.755  INFO [NioProcessor-50] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:56.755  INFO [NioProcessor-50] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:58:58.765  INFO [NioProcessor-54] LoggingFilter: CREATED
+09/04/2018 16:58:58.766  INFO [NioProcessor-54] LoggingFilter: OPENED
+09/04/2018 16:58:58.766  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:58:58.766  INFO [NioProcessor-54] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000011: nio socket, client, /127.0.0.1:16830 => /127.0.0.1:8623)}
+09/04/2018 16:58:58.773  INFO [NioProcessor-54] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:58:58.773  INFO [NioProcessor-54] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:58:58.773  INFO [NioProcessor-54] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:00.779  INFO [NioProcessor-55] LoggingFilter: CREATED
+09/04/2018 16:59:00.780  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:00.780  INFO [NioProcessor-55] LoggingFilter: OPENED
+09/04/2018 16:59:00.780  INFO [NioProcessor-55] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000012: nio socket, client, /127.0.0.1:16839 => /127.0.0.1:8623)}
+09/04/2018 16:59:00.782  INFO [NioProcessor-55] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:00.782  INFO [NioProcessor-55] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:00.782  INFO [NioProcessor-55] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:02.786  INFO [NioProcessor-59] LoggingFilter: CREATED
+09/04/2018 16:59:02.786  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:02.786  INFO [NioProcessor-59] LoggingFilter: OPENED
+09/04/2018 16:59:02.787  INFO [NioProcessor-59] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000013: nio socket, client, /127.0.0.1:16849 => /127.0.0.1:8623)}
+09/04/2018 16:59:02.787  INFO [NioProcessor-59] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:02.787  INFO [NioProcessor-59] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:02.787  INFO [NioProcessor-59] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:04.797  INFO [NioProcessor-63] LoggingFilter: CREATED
+09/04/2018 16:59:04.798  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:04.798  INFO [NioProcessor-63] LoggingFilter: OPENED
+09/04/2018 16:59:04.798  INFO [NioProcessor-63] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000014: nio socket, client, /127.0.0.1:16858 => /127.0.0.1:8623)}
+09/04/2018 16:59:04.799  INFO [NioProcessor-63] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:04.799  INFO [NioProcessor-63] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:04.799  INFO [NioProcessor-63] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:06.810  INFO [NioProcessor-64] LoggingFilter: CREATED
+09/04/2018 16:59:06.810  INFO [NioProcessor-64] LoggingFilter: OPENED
+09/04/2018 16:59:06.810  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:06.811  INFO [NioProcessor-64] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000015: nio socket, client, /127.0.0.1:16867 => /127.0.0.1:8623)}
+09/04/2018 16:59:06.811  INFO [NioProcessor-64] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:06.812  INFO [NioProcessor-64] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:06.812  INFO [NioProcessor-64] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:08.824  INFO [NioProcessor-68] LoggingFilter: CREATED
+09/04/2018 16:59:08.824  INFO [NioProcessor-68] LoggingFilter: OPENED
+09/04/2018 16:59:08.824  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:08.825  INFO [NioProcessor-68] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000016: nio socket, client, /127.0.0.1:16876 => /127.0.0.1:8623)}
+09/04/2018 16:59:08.825  INFO [NioProcessor-68] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:08.826  INFO [NioProcessor-68] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:08.826  INFO [NioProcessor-68] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:10.834  INFO [NioProcessor-72] LoggingFilter: CREATED
+09/04/2018 16:59:10.835  INFO [NioProcessor-72] LoggingFilter: OPENED
+09/04/2018 16:59:10.835  INFO [NioProcessor-72] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000017: nio socket, client, /127.0.0.1:16887 => /127.0.0.1:8623)}
+09/04/2018 16:59:10.836  INFO [NioProcessor-72] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:10.836  INFO [NioProcessor-72] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:10.836  INFO [NioProcessor-72] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:10.836  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:12.845  INFO [NioProcessor-73] LoggingFilter: CREATED
+09/04/2018 16:59:12.846  INFO [NioProcessor-73] LoggingFilter: OPENED
+09/04/2018 16:59:12.846  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:12.846  INFO [NioProcessor-73] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000018: nio socket, client, /127.0.0.1:16897 => /127.0.0.1:8623)}
+09/04/2018 16:59:12.847  INFO [NioProcessor-73] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:12.847  INFO [NioProcessor-73] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:12.847  INFO [NioProcessor-73] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:14.857  INFO [NioProcessor-77] LoggingFilter: CREATED
+09/04/2018 16:59:14.858  INFO [NioProcessor-77] LoggingFilter: OPENED
+09/04/2018 16:59:14.858  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:14.858  INFO [NioProcessor-77] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000019: nio socket, client, /127.0.0.1:16906 => /127.0.0.1:8623)}
+09/04/2018 16:59:14.859  INFO [NioProcessor-77] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:14.859  INFO [NioProcessor-77] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:14.859  INFO [NioProcessor-77] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:16.869  INFO [NioProcessor-81] LoggingFilter: CREATED
+09/04/2018 16:59:16.869  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:16.870  INFO [NioProcessor-81] LoggingFilter: OPENED
+09/04/2018 16:59:16.870  INFO [NioProcessor-81] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001A: nio socket, client, /127.0.0.1:16916 => /127.0.0.1:8623)}
+09/04/2018 16:59:16.871  INFO [NioProcessor-81] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:16.871  INFO [NioProcessor-81] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:16.872  INFO [NioProcessor-81] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:18.882  INFO [NioProcessor-82] LoggingFilter: CREATED
+09/04/2018 16:59:18.882  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:18.883  INFO [NioProcessor-82] LoggingFilter: OPENED
+09/04/2018 16:59:18.883  INFO [NioProcessor-82] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001B: nio socket, client, /127.0.0.1:16925 => /127.0.0.1:8623)}
+09/04/2018 16:59:18.884  INFO [NioProcessor-82] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:18.885  INFO [NioProcessor-82] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:18.885  INFO [NioProcessor-82] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:20.901  INFO [NioProcessor-86] LoggingFilter: CREATED
+09/04/2018 16:59:20.901  INFO [NioProcessor-86] LoggingFilter: OPENED
+09/04/2018 16:59:20.901  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:20.902  INFO [NioProcessor-86] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001C: nio socket, client, /127.0.0.1:16934 => /127.0.0.1:8623)}
+09/04/2018 16:59:20.902  INFO [NioProcessor-86] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:20.903  INFO [NioProcessor-86] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:20.903  INFO [NioProcessor-86] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:22.913  INFO [NioProcessor-90] LoggingFilter: CREATED
+09/04/2018 16:59:22.913  INFO [NioProcessor-90] LoggingFilter: OPENED
+09/04/2018 16:59:22.913  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:22.914  INFO [NioProcessor-90] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001D: nio socket, client, /127.0.0.1:16944 => /127.0.0.1:8623)}
+09/04/2018 16:59:22.915  INFO [NioProcessor-90] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:22.916  INFO [NioProcessor-90] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:22.916  INFO [NioProcessor-90] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:24.927  INFO [NioProcessor-91] LoggingFilter: CREATED
+09/04/2018 16:59:24.928  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:24.928  INFO [NioProcessor-91] LoggingFilter: OPENED
+09/04/2018 16:59:24.928  INFO [NioProcessor-91] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001E: nio socket, client, /127.0.0.1:16954 => /127.0.0.1:8623)}
+09/04/2018 16:59:24.930  INFO [NioProcessor-91] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:24.930  INFO [NioProcessor-91] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:24.930  INFO [NioProcessor-91] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:26.941  INFO [NioProcessor-95] LoggingFilter: CREATED
+09/04/2018 16:59:26.942  INFO [NioProcessor-95] LoggingFilter: OPENED
+09/04/2018 16:59:26.942  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:26.942  INFO [NioProcessor-95] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000001F: nio socket, client, /127.0.0.1:16963 => /127.0.0.1:8623)}
+09/04/2018 16:59:26.943  INFO [NioProcessor-95] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:26.943  INFO [NioProcessor-95] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:26.943  INFO [NioProcessor-95] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:28.960  INFO [NioProcessor-99] LoggingFilter: CREATED
+09/04/2018 16:59:28.960  INFO [NioProcessor-99] LoggingFilter: OPENED
+09/04/2018 16:59:28.960  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:28.961  INFO [NioProcessor-99] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000020: nio socket, client, /127.0.0.1:16972 => /127.0.0.1:8623)}
+09/04/2018 16:59:28.962  INFO [NioProcessor-99] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:28.962  INFO [NioProcessor-99] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:28.962  INFO [NioProcessor-99] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:30.992  INFO [NioProcessor-100] LoggingFilter: CREATED
+09/04/2018 16:59:30.992  INFO [NioProcessor-100] LoggingFilter: OPENED
+09/04/2018 16:59:30.992  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:30.993  INFO [NioProcessor-100] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000021: nio socket, client, /127.0.0.1:16983 => /127.0.0.1:8623)}
+09/04/2018 16:59:30.993  INFO [NioProcessor-100] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:30.993  INFO [NioProcessor-100] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:30.993  INFO [NioProcessor-100] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:33.014  INFO [NioProcessor-104] LoggingFilter: CREATED
+09/04/2018 16:59:33.015  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:33.015  INFO [NioProcessor-104] LoggingFilter: OPENED
+09/04/2018 16:59:33.015  INFO [NioProcessor-104] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000022: nio socket, client, /127.0.0.1:16992 => /127.0.0.1:8623)}
+09/04/2018 16:59:33.015  INFO [NioProcessor-104] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:33.015  INFO [NioProcessor-104] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:33.016  INFO [NioProcessor-104] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:35.024  INFO [NioProcessor-108] LoggingFilter: CREATED
+09/04/2018 16:59:35.024  INFO [NioProcessor-108] LoggingFilter: OPENED
+09/04/2018 16:59:35.024  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:35.024  INFO [NioProcessor-108] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000023: nio socket, client, /127.0.0.1:17001 => /127.0.0.1:8623)}
+09/04/2018 16:59:35.025  INFO [NioProcessor-108] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:35.025  INFO [NioProcessor-108] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:35.026  INFO [NioProcessor-108] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:37.034  INFO [NioProcessor-109] LoggingFilter: CREATED
+09/04/2018 16:59:37.034  INFO [NioProcessor-109] LoggingFilter: OPENED
+09/04/2018 16:59:37.034  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:37.034  INFO [NioProcessor-109] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000024: nio socket, client, /127.0.0.1:17011 => /127.0.0.1:8623)}
+09/04/2018 16:59:37.035  INFO [NioProcessor-109] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:37.035  INFO [NioProcessor-109] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:37.036  INFO [NioProcessor-109] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:39.045  INFO [NioProcessor-113] LoggingFilter: CREATED
+09/04/2018 16:59:39.045  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:39.045  INFO [NioProcessor-113] LoggingFilter: OPENED
+09/04/2018 16:59:39.045  INFO [NioProcessor-113] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000025: nio socket, client, /127.0.0.1:17020 => /127.0.0.1:8623)}
+09/04/2018 16:59:39.046  INFO [NioProcessor-113] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:39.046  INFO [NioProcessor-113] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:39.046  INFO [NioProcessor-113] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:41.054  INFO [NioProcessor-117] LoggingFilter: CREATED
+09/04/2018 16:59:41.054  INFO [NioProcessor-117] LoggingFilter: OPENED
+09/04/2018 16:59:41.055  INFO [NioProcessor-117] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000026: nio socket, client, /127.0.0.1:17029 => /127.0.0.1:8623)}
+09/04/2018 16:59:41.055  INFO [NioProcessor-117] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:41.056  INFO [NioProcessor-117] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:41.056  INFO [NioProcessor-117] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:41.056  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:43.062  INFO [NioProcessor-118] LoggingFilter: CREATED
+09/04/2018 16:59:43.063  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:43.063  INFO [NioProcessor-118] LoggingFilter: OPENED
+09/04/2018 16:59:43.063  INFO [NioProcessor-118] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000027: nio socket, client, /127.0.0.1:17038 => /127.0.0.1:8623)}
+09/04/2018 16:59:43.064  INFO [NioProcessor-118] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:43.064  INFO [NioProcessor-118] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:43.064  INFO [NioProcessor-118] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:45.075  INFO [NioProcessor-122] LoggingFilter: CREATED
+09/04/2018 16:59:45.075  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:45.075  INFO [NioProcessor-122] LoggingFilter: OPENED
+09/04/2018 16:59:45.076  INFO [NioProcessor-122] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000028: nio socket, client, /127.0.0.1:17048 => /127.0.0.1:8623)}
+09/04/2018 16:59:45.076  INFO [NioProcessor-122] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:45.076  INFO [NioProcessor-122] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:45.077  INFO [NioProcessor-122] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:47.083  INFO [NioProcessor-126] LoggingFilter: CREATED
+09/04/2018 16:59:47.083  INFO [NioProcessor-126] LoggingFilter: OPENED
+09/04/2018 16:59:47.083  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:47.083  INFO [NioProcessor-126] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000029: nio socket, client, /127.0.0.1:17058 => /127.0.0.1:8623)}
+09/04/2018 16:59:47.084  INFO [NioProcessor-126] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:47.084  INFO [NioProcessor-126] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:47.084  INFO [NioProcessor-126] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:49.091  INFO [NioProcessor-127] LoggingFilter: CREATED
+09/04/2018 16:59:49.091  INFO [NioProcessor-127] LoggingFilter: OPENED
+09/04/2018 16:59:49.091  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:49.092  INFO [NioProcessor-127] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002A: nio socket, client, /127.0.0.1:17067 => /127.0.0.1:8623)}
+09/04/2018 16:59:49.092  INFO [NioProcessor-127] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:49.092  INFO [NioProcessor-127] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:49.092  INFO [NioProcessor-127] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:51.101  INFO [NioProcessor-131] LoggingFilter: CREATED
+09/04/2018 16:59:51.101  INFO [NioProcessor-131] LoggingFilter: OPENED
+09/04/2018 16:59:51.101  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:51.101  INFO [NioProcessor-131] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002B: nio socket, client, /127.0.0.1:17081 => /127.0.0.1:8623)}
+09/04/2018 16:59:51.102  INFO [NioProcessor-131] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:51.102  INFO [NioProcessor-131] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:51.102  INFO [NioProcessor-131] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:53.109  INFO [NioProcessor-135] LoggingFilter: CREATED
+09/04/2018 16:59:53.109  INFO [NioProcessor-135] LoggingFilter: OPENED
+09/04/2018 16:59:53.109  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:53.110  INFO [NioProcessor-135] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002C: nio socket, client, /127.0.0.1:17090 => /127.0.0.1:8623)}
+09/04/2018 16:59:53.111  INFO [NioProcessor-135] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:53.111  INFO [NioProcessor-135] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:53.111  INFO [NioProcessor-135] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:55.127  INFO [NioProcessor-136] LoggingFilter: CREATED
+09/04/2018 16:59:55.128  INFO [NioProcessor-136] LoggingFilter: OPENED
+09/04/2018 16:59:55.128  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:55.128  INFO [NioProcessor-136] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002D: nio socket, client, /127.0.0.1:17103 => /127.0.0.1:8623)}
+09/04/2018 16:59:55.129  INFO [NioProcessor-136] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:55.129  INFO [NioProcessor-136] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:55.129  INFO [NioProcessor-136] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:57.138  INFO [NioProcessor-140] LoggingFilter: CREATED
+09/04/2018 16:59:57.138  INFO [NioProcessor-140] LoggingFilter: OPENED
+09/04/2018 16:59:57.138  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:57.139  INFO [NioProcessor-140] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002E: nio socket, client, /127.0.0.1:17112 => /127.0.0.1:8623)}
+09/04/2018 16:59:57.139  INFO [NioProcessor-140] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:57.139  INFO [NioProcessor-140] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:57.139  INFO [NioProcessor-140] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+09/04/2018 16:59:59.154  INFO [NioProcessor-144] LoggingFilter: CREATED
+09/04/2018 16:59:59.155  INFO [NioProcessor-144] LoggingFilter: OPENED
+09/04/2018 16:59:59.155  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+09/04/2018 16:59:59.155  INFO [NioProcessor-144] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x0000002F: nio socket, client, /127.0.0.1:17122 => /127.0.0.1:8623)}
+09/04/2018 16:59:59.156  INFO [NioProcessor-144] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+09/04/2018 16:59:59.156  INFO [NioProcessor-144] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+09/04/2018 16:59:59.156  INFO [NioProcessor-144] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------

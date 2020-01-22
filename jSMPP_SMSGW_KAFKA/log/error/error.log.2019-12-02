@@ -1,0 +1,16 @@
+02/12/2019 15:40:26.827 ERROR [main] SMSGW: cannot create topic : report_SMS_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:68)
+02/12/2019 15:40:39.313 ERROR [main] SMSGW: cannot create topic : mo_pubdate
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)

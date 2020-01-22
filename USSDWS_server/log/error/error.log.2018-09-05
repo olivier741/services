@@ -1,0 +1,4 @@
+05/09/2018 10:51:18.140  WARN [main] AbstractHandler: No Server set for org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine$1@1b26f7b2
+05/09/2018 10:51:18.336  WARN [main] ContextHandler: Empty contextPath
+05/09/2018 10:52:05.775  WARN [qtp640363654-17 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results
+05/09/2018 10:52:30.266  WARN [qtp640363654-17 - /ussdservice/ussdMessage] JAXRSUtils: Both com.olivier.resfull.server.services.USSDService#addUssdMessage and com.olivier.resfull.server.services.USSDService#addUssdMessage are equal candidates for handling the current request which can lead to unpredictable results

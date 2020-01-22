@@ -1,0 +1,84 @@
+27/09/2019 15:03:35.187  INFO [main] Start_Process: Load log4j config file done.
+27/09/2019 15:03:35.375  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+27/09/2019 15:03:35.383  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+27/09/2019 15:03:35.386  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+27/09/2019 15:03:35.391  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+27/09/2019 15:03:35.392  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+27/09/2019 15:03:35.400  INFO [main] Receiver: LIST OF COMMAND : 
+27/09/2019 15:03:35.400  INFO [main] Receiver: Request_Conf{command_id=1, command_name=REG_Flash1, command_code=FLASH1, split_separator=, action_name=REG_Flash1, action_type=REGISTER, action_description=action to register Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:03:35.401  INFO [main] Receiver: Request_Conf{command_id=2, command_name=Del_Flash1, command_code=OFF, split_separator=, action_name=Del_Flash1, action_type=DELETE, action_description=action to delete Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:03:35.401  INFO [main] Receiver: Request_Conf{command_id=3, command_name=Check_Flash1, command_code=CHECK, split_separator=, action_name=Check_Flash1, action_type=CHECK, action_description=action to check Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:03:35.402  INFO [main] Receiver: Request_Conf{command_id=4, command_name=Guide_Flash1, command_code=GUIDE, split_separator=, action_name=Guide_Flash1, action_type=GUIDE, action_description=action to get guide of Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:03:35.582  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+27/09/2019 15:03:40.477  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "9aec990f-e12f-11e9-b8d7-39fe7bcd6be8",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "FLASH1"
+}
+27/09/2019 15:03:40.781  INFO [pool-7-thread-1] Receiver: transaction_id   : 9aec990f-e12f-11e9-b8d7-39fe7bcd6be8
+27/09/2019 15:03:40.781  INFO [pool-7-thread-1] Receiver: content send by customer   : FLASH1
+27/09/2019 15:03:40.782  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+27/09/2019 15:03:40.782  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+27/09/2019 15:03:40.785  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=9aec990f-e12f-11e9-b8d7-39fe7bcd6be8,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 15:03:40.477,
+ product_name=FLASH1,
+ notification_code=null,
+ language=null}
+27/09/2019 15:03:40.786  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+27/09/2019 15:13:33.470  INFO [main] Start_Process: Load log4j config file done.
+27/09/2019 15:13:33.497  INFO [main] Receiver: LIST OF COMMAND : 
+27/09/2019 15:13:33.498  INFO [main] Receiver: Request_Conf{command_id=1, command_name=REG_Flash1, command_code=FLASH1, split_separator=, action_name=REG_Flash1, action_type=REGISTER, action_description=action to register Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:13:33.499  INFO [main] Receiver: Request_Conf{command_id=2, command_name=Del_Flash1, command_code=OFF, split_separator=, action_name=Del_Flash1, action_type=DELETE, action_description=action to delete Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:13:33.501  INFO [main] Receiver: Request_Conf{command_id=3, command_name=Check_Flash1, command_code=CHECK, split_separator=, action_name=Check_Flash1, action_type=CHECK, action_description=action to check Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:13:33.502  INFO [main] Receiver: Request_Conf{command_id=4, command_name=Guide_Flash1, command_code=GUIDE, split_separator=, action_name=Guide_Flash1, action_type=GUIDE, action_description=action to get guide of Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 15:13:33.504  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+27/09/2019 15:13:33.505  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+27/09/2019 15:13:33.505  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+27/09/2019 15:13:33.506  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+27/09/2019 15:13:33.506  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+27/09/2019 15:13:33.627  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+27/09/2019 15:13:39.633  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "fff4be90-e130-11e9-b8d7-ad42fe7185be",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "FLASH1"
+}
+27/09/2019 15:13:40.049  INFO [pool-7-thread-1] Receiver: transaction_id   : fff4be90-e130-11e9-b8d7-ad42fe7185be
+27/09/2019 15:13:40.049  INFO [pool-7-thread-1] Receiver: content send by customer   : FLASH1
+27/09/2019 15:13:40.050  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+27/09/2019 15:13:40.055  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+27/09/2019 15:13:40.058  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=fff4be90-e130-11e9-b8d7-ad42fe7185be,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 15:13:39.633,
+ product_name=FLASH1,
+ notification_code=null,
+ language=null}
+27/09/2019 15:13:40.059  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0

@@ -1,0 +1,178 @@
+<service_listener>
+    <fault_msg>system is in maintenance, please contact call center </fault_msg>
+	<connection_retry_delay>500</connection_retry_delay>
+	<numberThread>1</numberThread>
+
+        <smpp_pool name = "receiver">
+	     <MinIdle>1</MinIdle>
+		 <MaxIdle>5</MaxIdle>
+		 <MaxTotal>5</MaxTotal>
+		 
+		 <!--TestOnBorrow=true  To ensure that we get a valid object from pool -->
+		 <TestOnBorrow>true</TestOnBorrow>
+		 
+		 <!--TestOnReturn=true  To ensure that valid object is returned to pool -->
+		 <TestOnReturn>true</TestOnReturn>
+	</smpp_pool>
+	
+	<smpp_pool name = "sender">
+	     <MinIdle>1</MinIdle>
+		 <MaxIdle>5</MaxIdle>
+		 <MaxTotal>5</MaxTotal>
+		 
+		 <!--TestOnBorrow=true  To ensure that we get a valid object from pool -->
+		 <TestOnBorrow>true</TestOnBorrow>
+		 
+		 <!--TestOnReturn=true  To ensure that valid object is returned to pool -->
+		 <TestOnReturn>true</TestOnReturn>
+	</smpp_pool>
+	
+	
+	<service name = "user1">
+	   <description>service allow to register on pubdate </description>
+	   <!-- Mean all the content start by ON, OFF, LIST,GUIDE , ADD [param] and DEL [param] 
+	   from customer that phone number end by 88 to short code 8965 are process by receiver listen user1. to check, we can reffer to https://www.freeformatter.com/java-regex-tester.html -->
+	   <mofilterSMS>
+		   <content>ON|OFF|LIST|ADD .*|DEL .*|GUIDE</content> 
+		   <receiver>888</receiver>
+		   <sender>.*</sender>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>.*</sender>
+	   </mtfilterSMS>
+	   
+	   <smsParam>
+			<service_type></service_type>
+			<source_ton>1</source_ton>
+			<source_npi>1</source_npi>
+			<destination_ton>5</destination_ton>
+			<destination_npi>0</destination_npi>
+			<replaceIfPresentFlag>0</replaceIfPresentFlag>
+			<scheduleDeliveryTime></scheduleDeliveryTime>
+			<validityPeriod>100</validityPeriod>
+			<esmClass>5</esmClass>
+			<protocolId>0</protocolId>
+			<priorityFlag>0</priorityFlag>
+			<registeredDelivery>1</registeredDelivery>
+			<dataCoding>0</dataCoding>
+			<smDefaultMsgId>0</smDefaultMsgId>		
+			<message_encoding>ASCII</message_encoding>
+		<!--
+      type of message_encoding : 
+
+	// American Standard Code for Information Interchange 
+      "ASCII";
+	  
+	// Windows Latin-1 
+      "Cp1252";
+	  
+	// ISO 8859-1, Latin alphabet No. 1 
+      "ISO8859_1";
+	  
+	// Sixteen-bit Unicode Transformation Format, big-endian byte order
+	// with byte-order mark
+      "UnicodeBig";
+	  
+	// Sixteen-bit Unicode Transformation Format, big-endian byte order 
+       "UnicodeBigUnmarked";
+	   
+	// Sixteen-bit Unicode Transformation Format, little-endian byte order
+	// with byte-order mark
+       "UnicodeLittle";
+	   
+	// Sixteen-bit Unicode Transformation Format, little-endian byte order 
+	   "UnicodeLittleUnmarked";
+	   
+	// Eight-bit Unicode Transformation Format 
+        "UTF8";
+		
+	// Sixteen-bit Unicode Transformation Format, byte order specified by
+	// a mandatory initial byte-order mark 
+	    "UTF-16";
+		
+	// GSM 7-bit unpacked
+	// Requires JVM 1.4 or later
+		"X-Gsm7Bit";
+		-->
+	
+	   </smsParam>
+	   
+	</service>  
+
+   <service name = "user2">
+	   <description>service allow to register on PIT </description>
+	   <mofilterSMS>
+		   <content>.*</content> 
+		   <receiver>8966</receiver>
+		   <sender>.*</sender>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>.*</sender>
+	   </mtfilterSMS>
+	   <smsParam>
+			<service_type></service_type>
+			<source_ton>5</source_ton>
+			<source_npi>0</source_npi>
+			<!-- source-address  come form application, we don't provide its config here (it value is 8965) -->
+			<destination_ton>5</destination_ton>
+			<destination_npi>0</destination_npi>
+			<!-- destination-address  come form application, we don't provide its config here (it value is the customer phone number) -->
+			<replaceIfPresentFlag>0</replaceIfPresentFlag>
+	        <!-- shortMessage  come form application, we don't provide its config here (it value is the message send by application) -->
+			<scheduleDeliveryTime></scheduleDeliveryTime>
+			<validityPeriod></validityPeriod>
+			<esmClass>2</esmClass>
+			<protocolId>5</protocolId>
+			<priorityFlag>0</priorityFlag>
+			 <!-- we want delivery reports  -->
+			<registeredDelivery>1</registeredDelivery>
+			<dataCoding>0</dataCoding>
+			<smDefaultMsgId>0</smDefaultMsgId>			
+			<message_encoding>ASCII</message_encoding>
+
+	   </smsParam>
+	</service>  
+	
+	<service name = "user3">
+	   <description>service allow to register on pubdate </description>
+	   <!-- Mean all the content start by ON, OFF, LIST,GUIDE , ADD [param] and DEL [param] 
+	   from customer that phone number end by 88 to short code 8965 are process by receiver listen user1. to check, we can reffer to https://www.freeformatter.com/java-regex-tester.html -->
+	   <mofilterSMS>
+		   <content>ON|OFF|LIST|ADD .*|DEL .*|GUIDE</content> 
+		   <receiver>8967</receiver>
+		   <sender>(237)[0-9].*88$</sender>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>8967</sender>
+	   </mtfilterSMS>
+	   
+	   <smsParam>
+			<service_type></service_type>
+			<source_ton>5</source_ton>
+			<source_npi>0</source_npi>
+			<destination_ton>5</destination_ton>
+			<destination_npi>0</destination_npi>
+			<replaceIfPresentFlag>0</replaceIfPresentFlag>
+			<scheduleDeliveryTime></scheduleDeliveryTime>
+			<validityPeriod></validityPeriod>
+			<esmClass>5</esmClass>
+			<protocolId>0</protocolId>
+			<priorityFlag>0</priorityFlag>
+			<registeredDelivery>1</registeredDelivery>
+			<dataCoding>0</dataCoding>
+			<smDefaultMsgId>0</smDefaultMsgId>
+			<message_encoding>ASCII</message_encoding>			
+	   </smsParam>
+	   
+	</service>  
+	
+</service_listener>

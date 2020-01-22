@@ -1,0 +1,45 @@
+<receiver_user>
+  <!-- configuration of user1 -->
+   <smpp_enableReport>1</smpp_enableReport>
+   <smspp_dataFormat>yyMMddHHmm</smspp_dataFormat>
+   
+   <failover>
+     <failureThreshold>3</failureThreshold>
+	 <resetTimeout>1000</resetTimeout>
+	 <receiveTimeout>100000</receiveTimeout>
+	 <delayBetweenRetries>1000</delayBetweenRetries>
+   </failover>
+   
+  <user_connection service_id = "user1" password = "pass_user1" ws_security_mode = '0' >
+		  <address>
+		      <IP>127.0.0.1</IP>
+			  <port>8940</port>
+		  </address>
+		  
+		  <address>
+		      <IP>127.0.0.1</IP>
+			  <port>8957</port>
+		  </address>
+  </user_connection> 
+   
+  <!-- configuration of user2 -->
+   <user_connection service_id = "user2" password = "pass_user2" ws_security_mode = '0'>
+		   <address>
+		      <IP>127.0.0.1</IP>
+			  <port>8940</port>
+		  </address>
+		  
+		  <address>
+		      <IP>127.0.0.1</IP>
+			  <port>8959</port>
+		  </address>
+  </user_connection> 
+ 
+  <user_connection service_id = "user3" password = "pass_user3" ws_security_mode = '0'>
+		  <address>
+		      <IP>127.0.0.1</IP>
+			  <port>8960</port>
+		  </address>
+  </user_connection> 
+  
+</receiver_user>

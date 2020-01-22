@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Sender_SMSInterfaceService" targetNamespace="http://com.tatsinktechnologic.Sender_SMS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.tatsinktechnologic.Sender_SMS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<xs:schema xmlns:tns="http://com.tatsinktechnologic.Sender_SMS" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://com.tatsinktechnologic.Sender_SMS" version="1.0">
+
+  <xs:element name="MyResponse" type="tns:responseMsg"/>
+
+  <xs:element name="send_sms" type="tns:send_sms"/>
+
+  <xs:element name="send_smsResponse" type="tns:send_smsResponse"/>
+
+  <xs:complexType name="send_sms">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Sender" type="xs:string"/>
+      <xs:element minOccurs="0" name="Receiver" type="xs:string"/>
+      <xs:element minOccurs="0" name="MsgContent" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="send_smsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:responseMsg"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="responseMsg">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" name="message_id" type="xs:string"/>
+      <xs:element minOccurs="0" name="response" type="xs:string"/>
+      <xs:element name="value" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="send_sms">
+    <wsdl:part name="parameters" element="tns:send_sms">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="send_smsResponse">
+    <wsdl:part name="parameters" element="tns:send_smsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Send_SMSInterface">
+    <wsdl:operation name="send_sms">
+      <wsdl:input name="send_sms" message="tns:send_sms">
+    </wsdl:input>
+      <wsdl:output name="send_smsResponse" message="tns:send_smsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Sender_SMSInterfaceServiceSoapBinding" type="tns:Send_SMSInterface">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="send_sms">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="send_sms">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="send_smsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Sender_SMSInterfaceService">
+    <wsdl:port name="SEND_SMSPort" binding="tns:Sender_SMSInterfaceServiceSoapBinding">
+      <soap:address location="http://127.0.0.1:8935/sender_sms?wsdl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

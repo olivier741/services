@@ -1,0 +1,23 @@
+16/05/2019 11:58:47.778  INFO [main] SMSGW: Load log4j config file done.
+16/05/2019 11:58:47.779  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+16/05/2019 11:58:47.934  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+16/05/2019 11:59:01.341  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+16/05/2019 11:59:05.885  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+16/05/2019 11:59:10.418  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+16/05/2019 11:59:14.950  INFO [main] SMSGW: ############ Topic mo-flash already exists #################
+16/05/2019 11:59:19.507  INFO [main] SMSGW: ############ Topic mt-flash already exists #################
+16/05/2019 11:59:24.050  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+16/05/2019 11:59:28.577  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+16/05/2019 11:59:28.849  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+16/05/2019 11:59:33.024  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+16/05/2019 11:59:41.005  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+16/05/2019 11:59:41.248  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "b4654be8-77c9-11e9-b317-15198f5562ae",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+16/05/2019 11:59:41.248  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+16/05/2019 11:59:41.448  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 0 -- offset: 11

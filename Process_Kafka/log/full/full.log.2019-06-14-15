@@ -1,0 +1,392 @@
+14/06/2019 15:02:57.231  INFO [main] Start_Process: Load log4j config file done.
+14/06/2019 15:02:57.241  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+14/06/2019 15:02:57.250  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+14/06/2019 15:02:57.251  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+14/06/2019 15:02:57.251  INFO [pool-5-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+14/06/2019 15:02:57.252  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+14/06/2019 15:02:57.381  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+14/06/2019 15:03:00.029  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "18704c98-8ead-11e9-a454-4f50af69bc7c",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+14/06/2019 15:03:00.293  INFO [pool-7-thread-1] Receiver: transaction_id   : 18704c98-8ead-11e9-a454-4f50af69bc7c
+14/06/2019 15:03:00.293  INFO [pool-7-thread-1] Receiver: content send by customer   : CAN1 INFO
+14/06/2019 15:03:00.294  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+14/06/2019 15:03:00.294  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+14/06/2019 15:03:00.295  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=18704c98-8ead-11e9-a454-4f50af69bc7c,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REGISTER,
+ action_description=null,
+ receive_time=2019-06-14 15:03:00.029,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+14/06/2019 15:03:00.295  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+14/06/2019 15:03:01.229  INFO [pool-3-thread-1] Webservice_Charge: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>flash@123</password>
+    <user_name>flash_sms_CHARGE</user_name>
+</account>
+
+14/06/2019 15:03:01.229  INFO [pool-3-thread-1] Webservice_Charge: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJhMjI3NjVlYS0xMzZjLTRiNjAtYWM2Yy00YmVmNmZkMTUxMmMiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDUyMTA0MX0.A1TC5lqHziCGxA8nsfUsLee9XG_GB_obCGt3ohB3ATI
+14/06/2019 15:03:01.254  INFO [pool-3-thread-1] Webservice_Charge: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <WSparam>
+        <tag_name>param</tag_name>
+        <tag_value>charge CAN1 on the service onlineflash</tag_value>
+        <WSTag_Attr>
+            <attr_name>name</attr_name>
+            <attr_value>input</attr_value>
+        </WSTag_Attr>
+        <WSTag_Attr>
+            <attr_name>value</attr_name>
+            <attr_value>4477665544|PROFESSIONAL_NUMBER|charge CAN1 on the service onlineflash|10|50|26|charge CAN1 on the service onlineflash</attr_value>
+        </WSTag_Attr>
+    </WSparam>
+    <ws_client_name>flash_sms</ws_client_name>
+    <ws_webservice_name>CHARGE</ws_webservice_name>
+</Request>
+
+14/06/2019 15:03:01.308  INFO [pool-3-thread-1] Webservice_Charge: duration to request CHARGE : 14 ms
+14/06/2019 15:03:01.308  INFO [pool-3-thread-1] Webservice_Charge: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : CHARGE</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent></WS_ResponseContent>
+</Response>
+
+14/06/2019 15:06:34.409  INFO [main] Start_Process: Load log4j config file done.
+14/06/2019 15:06:34.429  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+14/06/2019 15:06:34.461  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+14/06/2019 15:06:34.461  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+14/06/2019 15:06:34.463  INFO [pool-5-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+14/06/2019 15:06:34.464  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+14/06/2019 15:06:34.564  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+14/06/2019 15:06:43.194  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "a23aa6f9-8ead-11e9-a454-797e5c821c14",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+14/06/2019 15:06:43.410  INFO [pool-7-thread-1] Receiver: transaction_id   : a23aa6f9-8ead-11e9-a454-797e5c821c14
+14/06/2019 15:06:43.410  INFO [pool-7-thread-1] Receiver: content send by customer   : CAN1 INFO
+14/06/2019 15:06:43.410  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+14/06/2019 15:06:43.410  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+14/06/2019 15:06:43.411  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=a23aa6f9-8ead-11e9-a454-797e5c821c14,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REGISTER,
+ action_description=null,
+ receive_time=2019-06-14 15:06:43.194,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+14/06/2019 15:06:43.411  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+14/06/2019 15:06:43.926  INFO [pool-3-thread-1] Webservice_Charge: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>flash@123</password>
+    <user_name>flash_sms_CHARGE</user_name>
+</account>
+
+14/06/2019 15:06:43.927  INFO [pool-3-thread-1] Webservice_Charge: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmZmMyZmJjZC01NjY1LTQxYWQtOTEyNi03MWEzZjc4NjkzMzkiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDUyMTI2M30.fJ05AdoVf4o6MV5EVe8JXUaGYZLfA1bBhMM1vtNLJNo
+14/06/2019 15:06:43.955  INFO [pool-3-thread-1] Webservice_Charge: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <WSparam>
+        <tag_name>param</tag_name>
+        <tag_value>charge CAN1 on the service onlineflash</tag_value>
+        <WSTag_Attr>
+            <attr_name>name</attr_name>
+            <attr_value>input</attr_value>
+        </WSTag_Attr>
+        <WSTag_Attr>
+            <attr_name>value</attr_name>
+            <attr_value>4477665544|PROFESSIONAL_NUMBER|charge CAN1 on the service onlineflash|10|50|26|charge CAN1 on the service onlineflash</attr_value>
+        </WSTag_Attr>
+    </WSparam>
+    <ws_client_name>flash_sms</ws_client_name>
+    <ws_webservice_name>CHARGE</ws_webservice_name>
+</Request>
+
+14/06/2019 15:06:44.003  INFO [pool-3-thread-1] Webservice_Charge: duration to request CHARGE : 13 ms
+14/06/2019 15:06:44.003  INFO [pool-3-thread-1] Webservice_Charge: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : CHARGE</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent></WS_ResponseContent>
+</Response>
+
+14/06/2019 15:06:44.022  WARN [pool-3-thread-1] SqlExceptionHelper: SQL Error: 1366, SQLState: 22007
+14/06/2019 15:06:44.022  WARN [pool-3-thread-1] SqlExceptionHelper: SQL Error: 1366, SQLState: 22007
+14/06/2019 15:06:44.022 ERROR [pool-3-thread-1] SqlExceptionHelper: (conn=1361) Incorrect integer value: 'REGISTRATION' for column 'charge_mode' at row 1
+14/06/2019 15:06:44.022 ERROR [pool-3-thread-1] SqlExceptionHelper: (conn=1361) Incorrect integer value: 'REGISTRATION' for column 'charge_mode' at row 1
+14/06/2019 15:06:44.023  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    413697 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    68608 nanoseconds spent preparing 1 JDBC statements;
+    4023639 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:06:44.023  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    413697 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    68608 nanoseconds spent preparing 1 JDBC statements;
+    4023639 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:08:32.181  INFO [main] Start_Process: Load log4j config file done.
+14/06/2019 15:08:32.186  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+14/06/2019 15:08:32.195  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+14/06/2019 15:08:32.195  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+14/06/2019 15:08:32.196  INFO [pool-5-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+14/06/2019 15:08:32.196  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+14/06/2019 15:08:32.284  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+14/06/2019 15:09:08.450  INFO [main] Start_Process: Load log4j config file done.
+14/06/2019 15:09:08.467  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+14/06/2019 15:09:08.479  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+14/06/2019 15:09:08.489  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+14/06/2019 15:09:08.489  INFO [pool-5-thread-1] Process_Del: ################################## START PROCESS DELETE ###########################
+14/06/2019 15:09:08.491  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+14/06/2019 15:09:08.582  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+14/06/2019 15:09:17.106  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "fdd8c8ca-8ead-11e9-a454-ed3ae90bcd71",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+14/06/2019 15:09:17.341  INFO [pool-7-thread-1] Receiver: transaction_id   : fdd8c8ca-8ead-11e9-a454-ed3ae90bcd71
+14/06/2019 15:09:17.341  INFO [pool-7-thread-1] Receiver: content send by customer   : CAN1 INFO
+14/06/2019 15:09:17.341  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+14/06/2019 15:09:17.341  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+14/06/2019 15:09:17.342  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=fdd8c8ca-8ead-11e9-a454-ed3ae90bcd71,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REGISTER,
+ action_description=null,
+ receive_time=2019-06-14 15:09:17.106,
+ product_name=CAN1,
+ notification_code=null,
+ language=null}
+14/06/2019 15:09:17.343  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+14/06/2019 15:09:18.047  INFO [pool-3-thread-1] Webservice_Charge: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>flash@123</password>
+    <user_name>flash_sms_CHARGE</user_name>
+</account>
+
+14/06/2019 15:09:18.047  INFO [pool-3-thread-1] Webservice_Charge: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI0NjgxNWIyZC1jMGExLTRkYWYtOWVjYS01N2E2NTQ2MDFmYWEiLCJ1c2VyX25hbWUiOiJmbGFzaF9zbXNfQ0hBUkdFIiwiaXNzIjoiZmxhc2hfc21zX0NIQVJHRSIsImV4cCI6MTU2MDUyMTQxOH0.mTaxTFM1SstLaTTLrnbcH1cMGCLR2v9JzsOgAyYXQM0
+14/06/2019 15:09:18.070  INFO [pool-3-thread-1] Webservice_Charge: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <WSparam>
+        <tag_name>param</tag_name>
+        <tag_value>charge CAN1 on the service onlineflash</tag_value>
+        <WSTag_Attr>
+            <attr_name>name</attr_name>
+            <attr_value>input</attr_value>
+        </WSTag_Attr>
+        <WSTag_Attr>
+            <attr_name>value</attr_name>
+            <attr_value>4477665544|PROFESSIONAL_NUMBER|charge CAN1 on the service onlineflash|10|50|26|charge CAN1 on the service onlineflash</attr_value>
+        </WSTag_Attr>
+    </WSparam>
+    <ws_client_name>flash_sms</ws_client_name>
+    <ws_webservice_name>CHARGE</ws_webservice_name>
+</Request>
+
+14/06/2019 15:09:18.118  INFO [pool-3-thread-1] Webservice_Charge: duration to request CHARGE : 13 ms
+14/06/2019 15:09:18.118  INFO [pool-3-thread-1] Webservice_Charge: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : CHARGE</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent></WS_ResponseContent>
+</Response>
+
+14/06/2019 15:09:18.193  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    468993 nanoseconds spent acquiring 2 JDBC connections;
+    379905 nanoseconds spent releasing 2 JDBC connections;
+    233132 nanoseconds spent preparing 3 JDBC statements;
+    3418456 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    11579056 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 6 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.193  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    468993 nanoseconds spent acquiring 2 JDBC connections;
+    379905 nanoseconds spent releasing 2 JDBC connections;
+    233132 nanoseconds spent preparing 3 JDBC statements;
+    3418456 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    11579056 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 6 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.209  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    9557 nanoseconds spent releasing 1 JDBC connections;
+    80555 nanoseconds spent preparing 1 JDBC statements;
+    840363 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.209  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    9557 nanoseconds spent releasing 1 JDBC connections;
+    80555 nanoseconds spent preparing 1 JDBC statements;
+    840363 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.235  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    25259 nanoseconds spent acquiring 2 JDBC connections;
+    452608 nanoseconds spent releasing 2 JDBC connections;
+    206506 nanoseconds spent preparing 3 JDBC statements;
+    3053570 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    244736 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 6 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.235  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    25259 nanoseconds spent acquiring 2 JDBC connections;
+    452608 nanoseconds spent releasing 2 JDBC connections;
+    206506 nanoseconds spent preparing 3 JDBC statements;
+    3053570 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    244736 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 6 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.235  INFO [pool-3-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=fdd8c8ca-8ead-11e9-a454-ed3ae90bcd71,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REGISTER,
+ action_description=null,
+ receive_time=2019-06-14 15:09:17.106,
+ product_name=CAN1,
+ notification_code=REG-PRODUCT-SUCCESS-CAN1,
+ language=null}
+14/06/2019 15:09:18.235  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=fdd8c8ca-8ead-11e9-a454-ed3ae90bcd71,
+ msisdn=4477665544,
+ receiver=8966,
+ content=CAN1 INFO,
+ command_code=CAN1,
+ split_separate=null,
+ param_name=param_can,
+ param_length=1,
+ param_pattern=INFO|GOAL|TEAM,
+ param_value=INFO,
+ channel=9696,
+ action_type=REGISTER,
+ action_description=null,
+ receive_time=2019-06-14 15:09:17.106,
+ product_name=CAN1,
+ notification_code=REG-PRODUCT-SUCCESS-CAN1,
+ language=null}
+14/06/2019 15:09:18.236  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+14/06/2019 15:09:18.259  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24918 nanoseconds spent acquiring 2 JDBC connections;
+    387413 nanoseconds spent releasing 2 JDBC connections;
+    354646 nanoseconds spent preparing 4 JDBC statements;
+    4443821 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    395606 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 11 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.259  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24918 nanoseconds spent acquiring 2 JDBC connections;
+    387413 nanoseconds spent releasing 2 JDBC connections;
+    354646 nanoseconds spent preparing 4 JDBC statements;
+    4443821 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    395606 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 11 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+14/06/2019 15:09:18.260  INFO [pool-3-thread-1] Process_Reg: insert into mo_his

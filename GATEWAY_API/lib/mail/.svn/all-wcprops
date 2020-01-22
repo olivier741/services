@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail
+END
+dsn.jar
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail/dsn.jar
+END
+mail1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail/mail1.4.jar
+END
+imap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail/imap.jar
+END
+mailapi.jar
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail/mailapi.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail/activation.jar
+END
+pop3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail/pop3.jar
+END
+smtp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/GP_QT05_12007_Services/!svn/ver/4173/06.SOURCE/SRC_GP_QT05_12007_Services_v1.0/VAS/CAM/BccsGW/BccsGw/BCCS_GW/lib/mail/smtp.jar
+END

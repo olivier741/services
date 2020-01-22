@@ -1,0 +1,20 @@
+08/05/2019 07:55:53.349  INFO [main] Start_Process: Load log4j config file done.
+08/05/2019 07:55:53.485  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+08/05/2019 07:57:41.186  INFO [main] Start_Process: Load log4j config file done.
+08/05/2019 07:57:41.286  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+08/05/2019 07:57:41.426  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+08/05/2019 07:57:41.426  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+08/05/2019 07:57:41.559  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+08/05/2019 07:57:41.559  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+08/05/2019 07:57:41.560  INFO [main] Environment: HHH000206: hibernate.properties not found
+08/05/2019 07:57:41.560  INFO [main] Environment: HHH000206: hibernate.properties not found
+08/05/2019 07:57:41.600  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+08/05/2019 07:57:41.600  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+08/05/2019 07:57:41.759  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+08/05/2019 07:57:41.759  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+08/05/2019 07:57:42.596  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+08/05/2019 07:57:42.596  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect

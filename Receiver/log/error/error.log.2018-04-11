@@ -1,0 +1,60 @@
+11/04/2018 14:59:36.953 ERROR [pool-2-thread-1] TCP_ClientThread: Failed to connect :IP=127.0.0.4587 PORT=8623
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:123)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:621)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:187)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.connect0(AbstractPollingIoConnector.java:370)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:322)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:206)
+	at com.tatsinktechnologic.tcp.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11/04/2018 14:59:36.956 ERROR [pool-2-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+11/04/2018 14:59:38.965 ERROR [pool-2-thread-1] TCP_ClientThread: done waiting.
+11/04/2018 14:59:40.989 ERROR [pool-2-thread-1] TCP_ClientThread: Failed to connect :IP=127.0.0.4587 PORT=8623
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:123)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:621)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:187)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.connect0(AbstractPollingIoConnector.java:370)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:322)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:206)
+	at com.tatsinktechnologic.tcp.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11/04/2018 14:59:40.989 ERROR [pool-2-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+11/04/2018 14:59:42.989 ERROR [pool-2-thread-1] TCP_ClientThread: done waiting.
+11/04/2018 14:59:45.004 ERROR [pool-2-thread-1] TCP_ClientThread: Failed to connect :IP=127.0.0.4587 PORT=8623
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:123)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:621)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:187)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.connect0(AbstractPollingIoConnector.java:370)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:322)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:206)
+	at com.tatsinktechnologic.tcp.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11/04/2018 14:59:45.005 ERROR [pool-2-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+11/04/2018 14:59:47.005 ERROR [pool-2-thread-1] TCP_ClientThread: done waiting.
+11/04/2018 14:59:51.265 ERROR [pool-2-thread-1] TCP_ClientThread: Failed to connect :IP=127.0.0.4587 PORT=8623
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:123)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:621)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:187)
+	at org.apache.mina.transport.socket.nio.NioSocketConnector.connect(NioSocketConnector.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.connect0(AbstractPollingIoConnector.java:370)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:322)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:206)
+	at com.tatsinktechnologic.tcp.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11/04/2018 14:59:51.266 ERROR [pool-2-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+11/04/2018 14:59:53.266 ERROR [pool-2-thread-1] TCP_ClientThread: done waiting.

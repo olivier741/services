@@ -1,0 +1,101 @@
+15/05/2019 15:37:23.139  INFO [main] SMSGW: Load log4j config file done.
+15/05/2019 15:37:23.140  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+15/05/2019 15:37:23.278  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+15/05/2019 15:37:36.417  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+15/05/2019 15:37:40.950  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+15/05/2019 15:37:45.508  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+15/05/2019 15:37:50.040  INFO [main] SMSGW: ############ Topic mo-flash already exists #################
+15/05/2019 15:37:54.753  INFO [main] SMSGW: ############ Topic mt-flash already exists #################
+15/05/2019 15:37:59.357  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+15/05/2019 15:38:03.932  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+15/05/2019 15:38:04.235  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+15/05/2019 15:38:05.983  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+15/05/2019 15:38:12.967  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+15/05/2019 15:38:13.227  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "11531675-771f-11e9-af02-352243015270",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:13.227  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 LIST ]
+15/05/2019 15:38:13.419  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 5 -- offset: 5
+15/05/2019 15:38:30.054  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+15/05/2019 15:38:30.056  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "1b7f7536-771f-11e9-af02-6966976c2155",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:30.056  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 LIST ]
+15/05/2019 15:38:30.240  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 8 -- offset: 5
+15/05/2019 15:38:30.760  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+15/05/2019 15:38:30.761  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "1beb2f57-771f-11e9-af02-9f90f458eed2",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:30.762  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 LIST ]
+15/05/2019 15:38:30.867  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 2 -- offset: 5
+15/05/2019 15:38:34.275  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+15/05/2019 15:38:34.276  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "1e038808-771f-11e9-af02-61aab5e61161",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:38:34.277  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 LIST ]
+15/05/2019 15:38:34.405  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 9 -- offset: 5
+15/05/2019 15:40:29.991  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+15/05/2019 15:40:29.995  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+15/05/2019 15:41:36.003  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+15/05/2019 15:41:36.038  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+15/05/2019 15:41:41.225  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+15/05/2019 15:41:41.227  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "8d71fd79-771f-11e9-af02-1371b6be6458",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 LIST"
+}
+15/05/2019 15:41:41.228  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 LIST ]
+15/05/2019 15:41:41.342  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 1 -- offset: 4
+15/05/2019 15:45:42.049  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+15/05/2019 15:45:42.052  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+15/05/2019 15:45:45.055  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+15/05/2019 15:45:45.060  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+15/05/2019 15:45:51.075  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+15/05/2019 15:45:51.076  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "225dec0a-7720-11e9-af02-47188bc710e2",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+15/05/2019 15:45:51.076  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+15/05/2019 15:45:51.188  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 4 -- offset: 4
+15/05/2019 15:46:15.971  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+15/05/2019 15:46:15.972  INFO [pool-1-thread-3] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "3134c00b-7720-11e9-af02-770ae2cee34c",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "CAN1 INFO"
+}
+15/05/2019 15:46:15.972  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-flash | 4477665544 --> 8966 [msg = CAN1 INFO ]
+15/05/2019 15:46:16.089  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-flash -- Partition: 6 -- offset: 4
+15/05/2019 15:46:51.065  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+15/05/2019 15:46:51.068  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+15/05/2019 15:47:04.237  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+15/05/2019 15:47:04.239  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]

@@ -1,0 +1,39 @@
+29/03/2019 14:15:35.803  INFO [main] SMSGW: Load log4j config file done.
+29/03/2019 14:15:35.805  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+29/03/2019 14:15:36.018  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+29/03/2019 14:15:41.546  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+29/03/2019 14:15:46.280  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+29/03/2019 14:15:50.909  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+29/03/2019 14:15:55.739  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+29/03/2019 14:16:00.481  INFO [main] SMSGW: ############ Topic mt-topic already exists #################
+29/03/2019 14:16:05.296  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+29/03/2019 14:16:10.067  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+29/03/2019 14:16:10.576  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+29/03/2019 14:16:10.665  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+29/03/2019 14:16:15.212  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+29/03/2019 14:16:40.241  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-topic -- Partition: 0 -- offset: 313
+29/03/2019 14:16:40.502  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+29/03/2019 14:16:40.765  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-topic | 4477665544 --> 8966 [msg = Hello from SMPPSim ]
+29/03/2019 14:16:54.218  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+29/03/2019 14:17:01.221  INFO [EnquireLinkSender: org.jsmpp.session.SMPPSession@7f132176] SMSGateway: Session ee2f4ea3 closed
+29/03/2019 14:17:01.227  INFO [Thread-8] SMSGateway: Schedule reconnect after 5000 millis
+29/03/2019 14:17:06.234  INFO [Thread-8] SMSGateway: Reconnecting attempt #1 ...
+29/03/2019 14:17:30.366  INFO [main] SMSGW: Load log4j config file done.
+29/03/2019 14:17:30.366  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+29/03/2019 14:17:30.546  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+29/03/2019 14:17:36.128  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+29/03/2019 14:17:40.755  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+29/03/2019 14:17:45.371  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+29/03/2019 14:17:49.973  INFO [main] SMSGW: ############ Topic mo-topic already exists #################
+29/03/2019 14:17:54.512  INFO [main] SMSGW: ############ Topic mt-topic already exists #################
+29/03/2019 14:17:59.120  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+29/03/2019 14:18:03.736  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+29/03/2019 14:18:04.194  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+29/03/2019 14:18:04.210  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+29/03/2019 14:21:40.574  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE MO SMS -----------

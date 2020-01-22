@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Message>
+		<Return>0</Return>
+        <Name>SUCCESS</Name>
+        <Code>0</Code>
+        <Value>OK</Value>
+    </Message>
+    <Message>
+		<Return>1000</Return>
+        <Name>BAD_REQUEST</Name>
+        <Code>400</Code>
+        <Value>Bad request</Value>
+    </Message>
+	<Message>
+		<Return>2000</Return>
+        <Name>BAD_REQUEST</Name>
+        <Code>400</Code>
+        <Value>Bad request</Value>
+    </Message>
+    <Message>
+		<Return>3000</Return>
+        <Name>UNTHORIZED</Name>
+        <Code>401</Code>
+        <Value>Unauthorized</Value>
+    </Message>
+	<Message>
+		<Return>8001</Return>
+        <Name>UNTHORIZED</Name>
+        <Code>401</Code>
+        <Value>Unauthorized</Value>
+    </Message>
+	<Message>
+		<Return>8000</Return>
+        <Name>UNTHORIZED</Name>
+        <Code>401</Code>
+        <Value>Unauthorized</Value>
+    </Message>
+    <Message>
+		<Return>6001</Return>
+        <Name>OUT_OF_RESOURCE</Name>
+        <Code>503</Code>
+        <Value>Out of resources</Value>
+    </Message>
+    <Message>
+		<Return></Return>
+        <Name>SERVICE_IS_BEING_PAUSE</Name>
+        <Code>14</Code>
+        <Value>Service is being paused</Value>
+    </Message>
+    <Message>
+		<Return></Return>
+        <Name>CAN_NOT_UNPAUSE</Name>
+        <Code>15</Code>
+        <Value>Can't unpause service</Value>
+    </Message>
+    <Message>
+		<Return>66</Return>
+        <Name>INVALID_MSISDN</Name>
+        <Code>1</Code>
+        <Value>Invalid MSISDN</Value>
+    </Message>
+    <Message>
+		<Return></Return>
+        <Name>INVALID_PROVIDER</Name>
+        <Code>2</Code>
+        <Value>Invalid provider</Value>
+    </Message>
+    <Message>
+		<Return>2001</Return>
+        <Name>INVALID_SERVICE</Name>
+        <Code>3</Code>
+        <Value>Invalid service</Value>
+    </Message>
+    <Message>
+		<Return></Return>
+        <Name>INVALID_TIME</Name>
+        <Code>4</Code>
+        <Value>Invalid time</Value>
+    </Message>
+    <Message>
+		<Return></Return>
+        <Name>ALREADY_SUBSCRIBED</Name>
+        <Code>11</Code>
+        <Value>Service already subscribed</Value>
+    </Message>
+    <Message>
+		<Return>57</Return>
+        <Name>UNSUBSCRIBED</Name>
+        <Code>12</Code>
+        <Value>Service unsubscribed</Value>
+    </Message>
+    <Message>
+		<Return>77</Return>
+        <Name>SUBSCRIBER_IS_BLOCKED</Name>
+        <Code>13</Code>
+        <Value>Subscriber is locked</Value>
+    </Message>
+    <Message>
+		<Return>55</Return>
+        <Name>CHARGING_ERROR</Name>
+        <Code>21</Code>
+        <Value>Charging error</Value>
+    </Message>
+	<Message>
+		<Return>99</Return>
+        <Name>CHARGING_ERROR</Name>
+        <Code>21</Code>
+        <Value>Charging error</Value>
+    </Message>
+    <Message>
+		<Return>2006</Return>
+        <Name>SYSTEM_ERROR</Name>
+        <Code>22</Code>
+        <Value>System error</Value>
+    </Message>
+	<Message>
+		<Return>9001</Return>
+        <Name>SYSTEM_ERROR</Name>
+        <Code>22</Code>
+        <Value>System error</Value>
+    </Message>
+	<Message>
+		<Return>33</Return>
+        <Name>SYSTEM_ERROR</Name>
+        <Code>22</Code>
+        <Value>System error</Value>
+    </Message>
+	 <Message>
+		<Return>88</Return>
+        <Name>SYSTEM_ERROR</Name>
+        <Code>22</Code>
+        <Value>System error</Value>
+    </Message>
+    <Message>
+		<Return>9000</Return>
+        <Name>UNEXPECTED_ERROR</Name>
+        <Code>23</Code>
+        <Value>Unexpected error</Value>
+    </Message>
+    <Message>
+		<Return>35</Return>
+        <Name>BALANCE_NOT_ENOUGH</Name>
+        <Code>24</Code>
+        <Value>Balance is not enough</Value>
+    </Message>
+    <Message>
+		<Return>25</Return>
+        <Name>CONTENT_NULL</Name>
+        <Code>25</Code>
+        <Value>Content is null or blank</Value>
+    </Message>
+    <Message>
+		<Return>58</Return>
+        <Name>COMMAND_INVALID</Name>
+        <Code>26</Code>
+        <Value>Command invalid</Value>
+    </Message>
+    <Message>
+		<Return></Return>
+        <Name>SUB_NOT_PAUSE</Name>
+        <Code>27</Code>
+        <Value>Subscriber has not paused</Value>
+    </Message>
+    <Message>
+		<Return>36</Return>
+        <Name>INVALID_CHARGING_AMOUNT</Name>
+        <Code>28</Code>
+        <Value>Invalid charging amount</Value>
+    </Message>
+    <Message>
+		<Return></Return>
+        <Name>INVALID_TAX_FEE</Name>
+        <Code>29</Code>
+        <Value>Invalid tax free</Value>
+    </Message>
+</root>

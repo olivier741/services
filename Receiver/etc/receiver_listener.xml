@@ -1,0 +1,19 @@
+<receiver>
+    <node_name>RECEIVER_01</node_name>
+     <!-- soap web service listerner -->
+	<smspp_dataFormat>yyMMddHHmm</smspp_dataFormat>
+	
+	 <http_listener>
+		 <http_IP>127.0.0.1</http_IP>
+		 <http_port>8940</http_port>
+		 <ws_security_mode>0</ws_security_mode>
+     </http_listener>
+	 
+	 <!-- SMS filter -->
+	 <mofilterSMS>
+		   <content>.*</content> 
+		   <receiver>8966</receiver>
+		   <sender>.*</sender>
+	 </mofilterSMS>
+</receiver>
+

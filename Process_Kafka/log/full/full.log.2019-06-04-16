@@ -1,0 +1,194 @@
+04/06/2019 16:07:50.999  INFO [main] NewMain: Load log4j config file done.
+04/06/2019 16:07:51.227  INFO [main] Load_Configuration: successfull load : etc\http_listener.xml
+04/06/2019 16:07:51.263 ERROR [main] Load_Configuration: ERROR in config file api_charging.xml
+org.simpleframework.xml.core.PersistenceException: Element 'tag_value' is already used with @org.simpleframework.xml.Element(name=tag_value, type=void, data=false, required=false) on field 'tag_value' private java.lang.String com.tatsinktechnologic.xml.Tag.tag_value at line 12
+	at org.simpleframework.xml.core.Variable$Adapter.read(Variable.java:484)
+	at org.simpleframework.xml.core.Variable$Adapter.read(Variable.java:462)
+	at org.simpleframework.xml.core.Composite.readVariable(Composite.java:623)
+	at org.simpleframework.xml.core.Composite.readInstance(Composite.java:573)
+	at org.simpleframework.xml.core.Composite.readUnion(Composite.java:549)
+	at org.simpleframework.xml.core.Composite.readElement(Composite.java:532)
+	at org.simpleframework.xml.core.Composite.readElements(Composite.java:445)
+	at org.simpleframework.xml.core.Composite.access$400(Composite.java:59)
+	at org.simpleframework.xml.core.Composite$Injector.read(Composite.java:1433)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:201)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:148)
+	at org.simpleframework.xml.core.Traverser.read(Traverser.java:92)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:190)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:167)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:124)
+	at org.simpleframework.xml.core.Composite.readVariable(Composite.java:623)
+	at org.simpleframework.xml.core.Composite.readInstance(Composite.java:573)
+	at org.simpleframework.xml.core.Composite.readUnion(Composite.java:549)
+	at org.simpleframework.xml.core.Composite.readElement(Composite.java:532)
+	at org.simpleframework.xml.core.Composite.readElements(Composite.java:445)
+	at org.simpleframework.xml.core.Composite.access$400(Composite.java:59)
+	at org.simpleframework.xml.core.Composite$Injector.read(Composite.java:1433)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:201)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:148)
+	at org.simpleframework.xml.core.Traverser.read(Traverser.java:92)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:625)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:606)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:584)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:543)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:521)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:426)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration.<init>(Load_Configuration.java:97)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration.<init>(Load_Configuration.java:36)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration$SingletonCommunDAO.<clinit>(Load_Configuration.java:120)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration.getConfigurationLoader(Load_Configuration.java:124)
+	at com.tatsinktechnologic.resfull.client.Webservice_Request.<clinit>(Webservice_Request.java:33)
+	at com.tatsinktechnologic.resfull.client.NewMain.main(NewMain.java:28)
+04/06/2019 16:07:51.289 ERROR [main] Load_Configuration: ERROR in config file api_viewinfo.xml
+org.simpleframework.xml.core.PersistenceException: Element 'tag_value' is already used with @org.simpleframework.xml.Element(name=tag_value, type=void, data=false, required=false) on field 'tag_value' private java.lang.String com.tatsinktechnologic.xml.Tag.tag_value at line 12
+	at org.simpleframework.xml.core.Variable$Adapter.read(Variable.java:484)
+	at org.simpleframework.xml.core.Variable$Adapter.read(Variable.java:462)
+	at org.simpleframework.xml.core.Composite.readVariable(Composite.java:623)
+	at org.simpleframework.xml.core.Composite.readInstance(Composite.java:573)
+	at org.simpleframework.xml.core.Composite.readUnion(Composite.java:549)
+	at org.simpleframework.xml.core.Composite.readElement(Composite.java:532)
+	at org.simpleframework.xml.core.Composite.readElements(Composite.java:445)
+	at org.simpleframework.xml.core.Composite.access$400(Composite.java:59)
+	at org.simpleframework.xml.core.Composite$Injector.read(Composite.java:1433)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:201)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:148)
+	at org.simpleframework.xml.core.Traverser.read(Traverser.java:92)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:190)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:167)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:124)
+	at org.simpleframework.xml.core.Composite.readVariable(Composite.java:623)
+	at org.simpleframework.xml.core.Composite.readInstance(Composite.java:573)
+	at org.simpleframework.xml.core.Composite.readUnion(Composite.java:549)
+	at org.simpleframework.xml.core.Composite.readElement(Composite.java:532)
+	at org.simpleframework.xml.core.Composite.readElements(Composite.java:445)
+	at org.simpleframework.xml.core.Composite.access$400(Composite.java:59)
+	at org.simpleframework.xml.core.Composite$Injector.read(Composite.java:1433)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:201)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:148)
+	at org.simpleframework.xml.core.Traverser.read(Traverser.java:92)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:625)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:606)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:584)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:543)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:521)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:426)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration.<init>(Load_Configuration.java:104)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration.<init>(Load_Configuration.java:36)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration$SingletonCommunDAO.<clinit>(Load_Configuration.java:120)
+	at com.tatsinktechnologic.loadconfig.Load_Configuration.getConfigurationLoader(Load_Configuration.java:124)
+	at com.tatsinktechnologic.resfull.client.Webservice_Request.<clinit>(Webservice_Request.java:33)
+	at com.tatsinktechnologic.resfull.client.NewMain.main(NewMain.java:28)
+04/06/2019 16:07:51.421  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+04/06/2019 16:07:51.421  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+04/06/2019 16:07:51.533  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+04/06/2019 16:07:51.533  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+04/06/2019 16:07:51.534  INFO [main] Environment: HHH000206: hibernate.properties not found
+04/06/2019 16:07:51.534  INFO [main] Environment: HHH000206: hibernate.properties not found
+04/06/2019 16:07:51.568  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+04/06/2019 16:07:51.568  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+04/06/2019 16:07:51.906  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+04/06/2019 16:07:51.906  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+04/06/2019 16:07:52.222  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+04/06/2019 16:07:52.222  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+04/06/2019 16:07:53.295  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+04/06/2019 16:07:53.295  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+04/06/2019 16:07:53.437  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    22528 nanoseconds spent acquiring 1 JDBC connections;
+    14677 nanoseconds spent releasing 1 JDBC connections;
+    17683764 nanoseconds spent preparing 2 JDBC statements;
+    5966837 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/06/2019 16:07:53.437  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    22528 nanoseconds spent acquiring 1 JDBC connections;
+    14677 nanoseconds spent releasing 1 JDBC connections;
+    17683764 nanoseconds spent preparing 2 JDBC statements;
+    5966837 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/06/2019 16:07:53.444  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    21845 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    145749 nanoseconds spent preparing 1 JDBC statements;
+    811689 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/06/2019 16:07:53.444  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    21845 nanoseconds spent acquiring 1 JDBC connections;
+    8533 nanoseconds spent releasing 1 JDBC connections;
+    145749 nanoseconds spent preparing 1 JDBC statements;
+    811689 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/06/2019 16:07:53.451  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    252245 nanoseconds spent preparing 2 JDBC statements;
+    2819749 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/06/2019 16:07:53.451  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    14336 nanoseconds spent acquiring 1 JDBC connections;
+    7851 nanoseconds spent releasing 1 JDBC connections;
+    252245 nanoseconds spent preparing 2 JDBC statements;
+    2819749 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/06/2019 16:07:53.459  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    250539 nanoseconds spent preparing 1 JDBC statements;
+    1549651 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/06/2019 16:07:53.459  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    8875 nanoseconds spent releasing 1 JDBC connections;
+    250539 nanoseconds spent preparing 1 JDBC statements;
+    1549651 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}

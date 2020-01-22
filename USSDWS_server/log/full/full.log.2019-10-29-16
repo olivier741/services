@@ -1,0 +1,23 @@
+29/10/2019 16:44:10.518  INFO [main] USSGW: Load log4j config file done.
+29/10/2019 16:44:24.545  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+29/10/2019 16:44:29.078  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+29/10/2019 16:44:33.612  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+29/10/2019 16:44:38.186  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+29/10/2019 16:44:42.719  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+29/10/2019 16:44:47.260  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+29/10/2019 16:44:51.797  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+29/10/2019 16:59:51.484  INFO [qtp217389263-41] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+29/10/2019 16:59:51.485  INFO [qtp217389263-41] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572364790971,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654#,
+ charSet=1,
+ loggedString=*654#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=0,
+ timeout=300,
+ sendRecvTime=1572364791011}
+29/10/2019 16:59:51.493  INFO [qtp217389263-41] USSDService: Not USSD MENU Define for this Transaction : W1-0-1572364790971

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    User MANAGEMENT
+                    <small>User informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+                                    <p:panel header="List of User and related Role and Contact" > 
+                                        <p:panelGrid id="rolecrud"  columns="8">
+
+                                            <h:outputLabel value="User Name :" />
+                                            <p:inputText  value="#{userMB.selectedUser.username}" required="true" disabled="#{userMB.do_view or userMB.do_edit}"/>
+
+                                            <h:outputLabel value="First Name :"/> 
+                                            <p:inputText  value="#{userMB.selectedUser.firstname}" disabled="#{userMB.do_view}"/>
+
+                                            <h:outputLabel value="Last Name :"/> 
+                                            <p:inputText  value="#{userMB.selectedUser.lastname}" disabled="#{userMB.do_view}"/>
+
+
+                                            <h:outputLabel value="ID Card :"/> 
+                                            <p:inputText  value="#{userMB.selectedUser.CNI}" disabled="#{userMB.do_view}"/>
+
+                                            <h:outputLabel value="Age :"/> 
+                                            <p:inputText  value="#{userMB.selectedUser.age}" disabled="#{userMB.do_view}"/>
+
+                                            <h:outputLabel value="Sexe :"/> 
+                                            <h:selectOneMenu value="#{userMB.selectedUser.sexe}" disabled="#{userMB.do_view}" style="width:180px">
+                                                <f:selectItem itemValue="MALE" itemLabel="MALE" />
+                                                <f:selectItem itemValue="FEMALE" itemLabel="FEMALE" />
+                                            </h:selectOneMenu>
+
+
+                                            
+                                            <p:outputLabel value="Locking Account :" />
+                                            <p:inputSwitch value="#{userMB.selectedUser.islock}" onLabel="LOCK " offLabel="UNLOCK" disabled="#{userMB.do_view or userMB.do_create}" />
+
+                                            <p:outputLabel value="Reset Password :" />
+                                            <p:inputSwitch value="#{userMB.selectedUser.isReset}" onLabel="RESET PASSWORD" offLabel="CURRENT PASSOWRD" disabled="#{userMB.do_view or userMB.do_create}"/>
+
+
+                                            <h:outputLabel value="Role :" />
+                                            <p:pickList  value="#{userMB.dualListModelroles}" var="val" 
+                                                             itemLabel="#{val.roleName}" 
+                                                             itemValue="#{val}" 
+                                                             responsive="true"
+                                                             showSourceFilter="true" showTargetFilter="true" filterMatchMode="contains"
+                                                             converter="rolePickListConverter"
+                                                             disabled="#{userMB.do_view}" >
+
+                                                        <f:facet name="sourceCaption">Available</f:facet>
+                                                        <f:facet name="targetCaption">Starting</f:facet>
+
+                                                        <p:ajax event="transfer" listener="#{userMB.onTransfer}" update="messages" />
+                                                        <p:ajax event="select" listener="#{userMB.onSelect}" update="messages"/>
+                                                        <p:ajax event="unselect" listener="#{userMB.onUnselect}" update="messages"/>
+                                                        <p:ajax event="reorder" listener="#{userMB.onReorder}" update="messages"/>
+
+                                                        <p:column style="width:85%;">
+                                                            <h:outputText value="#{val.roleName}" />
+                                                        </p:column>
+                                                 </p:pickList>
+                                            
+
+                                            <h:outputLabel value="Contact :" />
+                                            <p:pickList  value="#{userMB.dualListModelcontacts}" var="val" 
+                                                             itemLabel="#{val.contact_name}" 
+                                                             itemValue="#{val}" 
+                                                             responsive="true"
+                                                             showSourceFilter="true" showTargetFilter="true" filterMatchMode="contains"
+                                                             converter="contactPickListConverter"
+                                                             disabled="#{userMB.do_view}" >
+
+                                                        <f:facet name="sourceCaption">Available</f:facet>
+                                                        <f:facet name="targetCaption">Starting</f:facet>
+
+                                                        <p:ajax event="transfer" listener="#{userMB.onTransfer}" update="messages" />
+                                                        <p:ajax event="select" listener="#{userMB.onSelect}" update="messages"/>
+                                                        <p:ajax event="unselect" listener="#{userMB.onUnselect}" update="messages"/>
+                                                        <p:ajax event="reorder" listener="#{userMB.onReorder}" update="messages"/>
+
+                                                        <p:column style="width:85%;">
+                                                            <h:outputText value="#{val.contact_name}" />
+                                                        </p:column>
+                                                 </p:pickList>
+                                           
+                                            <f:facet name="footer">
+                                                 <h:commandButton value="Enable Edit" action="#{userMB.enableEdit}" rendered="#{userMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{userMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{userMB.delete}" rendered="#{userMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                 </h:commandButton>
+                                                <h:commandButton value="Add" action="#{userMB.onAddNew}" rendered="#{userMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{userMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{userMB.edit}" rendered="#{userMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{userMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{userMB.clear}" rendered="#{userMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                 </h:commandButton> 
+                                              </f:facet>
+                                        </p:panelGrid>
+                                        <p:spacer height="30px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{userMB.listUser}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+                                            <p:ajax event="rowSelectCheckbox" oncomplete="rolecrud.show();"  update="datatable_grid,:form1:messages"/>
+                                            <p:ajax event="rowUnselectCheckbox" oncomplete="rolecrud.show();"  update="datatable_grid,:form1:messages"/>
+                                            <p:ajax event="rowSelect" oncomplete="rolecrud.show();"  update="datatable_grid,:form1:messages"/>
+                                            <p:ajax event="rowUnselect" oncomplete="rolecrud.show();"  update="datatable_grid,:form1:messages"/>
+                                            <p:ajax event="toggleSelect" oncomplete="rolecrud.show();"  update="datatable_grid,:form1:messages" />
+
+
+                                            <p:column headerText="ID" filterBy="#{o.user_id}" sortBy="#{o.user_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.user_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="User Name" filterBy="#{o.username}" sortBy="#{o.username}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.username}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="List Role" filterBy="#{userMB.roles_string}" sortBy="#{userMB.roles_string}" filterMatchMode="contains">
+                                                <h:outputText value="#{userMB.getRoleUser(o.username)}" escape="false" style="white-space: pre-wrap;word-wrap: break-word; " /> 
+                                            </p:column>
+
+                                            <p:column headerText="List Contact" filterBy="#{userMB.contacts_string}" sortBy="#{userMB.contacts_string}" filterMatchMode="contains">
+                                                <h:outputText value="#{userMB.getContactUser(o.username)}" escape="false" style="white-space: pre-wrap;word-wrap: break-word; " /> 
+                                            </p:column>
+
+                                            <p:column headerText="First Name" filterBy="#{o.firstname}" sortBy="#{o.firstname}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.firstname}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="ID Card" filterBy="#{o.CNI}" sortBy="#{o.CNI}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.CNI}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Age" filterBy="#{o.age}" sortBy="#{o.age}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.age}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Sexe" filterBy="#{o.sexe}" sortBy="#{o.sexe}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.sexe}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Create date" filterBy="#{o.create_date}" sortBy="#{o.create_date}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.create_date}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.last_update}" sortBy="#{o.last_update}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.last_update}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{userMB.view(o)}" rendered="#{not o.islock}" update="datatable_grid,:form1:rolecrud,:form1:messages"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                                <p:commandLink title="View Lock account" action="#{userMB.view(o)}" rendered="#{o.islock}" update="datatable_grid,:form1:rolecrud,:form1:messages"  process="@this"> 
+                                                    <i class="fa fa-lock" ></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   
+

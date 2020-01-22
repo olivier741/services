@@ -1,0 +1,74 @@
+30/10/2019 09:20:41.002  INFO [main] USSGW: Load log4j config file done.
+30/10/2019 09:20:54.805  INFO [main] USSGW: ############ Topic report_SMS_topic already exists #################
+30/10/2019 09:20:59.364  INFO [main] USSGW: ############ Topic mo_pubdate already exists #################
+30/10/2019 09:21:03.905  INFO [main] USSGW: ############ Topic mt_pubdate already exists #################
+30/10/2019 09:21:08.431  INFO [main] USSGW: ############ Topic mo-flash already exists #################
+30/10/2019 09:21:12.988  INFO [main] USSGW: ############ Topic mt-flash already exists #################
+30/10/2019 09:21:17.522  INFO [main] USSGW: ############ Topic mo_gameshow already exists #################
+30/10/2019 09:21:22.055  INFO [main] USSGW: ############ Topic mt_gameshow already exists #################
+30/10/2019 09:21:22.554  INFO [main] USSGW: ############# USSD APPLICATION IS UP ##############
+30/10/2019 09:22:00.866  INFO [qtp245298614-42] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+30/10/2019 09:22:00.866  INFO [qtp245298614-42] USSDService: UssdMessage{type=100,
+ transId=W1-0-1572423720559,
+ msisdn=84,
+ imsi=null,
+ ussdString=*654*1#,
+ charSet=1,
+ loggedString=*654*1#,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=0,
+ timeout=300,
+ sendRecvTime=1572423720583}
+30/10/2019 09:22:00.870  INFO [qtp245298614-42] USSDService: CURRENT USSD MENU : State{state_id=3, content=1- CITRON
+2- ANANAS
+3- ORANGE
+0-retour, bizId=0, state_level=INTERMEDIATE} -----> Transaction : W1-0-1572423720559
+30/10/2019 09:22:06.317  INFO [qtp245298614-39] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+30/10/2019 09:22:06.317  INFO [qtp245298614-39] USSDService: UssdMessage{type=101,
+ transId=W1-0-1572423720559,
+ msisdn=null,
+ imsi=null,
+ ussdString=1,
+ charSet=1,
+ loggedString=1,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=0,
+ timeout=0,
+ sendRecvTime=1572423726287}
+30/10/2019 09:22:06.317  INFO [qtp245298614-39] USSDService: Remove --> previous state : State{state_id=3, content=1- CITRON
+2- ANANAS
+3- ORANGE
+0-retour, bizId=0, state_level=INTERMEDIATE} -----> Transaction : W1-0-1572423720559
+30/10/2019 09:22:06.317  INFO [qtp245298614-39] USSDService: Remove --> ShortCode and MSISDN: ShortCode_Msisdn{msisdn=84, transaction_id=W1-0-1572423720559, short_code=654} -----> Transaction : W1-0-1572423720559
+30/10/2019 09:22:06.318  INFO [qtp245298614-39] USSDService: CURRENT USSD MENU : State{state_id=4, content=vous allez souscrir au service CITRON
+1- OUI
+2- NON
+0-retour, bizId=0, state_level=INTERMEDIATE} -----> Transaction : W1-0-1572423720559
+30/10/2019 09:22:10.226  INFO [qtp245298614-43] USSDService: --------------message receive from USSDGW POST FUNCTION---------------
+30/10/2019 09:22:10.226  INFO [qtp245298614-43] USSDService: UssdMessage{type=101,
+ transId=W1-0-1572423720559,
+ msisdn=null,
+ imsi=null,
+ ussdString=1,
+ charSet=1,
+ loggedString=1,
+ encryptedUssdString=null,
+ connectorId=1,
+ hlrGT=null,
+ dlgId=0,
+ timeout=0,
+ sendRecvTime=1572423730201}
+30/10/2019 09:22:10.226  INFO [qtp245298614-43] USSDService: Remove --> previous state : State{state_id=4, content=vous allez souscrir au service CITRON
+1- OUI
+2- NON
+0-retour, bizId=0, state_level=INTERMEDIATE} -----> Transaction : W1-0-1572423720559
+30/10/2019 09:22:10.226  INFO [qtp245298614-43] USSDService: Remove --> ShortCode and MSISDN: ShortCode_Msisdn{msisdn=84, transaction_id=W1-0-1572423720559, short_code=654} -----> Transaction : W1-0-1572423720559
+30/10/2019 09:22:10.226  WARN [qtp245298614-43] USSDService: Command not define in MO_Fake : 
+ ussd Message =  1
+  Short Code = 654
+  Msisdn = 84
+30/10/2019 09:22:10.228  INFO [qtp245298614-43] USSDService: CURRENT USSD MENU : State{state_id=5, content=Souscrition au service CITRON en cours. vous recevrez la notification par SMS, bizId=0, state_level=TERMINATE_PROC} -----> Transaction : W1-0-1572423720559

@@ -1,0 +1,8 @@
+03/08/2019 21:03:53.756  INFO [main] Rest_API_Server: Load log4j config file done.
+03/08/2019 21:03:54.322  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+03/08/2019 21:03:54.416  INFO [main] log: Logging initialized @4863ms to org.eclipse.jetty.util.log.Slf4jLog
+03/08/2019 21:03:54.627  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+03/08/2019 21:03:54.702  INFO [main] AbstractConnector: Started ServerConnector@5a8cbffe{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+03/08/2019 21:03:54.703  INFO [main] Server: Started @5150ms
+03/08/2019 21:03:54.712  WARN [main] ContextHandler: Empty contextPath
+03/08/2019 21:03:54.733  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@3ed03652{/,null,AVAILABLE}

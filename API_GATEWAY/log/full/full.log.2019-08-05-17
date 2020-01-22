@@ -1,0 +1,793 @@
+05/08/2019 14:48:15.869  INFO [main] Rest_API_Server: Load log4j config file done.
+05/08/2019 14:48:16.318  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+05/08/2019 14:48:16.367  INFO [main] log: Logging initialized @2625ms to org.eclipse.jetty.util.log.Slf4jLog
+05/08/2019 14:48:16.457  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+05/08/2019 14:48:16.526  INFO [main] AbstractConnector: Started ServerConnector@4248b963{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+05/08/2019 14:48:16.526  INFO [main] Server: Started @2785ms
+05/08/2019 14:48:16.535  WARN [main] ContextHandler: Empty contextPath
+05/08/2019 14:48:16.546  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@2caa5d7c{/,null,AVAILABLE}
+05/08/2019 14:48:31.714  INFO [main] ClientAPI: Load log4j config file done.
+05/08/2019 14:48:32.355  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 14:48:32.466  INFO [qtp687372448-21] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[213], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 14:48:32.476  WARN [qtp687372448-21] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 14:48:32.647  INFO [qtp687372448-21] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 14:48:33.071  INFO [qtp687372448-21] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 13:48:33 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI2ZDZmYTk3OS1hZjljLTQxYjUtOTU4ZS1iODkwNmM3ZDQ5ZGUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDEyOTcyfQ.zgxxixEjODTlKo8p52vRdtjDeAOJZdPzyDVvcqopWBY
+--------------------------------------
+05/08/2019 14:48:33.101  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 13:48:33 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI2ZDZmYTk3OS1hZjljLTQxYjUtOTU4ZS1iODkwNmM3ZDQ5ZGUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDEyOTcyfQ.zgxxixEjODTlKo8p52vRdtjDeAOJZdPzyDVvcqopWBY
+--------------------------------------
+05/08/2019 14:48:33.124  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>sms</password>
+    <user_name>sms</user_name>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+05/08/2019 14:48:33.124  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI2ZDZmYTk3OS1hZjljLTQxYjUtOTU4ZS1iODkwNmM3ZDQ5ZGUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDEyOTcyfQ.zgxxixEjODTlKo8p52vRdtjDeAOJZdPzyDVvcqopWBY
+05/08/2019 14:48:33.153  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+05/08/2019 14:48:33.157  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI2ZDZmYTk3OS1hZjljLTQxYjUtOTU4ZS1iODkwNmM3ZDQ5ZGUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDEyOTcyfQ.zgxxixEjODTlKo8p52vRdtjDeAOJZdPzyDVvcqopWBY], Account=[test_sms_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 14:48:33.163  INFO [qtp687372448-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_sms_SMS_API], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI2ZDZmYTk3OS1hZjljLTQxYjUtOTU4ZS1iODkwNmM3ZDQ5ZGUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDEyOTcyfQ.zgxxixEjODTlKo8p52vRdtjDeAOJZdPzyDVvcqopWBY], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[163], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 14:48:33.165  WARN [qtp687372448-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 14:48:33.167  INFO [qtp687372448-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 14:48:33.367  INFO [qtp687372448-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 13:48:33 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 15) 15 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 14:48:33</WS_request_time></Response>
+--------------------------------------
+05/08/2019 14:48:33.372  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 13:48:33 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 15) 15 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 14:48:33</WS_request_time></Response>
+--------------------------------------
+05/08/2019 14:48:33.436  INFO [main] ClientAPI: duration to request OCM_Charging : 218 ms
+05/08/2019 14:48:33.436  INFO [main] ClientAPI: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 15) 15 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent>
+    <WS_request_time>2019-08-05 14:48:33</WS_request_time>
+</Response>
+
+05/08/2019 17:28:58.398  INFO [main] Rest_API_Server: Load log4j config file done.
+05/08/2019 17:28:58.705  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+05/08/2019 17:28:58.748  INFO [main] log: Logging initialized @2694ms to org.eclipse.jetty.util.log.Slf4jLog
+05/08/2019 17:28:58.843  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+05/08/2019 17:28:58.889  INFO [main] AbstractConnector: Started ServerConnector@4248b963{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+05/08/2019 17:28:58.889  INFO [main] Server: Started @2835ms
+05/08/2019 17:28:58.896  WARN [main] ContextHandler: Empty contextPath
+05/08/2019 17:28:58.910  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@2caa5d7c{/,null,AVAILABLE}
+05/08/2019 17:29:10.466  INFO [main] ClientAPI: Load log4j config file done.
+05/08/2019 17:29:11.103  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:29:11.222  INFO [qtp687372448-19] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[213], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:29:11.231  WARN [qtp687372448-19] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:29:11.376  INFO [qtp687372448-19] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:29:11.805  INFO [qtp687372448-19] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:29:11 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxZTM2YzY2Ny1iODk2LTQ4NDctOWVjNi02NTAwMTNlNGM3ZjYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjExfQ.3dqBk5dOQDG5LoFJw2_FwqRd40YI61JbRDVHTzMLHnM
+--------------------------------------
+05/08/2019 17:29:11.831  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:29:11 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxZTM2YzY2Ny1iODk2LTQ4NDctOWVjNi02NTAwMTNlNGM3ZjYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjExfQ.3dqBk5dOQDG5LoFJw2_FwqRd40YI61JbRDVHTzMLHnM
+--------------------------------------
+05/08/2019 17:29:11.850  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>sms</password>
+    <user_name>sms</user_name>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+05/08/2019 17:29:11.850  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxZTM2YzY2Ny1iODk2LTQ4NDctOWVjNi02NTAwMTNlNGM3ZjYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjExfQ.3dqBk5dOQDG5LoFJw2_FwqRd40YI61JbRDVHTzMLHnM
+05/08/2019 17:29:11.877  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+05/08/2019 17:29:11.882  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxZTM2YzY2Ny1iODk2LTQ4NDctOWVjNi02NTAwMTNlNGM3ZjYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjExfQ.3dqBk5dOQDG5LoFJw2_FwqRd40YI61JbRDVHTzMLHnM], Account=[test_sms_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:29:11.888  INFO [qtp687372448-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_sms_SMS_API], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxZTM2YzY2Ny1iODk2LTQ4NDctOWVjNi02NTAwMTNlNGM3ZjYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjExfQ.3dqBk5dOQDG5LoFJw2_FwqRd40YI61JbRDVHTzMLHnM], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[163], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:29:11.889  WARN [qtp687372448-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:29:11.891  INFO [qtp687372448-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:29:12.485  WARN [main] PhaseInterceptorChain: Interceptor for {http://127.0.0.1:9125}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not receive Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:65)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:431)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:461)
+	at com.tatsinktechnologic.main.ClientAPI.main(ClientAPI.java:99)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking http://127.0.0.1:9125/api_service/sendRequest: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:377)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:373)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.getResponseCode(URLConnectionHTTPConduit.java:373)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.doProcessResponseCode(HTTPConduit.java:1597)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:1625)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:1570)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1371)
+	... 14 more
+05/08/2019 17:29:12.842  INFO [qtp687372448-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:29:12 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 3) 16 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:29:11</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:30:08.163  INFO [main] ClientAPI: Load log4j config file done.
+05/08/2019 17:30:08.814  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:30:08.838  INFO [qtp687372448-15] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 3
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[213], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:30:08.838  WARN [qtp687372448-15] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:30:08.846  INFO [qtp687372448-15] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:30:08.849  INFO [qtp687372448-15] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:08 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI4NDdjMjEyZS02OTIxLTQzMTUtOWYzNC0wNDNlNzYzMGZjYzMiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjY4fQ.YJu4jrlHSC-QzkUtHFQ07_1InXTwT_URQyaN9aFaBuI
+--------------------------------------
+05/08/2019 17:30:08.868  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:08 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI4NDdjMjEyZS02OTIxLTQzMTUtOWYzNC0wNDNlNzYzMGZjYzMiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjY4fQ.YJu4jrlHSC-QzkUtHFQ07_1InXTwT_URQyaN9aFaBuI
+--------------------------------------
+05/08/2019 17:30:08.890  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>sms</password>
+    <user_name>sms</user_name>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+05/08/2019 17:30:08.890  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI4NDdjMjEyZS02OTIxLTQzMTUtOWYzNC0wNDNlNzYzMGZjYzMiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjY4fQ.YJu4jrlHSC-QzkUtHFQ07_1InXTwT_URQyaN9aFaBuI
+05/08/2019 17:30:08.918  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+05/08/2019 17:30:08.923  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI4NDdjMjEyZS02OTIxLTQzMTUtOWYzNC0wNDNlNzYzMGZjYzMiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjY4fQ.YJu4jrlHSC-QzkUtHFQ07_1InXTwT_URQyaN9aFaBuI], Account=[test_sms_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:30:08.927  INFO [qtp687372448-21] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 4
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_sms_SMS_API], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI4NDdjMjEyZS02OTIxLTQzMTUtOWYzNC0wNDNlNzYzMGZjYzMiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNjY4fQ.YJu4jrlHSC-QzkUtHFQ07_1InXTwT_URQyaN9aFaBuI], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[163], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:30:08.928  WARN [qtp687372448-21] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:30:08.929  INFO [qtp687372448-21] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:30:08.954  INFO [qtp687372448-21] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:08 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 4) 17 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:30:08</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:30:08.955  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:08 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 4) 17 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:30:08</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:30:09.020  INFO [main] ClientAPI: duration to request OCM_Charging : 36 ms
+05/08/2019 17:30:09.021  INFO [main] ClientAPI: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 4) 17 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent>
+    <WS_request_time>2019-08-05 17:30:08</WS_request_time>
+</Response>
+
+05/08/2019 17:30:57.106  INFO [main] ClientAPI: Load log4j config file done.
+05/08/2019 17:30:57.739  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:30:57.770  INFO [qtp687372448-18] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 5
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[213], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:30:57.771  WARN [qtp687372448-18] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:30:57.772  INFO [qtp687372448-18] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:30:57.775  INFO [qtp687372448-18] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:57 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJlNjIxZjg0Ny0zYmMyLTRkZDYtYmQwMi0wYmYzYjE0MDRiNTkiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNzE3fQ.t_H032hl69woc6JWNkH2gjcI6bvOKZGTrKCsHVo62uE
+--------------------------------------
+05/08/2019 17:30:57.793  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:57 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJlNjIxZjg0Ny0zYmMyLTRkZDYtYmQwMi0wYmYzYjE0MDRiNTkiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNzE3fQ.t_H032hl69woc6JWNkH2gjcI6bvOKZGTrKCsHVo62uE
+--------------------------------------
+05/08/2019 17:30:57.806  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>sms</password>
+    <user_name>sms</user_name>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+05/08/2019 17:30:57.806  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJlNjIxZjg0Ny0zYmMyLTRkZDYtYmQwMi0wYmYzYjE0MDRiNTkiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNzE3fQ.t_H032hl69woc6JWNkH2gjcI6bvOKZGTrKCsHVo62uE
+05/08/2019 17:30:57.836  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+05/08/2019 17:30:57.841  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJlNjIxZjg0Ny0zYmMyLTRkZDYtYmQwMi0wYmYzYjE0MDRiNTkiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNzE3fQ.t_H032hl69woc6JWNkH2gjcI6bvOKZGTrKCsHVo62uE], Account=[test_sms_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:30:57.844  INFO [qtp687372448-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 6
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_sms_SMS_API], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJlNjIxZjg0Ny0zYmMyLTRkZDYtYmQwMi0wYmYzYjE0MDRiNTkiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyNzE3fQ.t_H032hl69woc6JWNkH2gjcI6bvOKZGTrKCsHVo62uE], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[163], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:30:57.845  WARN [qtp687372448-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:30:57.845  INFO [qtp687372448-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:30:57.868  INFO [qtp687372448-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:57 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 5) 18 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:30:57</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:30:57.870  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:30:57 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 5) 18 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:30:57</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:30:57.935  INFO [main] ClientAPI: duration to request OCM_Charging : 34 ms
+05/08/2019 17:30:57.935  INFO [main] ClientAPI: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent><?xml version="1.0" encoding="UTF-8" standalone="no"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"><return><description>SMS Content have been send successfully</description><response>SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 5) 18 ) </response><value>0</value></return></ns2:send_smsResponse></soap:Body></soap:Envelope></WS_ResponseContent>
+    <WS_request_time>2019-08-05 17:30:57</WS_request_time>
+</Response>
+
+05/08/2019 17:35:12.891  INFO [main] ClientAPI: Load log4j config file done.
+05/08/2019 17:35:13.550  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:35:13.570  INFO [qtp687372448-21] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 7
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[213], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:35:13.571  WARN [qtp687372448-21] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:35:13.572  INFO [qtp687372448-21] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:35:13.575  INFO [qtp687372448-21] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 7
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:35:13 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyYWYxMTA2NS02MWRiLTRiM2ItYjBhMy0yZTdiNGM0MGZkZmYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyOTczfQ.eI-XF5sDuIms5jW1DaKSnqawmgwXxN3kEIgt_H6VttA
+--------------------------------------
+05/08/2019 17:35:13.593  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:35:13 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyYWYxMTA2NS02MWRiLTRiM2ItYjBhMy0yZTdiNGM0MGZkZmYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyOTczfQ.eI-XF5sDuIms5jW1DaKSnqawmgwXxN3kEIgt_H6VttA
+--------------------------------------
+05/08/2019 17:35:13.605  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>sms</password>
+    <user_name>sms</user_name>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+05/08/2019 17:35:13.605  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyYWYxMTA2NS02MWRiLTRiM2ItYjBhMy0yZTdiNGM0MGZkZmYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyOTczfQ.eI-XF5sDuIms5jW1DaKSnqawmgwXxN3kEIgt_H6VttA
+05/08/2019 17:35:13.628  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+05/08/2019 17:35:13.633  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyYWYxMTA2NS02MWRiLTRiM2ItYjBhMy0yZTdiNGM0MGZkZmYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyOTczfQ.eI-XF5sDuIms5jW1DaKSnqawmgwXxN3kEIgt_H6VttA], Account=[test_sms_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:35:13.636  INFO [qtp687372448-15] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 8
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_sms_SMS_API], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIyYWYxMTA2NS02MWRiLTRiM2ItYjBhMy0yZTdiNGM0MGZkZmYiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIyOTczfQ.eI-XF5sDuIms5jW1DaKSnqawmgwXxN3kEIgt_H6VttA], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[163], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:35:13.637  WARN [qtp687372448-15] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:35:13.637  INFO [qtp687372448-15] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:35:13.659  INFO [qtp687372448-15] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 8
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:35:13 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 6) 19 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:35:13</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:35:13.661  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:35:13 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 6) 19 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:35:13</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:35:13.736  INFO [main] ClientAPI: duration to request OCM_Charging : 33 ms
+05/08/2019 17:35:13.737  INFO [main] ClientAPI: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent><?xml version="1.0" encoding="UTF-8" standalone="no"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"><return><description>SMS Content have been send successfully</description><response>SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 6) 19 ) </response><value>0</value></return></ns2:send_smsResponse></soap:Body></soap:Envelope></WS_ResponseContent>
+    <WS_request_time>2019-08-05 17:35:13</WS_request_time>
+</Response>
+
+05/08/2019 17:47:02.596  INFO [main] ClientAPI: Load log4j config file done.
+05/08/2019 17:47:03.236  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:47:03.256  INFO [qtp687372448-18] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 9
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[213], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:47:03.258  WARN [qtp687372448-18] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:47:03.260  INFO [qtp687372448-18] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:47:03.263  INFO [qtp687372448-18] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 9
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:03 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmOGE4MWI3MS05MmViLTRjMTAtYWJjYS0yNWJiZjEzMTkzNTciLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNjgzfQ.Py-eQhYPKVheOFJxxDXNZJV7NymztLW57fdyrz_Sx_c
+--------------------------------------
+05/08/2019 17:47:03.283  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:03 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmOGE4MWI3MS05MmViLTRjMTAtYWJjYS0yNWJiZjEzMTkzNTciLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNjgzfQ.Py-eQhYPKVheOFJxxDXNZJV7NymztLW57fdyrz_Sx_c
+--------------------------------------
+05/08/2019 17:47:03.305  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>sms</password>
+    <user_name>sms</user_name>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+05/08/2019 17:47:03.305  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmOGE4MWI3MS05MmViLTRjMTAtYWJjYS0yNWJiZjEzMTkzNTciLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNjgzfQ.Py-eQhYPKVheOFJxxDXNZJV7NymztLW57fdyrz_Sx_c
+05/08/2019 17:47:03.333  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+05/08/2019 17:47:03.337  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmOGE4MWI3MS05MmViLTRjMTAtYWJjYS0yNWJiZjEzMTkzNTciLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNjgzfQ.Py-eQhYPKVheOFJxxDXNZJV7NymztLW57fdyrz_Sx_c], Account=[test_sms_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:47:03.340  INFO [qtp687372448-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 10
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_sms_SMS_API], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJmOGE4MWI3MS05MmViLTRjMTAtYWJjYS0yNWJiZjEzMTkzNTciLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNjgzfQ.Py-eQhYPKVheOFJxxDXNZJV7NymztLW57fdyrz_Sx_c], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[163], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:47:03.340  WARN [qtp687372448-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:47:03.341  INFO [qtp687372448-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:47:03.360  INFO [qtp687372448-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 10
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:03 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 7) 20 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:47:03</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:47:03.361  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:03 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 7) 20 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:47:03</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:47:03.422  INFO [main] ClientAPI: duration to request OCM_Charging : 28 ms
+05/08/2019 17:47:03.422  INFO [main] ClientAPI: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent><?xml version="1.0" encoding="UTF-8" standalone="no"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"><return><description>SMS Content have been send successfully</description><response>SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 7) 20 ) </response><value>0</value></return></ns2:send_smsResponse></soap:Body></soap:Envelope></WS_ResponseContent>
+    <WS_request_time>2019-08-05 17:47:03</WS_request_time>
+</Response>
+
+05/08/2019 17:47:29.395  INFO [main] Rest_API_Server: Load log4j config file done.
+05/08/2019 17:47:29.775  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+05/08/2019 17:47:29.840  INFO [main] log: Logging initialized @2683ms to org.eclipse.jetty.util.log.Slf4jLog
+05/08/2019 17:47:29.944  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+05/08/2019 17:47:30.016  INFO [main] AbstractConnector: Started ServerConnector@4248b963{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+05/08/2019 17:47:30.016  INFO [main] Server: Started @2860ms
+05/08/2019 17:47:30.025  WARN [main] ContextHandler: Empty contextPath
+05/08/2019 17:47:30.037  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@2caa5d7c{/,null,AVAILABLE}
+05/08/2019 17:47:44.568  INFO [main] ClientAPI: Load log4j config file done.
+05/08/2019 17:47:45.202  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:47:45.309  INFO [qtp687372448-20] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[213], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>sms</password><user_name>sms</user_name><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+05/08/2019 17:47:45.318  WARN [qtp687372448-20] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:47:45.461  INFO [qtp687372448-20] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:47:45.898  INFO [qtp687372448-20] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:45 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxYzIyMmRlZi01NTgzLTRjMDItOTI3Yy1kYWVkNWJmM2I2MmUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNzI1fQ.nnFy5YyN0zSwg-QmT_tvTPAVzxu9T3SO6SIofEfBWus
+--------------------------------------
+05/08/2019 17:47:45.925  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:45 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxYzIyMmRlZi01NTgzLTRjMDItOTI3Yy1kYWVkNWJmM2I2MmUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNzI1fQ.nnFy5YyN0zSwg-QmT_tvTPAVzxu9T3SO6SIofEfBWus
+--------------------------------------
+05/08/2019 17:47:45.957  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>sms</password>
+    <user_name>sms</user_name>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+05/08/2019 17:47:45.958  INFO [main] ClientAPI: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxYzIyMmRlZi01NTgzLTRjMDItOTI3Yy1kYWVkNWJmM2I2MmUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNzI1fQ.nnFy5YyN0zSwg-QmT_tvTPAVzxu9T3SO6SIofEfBWus
+05/08/2019 17:47:45.984  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <ws_client_name>test_sms</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+05/08/2019 17:47:45.990  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxYzIyMmRlZi01NTgzLTRjMDItOTI3Yy1kYWVkNWJmM2I2MmUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNzI1fQ.nnFy5YyN0zSwg-QmT_tvTPAVzxu9T3SO6SIofEfBWus], Account=[test_sms_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:47:45.995  INFO [qtp687372448-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_sms_SMS_API], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiIxYzIyMmRlZi01NTgzLTRjMDItOTI3Yy1kYWVkNWJmM2I2MmUiLCJ1c2VyX25hbWUiOiJOcWtHLyt0ejk0VFczWHhRc1lvNUdlSTRMZXhBbk9QQUhVWUR2TDRxQmlVPSIsImlzcyI6Ik5xa0cvK3R6OTRUVzNYeFFzWW81R2VJNExleEFuT1BBSFVZRHZMNHFCaVU9IiwiZXhwIjoxNTY1MDIzNzI1fQ.nnFy5YyN0zSwg-QmT_tvTPAVzxu9T3SO6SIofEfBWus], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[163], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><ws_client_name>test_sms</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+05/08/2019 17:47:45.996  WARN [qtp687372448-16] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+05/08/2019 17:47:45.999  INFO [qtp687372448-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+05/08/2019 17:47:46.173  INFO [qtp687372448-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:46 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><client_IP>127.0.0.1</client_IP><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 8) 21 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:47:46</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:47:46.175  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Mon, 05 Aug 2019 16:47:46 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description><API_GW_Error>00</API_GW_Error><client_IP>127.0.0.1</client_IP><WS_Description></WS_Description><WS_ERROR></WS_ERROR><WS_ResponseContent>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soap:Body&gt;&lt;ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"&gt;&lt;return&gt;&lt;description&gt;SMS Content have been send successfully&lt;/description&gt;&lt;response&gt;SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 8) 21 ) &lt;/response&gt;&lt;value&gt;0&lt;/value&gt;&lt;/return&gt;&lt;/ns2:send_smsResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</WS_ResponseContent><WS_request_time>2019-08-05 17:47:46</WS_request_time></Response>
+--------------------------------------
+05/08/2019 17:47:46.239  INFO [main] ClientAPI: duration to request OCM_Charging : 191 ms
+05/08/2019 17:47:46.239  INFO [main] ClientAPI: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <API_GW_Description>SUCCESS PROCESS : SMS_API</API_GW_Description>
+    <API_GW_Error>00</API_GW_Error>
+    <client_IP>127.0.0.1</client_IP>
+    <WS_Description></WS_Description>
+    <WS_ERROR></WS_ERROR>
+    <WS_ResponseContent><?xml version="1.0" encoding="UTF-8" standalone="no"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:send_smsResponse xmlns:ns2="http://com.tatsinktechnologic.Sender_SMS"><return><description>SMS Content have been send successfully</description><response>SUCCESS_SMS_CONTENT | response = (submit_resp: (pdu: 19 80000004 0 8) 21 ) </response><value>0</value></return></ns2:send_smsResponse></soap:Body></soap:Envelope></WS_ResponseContent>
+    <WS_request_time>2019-08-05 17:47:46</WS_request_time>
+</Response>
+

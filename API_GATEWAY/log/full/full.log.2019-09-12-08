@@ -1,0 +1,860 @@
+12/09/2019 07:56:36.997  INFO [main] Rest_API_Server: Load log4j config file done.
+12/09/2019 07:56:37.387  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+12/09/2019 07:56:37.441  INFO [main] log: Logging initialized @2520ms to org.eclipse.jetty.util.log.Slf4jLog
+12/09/2019 07:56:37.519  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_171-b11
+12/09/2019 07:56:37.570  INFO [main] AbstractConnector: Started ServerConnector@670d4d38{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+12/09/2019 07:56:37.570  INFO [main] Server: Started @2649ms
+12/09/2019 07:56:37.576  WARN [main] ContextHandler: Empty contextPath
+12/09/2019 07:56:37.593  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@3e104d4b{/,null,AVAILABLE}
+12/09/2019 07:56:46.017  INFO [main] ClientAPI_Rest: Load log4j config file done.
+12/09/2019 07:56:46.631  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>test</password><user_name>test</user_name><ws_block_api_name>test_block</ws_block_api_name><ws_client_name>test</ws_client_name></account>
+--------------------------------------
+12/09/2019 07:56:46.757  INFO [qtp7575494-20] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[212], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>test</password><user_name>test</user_name><ws_block_api_name>test_block</ws_block_api_name><ws_client_name>test</ws_client_name></account>
+--------------------------------------
+12/09/2019 07:56:46.767  WARN [qtp7575494-20] JAXRSUtils: Both com.tatsinktechnologic.gateway.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.gateway.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+12/09/2019 07:56:46.923  INFO [qtp7575494-20] AuthenticationService_tokenAuth: Client IP Address = 127.0.0.1
+12/09/2019 07:56:47.327  INFO [qtp7575494-20] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Thu, 12 Sep 2019 06:56:47 GMT]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI1MmNhYTk3NS05OTIzLTQyY2MtYTI0MC1mYjYyMzE4MjZmOGMiLCJ1c2VyX25hbWUiOiJwbys0d1NHYmFuVVhkODRCaUJ2cWlaS0svYUFNVnNOaUpSM05ZOTE0VEhRPSIsImlzcyI6InBvKzR3U0diYW5VWGQ4NEJpQnZxaVpLSy9hQU1Wc05pSlIzTlk5MTRUSFE9IiwiZXhwIjoxNTY4MjcxNDY2fQ.0VJNLn_C28YywjxKzblKw_f1rsnh2j2Gnkrul9lNDbo
+--------------------------------------
+12/09/2019 07:56:47.351  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Thu, 12 Sep 2019 06:56:47 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI1MmNhYTk3NS05OTIzLTQyY2MtYTI0MC1mYjYyMzE4MjZmOGMiLCJ1c2VyX25hbWUiOiJwbys0d1NHYmFuVVhkODRCaUJ2cWlaS0svYUFNVnNOaUpSM05ZOTE0VEhRPSIsImlzcyI6InBvKzR3U0diYW5VWGQ4NEJpQnZxaVpLSy9hQU1Wc05pSlIzTlk5MTRUSFE9IiwiZXhwIjoxNTY4MjcxNDY2fQ.0VJNLn_C28YywjxKzblKw_f1rsnh2j2Gnkrul9lNDbo
+--------------------------------------
+12/09/2019 07:56:47.368  INFO [main] ClientAPI_Rest: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>test</password>
+    <user_name>test</user_name>
+    <ws_block_api_name>test_block</ws_block_api_name>
+    <ws_client_name>test</ws_client_name>
+</account>
+
+12/09/2019 07:56:47.369  INFO [main] ClientAPI_Rest: Auth token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI1MmNhYTk3NS05OTIzLTQyY2MtYTI0MC1mYjYyMzE4MjZmOGMiLCJ1c2VyX25hbWUiOiJwbys0d1NHYmFuVVhkODRCaUJ2cWlaS0svYUFNVnNOaUpSM05ZOTE0VEhRPSIsImlzcyI6InBvKzR3U0diYW5VWGQ4NEJpQnZxaVpLSy9hQU1Wc05pSlIzTlk5MTRUSFE9IiwiZXhwIjoxNTY4MjcxNDY2fQ.0VJNLn_C28YywjxKzblKw_f1rsnh2j2Gnkrul9lNDbo
+12/09/2019 07:56:47.390  INFO [main] ClientAPI_Rest: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <WSparam>
+        <alias>%sender%</alias>
+        <value>IRON</value>
+    </WSparam>
+    <WSparam>
+        <alias>%msisdn%</alias>
+        <value>237661000504</value>
+    </WSparam>
+    <WSparam>
+        <alias>%message%</alias>
+        <value>Hello</value>
+    </WSparam>
+    <ws_block_api_name>test_block</ws_block_api_name>
+    <ws_client_name>test</ws_client_name>
+</Request>
+
+12/09/2019 07:56:47.394  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI1MmNhYTk3NS05OTIzLTQyY2MtYTI0MC1mYjYyMzE4MjZmOGMiLCJ1c2VyX25hbWUiOiJwbys0d1NHYmFuVVhkODRCaUJ2cWlaS0svYUFNVnNOaUpSM05ZOTE0VEhRPSIsImlzcyI6InBvKzR3U0diYW5VWGQ4NEJpQnZxaVpLSy9hQU1Wc05pSlIzTlk5MTRUSFE9IiwiZXhwIjoxNTY4MjcxNDY2fQ.0VJNLn_C28YywjxKzblKw_f1rsnh2j2Gnkrul9lNDbo], Account=[test_test_block]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><alias>%sender%</alias><value>IRON</value></WSparam><WSparam><alias>%msisdn%</alias><value>237661000504</value></WSparam><WSparam><alias>%message%</alias><value>Hello</value></WSparam><ws_block_api_name>test_block</ws_block_api_name><ws_client_name>test</ws_client_name></Request>
+--------------------------------------
+12/09/2019 07:56:47.399  INFO [qtp7575494-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[test_test_block], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiI1MmNhYTk3NS05OTIzLTQyY2MtYTI0MC1mYjYyMzE4MjZmOGMiLCJ1c2VyX25hbWUiOiJwbys0d1NHYmFuVVhkODRCaUJ2cWlaS0svYUFNVnNOaUpSM05ZOTE0VEhRPSIsImlzcyI6InBvKzR3U0diYW5VWGQ4NEJpQnZxaVpLSy9hQU1Wc05pSlIzTlk5MTRUSFE9IiwiZXhwIjoxNTY4MjcxNDY2fQ.0VJNLn_C28YywjxKzblKw_f1rsnh2j2Gnkrul9lNDbo], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[353], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><alias>%sender%</alias><value>IRON</value></WSparam><WSparam><alias>%msisdn%</alias><value>237661000504</value></WSparam><WSparam><alias>%message%</alias><value>Hello</value></WSparam><ws_block_api_name>test_block</ws_block_api_name><ws_client_name>test</ws_client_name></Request>
+--------------------------------------
+12/09/2019 07:56:47.401  WARN [qtp7575494-16] JAXRSUtils: Both com.tatsinktechnologic.gateway.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.gateway.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+12/09/2019 07:56:47.410  INFO [qtp7575494-16] AuthenticationFilter_tokenAuth: Client IP Address = 127.0.0.1
+12/09/2019 07:56:47.474  INFO [qtp7575494-16] StatisticalLoggingSessionEventListener: Session Metrics {
+    472405 nanoseconds spent acquiring 2 JDBC connections;
+    452266 nanoseconds spent releasing 2 JDBC connections;
+    145408 nanoseconds spent preparing 2 JDBC statements;
+    2009426 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+12/09/2019 07:56:47.474  INFO [qtp7575494-16] StatisticalLoggingSessionEventListener: Session Metrics {
+    472405 nanoseconds spent acquiring 2 JDBC connections;
+    452266 nanoseconds spent releasing 2 JDBC connections;
+    145408 nanoseconds spent preparing 2 JDBC statements;
+    2009426 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+12/09/2019 07:56:47.477  INFO [qtp7575494-16] StatisticalLoggingSessionEventListener: Session Metrics {
+    22528 nanoseconds spent acquiring 2 JDBC connections;
+    424276 nanoseconds spent releasing 2 JDBC connections;
+    41984 nanoseconds spent preparing 1 JDBC statements;
+    643071 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+12/09/2019 07:56:47.477  INFO [qtp7575494-16] StatisticalLoggingSessionEventListener: Session Metrics {
+    22528 nanoseconds spent acquiring 2 JDBC connections;
+    424276 nanoseconds spent releasing 2 JDBC connections;
+    41984 nanoseconds spent preparing 1 JDBC statements;
+    643071 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+12/09/2019 07:56:47.525  INFO [qtp7575494-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 3
+Address: http://10.124.160.103:8500/shops
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Content-Type=[application/json], Authorization=[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbIkFETUlOIl0sImlzcyI6Ii9sb2dpbiIsImV4cCI6MTU2OTA4MTA3OH0.O46GX6jwBJndNSg825KfuVmUhf5W3saZDJzKvaFjC1U]}
+--------------------------------------
+12/09/2019 07:56:48.560  INFO [qtp7575494-16] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 3
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: application/json;charset=UTF-8
+Headers: {Access-Control-Allow-Headers=[Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, authorization], Access-Control-Allow-Methods=[GET,PATCH ,POST,PUT,DELETE,OPTIONS], Access-Control-Allow-Origin=[*], Access-Control-Expose-Headers=[Access-Control-Allow-Origin, Access-Control-Allow-Credentials, authorization], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], content-type=[application/json;charset=UTF-8], Date=[Thu, 12 Sep 2019 06:56:48 GMT], Expires=[0], Pragma=[no-cache], transfer-encoding=[chunked], X-Content-Type-Options=[nosniff], X-Frame-Options=[DENY], X-XSS-Protection=[1; mode=block]}
+Payload: {
+  "_embedded" : {
+    "shops" : [ {
+      "id" : 1,
+      "code" : "toto",
+      "description" : "Shop 1",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/1/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 2,
+      "code" : "SH2",
+      "description" : "Shop 2",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/2/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 3,
+      "code" : "SH3",
+      "description" : "Shop 3",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/3/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 4,
+      "code" : "SH4",
+      "description" : "Shop 4",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/4/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 5,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/5/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 6,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/6/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 7,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/7/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 8,
+      "code" : "JDIN",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/8/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 9,
+      "code" : "mokaie",
+      "description" : "le pros",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/9/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.124.160.103:8500/shops{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://10.124.160.103:8500/profile/shops"
+    },
+    "search" : {
+      "href" : "http://10.124.160.103:8500/shops/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 9,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+--------------------------------------
+12/09/2019 07:56:48.586  INFO [qtp7575494-16] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/xml
+Headers: {Content-Type=[application/xml], Date=[Thu, 12 Sep 2019 06:56:48 GMT]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Block_Response><listws_response><API_GW_Description>SUCCESS PROCESS : identitity_Get</API_GW_Description><API_GW_Error>00</API_GW_Error><client_IP>127.0.0.1</client_IP><WS_Description></WS_Description><WS_ERROR>200</WS_ERROR><WS_ResponseContent>{
+  "_embedded" : {
+    "shops" : [ {
+      "id" : 1,
+      "code" : "toto",
+      "description" : "Shop 1",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/1/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 2,
+      "code" : "SH2",
+      "description" : "Shop 2",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/2/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 3,
+      "code" : "SH3",
+      "description" : "Shop 3",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/3/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 4,
+      "code" : "SH4",
+      "description" : "Shop 4",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/4/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 5,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/5/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 6,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/6/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 7,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/7/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 8,
+      "code" : "JDIN",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/8/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 9,
+      "code" : "mokaie",
+      "description" : "le pros",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/9/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.124.160.103:8500/shops{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://10.124.160.103:8500/profile/shops"
+    },
+    "search" : {
+      "href" : "http://10.124.160.103:8500/shops/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 9,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}</WS_ResponseContent><WS_name>identitity_Get</WS_name><WS_request_time>2019-09-12 07:56:47</WS_request_time></listws_response><ws_block_name>test_block</ws_block_name></Block_Response>
+--------------------------------------
+12/09/2019 07:56:48.589  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/xml
+Headers: {content-type=[application/xml], Date=[Thu, 12 Sep 2019 06:56:48 GMT], Server=[Jetty(9.4.18.v20190429)], transfer-encoding=[chunked]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Block_Response><listws_response><API_GW_Description>SUCCESS PROCESS : identitity_Get</API_GW_Description><API_GW_Error>00</API_GW_Error><client_IP>127.0.0.1</client_IP><WS_Description></WS_Description><WS_ERROR>200</WS_ERROR><WS_ResponseContent>{
+  "_embedded" : {
+    "shops" : [ {
+      "id" : 1,
+      "code" : "toto",
+      "description" : "Shop 1",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/1/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 2,
+      "code" : "SH2",
+      "description" : "Shop 2",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/2/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 3,
+      "code" : "SH3",
+      "description" : "Shop 3",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/3/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 4,
+      "code" : "SH4",
+      "description" : "Shop 4",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/4/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 5,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/5/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 6,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/6/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 7,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/7/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 8,
+      "code" : "JDIN",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/8/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 9,
+      "code" : "mokaie",
+      "description" : "le pros",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/9/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.124.160.103:8500/shops{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://10.124.160.103:8500/profile/shops"
+    },
+    "search" : {
+      "href" : "http://10.124.160.103:8500/shops/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 9,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}</WS_ResponseContent><WS_name>identitity_Get</WS_name><WS_request_time>2019-09-12 07:56:47</WS_request_time></listws_response><ws_block_name>test_block</ws_block_name></Block_Response>
+--------------------------------------
+12/09/2019 07:56:48.669  INFO [main] ClientAPI_Rest: duration to request OCM_Charging : 1216 ms
+12/09/2019 07:56:48.670  INFO [main] ClientAPI_Rest: response : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Block_Response>
+    <listws_response>
+        <API_GW_Description>SUCCESS PROCESS : identitity_Get</API_GW_Description>
+        <API_GW_Error>00</API_GW_Error>
+        <client_IP>127.0.0.1</client_IP>
+        <WS_Description></WS_Description>
+        <WS_ERROR>200</WS_ERROR>
+        <WS_ResponseContent>{
+  "_embedded" : {
+    "shops" : [ {
+      "id" : 1,
+      "code" : "toto",
+      "description" : "Shop 1",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/1"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/1/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 2,
+      "code" : "SH2",
+      "description" : "Shop 2",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/2"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/2/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 3,
+      "code" : "SH3",
+      "description" : "Shop 3",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/3"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/3/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 4,
+      "code" : "SH4",
+      "description" : "Shop 4",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/4"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/4/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 5,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/5"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/5/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 6,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/6"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/6/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 7,
+      "code" : "JDIND30934",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/7"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/7/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 8,
+      "code" : "JDIN",
+      "description" : "Lorem ipsum dolor sit amet sum",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/8"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/8/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    }, {
+      "id" : 9,
+      "code" : "mokaie",
+      "description" : "le pros",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "shop" : {
+          "href" : "http://10.124.160.103:8500/shops/9"
+        },
+        "pieceClients" : {
+          "href" : "http://10.124.160.103:8500/shops/9/pieceClients{?projection}",
+          "templated" : true
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.124.160.103:8500/shops{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://10.124.160.103:8500/profile/shops"
+    },
+    "search" : {
+      "href" : "http://10.124.160.103:8500/shops/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 9,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}</WS_ResponseContent>
+        <WS_name>identitity_Get</WS_name>
+        <WS_request_time>2019-09-12 07:56:47</WS_request_time>
+    </listws_response>
+    <ws_block_name>test_block</ws_block_name>
+</Block_Response>
+

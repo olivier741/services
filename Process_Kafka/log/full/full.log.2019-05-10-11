@@ -1,0 +1,76 @@
+10/05/2019 11:10:03.912  INFO [main] Start_Process: Load log4j config file done.
+10/05/2019 11:10:04.062  INFO [main] Start_Process: successfull load : etc\http_listener.xml
+10/05/2019 11:10:04.210  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 11:10:04.210  INFO [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: Config_DB1
+	...]
+10/05/2019 11:10:04.357  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 11:10:04.357  INFO [main] Version: HHH000412: Hibernate Core {5.2.16.Final}
+10/05/2019 11:10:04.359  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 11:10:04.359  INFO [main] Environment: HHH000206: hibernate.properties not found
+10/05/2019 11:10:04.397  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 11:10:04.397  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10/05/2019 11:10:04.559  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 11:10:04.559  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+10/05/2019 11:10:04.946  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 11:10:04.946  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+10/05/2019 11:10:06.378  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 11:10:06.378  INFO [main] QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+10/05/2019 11:10:06.530  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    485035 nanoseconds spent acquiring 1 JDBC connections;
+    16043 nanoseconds spent releasing 1 JDBC connections;
+    13962921 nanoseconds spent preparing 1 JDBC statements;
+    5315583 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 11:10:06.530  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    485035 nanoseconds spent acquiring 1 JDBC connections;
+    16043 nanoseconds spent releasing 1 JDBC connections;
+    13962921 nanoseconds spent preparing 1 JDBC statements;
+    5315583 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 11:10:06.667  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    18091 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    293546 nanoseconds spent preparing 1 JDBC statements;
+    1739434 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 11:10:06.667  INFO [main] StatisticalLoggingSessionEventListener: Session Metrics {
+    18091 nanoseconds spent acquiring 1 JDBC connections;
+    8192 nanoseconds spent releasing 1 JDBC connections;
+    293546 nanoseconds spent preparing 1 JDBC statements;
+    1739434 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+10/05/2019 11:10:06.669  INFO [pool-1-thread-1] Receiver: ################################## START PROCESSING IN RECEIVER ###########################
+10/05/2019 11:10:12.393  INFO [pool-1-thread-1] Receiver: request in receiver    : {
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}

@@ -1,0 +1,221 @@
+04/12/2019 11:00:32.896  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "e82bc676-167c-11ea-9e3e-1bcc0bad00ca",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+04/12/2019 11:00:32.905  INFO [pool-7-thread-1] Receiver: transaction_id   : e82bc676-167c-11ea-9e3e-1bcc0bad00ca
+04/12/2019 11:00:32.906  INFO [pool-7-thread-1] Receiver: content send by customer   : CHO1
+04/12/2019 11:00:32.906  INFO [pool-7-thread-1] Receiver: customer phone number      : 661000504
+04/12/2019 11:00:32.906  INFO [pool-7-thread-1] Receiver: short code                 : 8755
+04/12/2019 11:00:32.906  INFO [pool-7-thread-1] Receiver: Emitte to Register Process : Process_Request{transaction_id=e82bc676-167c-11ea-9e3e-1bcc0bad00ca, msisdn=661000504, receiver=8755, content=CHO1, command_code=CHO1, split_separate=, param_name=null, param_length=null, param_pattern=null, param_value=H O 1, channel=8755, action_type=REGISTER, action_description=action to register on cho1, receive_time=2019-12-04 11:00:32.896, product_name=CHO1, notification_code=null, language=null, exchange_mode=SMS}
+04/12/2019 11:00:32.906  INFO [pool-3-thread-1] Process_Register: Get message in Register queue :Process_Request{transaction_id=e82bc676-167c-11ea-9e3e-1bcc0bad00ca, msisdn=661000504, receiver=8755, content=CHO1, command_code=CHO1, split_separate=, param_name=null, param_length=null, param_pattern=null, param_value=H O 1, channel=8755, action_type=REGISTER, action_description=action to register on cho1, receive_time=2019-12-04 11:00:32.896, product_name=CHO1, notification_code=null, language=null, exchange_mode=SMS}
+04/12/2019 11:00:32.913  INFO [pool-3-thread-1] Process_Register: Register Queue size :0
+04/12/2019 11:00:32.926  INFO [pool-3-thread-1] Webservice_Charge: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <charge_amount>0</charge_amount>
+    <msisdn>661000504</msisdn>
+    <reg_transaction_id>e82bc676-167c-11ea-9e3e-1bcc0bad00ca</reg_transaction_id>
+    <WSparam>
+        <alias>_description_</alias>
+        <value>Product Cho1 is daily offer</value>
+    </WSparam>
+    <WSparam>
+        <alias>_msisdn_</alias>
+        <value>661000504</value>
+    </WSparam>
+    <WSparam>
+        <alias>_fee_</alias>
+        <value>50</value>
+    </WSparam>
+    <ws_block_api_name>CHARGE</ws_block_api_name>
+    <ws_client_name>flash_sms</ws_client_name>
+</Request>
+
+04/12/2019 11:00:33.021  INFO [pool-3-thread-1] Webservice_Charge: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>flash@123</password>
+    <user_name>flash</user_name>
+    <ws_block_api_name>CHARGE</ws_block_api_name>
+    <ws_client_name>flash_sms</ws_client_name>
+</account>
+
+04/12/2019 11:00:33.021  INFO [pool-3-thread-1] Webservice_Charge: Auth token : 
+04/12/2019 11:00:33.076  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1329835 nanoseconds spent acquiring 2 JDBC connections;
+    339285 nanoseconds spent releasing 2 JDBC connections;
+    251904 nanoseconds spent preparing 1 JDBC statements;
+    1135275 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    296277 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.076  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1329835 nanoseconds spent acquiring 2 JDBC connections;
+    339285 nanoseconds spent releasing 2 JDBC connections;
+    251904 nanoseconds spent preparing 1 JDBC statements;
+    1135275 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    296277 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.077 ERROR [pool-3-thread-1] Process_Register: API-GATEWAY Authentication issue 
+04/12/2019 11:00:33.078  INFO [pool-3-thread-1] CommunRepository: SQL query : select generatedAlias0 from Register as generatedAlias0 where ( generatedAlias0.msisdn=:param0 ) and ( generatedAlias0.product=:param1 )
+04/12/2019 11:00:33.078  INFO [pool-3-thread-1] CommunRepository: SQL param msisdn = 661000504
+04/12/2019 11:00:33.078  INFO [pool-3-thread-1] CommunRepository: SQL param product = Product{product_id=4, product_code=CHO1, reg_fee=50, restrict_product=, register_day=, start_date=2019-12-01 00:00:00.0, end_date=null, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D60, description=Product Cho1 is daily offer, create_time=2019-12-02 15:15:44.786, update_time=2019-12-02 15:15:44.786, promotion=null, service=Service{service_id=2, service_name=CHOCHO, receive_channel=8755, send_channel=8755, service_provider=Mr Kamtem, service_description=l'artister Kamtem fournis les contenues, create_time=2019-12-02 15:13:16.362, update_time=2019-12-02 15:13:16.362}}
+04/12/2019 11:00:33.085  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    9216 nanoseconds spent releasing 1 JDBC connections;
+    273408 nanoseconds spent preparing 2 JDBC statements;
+    2165760 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.085  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    13995 nanoseconds spent acquiring 1 JDBC connections;
+    9216 nanoseconds spent releasing 1 JDBC connections;
+    273408 nanoseconds spent preparing 2 JDBC statements;
+    2165760 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.109  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    26283 nanoseconds spent acquiring 2 JDBC connections;
+    393899 nanoseconds spent releasing 2 JDBC connections;
+    185344 nanoseconds spent preparing 2 JDBC statements;
+    2129921 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1740459 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 7 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.109  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    26283 nanoseconds spent acquiring 2 JDBC connections;
+    393899 nanoseconds spent releasing 2 JDBC connections;
+    185344 nanoseconds spent preparing 2 JDBC statements;
+    2129921 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1740459 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 7 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.110  INFO [pool-3-thread-1] CommunRepository: SQL query : select generatedAlias0 from Alias as generatedAlias0 where generatedAlias0.msisdn=:param0
+04/12/2019 11:00:33.110  INFO [pool-3-thread-1] CommunRepository: SQL param msisdn = 661000504
+04/12/2019 11:00:33.112  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    12971 nanoseconds spent acquiring 1 JDBC connections;
+    10582 nanoseconds spent releasing 1 JDBC connections;
+    61098 nanoseconds spent preparing 1 JDBC statements;
+    805888 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.112  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    12971 nanoseconds spent acquiring 1 JDBC connections;
+    10582 nanoseconds spent releasing 1 JDBC connections;
+    61098 nanoseconds spent preparing 1 JDBC statements;
+    805888 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.112  INFO [pool-3-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=e82bc676-167c-11ea-9e3e-1bcc0bad00ca, msisdn=661000504, receiver=8755, content=CHO1, command_code=CHO1, split_separate=, param_name=null, param_length=null, param_pattern=null, param_value=H O 1, channel=8755, action_type=REGISTER, action_description=action to register on cho1, receive_time=2019-12-04 11:00:32.896, product_name=CHO1, notification_code=REG-PRODUCT-SUCCESS-OVERIDE-CHO1, language=null, exchange_mode=SMS}
+04/12/2019 11:00:33.112  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=e82bc676-167c-11ea-9e3e-1bcc0bad00ca, msisdn=661000504, receiver=8755, content=CHO1, command_code=CHO1, split_separate=, param_name=null, param_length=null, param_pattern=null, param_value=H O 1, channel=8755, action_type=REGISTER, action_description=action to register on cho1, receive_time=2019-12-04 11:00:32.896, product_name=CHO1, notification_code=REG-PRODUCT-SUCCESS-OVERIDE-CHO1, language=null, exchange_mode=SMS}
+04/12/2019 11:00:33.113  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+04/12/2019 11:00:33.113  WARN [pool-2-thread-1] Sender: Msisdn :661000504 --> Channel : 8755 --> Notification Code : REG-PRODUCT-SUCCESS-OVERIDE-CHO1 --> Message Not provide in DB
+04/12/2019 11:00:33.143  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24917 nanoseconds spent acquiring 2 JDBC connections;
+    398677 nanoseconds spent releasing 2 JDBC connections;
+    551937 nanoseconds spent preparing 4 JDBC statements;
+    4194987 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    634197 nanoseconds spent executing 1 flushes (flushing a total of 11 entities and 11 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.143  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    24917 nanoseconds spent acquiring 2 JDBC connections;
+    398677 nanoseconds spent releasing 2 JDBC connections;
+    551937 nanoseconds spent preparing 4 JDBC statements;
+    4194987 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    634197 nanoseconds spent executing 1 flushes (flushing a total of 11 entities and 11 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:00:33.143  INFO [pool-3-thread-1] Process_Register: insert into mo_his
+04/12/2019 11:11:16.585  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "67b7a439-167e-11ea-9e3e-6dddfdd3b0ab",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "id:181 sub:001 dlvrd:001 submit date:1912041111 done date:1912041111 stat:DELIVRD err:000 Text:Bonjour les Jeunes, ",
+  "exchange_mode" : "SMS"
+}
+04/12/2019 11:11:16.586  INFO [pool-7-thread-1] Receiver: transaction_id   : 67b7a439-167e-11ea-9e3e-6dddfdd3b0ab
+04/12/2019 11:11:16.586  INFO [pool-7-thread-1] Receiver: content send by customer   : ID:181 SUB:001 DLVRD:001 SUBMIT DATE:1912041111 DONE DATE:1912041111 STAT:DELIVRD ERR:000 TEXT:BONJOUR LES JEUNES,
+04/12/2019 11:11:16.586  INFO [pool-7-thread-1] Receiver: customer phone number      : 661000504
+04/12/2019 11:11:16.587  INFO [pool-7-thread-1] Receiver: short code                 : 8755
+04/12/2019 11:11:16.587  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=67b7a439-167e-11ea-9e3e-6dddfdd3b0ab, msisdn=661000504, receiver=8755, content=ID:181 SUB:001 DLVRD:001 SUBMIT DATE:1912041111 DONE DATE:1912041111 STAT:DELIVRD ERR:000 TEXT:BONJOUR LES JEUNES,, command_code=null, split_separate=null, param_name=null, param_length=null, param_pattern=null, param_value=null, channel=null, action_type=null, action_description=null, receive_time=2019-12-04 11:11:16.585, product_name=null, notification_code=RECEIVER-WRONG-SYNTAX, language=null, exchange_mode=null}
+04/12/2019 11:11:16.587  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=67b7a439-167e-11ea-9e3e-6dddfdd3b0ab, msisdn=661000504, receiver=8755, content=ID:181 SUB:001 DLVRD:001 SUBMIT DATE:1912041111 DONE DATE:1912041111 STAT:DELIVRD ERR:000 TEXT:BONJOUR LES JEUNES,, command_code=null, split_separate=null, param_name=null, param_length=null, param_pattern=null, param_value=null, channel=null, action_type=null, action_description=null, receive_time=2019-12-04 11:11:16.585, product_name=null, notification_code=RECEIVER-WRONG-SYNTAX, language=null, exchange_mode=null}
+04/12/2019 11:11:16.587  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+04/12/2019 11:11:16.588  WARN [pool-2-thread-1] Sender: Msisdn :661000504 --> Channel : null --> Notification Code : RECEIVER-WRONG-SYNTAX --> Message Not provide in DB
+04/12/2019 11:11:16.614  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1238016 nanoseconds spent acquiring 2 JDBC connections;
+    472747 nanoseconds spent releasing 2 JDBC connections;
+    83627 nanoseconds spent preparing 1 JDBC statements;
+    963584 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    121515 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:11:16.614  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1238016 nanoseconds spent acquiring 2 JDBC connections;
+    472747 nanoseconds spent releasing 2 JDBC connections;
+    83627 nanoseconds spent preparing 1 JDBC statements;
+    963584 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    121515 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+04/12/2019 11:11:16.614  INFO [pool-7-thread-1] Receiver: insert into mo_his 

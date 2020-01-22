@@ -1,0 +1,64 @@
+<service_listener>
+    <fault_msg>system is in maintenance, please contact call center </fault_msg>
+	
+	 <http_listener>
+		 <http_IP>127.0.0.1</http_IP>
+		 <http_port>8935</http_port>
+		 <ws_security_mode>0</ws_security_mode>
+     </http_listener>
+	
+	<service service_id = "user1">
+	   <description>service allow to register on pubdate </description>
+	  <!-- Mean all the content start by ON, OFF, LIST,GUIDE , ADD [param] and DEL [param] 
+		   from customer that phone number end by 88 to short code 8965 are process by receiver listen user1. 
+		   to check, we can reffer to https://www.freeformatter.com/java-regex-tester.html 
+	    -->
+	   <mofilterSMS>
+		   <content>ON|OFF|LIST|ADD .*|DEL .*|GUIDE</content> 
+		   <receiver>8965</receiver>
+		   <sender>.*</sender>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>.*</sender>
+	   </mtfilterSMS>
+	   
+	</service>  
+
+   <service service_id = "user2">
+	   <description>service allow to register on PIT </description>
+	   <mofilterSMS>
+		   <content>.*</content> 
+		   <receiver>8966</receiver>
+		   <sender>.*</sender>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>8966</sender>
+	   </mtfilterSMS>
+	</service>  
+	
+	<service service_id = "user3">
+	   <description>service allow to register on pubdate </description>
+	   <!-- Mean all the content start by ON, OFF, LIST,GUIDE , ADD [param] and DEL [param] 
+		   from customer that phone number end by 88 to short code 8965 are process by receiver listen user1. 
+		   to check, we can reffer to https://www.freeformatter.com/java-regex-tester.html 
+	    -->
+	   <mofilterSMS>
+		   <content>ON|OFF|LIST|ADD .*|DEL .*|GUIDE</content> 
+		   <receiver>8967</receiver>
+		   <sender>(237)[0-9].*88$</sender>
+	   </mofilterSMS>
+	   
+	   <mtfilterSMS>
+		   <content>.*</content> 
+		   <receiver>.*</receiver>
+		   <sender>8967</sender>
+	   </mtfilterSMS>
+	</service>  
+	
+</service_listener>

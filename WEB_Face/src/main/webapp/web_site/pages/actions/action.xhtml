@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml" >
+
+    <ui:define name="body">
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    ACTION MANAGEMENT
+                    <small>Action informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+
+                                    <p:panel header="Operate on the Action / List Actions" > 
+                                        <p:panelGrid id="rolecrud" columns="2">
+
+
+                                            <h:outputLabel value="Action Name :" style="width:150px"/>
+
+                                            <p:inputText  value="#{actionMB.selectedAction.action_name}" disabled="#{actionMB.do_view}"  required="true" />
+
+                                            <h:outputLabel value="Action Type :" style="width:150px"/>
+
+                                            <h:selectOneMenu value="#{actionMB.selectedAction.action_type}" disabled="#{actionMB.do_view}" style="width:180px">
+                                                <f:selectItem itemValue="REGISTER" itemLabel="REGISTER" />
+                                                <f:selectItem itemValue="DELETE_REG" itemLabel="DELETE" />
+                                                <f:selectItem itemValue="CHECK_REG" itemLabel="CHECK" />
+                                                <f:selectItem itemValue="GUIDE_REG" itemLabel="GUIDE" />
+                                                <f:selectItem itemValue="LIST_REG" itemLabel="LIST" />
+                                                <f:selectItem itemValue="ACC_CHANGE_ALIAS" itemLabel="CHANGE-ALIAS" />
+                                                <f:selectItem itemValue="ACC_ADD_CHATGROUP" itemLabel="ADD-CHATGROUP" />
+                                                <f:selectItem itemValue="ACC_DEL_CHATGROUP" itemLabel="DEL-CHATGROUP" />
+                                                <f:selectItem itemValue="ACC_LIST_ALL_CHATGROUP" itemLabel="LIST-ALL-CHATGROUP" />
+                                                <f:selectItem itemValue="ACC_LIST_REG_CHATGROUP" itemLabel="LIST-REG-CHATGROUP" />
+                                                <f:selectItem itemValue="ACC_LIST_NOTREG_CHATGROUP" itemLabel="LIST-NOTREG-CHATGROUP" />
+                                            </h:selectOneMenu>
+
+                                            <h:outputLabel value="Select Product :" style="width:150px"/>
+
+                                            <h:selectOneMenu  label="Product" value="#{actionMB.selectedProduct}" 
+                                                              disabled="#{actionMB.do_view}" 
+                                                              converter="productConverter"
+                                                              style="width:180px">                                                        
+                                                <f:selectItems value="#{actionMB.listproduct}" var="product" itemLabel="#{product.product_code}" itemValue="#{product}"/>
+
+                                            </h:selectOneMenu>
+
+                                            <h:outputLabel value="Description :" style="width:150px"/>
+
+                                            <p:inputTextarea value="#{actionMB.selectedAction.description}"  rows="5" cols="45" 
+                                                             disabled="#{actionMB.do_view}"
+                                                             counterTemplate="{0} characters remaining." 
+                                                             autoResize="false" />
+
+
+
+                                            <f:facet name="footer">
+                                                <h:commandButton value="Enable Edit" action="#{actionMB.enableEdit}" rendered="#{actionMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{actionMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{actionMB.delete}" rendered="#{actionMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                </h:commandButton>
+                                                <h:commandButton value="Add" action="#{actionMB.onAddNew}" rendered="#{actionMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{actionMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{actionMB.edit}" rendered="#{actionMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{actionMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{actionMB.clear}" rendered="#{actionMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                </h:commandButton> 
+                                            </f:facet>
+                                        </p:panelGrid>
+                                        <p:spacer height="50px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{actionMB.listAction}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+
+
+                                            <p:column headerText="ID" filterBy="#{o.action_id}" sortBy="#{o.action_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.action_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="Action Name" filterBy="#{o.action_name}" sortBy="#{o.action_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.action_name}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Action Type" filterBy="#{o.action_type}" sortBy="#{o.action_type}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.action_type}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Product" filterBy="#{o.product.product_code}" sortBy="#{o.product.product_code}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.product.product_code}"  /> 
+                                            </p:column>
+
+                                            <p:column headerText="Description" filterBy="#{o.description}" sortBy="#{o.description}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.description}"/> 
+                                            </p:column>
+
+
+
+                                            <p:column headerText="Create date" filterBy="#{o.create_time}" sortBy="#{o.create_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.create_time}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Update date" filterBy="#{o.update_time}" sortBy="#{o.update_time}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.update_time}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{actionMB.view(o)}" update="datatable_grid,:form1:rolecrud,:form1:messages"  process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   
+

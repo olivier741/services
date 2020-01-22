@@ -1,0 +1,27 @@
+<tcp_listener>
+
+  <node_name>RECEIVER01</node_name>
+  
+  <tcp_connection name = "smsgw1">
+     <user_name>user2</user_name>
+	 <password>pass_user2</password>
+     <ip_smsgw>127.0.0.1</ip_smsgw>
+	 <port_smsgw>8623</port_smsgw>
+	 <connection_timeout>3000</connection_timeout>
+	 <numberThread>2</numberThread>
+	 <threadPool>10</threadPool>
+	 <connection_retry_delay>2000</connection_retry_delay>
+  </tcp_connection>
+ <!-- 
+  <tcp_connection name = "smsgw2">
+     <user_name>user1</user_name>
+	 <password>pass_user1</password>
+     <ip_smsgw>127.0.0.4587</ip_smsgw>
+	 <port_smsgw>8623</port_smsgw>
+	 <connection_timeout>1000</connection_timeout>
+	 <numberThread>1</numberThread>
+	 <threadPool>1</threadPool>
+	 <connection_retry_delay>2000</connection_retry_delay>
+  </tcp_connection> 
+  -->
+</tcp_listener>

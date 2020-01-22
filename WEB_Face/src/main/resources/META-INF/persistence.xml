@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="DB_PU1" transaction-type="JTA">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <jta-data-source>openejb:Resource/mySQLDataSource</jta-data-source>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+       <!--
+        <property name="javax.persistence.schema-generation.database.action" value="create"/>
+       -->
+      
+       <!-- Configuring JDBC properties -->
+
+      <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://10.124.160.67:3306/olivier_test"/>
+      <property name="javax.persistence.jdbc.user" value="olivier"/>
+      <property name="javax.persistence.jdbc.password" value="abc@1234"/>
+      <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+      <property name="javax.persistence.lock.timeout" value="0"/>
+      <property name="javax.persistence.sharedCache.mode" value="ALL"/>
+
+      
+      
+      <!-- Hibernate properties -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDB103Dialect"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.connection.driver_class" value="org.mariadb.jdbc.Driver"/>
+      <property name="hibernate.use_sql_comments" value="true"/>
+      <property name="hibernate.generate_statistics" value="true"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.connection.autocommit" value="true"/>
+      <property name="hibernate.connection.shutdown" value="true"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.enable_lazy_load_no_trans" value="true"/>
+      <property name="hibernate.cache.use_second_level_cache" value="true"/>
+      <property name="hibernate.cache.use_query_cache" value="true"/>
+      <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>
+      <property name="openjpa.Log" value="DefaultLevel=WARN, Runtime=DEBUG, Tool=DEBUG, SQL=TRACE" /> 
+      <property name="tomee.jpa.cdi" value="false"/>
+      <!-- 
+       
+      hibernate.hbm2ddl.auto vaulue = create | update | validate | create-drop
+
+        Following is the explanation of the behaviour shown by these value:
+
+        create :- create the schema, the data previously present (if there) in the schema is lost
+        update:- update the schema with the given values.
+        validate:- validate the schema. It makes no change in the DB.
+        create-drop:- create the schema with destroying the data previously present(if there). It also drop the database schema when the SessionFactory is closed.
+
+      -->
+
+      <!-- Configuring Connection Pool 
+        <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />       
+        <property name="hibernate.c3p0.min_size" value="5" />
+        <property name="hibernate.c3p0.max_size" value="20" />
+        <property name="hibernate.c3p0.timeout"  value="300" />
+        <property name="hibernate.c3p0.acquire_increment" value="1" />
+        <property name="hibernate.c3p0.max_statements"   value="50" />
+        <property name="hibernate.c3p0.idle_test_period" value="120" />
+        -->
+    </properties>
+  </persistence-unit>
+</persistence>

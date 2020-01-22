@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:p="http://primefaces.org/ui"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 template = "../../template/template.xhtml">
+    <ui:define name="body">
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    CONTACT MANAGEMENT
+                    <small>Contact informations</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#{request.contextPath}/web_site/index.xhtml"><i class="fa fa-dashboard"></i> Home</a></li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="box">
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <h:form id="form1">
+                                    <p:growl id="messages" showDetail="true"/>
+                                    <p:panel header="List of Contact" > 
+                                        <p:panelGrid id="rolecrud" columns="4">
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Contact Label :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{contactMB.selectedContact.contact_name}" required="true" disabled="#{contactMB.do_view}"/>
+                                                </p:column>
+                                            </p:row>
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Street :" style="width:150px"/>
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{contactMB.selectedContact.street}" disabled="#{contactMB.do_view}"/>
+                                                </p:column>
+                                            </p:row>
+
+                                            <p:row>
+                                                <p:column >
+                                                    <h:outputLabel value="District :" style="width:150px" /> 
+                                                </p:column>
+                                                <p:column >
+                                                    <p:inputText  value="#{contactMB.selectedContact.district}" disabled="#{contactMB.do_view}"/>
+                                                </p:column>
+                                            </p:row>
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Region :" style="width:150px" /> 
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{contactMB.selectedContact.region}" disabled="#{contactMB.do_view}"/>
+                                                </p:column>
+                                            </p:row>
+
+
+                                            <p:row>
+                                                <p:column >
+                                                    <h:outputLabel value="City :" style="width:150px"/> 
+                                                </p:column>
+                                                <p:column >
+                                                    <p:inputText  value="#{contactMB.selectedContact.city}" disabled="#{contactMB.do_view}"/>
+                                                </p:column>
+                                            </p:row>
+                                            <p:row>
+                                                <p:column style="font-weight: bold;">
+                                                    <h:outputLabel value="Contry :" style="width:150px" /> 
+                                                </p:column>
+                                                <p:column style="font-weight: bold;">
+                                                    <p:inputText  value="#{contactMB.selectedContact.contry}" disabled="#{contactMB.do_view}"/>
+                                                </p:column>
+                                            </p:row>
+
+
+                                            <p:row>
+                                                <p:column >
+                                                    <h:outputLabel value="Postal Code :" style="width:150px"/> 
+                                                </p:column>
+                                                <p:column >
+                                                    <p:inputText  value="#{contactMB.selectedContact.postalCode}" disabled="#{contactMB.do_view}"/>
+                                                </p:column>                                         
+                                            </p:row>
+
+
+                                            <p:row>
+                                                <p:column >
+                                                    <h:outputLabel value="Email :" style="width:150px"/>
+                                                    <p:inputText  value="#{contactMB.email.email}" disabled="#{contactMB.do_view}"/> 
+                                                </p:column> 
+                                                <br/>
+                                                <p:column >
+                                                    <h:commandButton value="ADD Email" action="#{contactMB.addEmail}"   update=":form1:rolecrud" process="@this" disabled="#{contactMB.do_view}"/> 
+                                                </p:column>
+                                            </p:row>
+
+                                            <p:row>
+                                                <p:column >
+                                                    <h:outputLabel value="List Phone :" style="width:150px"/> 
+                                                    <br/>
+                                                </p:column>
+                                      
+                                               <p:column colspan="2" style="width:1500px">
+                                                        <p:pickList  value="#{contactMB.dualListModelphones}" var="val" 
+                                                             itemLabel="#{val.phone_number}" 
+                                                             itemValue="#{val}" 
+                                                             responsive="true"
+                                                             showSourceFilter="true" showTargetFilter="true" filterMatchMode="contains"
+                                                             converter="phonePickListConverter"
+                                                             disabled="#{contactMB.do_view}" >
+
+                                                        <f:facet name="sourceCaption">Available</f:facet>
+                                                        <f:facet name="targetCaption">Starting</f:facet>
+
+                                                        <p:ajax event="transfer" listener="#{contactMB.onTransfer}" update="messages" />
+                                                        <p:ajax event="select" listener="#{contactMB.onSelect}" update="messages"/>
+                                                        <p:ajax event="unselect" listener="#{contactMB.onUnselect}" update="messages"/>
+                                                        <p:ajax event="reorder" listener="#{contactMB.onReorder}" update="messages"/>
+
+                                                        <p:column style="width:85%;">
+                                                            <h:outputText value="#{val.phone_number}" />
+                                                        </p:column>
+                                                 </p:pickList>
+                                                    
+                                               </p:column>
+                                            </p:row>  
+
+                                            <p:row>
+                                                <p:column >
+                                                    <h:outputLabel value="List Email :" style="width:150px"/> 
+                                                    <br/>
+                                                </p:column>
+                                                    <p:column colspan="2" style="width:1500px">
+                                                        <p:pickList value="#{contactMB.dualListModelemails}" var="val" 
+                                                             itemLabel="#{val.email}" 
+                                                             itemValue="#{val}" 
+                                                             responsive="true"
+                                                             showSourceFilter="true" showTargetFilter="true" filterMatchMode="contains"
+                                                             converter="emailPickListConverter"
+                                                             disabled="#{contactMB.do_view}" >
+
+                                                        <f:facet name="sourceCaption">Available</f:facet>
+                                                        <f:facet name="targetCaption">Starting</f:facet>
+
+                                                        <p:ajax event="transfer" listener="#{contactMB.onTransfer}" update="messages" />
+                                                        <p:ajax event="select" listener="#{contactMB.onSelect}" update="messages"/>
+                                                        <p:ajax event="unselect" listener="#{contactMB.onUnselect}" update="messages"/>
+                                                        <p:ajax event="reorder" listener="#{contactMB.onReorder}" update="messages"/>
+
+                                                        <p:column style="width:85%;">
+                                                            <h:outputText value="#{val.email}" />
+                                                        </p:column>
+                                                 </p:pickList>
+                                                    
+                                                  
+                                                </p:column>
+                                            </p:row>  
+
+                                            <p:row>
+                                                <p:column>
+                                                    <h:outputLabel value="Phone Number :" style="width:150px"/>
+                                                    <p:inputText  value="#{contactMB.phone_number.phone_number}"  disabled="#{contactMB.do_view}"/>
+                                                </p:column> 
+                                                <br/>
+                                                <p:column >
+                                                    <h:commandButton value="ADD Phone" action="#{contactMB.addPhone}"   update=":form1:rolecrud" process="@this" disabled="#{contactMB.do_view}"/> 
+                                                </p:column>
+                                            </p:row>
+
+                                            <f:facet name="footer">
+                                                 <h:commandButton value="Enable Edit" action="#{contactMB.enableEdit}" rendered="#{contactMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages"
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this">
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+
+                                                <p:spacer width="30px;" rendered="#{contactMB.do_view}" />
+                                                <h:commandButton value="Delete" action="#{contactMB.delete}" rendered="#{contactMB.do_view}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-danger btn-large btn-lg"
+                                                                 icon="fa fa-trash"
+                                                                 process="@this">
+                                                    <i class="fa fa-trash"></i>
+                                                 </h:commandButton>
+                                                <h:commandButton value="Add" action="#{contactMB.onAddNew}" rendered="#{contactMB.do_create}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{contactMB.do_reset}"/>
+                                                <h:commandButton value="Edit" action="#{contactMB.edit}" rendered="#{contactMB.do_edit}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-primary btn-large btn-lg"
+                                                                 icon="fa fa-check"
+                                                                 process="@this" >
+                                                    <i class="fa fa-check"></i>
+                                                 </h:commandButton>
+                                                <p:spacer width="30px;" rendered="#{contactMB.do_edit}"/>
+                                                <h:commandButton value="Reset" action="#{contactMB.clear}" rendered="#{contactMB.do_reset}" 
+                                                                 update="datatable_grid,:form1:rolecrud,:form1:messages" 
+                                                                 styleClass="btn btn-success btn-large btn-lg"
+                                                                 icon="fa fa-refresh"
+                                                                 process="@this">
+                                                    <i class="fa fa-refresh"></i>
+                                                 </h:commandButton> 
+                                              </f:facet>
+
+                                        </p:panelGrid>
+                                        <p:spacer height="30px;"/>
+                                        <p:dataTable id="datatable_grid" value="#{contactMB.listContact}" var="o" widgetVar="datatable_grid" style="width: 100%;" editable="true"
+                                                     rows="10" paginator="true"
+                                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                                     rowsPerPageTemplate="5,10,15,20,25,30,35,40,45,50" tableStyle="height:auto">
+                                            <f:facet name="header" >
+                                                <p:outputPanel >
+                                                    <h:outputText value="Search all fields:"  />
+                                                    <p:inputText id="globalFilter" onkeyup="PF('datatable_grid').filter()" style="width:300px" placeholder="Enter keyword"/>
+                                                </p:outputPanel>
+                                            </f:facet>
+
+                                      
+
+                                            <p:column headerText="ID" filterBy="#{o.contact_id}" sortBy="#{o.contact_id}" filterMatchMode="startsWith" style="width:100px">
+                                                <h:outputText value="#{o.contact_id}"/>  
+                                            </p:column>
+
+                                            <p:column headerText="Contact Label" filterBy="#{o.contact_name}" sortBy="#{o.contact_name}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.contact_name}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Phone Number" filterBy="#{contactMB.allPhone}" sortBy="#{contactMB.allPhone}" filterMatchMode="contains">
+                                                <h:outputText value="#{contactMB.getPhonebyContact(o.contact_name)}" escape="false" style="white-space: pre-wrap;word-wrap: break-word; " /> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Email" filterBy="#{contactMB.allEmail}" sortBy="#{contactMB.allEmail}" filterMatchMode="contains">
+                                                <h:outputText value="#{contactMB.getEmailbyContact(o.contact_name)}" escape="false" style="white-space: pre-wrap;word-wrap: break-word; " /> 
+                                            </p:column>
+
+                                            <p:column headerText="Street" filterBy="#{o.street}" sortBy="#{o.street}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.street}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="District" filterBy="#{o.district}" sortBy="#{o.district}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.district}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="Region" filterBy="#{o.region}" sortBy="#{o.region}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.region}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="City" filterBy="#{o.city}" sortBy="#{o.city}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.city}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="Contry" filterBy="#{o.contry}" sortBy="#{o.contry}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.contry}"/> 
+                                            </p:column>
+
+                                            <p:column headerText="PostalCode" filterBy="#{o.postalCode}" sortBy="#{o.postalCode}" filterMatchMode="startsWith">
+                                                <h:outputText value="#{o.postalCode}"/> 
+                                            </p:column>
+
+
+                                            <p:column headerText="View" style="width:50px">                    
+                                                <p:commandLink title="View" action="#{contactMB.view(o)}" update="datatable_grid,:form1:rolecrud,:form1:messages"  process="@this"> 
+                                                    <i class="fa fa-eye"></i>
+                                                </p:commandLink>
+                                            </p:column>
+
+                                        </p:dataTable>
+                                    </p:panel>
+
+                                </h:form>
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+    </ui:define>
+</ui:composition>   

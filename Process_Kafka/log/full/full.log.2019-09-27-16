@@ -1,0 +1,713 @@
+27/09/2019 16:09:27.278  INFO [main] Start_Process: Load log4j config file done.
+27/09/2019 16:09:27.307  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+27/09/2019 16:09:27.330  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+27/09/2019 16:09:27.332  INFO [main] Receiver: LIST OF COMMAND : 
+27/09/2019 16:09:27.332  INFO [main] Receiver: Request_Conf{command_id=1, command_name=REG_Flash1, command_code=FLASH1, split_separator=, action_name=REG_Flash1, action_type=REGISTER, action_description=action to register Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:09:27.336  INFO [main] Receiver: Request_Conf{command_id=2, command_name=Del_Flash1, command_code=OFF, split_separator=, action_name=Del_Flash1, action_type=DELETE, action_description=action to delete Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:09:27.336  INFO [main] Receiver: Request_Conf{command_id=3, command_name=Check_Flash1, command_code=CHECK, split_separator=, action_name=Check_Flash1, action_type=CHECK, action_description=action to check Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:09:27.337  INFO [main] Receiver: Request_Conf{command_id=4, command_name=Guide_Flash1, command_code=GUIDE, split_separator=, action_name=Guide_Flash1, action_type=GUIDE, action_description=action to get guide of Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:09:27.333  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+27/09/2019 16:09:27.333  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+27/09/2019 16:09:27.333  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+27/09/2019 16:09:27.481  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+27/09/2019 16:10:35.364  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "f3f3cc78-e138-11e9-90f8-c94eb5b9cd74",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "FLASH1"
+}
+27/09/2019 16:10:35.676  INFO [pool-7-thread-1] Receiver: transaction_id   : f3f3cc78-e138-11e9-90f8-c94eb5b9cd74
+27/09/2019 16:10:35.676  INFO [pool-7-thread-1] Receiver: content send by customer   : FLASH1
+27/09/2019 16:10:35.676  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+27/09/2019 16:10:35.677  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+27/09/2019 16:10:35.679  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=f3f3cc78-e138-11e9-90f8-c94eb5b9cd74,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:10:35.364,
+ product_name=FLASH1,
+ notification_code=null,
+ language=null}
+27/09/2019 16:10:35.679  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+27/09/2019 16:19:06.325  INFO [main] Start_Process: Load log4j config file done.
+27/09/2019 16:19:06.351  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+27/09/2019 16:19:06.353  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+27/09/2019 16:19:06.354  INFO [main] Receiver: LIST OF COMMAND : 
+27/09/2019 16:19:06.355  INFO [main] Receiver: Request_Conf{command_id=1, command_name=REG_Flash1, command_code=FLASH1, split_separator=, action_name=REG_Flash1, action_type=REGISTER, action_description=action to register Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:19:06.356  INFO [main] Receiver: Request_Conf{command_id=2, command_name=Del_Flash1, command_code=OFF, split_separator=, action_name=Del_Flash1, action_type=DELETE, action_description=action to delete Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:19:06.356  INFO [main] Receiver: Request_Conf{command_id=3, command_name=Check_Flash1, command_code=CHECK, split_separator=, action_name=Check_Flash1, action_type=CHECK, action_description=action to check Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:19:06.357  INFO [main] Receiver: Request_Conf{command_id=4, command_name=Guide_Flash1, command_code=GUIDE, split_separator=, action_name=Guide_Flash1, action_type=GUIDE, action_description=action to get guide of Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:19:06.355  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+27/09/2019 16:19:06.358  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+27/09/2019 16:19:06.356  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+27/09/2019 16:19:06.528  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+27/09/2019 16:19:16.596  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "2a943709-e13a-11e9-90f8-afbeaf1bcdc3",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "FLASH1"
+}
+27/09/2019 16:19:16.948  INFO [pool-7-thread-1] Receiver: transaction_id   : 2a943709-e13a-11e9-90f8-afbeaf1bcdc3
+27/09/2019 16:19:16.948  INFO [pool-7-thread-1] Receiver: content send by customer   : FLASH1
+27/09/2019 16:19:16.949  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+27/09/2019 16:19:16.949  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+27/09/2019 16:19:16.956  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=2a943709-e13a-11e9-90f8-afbeaf1bcdc3,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:19:16.596,
+ product_name=FLASH1,
+ notification_code=null,
+ language=null}
+27/09/2019 16:19:16.956  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+27/09/2019 16:19:17.150  INFO [pool-3-thread-1] Webservice_Charge: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <charge_amount>0</charge_amount>
+    <msisdn>4477665544</msisdn>
+    <reg_transaction_id>2a943709-e13a-11e9-90f8-afbeaf1bcdc3</reg_transaction_id>
+    <WSparam>
+        <alias>_description_</alias>
+        <value>Daily registration to Flash SMS</value>
+    </WSparam>
+    <WSparam>
+        <alias>_msisdn_</alias>
+        <value>4477665544</value>
+    </WSparam>
+    <WSparam>
+        <alias>_fee_</alias>
+        <value>50</value>
+    </WSparam>
+    <ws_block_api_name>CHARGE</ws_block_api_name>
+    <ws_client_name>flash_sms</ws_client_name>
+</Request>
+
+27/09/2019 16:19:18.837 ERROR [pool-3-thread-1] Webservice_Charge: Webservice Error 2
+javax.ws.rs.ProcessingException: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/api_service/sendRequest: Connection refused: connect
+	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:638)
+	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:614)
+	at org.apache.cxf.jaxrs.client.WebClient.doResponse(WebClient.java:1115)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1052)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:431)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:461)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.sendAPI_Request(Webservice_Charge.java:358)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.requestCharge_Product(Webservice_Charge.java:168)
+	at com.tatsinktechnologic.process.Process_Reg.run(Process_Reg.java:324)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/api_service/sendRequest: Connection refused: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1199)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:274)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1343)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1304)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:307)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1356)
+	... 19 more
+27/09/2019 16:19:19.941 ERROR [pool-3-thread-1] Webservice_Charge: Cannot get Token 2
+javax.ws.rs.ProcessingException: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/authentication/auth: Connection refused: connect
+	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:638)
+	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:614)
+	at org.apache.cxf.jaxrs.client.WebClient.doResponse(WebClient.java:1115)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1052)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:334)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:343)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.getToken(Webservice_Charge.java:316)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.requestCharge_Product(Webservice_Charge.java:179)
+	at com.tatsinktechnologic.process.Process_Reg.run(Process_Reg.java:324)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/authentication/auth: Connection refused: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1199)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:274)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1343)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1304)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:307)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1356)
+	... 19 more
+27/09/2019 16:19:21.040 ERROR [pool-3-thread-1] Webservice_Charge: Webservice Error 2
+javax.ws.rs.ProcessingException: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/api_service/sendRequest: Connection refused: connect
+	at org.apache.cxf.jaxrs.client.AbstractClient.checkClientException(AbstractClient.java:638)
+	at org.apache.cxf.jaxrs.client.AbstractClient.preProcessResult(AbstractClient.java:614)
+	at org.apache.cxf.jaxrs.client.WebClient.doResponse(WebClient.java:1115)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1052)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:431)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:461)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.sendAPI_Request(Webservice_Charge.java:358)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.requestCharge_Product(Webservice_Charge.java:185)
+	at com.tatsinktechnologic.process.Process_Reg.run(Process_Reg.java:324)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/api_service/sendRequest: Connection refused: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1199)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:274)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1343)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1304)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:307)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1356)
+	... 19 more
+27/09/2019 16:19:21.042 ERROR [pool-3-thread-1] Process_Reg: API error : 
+java.lang.NullPointerException
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.getResponseMessage(ResponseImpl.java:428)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.entityStreamAvailable(ResponseImpl.java:420)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.doReadEntity(ResponseImpl.java:341)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.readEntity(ResponseImpl.java:314)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.readEntity(ResponseImpl.java:304)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.requestCharge_Product(Webservice_Charge.java:197)
+	at com.tatsinktechnologic.process.Process_Reg.run(Process_Reg.java:324)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+27/09/2019 16:19:21.042  INFO [pool-3-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=2a943709-e13a-11e9-90f8-afbeaf1bcdc3,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:19:16.596,
+ product_name=FLASH1,
+ notification_code=REG-PRODUCT-WRONG-API-CONNECTION-FLASH1,
+ language=null}
+27/09/2019 16:19:21.047  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=2a943709-e13a-11e9-90f8-afbeaf1bcdc3,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:19:16.596,
+ product_name=FLASH1,
+ notification_code=REG-PRODUCT-WRONG-API-CONNECTION-FLASH1,
+ language=null}
+27/09/2019 16:19:21.050  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+27/09/2019 16:19:21.147  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1244500 nanoseconds spent acquiring 2 JDBC connections;
+    405162 nanoseconds spent releasing 2 JDBC connections;
+    595285 nanoseconds spent preparing 4 JDBC statements;
+    19370322 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6933844 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 10 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:19:21.147  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1244500 nanoseconds spent acquiring 2 JDBC connections;
+    405162 nanoseconds spent releasing 2 JDBC connections;
+    595285 nanoseconds spent preparing 4 JDBC statements;
+    19370322 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6933844 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 10 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:19:21.148  INFO [pool-3-thread-1] Process_Reg: insert into mo_his
+27/09/2019 16:31:15.747  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "d7ca4c1a-e13b-11e9-90f8-dd89c0483b47",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "FLASH1"
+}
+27/09/2019 16:31:15.748  INFO [pool-7-thread-1] Receiver: transaction_id   : d7ca4c1a-e13b-11e9-90f8-dd89c0483b47
+27/09/2019 16:31:15.748  INFO [pool-7-thread-1] Receiver: content send by customer   : FLASH1
+27/09/2019 16:31:15.748  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+27/09/2019 16:31:15.748  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+27/09/2019 16:31:15.748  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=d7ca4c1a-e13b-11e9-90f8-dd89c0483b47,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:31:15.746,
+ product_name=FLASH1,
+ notification_code=null,
+ language=null}
+27/09/2019 16:31:15.748  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+27/09/2019 16:31:15.754  INFO [pool-3-thread-1] Webservice_Charge: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <charge_amount>0</charge_amount>
+    <msisdn>4477665544</msisdn>
+    <reg_transaction_id>d7ca4c1a-e13b-11e9-90f8-dd89c0483b47</reg_transaction_id>
+    <WSparam>
+        <alias>_description_</alias>
+        <value>Daily registration to Flash SMS</value>
+    </WSparam>
+    <WSparam>
+        <alias>_msisdn_</alias>
+        <value>4477665544</value>
+    </WSparam>
+    <WSparam>
+        <alias>_fee_</alias>
+        <value>50</value>
+    </WSparam>
+    <ws_block_api_name>CHARGE</ws_block_api_name>
+    <ws_client_name>flash_sms</ws_client_name>
+</Request>
+
+27/09/2019 16:31:16.202  INFO [pool-3-thread-1] Webservice_Charge: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>flash@123</password>
+    <user_name>flash</user_name>
+    <ws_block_api_name>CHARGE</ws_block_api_name>
+    <ws_client_name>flash_sms</ws_client_name>
+</account>
+
+27/09/2019 16:31:16.202  INFO [pool-3-thread-1] Webservice_Charge: Auth token : 
+27/09/2019 16:31:16.219 ERROR [pool-3-thread-1] Process_Reg: API error : 
+javax.ws.rs.client.ResponseProcessingException: Problem with reading the data, class com.tatsinktechnologic.resfull.bean.WS_Block_Response, ContentType: */*.
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.reportMessageHandlerProblem(ResponseImpl.java:437)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.doReadEntity(ResponseImpl.java:379)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.readEntity(ResponseImpl.java:314)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.readEntity(ResponseImpl.java:304)
+	at com.tatsinktechnologic.resfull.client.Webservice_Charge.requestCharge_Product(Webservice_Charge.java:197)
+	at com.tatsinktechnologic.process.Process_Reg.run(Process_Reg.java:324)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.ws.rs.core.NoContentException: Message body is empty
+	at org.apache.cxf.jaxrs.provider.AbstractConfigurableProvider.reportEmptyContentLength(AbstractConfigurableProvider.java:171)
+	at org.apache.cxf.jaxrs.provider.JAXBElementProvider.readFrom(JAXBElementProvider.java:155)
+	at org.apache.cxf.jaxrs.utils.JAXRSUtils.readFromMessageBodyReader(JAXRSUtils.java:1397)
+	at org.apache.cxf.jaxrs.impl.ResponseImpl.doReadEntity(ResponseImpl.java:370)
+	... 7 more
+27/09/2019 16:31:16.220  INFO [pool-3-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=d7ca4c1a-e13b-11e9-90f8-dd89c0483b47,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:31:15.746,
+ product_name=FLASH1,
+ notification_code=REG-PRODUCT-WRONG-API-CONNECTION-FLASH1,
+ language=null}
+27/09/2019 16:31:16.221  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=d7ca4c1a-e13b-11e9-90f8-dd89c0483b47,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:31:15.746,
+ product_name=FLASH1,
+ notification_code=REG-PRODUCT-WRONG-API-CONNECTION-FLASH1,
+ language=null}
+27/09/2019 16:31:16.221  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+27/09/2019 16:31:16.282  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1043457 nanoseconds spent acquiring 2 JDBC connections;
+    409942 nanoseconds spent releasing 2 JDBC connections;
+    382976 nanoseconds spent preparing 4 JDBC statements;
+    4809726 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    810325 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 10 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:31:16.282  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1043457 nanoseconds spent acquiring 2 JDBC connections;
+    409942 nanoseconds spent releasing 2 JDBC connections;
+    382976 nanoseconds spent preparing 4 JDBC statements;
+    4809726 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    810325 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 10 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:31:16.282  INFO [pool-3-thread-1] Process_Reg: insert into mo_his
+27/09/2019 16:57:40.504  INFO [main] Start_Process: Load log4j config file done.
+27/09/2019 16:57:40.526  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+27/09/2019 16:57:40.540  INFO [main] Receiver: LIST OF COMMAND : 
+27/09/2019 16:57:40.541  INFO [main] Receiver: Request_Conf{command_id=1, command_name=REG_Flash1, command_code=FLASH1, split_separator=, action_name=REG_Flash1, action_type=REGISTER, action_description=action to register Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:57:40.542  INFO [main] Receiver: Request_Conf{command_id=2, command_name=Del_Flash1, command_code=OFF, split_separator=, action_name=Del_Flash1, action_type=DELETE, action_description=action to delete Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:57:40.543  INFO [main] Receiver: Request_Conf{command_id=3, command_name=Check_Flash1, command_code=CHECK, split_separator=, action_name=Check_Flash1, action_type=CHECK, action_description=action to check Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:57:40.543  INFO [main] Receiver: Request_Conf{command_id=4, command_name=Guide_Flash1, command_code=GUIDE, split_separator=, action_name=Guide_Flash1, action_type=GUIDE, action_description=action to get guide of Flash1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, param_name=null, param_length=null, param_pattern=null, paramDescription=null}
+27/09/2019 16:57:40.617  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+27/09/2019 16:57:40.617  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+27/09/2019 16:57:40.618  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+27/09/2019 16:57:40.618  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+27/09/2019 16:57:40.767  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+27/09/2019 16:57:56.050  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "91e00e2b-e13f-11e9-90f8-49400131e10a",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "FLASH1"
+}
+27/09/2019 16:57:56.336  INFO [pool-7-thread-1] Receiver: transaction_id   : 91e00e2b-e13f-11e9-90f8-49400131e10a
+27/09/2019 16:57:56.337  INFO [pool-7-thread-1] Receiver: content send by customer   : FLASH1
+27/09/2019 16:57:56.337  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+27/09/2019 16:57:56.338  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+27/09/2019 16:57:56.339  INFO [pool-3-thread-1] Process_Reg: Get message in Register queue :Process_Request{transaction_id=91e00e2b-e13f-11e9-90f8-49400131e10a,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:57:56.05,
+ product_name=FLASH1,
+ notification_code=null,
+ language=null}
+27/09/2019 16:57:56.340  INFO [pool-3-thread-1] Process_Reg: Register Queue size :0
+27/09/2019 16:57:56.483  INFO [pool-3-thread-1] Webservice_Charge: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <charge_amount>0</charge_amount>
+    <msisdn>4477665544</msisdn>
+    <reg_transaction_id>91e00e2b-e13f-11e9-90f8-49400131e10a</reg_transaction_id>
+    <WSparam>
+        <alias>_description_</alias>
+        <value>Daily registration to Flash SMS</value>
+    </WSparam>
+    <WSparam>
+        <alias>_msisdn_</alias>
+        <value>4477665544</value>
+    </WSparam>
+    <WSparam>
+        <alias>_fee_</alias>
+        <value>50</value>
+    </WSparam>
+    <ws_block_api_name>CHARGE</ws_block_api_name>
+    <ws_client_name>flash_sms</ws_client_name>
+</Request>
+
+27/09/2019 16:57:57.020  INFO [pool-3-thread-1] Webservice_Charge: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>flash@123</password>
+    <user_name>flash</user_name>
+    <ws_block_api_name>CHARGE</ws_block_api_name>
+    <ws_client_name>flash_sms</ws_client_name>
+</account>
+
+27/09/2019 16:57:57.020  INFO [pool-3-thread-1] Webservice_Charge: Auth token : 
+27/09/2019 16:57:57.117  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1555114 nanoseconds spent acquiring 2 JDBC connections;
+    397995 nanoseconds spent releasing 2 JDBC connections;
+    90453 nanoseconds spent preparing 1 JDBC statements;
+    1102847 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3063466 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.117  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    1555114 nanoseconds spent acquiring 2 JDBC connections;
+    397995 nanoseconds spent releasing 2 JDBC connections;
+    90453 nanoseconds spent preparing 1 JDBC statements;
+    1102847 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3063466 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.117 ERROR [pool-3-thread-1] Process_Reg: API-GATEWAY Authentication issue 
+27/09/2019 16:57:57.133  INFO [pool-3-thread-1] CommunRepository: SQL query : select generatedAlias0 from Register as generatedAlias0 where ( generatedAlias0.msisdn=:param0 ) and ( generatedAlias0.product=:param1 )
+27/09/2019 16:57:57.133  INFO [pool-3-thread-1] CommunRepository: SQL param msisdn = 4477665544
+27/09/2019 16:57:57.133  INFO [pool-3-thread-1] CommunRepository: SQL param product = Product{product_id=1, product_code=FLASH1, reg_fee=50, restrict_product=, register_day=, start_date=2019-09-01 00:00:00.0, end_date=2059-09-30 00:00:00.0, start_reg_time=null, end_reg_time=null, isextend=true, isOveride_reg=true, isNotify_extend=false, extend_fee=50, validity=D1, pending_duration=D30, description=Daily registration to Flash SMS, create_time=2019-09-25 15:23:55.322, update_time=2019-09-25 15:23:55.322, promotion=null, service=Service{service_id=1, service_name=flash, receive_channel=8966, send_channel=8966, service_provider=IRON, service_description=flash allow to provide sms flash, create_time=2019-09-25 15:21:46.213, update_time=2019-09-25 15:21:46.213}}
+27/09/2019 16:57:57.137  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    18774 nanoseconds spent releasing 1 JDBC connections;
+    75776 nanoseconds spent preparing 1 JDBC statements;
+    1932629 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.137  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    15019 nanoseconds spent acquiring 1 JDBC connections;
+    18774 nanoseconds spent releasing 1 JDBC connections;
+    75776 nanoseconds spent preparing 1 JDBC statements;
+    1932629 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.176  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    30720 nanoseconds spent acquiring 2 JDBC connections;
+    480597 nanoseconds spent releasing 2 JDBC connections;
+    400383 nanoseconds spent preparing 3 JDBC statements;
+    3099648 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5118634 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 6 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.176  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    30720 nanoseconds spent acquiring 2 JDBC connections;
+    480597 nanoseconds spent releasing 2 JDBC connections;
+    400383 nanoseconds spent preparing 3 JDBC statements;
+    3099648 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5118634 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 6 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.176  INFO [pool-3-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=91e00e2b-e13f-11e9-90f8-49400131e10a,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:57:56.05,
+ product_name=FLASH1,
+ notification_code=REG-PRODUCT-SUCCESS-FLASH1,
+ language=null}
+27/09/2019 16:57:57.177  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=91e00e2b-e13f-11e9-90f8-49400131e10a,
+ msisdn=4477665544,
+ receiver=8966,
+ content=FLASH1,
+ command_code=FLASH1,
+ split_separate=,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=L A S H 1,
+ channel=8966,
+ action_type=REGISTER,
+ action_description=action to register Flash1,
+ receive_time=2019-09-27 16:57:56.05,
+ product_name=FLASH1,
+ notification_code=REG-PRODUCT-SUCCESS-FLASH1,
+ language=null}
+27/09/2019 16:57:57.179  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+27/09/2019 16:57:57.217  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    46079 nanoseconds spent acquiring 2 JDBC connections;
+    403115 nanoseconds spent releasing 2 JDBC connections;
+    370004 nanoseconds spent preparing 4 JDBC statements;
+    6936918 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    757418 nanoseconds spent executing 1 flushes (flushing a total of 11 entities and 10 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.217  INFO [pool-3-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    46079 nanoseconds spent acquiring 2 JDBC connections;
+    403115 nanoseconds spent releasing 2 JDBC connections;
+    370004 nanoseconds spent preparing 4 JDBC statements;
+    6936918 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    757418 nanoseconds spent executing 1 flushes (flushing a total of 11 entities and 10 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+27/09/2019 16:57:57.217  INFO [pool-3-thread-1] Process_Reg: insert into mo_his

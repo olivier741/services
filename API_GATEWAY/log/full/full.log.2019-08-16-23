@@ -1,0 +1,425 @@
+16/08/2019 23:30:53.742  INFO [main] ClientAPI: Load log4j config file done.
+16/08/2019 23:30:55.246  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:30:56.258  WARN [main] PhaseInterceptorChain: Interceptor for {http://127.0.0.1:9125}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:67)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:334)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:343)
+	at com.tatsinktechnologic.main.ClientAPI.main(ClientAPI.java:63)
+Caused by: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/authentication/auth: Connection refused: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1148)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:274)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1343)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1304)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:307)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1356)
+	... 14 more
+16/08/2019 23:36:42.040  INFO [main] Rest_API_Server: Load log4j config file done.
+16/08/2019 23:36:44.118  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+16/08/2019 23:36:44.249  INFO [main] log: Logging initialized @8735ms to org.eclipse.jetty.util.log.Slf4jLog
+16/08/2019 23:36:44.538  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+16/08/2019 23:36:44.634  INFO [main] AbstractConnector: Started ServerConnector@1c6c6f24{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+16/08/2019 23:36:44.634  INFO [main] Server: Started @9121ms
+16/08/2019 23:36:44.683  WARN [main] ContextHandler: Empty contextPath
+16/08/2019 23:36:44.695  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@75a118e6{/,null,AVAILABLE}
+16/08/2019 23:37:13.704  INFO [main] ClientAPI: Load log4j config file done.
+16/08/2019 23:37:14.796  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:37:15.061  INFO [qtp775911842-20] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[216], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:37:15.074  WARN [qtp775911842-20] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+16/08/2019 23:37:15.394  INFO [qtp775911842-20] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 401
+Content-Type: application/xml
+Headers: {WWW-Authenticate=[ERROR : MESSAGE=" Not Configuration for this Account "], Date=[Fri, 16 Aug 2019 22:37:15 GMT], Content-Length=[0]}
+--------------------------------------
+16/08/2019 23:37:15.499  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 401
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Content-Length=[0], Date=[Fri, 16 Aug 2019 22:37:15 GMT], Server=[Jetty(9.4.18.v20190429)], WWW-Authenticate=[ERROR : MESSAGE=" Not Configuration for this Account "]}
+--------------------------------------
+16/08/2019 23:37:15.527  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>iron</password>
+    <user_name>iron</user_name>
+    <ws_client_name>ironTecfh</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+16/08/2019 23:37:15.527  INFO [main] ClientAPI: Auth token : 
+16/08/2019 23:37:15.581  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <WSparam>
+        <alias>%sender%</alias>
+        <value>IRON</value>
+    </WSparam>
+    <WSparam>
+        <alias>%msisdn%</alias>
+        <value>237661000504</value>
+    </WSparam>
+    <WSparam>
+        <alias>%message%</alias>
+        <value>Hello</value>
+    </WSparam>
+    <ws_client_name>ironTecfh</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+16/08/2019 23:37:15.587  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer ], Account=[ironTecfh_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><alias>%sender%</alias><value>IRON</value></WSparam><WSparam><alias>%msisdn%</alias><value>237661000504</value></WSparam><WSparam><alias>%message%</alias><value>Hello</value></WSparam><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+16/08/2019 23:37:15.598  INFO [qtp775911842-15] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[ironTecfh_SMS_API], Authorization=[Bearer], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[357], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><alias>%sender%</alias><value>IRON</value></WSparam><WSparam><alias>%msisdn%</alias><value>237661000504</value></WSparam><WSparam><alias>%message%</alias><value>Hello</value></WSparam><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+16/08/2019 23:37:15.601  WARN [qtp775911842-15] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+16/08/2019 23:37:15.606  INFO [qtp775911842-15] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 401
+Content-Type: 
+Headers: {WWW-Authenticate=[Bearer realm="Not Bearer Authentication in the Header request"], Date=[Fri, 16 Aug 2019 22:37:15 GMT], Content-Length=[0]}
+--------------------------------------
+16/08/2019 23:37:15.612  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 401
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Content-Length=[0], Date=[Fri, 16 Aug 2019 22:37:15 GMT], Server=[Jetty(9.4.18.v20190429)], WWW-Authenticate=[Bearer realm="Not Bearer Authentication in the Header request"]}
+--------------------------------------
+16/08/2019 23:37:15.628  WARN [main] AbstractJAXBProvider: Message body is empty
+16/08/2019 23:37:15.628 ERROR [main] JAXRSUtils: Problem with reading the data, class com.tatsinktechnologic.resfull.bean.WS_Response, ContentType: */*.
+16/08/2019 23:37:15.629 ERROR [main] ClientAPI: message 2
+16/08/2019 23:42:37.579  INFO [main] Rest_API_Server: Load log4j config file done.
+16/08/2019 23:42:38.310  INFO [main] ServerImpl: Setting the server's publish address to be http://127.0.0.1:9125/
+16/08/2019 23:42:38.387  INFO [main] log: Logging initialized @79197ms to org.eclipse.jetty.util.log.Slf4jLog
+16/08/2019 23:42:38.527  INFO [main] Server: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_101-b13
+16/08/2019 23:42:38.607  INFO [main] AbstractConnector: Started ServerConnector@233f52f8{HTTP/1.1,[http/1.1]}{127.0.0.1:9125}
+16/08/2019 23:42:38.608  INFO [main] Server: Started @79417ms
+16/08/2019 23:42:38.617  WARN [main] ContextHandler: Empty contextPath
+16/08/2019 23:42:38.637  INFO [main] ContextHandler: Started o.e.j.s.h.ContextHandler@5785e813{/,null,AVAILABLE}
+16/08/2019 23:43:20.964  INFO [main] ClientAPI: Load log4j config file done.
+16/08/2019 23:43:21.760  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:43:21.919  INFO [qtp1592618491-23] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[216], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:43:21.934  WARN [qtp1592618491-23] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+16/08/2019 23:43:22.174  INFO [qtp1592618491-23] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Response-Code: 401
+Content-Type: application/xml
+Headers: {WWW-Authenticate=[ERROR : MESSAGE=" Not Configuration for this Account "], Date=[Fri, 16 Aug 2019 22:43:22 GMT], Content-Length=[0]}
+--------------------------------------
+16/08/2019 23:43:22.222  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 1
+Response-Code: 401
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Content-Length=[0], Date=[Fri, 16 Aug 2019 22:43:22 GMT], Server=[Jetty(9.4.18.v20190429)], WWW-Authenticate=[ERROR : MESSAGE=" Not Configuration for this Account "]}
+--------------------------------------
+16/08/2019 23:43:22.245  INFO [main] ClientAPI: Auth request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <password>iron</password>
+    <user_name>iron</user_name>
+    <ws_client_name>ironTecfh</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</account>
+
+16/08/2019 23:43:22.245  INFO [main] ClientAPI: Auth token : 
+16/08/2019 23:43:22.278  INFO [main] ClientAPI: request : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request>
+    <WSparam>
+        <alias>%sender%</alias>
+        <value>IRON</value>
+    </WSparam>
+    <WSparam>
+        <alias>%msisdn%</alias>
+        <value>237661000504</value>
+    </WSparam>
+    <WSparam>
+        <alias>%message%</alias>
+        <value>Hello</value>
+    </WSparam>
+    <ws_client_name>ironTecfh</ws_client_name>
+    <ws_webservice_name>SMS_API</ws_webservice_name>
+</Request>
+
+16/08/2019 23:43:22.282  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml], Authorization=[Bearer ], Account=[ironTecfh_SMS_API]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><alias>%sender%</alias><value>IRON</value></WSparam><WSparam><alias>%msisdn%</alias><value>237661000504</value></WSparam><WSparam><alias>%message%</alias><value>Hello</value></WSparam><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+16/08/2019 23:43:22.289  INFO [qtp1592618491-18] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1:9125/api_service/sendRequest
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Account=[ironTecfh_SMS_API], Authorization=[Bearer], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[357], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Request><WSparam><alias>%sender%</alias><value>IRON</value></WSparam><WSparam><alias>%msisdn%</alias><value>237661000504</value></WSparam><WSparam><alias>%message%</alias><value>Hello</value></WSparam><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></Request>
+--------------------------------------
+16/08/2019 23:43:22.291  WARN [qtp1592618491-18] JAXRSUtils: Both com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest and com.tatsinktechnologic.resfull.server.API_GatewayService_userTokenAuth#sendRequest are equal candidates for handling the current request which can lead to unpredictable results
+16/08/2019 23:43:22.296  INFO [qtp1592618491-18] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 2
+Response-Code: 401
+Content-Type: 
+Headers: {WWW-Authenticate=[Bearer realm="Not Bearer Authentication in the Header request"], Date=[Fri, 16 Aug 2019 22:43:22 GMT], Content-Length=[0]}
+--------------------------------------
+16/08/2019 23:43:22.300  INFO [main] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 2
+Response-Code: 401
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Content-Length=[0], Date=[Fri, 16 Aug 2019 22:43:22 GMT], Server=[Jetty(9.4.18.v20190429)], WWW-Authenticate=[Bearer realm="Not Bearer Authentication in the Header request"]}
+--------------------------------------
+16/08/2019 23:43:22.303  WARN [main] AbstractJAXBProvider: Message body is empty
+16/08/2019 23:43:22.304 ERROR [main] JAXRSUtils: Problem with reading the data, class com.tatsinktechnologic.resfull.bean.WS_Response, ContentType: */*.
+16/08/2019 23:43:22.305 ERROR [main] ClientAPI: message 2
+16/08/2019 23:44:22.234  INFO [main] ClientAPI: Load log4j config file done.
+16/08/2019 23:44:22.989  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:44:23.008  INFO [qtp1592618491-19] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 3
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[216], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:44:23.012  WARN [qtp1592618491-19] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+16/08/2019 23:45:23.003  WARN [main] PhaseInterceptorChain: Interceptor for {http://127.0.0.1:9125}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not receive Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:65)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:334)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:343)
+	at com.tatsinktechnologic.main.ClientAPI.main(ClientAPI.java:63)
+Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking http://127.0.0.1:9125/authentication/auth: Read timed out
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	... 8 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:377)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:373)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.getResponseCode(URLConnectionHTTPConduit.java:373)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.doProcessResponseCode(HTTPConduit.java:1597)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:1625)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:1570)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1371)
+	... 14 more
+16/08/2019 23:45:28.277  INFO [main] ClientAPI: Load log4j config file done.
+16/08/2019 23:45:29.223  INFO [main] LoggingOutInterceptor: Outbound Message
+---------------------------
+ID: 1
+Address: http://127.0.0.1:9125/authentication/auth
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Content-Type=[application/xml]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:45:29.239  INFO [qtp1592618491-23] LoggingInInterceptor: Inbound Message
+----------------------------
+ID: 4
+Address: http://127.0.0.1:9125/authentication/auth
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[application/xml], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[216], content-type=[application/xml], Host=[127.0.0.1:9125], Pragma=[no-cache], User-Agent=[Apache-CXF/3.3.2]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><password>iron</password><user_name>iron</user_name><ws_client_name>ironTecfh</ws_client_name><ws_webservice_name>SMS_API</ws_webservice_name></account>
+--------------------------------------
+16/08/2019 23:45:29.240  WARN [qtp1592618491-23] JAXRSUtils: Both com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser and com.tatsinktechnologic.resfull.security.AuthenticationService_tokenAuth#authenticateUser are equal candidates for handling the current request which can lead to unpredictable results
+16/08/2019 23:45:39.985  WARN [main] PhaseInterceptorChain: Interceptor for {http://127.0.0.1:9125}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:67)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:710)
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1051)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:897)
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:866)
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:334)
+	at org.apache.cxf.jaxrs.client.WebClient.post(WebClient.java:343)
+	at com.tatsinktechnologic.main.ClientAPI.main(ClientAPI.java:63)
+Caused by: java.net.ConnectException: ConnectException invoking http://127.0.0.1:9125/authentication/auth: Connection refused: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1400)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1384)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.close(AbstractWrappedOutputStream.java:77)
+	at org.apache.cxf.io.CacheAndWriteOutputStream.postClose(CacheAndWriteOutputStream.java:56)
+	at org.apache.cxf.io.CachedOutputStream.close(CachedOutputStream.java:228)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:671)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:63)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:667)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:377)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream$2.run(URLConnectionHTTPConduit.java:373)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.getResponseCode(URLConnectionHTTPConduit.java:373)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.doProcessResponseCode(HTTPConduit.java:1597)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponseInternal(HTTPConduit.java:1625)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleResponse(HTTPConduit.java:1570)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1371)
+	... 14 more

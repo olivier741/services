@@ -1,0 +1,12 @@
+07/04/2018 11:04:52.022  INFO [main] TCP_serverMain: Load log4j config file done.
+07/04/2018 11:05:16.280  INFO [main] TCP_clientMain: Load log4j config file done.
+07/04/2018 11:10:37.473  INFO [main] TCP_serverMain: Load log4j config file done.
+07/04/2018 11:10:51.260  INFO [main] TCP_clientMain: Load log4j config file done.
+07/04/2018 11:11:57.283 ERROR [main] TCP_serverMain: exception reading keyboard java.lang.NumberFormatException: For input string: ""
+07/04/2018 11:12:14.123  INFO [main] TCP_clientMain: Load log4j config file done.
+07/04/2018 11:15:28.094  INFO [main] TCP_clientMain: Load log4j config file done.
+07/04/2018 11:16:31.109  INFO [main] TCP_clientMain: Load log4j config file done.
+07/04/2018 11:17:49.986  INFO [main] TCP_serverMain: Load log4j config file done.
+07/04/2018 11:18:00.162  INFO [main] TCP_clientMain: Load log4j config file done.
+07/04/2018 11:25:08.342  INFO [main] TCP_serverMain: Load log4j config file done.
+07/04/2018 11:25:28.301  INFO [main] TCP_clientMain: Load log4j config file done.

@@ -1,0 +1,525 @@
+15/06/2019 10:59:33.218  INFO [main] Start_Process: Load log4j config file done.
+15/06/2019 10:59:33.234  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+15/06/2019 10:59:33.312  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+15/06/2019 10:59:33.312  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+15/06/2019 10:59:33.312  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+15/06/2019 10:59:33.312  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+15/06/2019 10:59:33.609  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+15/06/2019 11:02:00.413  INFO [main] Start_Process: Load log4j config file done.
+15/06/2019 11:02:00.491  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+15/06/2019 11:02:00.491  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+15/06/2019 11:02:00.491  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+15/06/2019 11:02:00.491  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+15/06/2019 11:02:00.491  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+15/06/2019 11:02:00.632  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+15/06/2019 11:02:14.163  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "a5047b92-8f54-11e9-bc15-79ee9d9adaf2",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+15/06/2019 11:02:14.476  INFO [pool-7-thread-1] Receiver: transaction_id   : a5047b92-8f54-11e9-bc15-79ee9d9adaf2
+15/06/2019 11:02:14.476  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+15/06/2019 11:02:14.476  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+15/06/2019 11:02:14.476  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+15/06/2019 11:02:14.476  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=a5047b92-8f54-11e9-bc15-79ee9d9adaf2,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:14.163,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:14.476  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=a5047b92-8f54-11e9-bc15-79ee9d9adaf2,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:14.163,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:14.476  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+15/06/2019 11:02:14.601  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    295111 nanoseconds spent acquiring 2 JDBC connections;
+    285630 nanoseconds spent releasing 2 JDBC connections;
+    132346 nanoseconds spent preparing 1 JDBC statements;
+    1127903 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2764646 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:14.601  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    295111 nanoseconds spent acquiring 2 JDBC connections;
+    285630 nanoseconds spent releasing 2 JDBC connections;
+    132346 nanoseconds spent preparing 1 JDBC statements;
+    1127903 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2764646 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:14.601  INFO [pool-7-thread-1] Receiver: insert into mo_his 
+15/06/2019 11:02:20.859  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "a9a1f883-8f54-11e9-bc15-438245004908",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+15/06/2019 11:02:20.859  INFO [pool-7-thread-1] Receiver: transaction_id   : a9a1f883-8f54-11e9-bc15-438245004908
+15/06/2019 11:02:20.859  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+15/06/2019 11:02:20.859  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+15/06/2019 11:02:20.859  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+15/06/2019 11:02:20.859  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=a9a1f883-8f54-11e9-bc15-438245004908,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:20.859,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:20.859  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=a9a1f883-8f54-11e9-bc15-438245004908,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:20.859,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:20.859  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+15/06/2019 11:02:20.937  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    256001 nanoseconds spent acquiring 2 JDBC connections;
+    505679 nanoseconds spent releasing 2 JDBC connections;
+    65580 nanoseconds spent preparing 1 JDBC statements;
+    20737210 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    190815 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:20.937  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    256001 nanoseconds spent acquiring 2 JDBC connections;
+    505679 nanoseconds spent releasing 2 JDBC connections;
+    65580 nanoseconds spent preparing 1 JDBC statements;
+    20737210 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    190815 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:20.937  INFO [pool-7-thread-1] Receiver: insert into mo_his 
+15/06/2019 11:02:22.968  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "aa3cd8f4-8f54-11e9-bc15-2fe9629ed0e1",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+15/06/2019 11:02:22.968  INFO [pool-7-thread-1] Receiver: transaction_id   : aa3cd8f4-8f54-11e9-bc15-2fe9629ed0e1
+15/06/2019 11:02:22.968  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+15/06/2019 11:02:22.968  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+15/06/2019 11:02:22.968  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+15/06/2019 11:02:22.968  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=aa3cd8f4-8f54-11e9-bc15-2fe9629ed0e1,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:22.968,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:22.968  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=aa3cd8f4-8f54-11e9-bc15-2fe9629ed0e1,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:22.968,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:22.968  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+15/06/2019 11:02:23.015  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    333433 nanoseconds spent acquiring 2 JDBC connections;
+    807902 nanoseconds spent releasing 2 JDBC connections;
+    125235 nanoseconds spent preparing 1 JDBC statements;
+    1084446 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    171062 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:23.015  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    333433 nanoseconds spent acquiring 2 JDBC connections;
+    807902 nanoseconds spent releasing 2 JDBC connections;
+    125235 nanoseconds spent preparing 1 JDBC statements;
+    1084446 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    171062 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:23.015  INFO [pool-7-thread-1] Receiver: insert into mo_his 
+15/06/2019 11:02:25.015  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "aafddf05-8f54-11e9-bc15-b758328a5b3c",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+15/06/2019 11:02:25.015  INFO [pool-7-thread-1] Receiver: transaction_id   : aafddf05-8f54-11e9-bc15-b758328a5b3c
+15/06/2019 11:02:25.015  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+15/06/2019 11:02:25.015  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+15/06/2019 11:02:25.015  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+15/06/2019 11:02:25.015  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=aafddf05-8f54-11e9-bc15-b758328a5b3c,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:25.015,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:25.015  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=aafddf05-8f54-11e9-bc15-b758328a5b3c,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:02:25.015,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:02:25.030  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+15/06/2019 11:02:25.109  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    9295418 nanoseconds spent acquiring 2 JDBC connections;
+    458667 nanoseconds spent releasing 2 JDBC connections;
+    231507 nanoseconds spent preparing 1 JDBC statements;
+    2158620 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    574025 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:25.109  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    9295418 nanoseconds spent acquiring 2 JDBC connections;
+    458667 nanoseconds spent releasing 2 JDBC connections;
+    231507 nanoseconds spent preparing 1 JDBC statements;
+    2158620 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    574025 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:02:25.109  INFO [pool-7-thread-1] Receiver: insert into mo_his 
+15/06/2019 11:48:08.383  INFO [main] Start_Process: Load log4j config file done.
+15/06/2019 11:48:08.383  INFO [pool-2-thread-1] Sender: ################################## START SENDER ###########################
+15/06/2019 11:48:08.383  INFO [pool-3-thread-1] Process_Reg: ################################## START PROCESS REGISTER ###########################
+15/06/2019 11:48:08.383  INFO [pool-4-thread-1] Process_Check: ################################## START PROCESS CHECK ###########################
+15/06/2019 11:48:08.383  INFO [pool-5-thread-1] Process_Delete: ################################## START PROCESS DELETE ###########################
+15/06/2019 11:48:08.383  INFO [pool-6-thread-1] Process_Guide: ################################## START PROCESS GUIDE ###########################
+15/06/2019 11:48:08.523  INFO [pool-7-thread-1] Receiver: ################################## START RECEIVER ###########################
+15/06/2019 11:48:11.476  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "8f068047-8f59-11e9-bc15-2986e5b013d3",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+15/06/2019 11:48:11.741  INFO [pool-7-thread-1] Receiver: transaction_id   : 8f068047-8f59-11e9-bc15-2986e5b013d3
+15/06/2019 11:48:11.741  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+15/06/2019 11:48:11.741  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+15/06/2019 11:48:11.741  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+15/06/2019 11:48:11.741  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=8f068047-8f59-11e9-bc15-2986e5b013d3,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:48:11.476,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:48:11.741  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=8f068047-8f59-11e9-bc15-2986e5b013d3,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:48:11.476,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:48:11.741  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    236248 nanoseconds spent acquiring 2 JDBC connections;
+    414024 nanoseconds spent releasing 2 JDBC connections;
+    146963 nanoseconds spent preparing 1 JDBC statements;
+    968692 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2496794 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    236248 nanoseconds spent acquiring 2 JDBC connections;
+    414024 nanoseconds spent releasing 2 JDBC connections;
+    146963 nanoseconds spent preparing 1 JDBC statements;
+    968692 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2496794 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] Receiver: insert into mo_his 
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "ae8035b8-8f59-11e9-bc15-03ae047d2b14",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] Receiver: transaction_id   : ae8035b8-8f59-11e9-bc15-03ae047d2b14
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+15/06/2019 11:48:11.913  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=ae8035b8-8f59-11e9-bc15-03ae047d2b14,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:48:11.913,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:48:11.913  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=ae8035b8-8f59-11e9-bc15-03ae047d2b14,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:48:11.913,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:48:11.913  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    51357 nanoseconds spent acquiring 2 JDBC connections;
+    269433 nanoseconds spent releasing 2 JDBC connections;
+    194766 nanoseconds spent preparing 1 JDBC statements;
+    3399510 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    443260 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    51357 nanoseconds spent acquiring 2 JDBC connections;
+    269433 nanoseconds spent releasing 2 JDBC connections;
+    194766 nanoseconds spent preparing 1 JDBC statements;
+    3399510 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    443260 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] Receiver: insert into mo_his 
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] Receiver: request receive   : {
+  "transaction_id" : "aeedc499-8f59-11e9-bc15-059fbef7aee7",
+  "service_id" : "onlineflash",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8966",
+  "content" : "Hello from SMPPSim"
+}
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] Receiver: transaction_id   : aeedc499-8f59-11e9-bc15-059fbef7aee7
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] Receiver: content send by customer   : HELLO FROM SMPPSIM
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] Receiver: customer phone number      : 4477665544
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] Receiver: short code                 : 8966
+15/06/2019 11:48:12.007  INFO [pool-7-thread-1] Sender: ADD message in the queue :Process_Request{transaction_id=aeedc499-8f59-11e9-bc15-059fbef7aee7,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:48:12.007,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:48:12.007  INFO [pool-2-thread-1] Sender: Get message in the sender queue :Process_Request{transaction_id=aeedc499-8f59-11e9-bc15-059fbef7aee7,
+ msisdn=4477665544,
+ receiver=8966,
+ content=HELLO FROM SMPPSIM,
+ command_code=null,
+ split_separate=null,
+ param_name=null,
+ param_length=null,
+ param_pattern=null,
+ param_value=null,
+ channel=null,
+ action_type=null,
+ action_description=null,
+ receive_time=2019-06-15 11:48:12.007,
+ product_name=null,
+ notification_code=RECEIVER-WRONG-SYNTAX,
+ language=null}
+15/06/2019 11:48:12.007  INFO [pool-2-thread-1] Sender: Sender Queue size :0
+15/06/2019 11:48:12.132  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    32000 nanoseconds spent acquiring 2 JDBC connections;
+    209778 nanoseconds spent releasing 2 JDBC connections;
+    65581 nanoseconds spent preparing 1 JDBC statements;
+    39335553 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    180939 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:48:12.132  INFO [pool-7-thread-1] StatisticalLoggingSessionEventListener: Session Metrics {
+    32000 nanoseconds spent acquiring 2 JDBC connections;
+    209778 nanoseconds spent releasing 2 JDBC connections;
+    65581 nanoseconds spent preparing 1 JDBC statements;
+    39335553 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    180939 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+15/06/2019 11:48:12.132  INFO [pool-7-thread-1] Receiver: insert into mo_his 

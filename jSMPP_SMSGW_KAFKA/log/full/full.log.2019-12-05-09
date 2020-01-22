@@ -1,0 +1,152 @@
+05/12/2019 09:26:26.469  INFO [main] SMSGW: Load log4j config file done.
+05/12/2019 09:26:26.471  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+05/12/2019 09:26:26.641  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+05/12/2019 09:26:41.134  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+05/12/2019 09:26:45.683  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+05/12/2019 09:26:50.207  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+05/12/2019 09:26:54.782  INFO [main] SMSGW: ############ Topic mo-flash already exists #################
+05/12/2019 09:26:59.315  INFO [main] SMSGW: ############ Topic mt-flash already exists #################
+05/12/2019 09:27:03.856  INFO [main] SMSGW: ############ Topic mo-chocho already exists #################
+05/12/2019 09:27:08.391  INFO [main] SMSGW: ############ Topic mt-chocho already exists #################
+05/12/2019 09:27:12.931  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+05/12/2019 09:27:17.465  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+05/12/2019 09:27:17.819  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:17.821  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:17.821  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:17.823  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:17.823  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:17.827  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:17.841  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:17.851  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:27:20.104  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[]
+05/12/2019 09:27:20.104  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+05/12/2019 09:27:20.106  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+05/12/2019 09:27:20.104  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+05/12/2019 09:27:20.107  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+05/12/2019 09:27:20.109  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+05/12/2019 09:27:20.110  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+05/12/2019 09:27:20.115  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+05/12/2019 09:27:35.362  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE DELIVERY SMS -----------
+05/12/2019 09:27:35.363  INFO [pool-1-thread-2] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+05/12/2019 09:27:35.713  INFO [pool-1-thread-2] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "16f1eebb-1739-11ea-8624-b9db6b8ecea9",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "661000504",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+05/12/2019 09:27:35.714  INFO [pool-1-thread-2] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 661000504 --> 8755 [msg = CHO1 ]
+05/12/2019 09:27:35.847  INFO [kafka-producer-network-thread | SMSGW_Producer_2] ReceiveSMS: Producer client ID :  SMSGW_Producer_2 -- Topic: mo-chocho -- Partition: 1 -- offset: 19
+05/12/2019 09:28:14.184  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+05/12/2019 09:28:14.185  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_pubdate-0]
+05/12/2019 09:28:14.207  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+05/12/2019 09:28:14.228  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+05/12/2019 09:28:14.311  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:28:14.312  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+05/12/2019 09:28:14.313  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+05/12/2019 09:28:14.313  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+05/12/2019 09:28:15.218  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+05/12/2019 09:28:15.219  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+05/12/2019 09:28:15.219  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+05/12/2019 09:28:15.219  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+05/12/2019 09:28:15.220  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[]
+05/12/2019 09:28:15.220  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+05/12/2019 09:28:15.220  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+05/12/2019 09:28:15.221  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+05/12/2019 09:29:47.656  INFO [pool-5-thread-1] SMSGateway: %%%%%%%%%%%%%%%%%% START SEND SMS %%%%%%%%%%%%%%%%%%%%%%
+05/12/2019 09:29:47.670  INFO [pool-5-thread-1] SMSGW_Thread: SUCCESS_SMS_CONTENT
+05/12/2019 09:29:47.671  INFO [pool-5-thread-1] SMSGW_Thread: SUCCESS Submition of : 8755 --> 661000504 ( msg =Bonjour les Jeunes, bienvenue au service de CHOCHO.  )
+05/12/2019 09:29:47.674  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE DELIVERY SMS -----------
+05/12/2019 09:29:47.674  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE DELIVERY SMS -----------
+05/12/2019 09:29:47.689  INFO [pool-1-thread-3] ReceiveSMS: Delivery Receive : {
+  "message_id" : "B9",
+  "sender" : "8755",
+  "receiver" : "661000504",
+  "delivery_id" : "185",
+  "delivery_sub" : "1",
+  "delivery_dlvrd" : "1",
+  "delivery_submitDate" : "1912050929",
+  "delivery_doneDate" : "1912050929",
+  "delivery_status" : "DELIVRD",
+  "delivery_err" : "000",
+  "delivery_text" : ""
+}
+05/12/2019 09:29:47.689  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS DELIVERY report  topic -->report_SMS_topic |   message: msg_id = B9 from 661000504 --> 8755
+05/12/2019 09:29:47.690  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS DELIVERY information : id:185 sub:001 dlvrd:001 submit date:1912050929 done date:1912050929 stat:DELIVRD err:000 text:Bonjour les Jeunes, 
+05/12/2019 09:29:47.690  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS  send delivery report : DeliveryMessage{message_id=B9, sender=8755, receiver=661000504, delivery_id=185, delivery_sub=1, delivery_dlvrd=1, delivery_submitDate=1912050929, delivery_doneDate=1912050929, delivery_status=DELIVRD, delivery_err=000, delivery_text=}
+05/12/2019 09:29:47.690  INFO [pool-1-thread-3] ReceiveSMS: SMSC_DEL_RECEIPT : PDUHeader(191, 00000005, 00000000, 196)
+05/12/2019 09:29:48.123  INFO [kafka-producer-network-thread | SMSGW_Producer_2_0_1] ReceiveSMS: Producer client ID :  SMSGW_Producer_2_0_1 -- Topic: report_SMS_topic -- Partition: 3 -- offset: 0
+05/12/2019 09:50:49.359  INFO [main] SMSGW: Load log4j config file done.
+05/12/2019 09:50:49.360  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+05/12/2019 09:50:49.501  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+05/12/2019 09:51:02.588  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+05/12/2019 09:51:07.134  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+05/12/2019 09:51:11.675  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+05/12/2019 09:51:16.200  INFO [main] SMSGW: ############ Topic mo-flash already exists #################
+05/12/2019 09:51:20.734  INFO [main] SMSGW: ############ Topic mt-flash already exists #################
+05/12/2019 09:51:25.268  INFO [main] SMSGW: ############ Topic mo-chocho already exists #################
+05/12/2019 09:51:29.792  INFO [main] SMSGW: ############ Topic mt-chocho already exists #################
+05/12/2019 09:51:34.334  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+05/12/2019 09:51:38.874  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+05/12/2019 09:51:39.241  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:39.256  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:39.256  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:39.256  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:39.257  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:39.258  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:39.256  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:39.260  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+05/12/2019 09:51:41.250  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+05/12/2019 09:51:41.250  INFO [pool-4-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-3, mt-flash-2, mt-flash-1, mt-flash-0, mt-flash-4]
+05/12/2019 09:51:41.250  INFO [pool-6-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-5, mt_gameshow-6, mt_gameshow-7, mt_gameshow-8, mt_gameshow-9]
+05/12/2019 09:51:41.251  INFO [pool-5-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-6, mt-chocho-7, mt-chocho-5, mt-chocho-8, mt-chocho-9]
+05/12/2019 09:51:41.251  INFO [pool-3-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[]
+05/12/2019 09:51:41.252  INFO [pool-5-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-chocho-4, mt-chocho-2, mt-chocho-3, mt-chocho-0, mt-chocho-1]
+05/12/2019 09:51:41.250  INFO [pool-4-thread-2] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt-flash-7, mt-flash-6, mt-flash-5, mt-flash-9, mt-flash-8]
+05/12/2019 09:51:41.255  INFO [pool-6-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_gameshow-1, mt_gameshow-2, mt_gameshow-3, mt_gameshow-4, mt_gameshow-0]
+05/12/2019 09:52:05.188  INFO [pool-5-thread-2] SMSGateway: %%%%%%%%%%%%%%%%%% START SEND SMS %%%%%%%%%%%%%%%%%%%%%%
+05/12/2019 09:52:05.199  INFO [pool-5-thread-2] SMSGW_Thread: SUCCESS_SMS_CONTENT
+05/12/2019 09:52:05.199  INFO [pool-5-thread-2] SMSGW_Thread: SUCCESS Submition of : 8755 --> 661000504 ( msg =Bonjour les Jeunes, bienvenue au service de CHOCHO.  )
+05/12/2019 09:52:15.212  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE DELIVERY SMS -----------
+05/12/2019 09:52:15.259  INFO [pool-1-thread-1] ReceiveSMS: Delivery Receive : {
+  "message_id" : "BA",
+  "sender" : "8755",
+  "receiver" : "661000504",
+  "delivery_id" : "186",
+  "delivery_sub" : "1",
+  "delivery_dlvrd" : "1",
+  "delivery_submitDate" : "1912050952",
+  "delivery_doneDate" : "1912050952",
+  "delivery_status" : "DELIVRD",
+  "delivery_err" : "000",
+  "delivery_text" : ""
+}
+05/12/2019 09:52:15.260  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS DELIVERY report  topic -->report_SMS_topic |   message: msg_id = BA from 661000504 --> 8755
+05/12/2019 09:52:15.261  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS DELIVERY information : id:186 sub:001 dlvrd:001 submit date:1912050952 done date:1912050952 stat:DELIVRD err:000 text:Bonjour les Jeunes, 
+05/12/2019 09:52:15.263  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS  send delivery report : DeliveryMessage{message_id=BA, sender=8755, receiver=661000504, delivery_id=186, delivery_sub=1, delivery_dlvrd=1, delivery_submitDate=1912050952, delivery_doneDate=1912050952, delivery_status=DELIVRD, delivery_err=000, delivery_text=}
+05/12/2019 09:52:15.263  INFO [pool-1-thread-1] ReceiveSMS: SMSC_DEL_RECEIPT : PDUHeader(191, 00000005, 00000000, 197)
+05/12/2019 09:52:15.438  INFO [kafka-producer-network-thread | SMSGW_Producer_2_1_10] ReceiveSMS: Producer client ID :  SMSGW_Producer_2_1_10 -- Topic: report_SMS_topic -- Partition: 0 -- offset: 0
+05/12/2019 09:59:25.406  INFO [pool-5-thread-2] SMSGateway: %%%%%%%%%%%%%%%%%% START SEND SMS %%%%%%%%%%%%%%%%%%%%%%
+05/12/2019 09:59:25.420  INFO [pool-5-thread-2] SMSGW_Thread: SUCCESS_SMS_CONTENT
+05/12/2019 09:59:25.420  INFO [pool-5-thread-2] SMSGW_Thread: SUCCESS Submition of : 8755 --> 661000504 ( msg =Bonjour les Jeunes, bienvenue au service de CHOCHO.  )
+05/12/2019 09:59:30.422  INFO [pool-1-thread-3] ReceiveSMS: -------------- START RECEIVE DELIVERY SMS -----------
+05/12/2019 09:59:30.431  INFO [pool-1-thread-3] ReceiveSMS: Delivery Receive : {
+  "message_id" : "BB",
+  "sender" : "8755",
+  "receiver" : "661000504",
+  "delivery_id" : "187",
+  "delivery_sub" : "1",
+  "delivery_dlvrd" : "1",
+  "delivery_submitDate" : "1912050959",
+  "delivery_doneDate" : "1912050959",
+  "delivery_status" : "DELIVRD",
+  "delivery_err" : "000",
+  "delivery_text" : ""
+}
+05/12/2019 09:59:30.432  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS DELIVERY report  topic -->report_SMS_topic |   message: msg_id = BB from 661000504 --> 8755
+05/12/2019 09:59:30.432  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS DELIVERY information : id:187 sub:001 dlvrd:001 submit date:1912050959 done date:1912050959 stat:DELIVRD err:000 text:Bonjour les Jeunes, 
+05/12/2019 09:59:30.432  INFO [pool-1-thread-3] ReceiveSMS: SUCCESS  send delivery report : DeliveryMessage{message_id=BB, sender=8755, receiver=661000504, delivery_id=187, delivery_sub=1, delivery_dlvrd=1, delivery_submitDate=1912050959, delivery_doneDate=1912050959, delivery_status=DELIVRD, delivery_err=000, delivery_text=}
+05/12/2019 09:59:30.432  INFO [pool-1-thread-3] ReceiveSMS: SMSC_DEL_RECEIPT : PDUHeader(191, 00000005, 00000000, 198)
+05/12/2019 09:59:30.564  INFO [kafka-producer-network-thread | SMSGW_Producer_2_1_2] ReceiveSMS: Producer client ID :  SMSGW_Producer_2_1_2 -- Topic: report_SMS_topic -- Partition: 9 -- offset: 0

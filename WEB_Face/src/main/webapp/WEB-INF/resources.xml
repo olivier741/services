@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+       <Resource id="mySQLDataSource" type="javax.sql.DataSource">
+        #Mon Jun 24 17:05:38 WAT 2019        
+              jdbcDriver = org.mariadb.jdbc.Driver
+              userName = olivier
+              password = abc@1234
+              jdbcUrl = jdbc:mariadb://10.124.160.67:3306/olivier_test
+              DefaultAutoCommit = true 
+              InitialSize = 1
+              MaxActive = 10
+              MaxWaitTime = 10 seconds
+              MaxIdle = 10
+              MinIdle = 1
+              ValidationQuery = SELECT 1
+              TestOnBorrow = true
+              TestWhileIdle = true
+              TimeBetweenEvictionRuns = 2 min
+              removeAbandoned = true
+              removeAbandonedTimeout = 600
+              logAbandoned = true
+              jmxEnabled = true
+      </Resource>
+</resources>

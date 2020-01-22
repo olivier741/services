@@ -1,0 +1,45 @@
+02/12/2019 15:40:05.889  INFO [main] SMSGW: Load log4j config file done.
+02/12/2019 15:40:05.891  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+02/12/2019 15:40:06.067  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+02/12/2019 15:40:26.827 ERROR [main] SMSGW: cannot create topic : report_SMS_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:68)
+02/12/2019 15:40:39.313 ERROR [main] SMSGW: cannot create topic : mo_pubdate
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.SMSGW.createTopicIfNotExists(SMSGW.java:106)
+	at com.tatsinktechnologic.main.SMSGW.main(SMSGW.java:72)
+02/12/2019 15:43:48.295  INFO [main] SMSGW: Load log4j config file done.
+02/12/2019 15:43:48.295  INFO [main] SMSGW: ############# START SMS GATEWAY ###################
+02/12/2019 15:43:48.440  INFO [main] ConfigLoader: successfull load : etc\service_listener.xml
+02/12/2019 15:43:58.178  INFO [main] SMSGW: ############ Topic report_SMS_topic already exists #################
+02/12/2019 15:44:02.731  INFO [main] SMSGW: ############ Topic mo_pubdate already exists #################
+02/12/2019 15:44:07.281  INFO [main] SMSGW: ############ Topic mt_pubdate already exists #################
+02/12/2019 15:44:11.831  INFO [main] SMSGW: ############ Topic mo-flash already exists #################
+02/12/2019 15:44:16.371  INFO [main] SMSGW: ############ Topic mt-flash already exists #################
+02/12/2019 15:44:21.270  INFO [main] SMSGW: ############# Topic mo-chocho created ##############
+02/12/2019 15:44:25.837  INFO [main] SMSGW: ############# Topic mt-chocho created ##############
+02/12/2019 15:44:30.380  INFO [main] SMSGW: ############ Topic mo_gameshow already exists #################
+02/12/2019 15:44:34.929  INFO [main] SMSGW: ############ Topic mt_gameshow already exists #################
+02/12/2019 15:44:35.283  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsRevoked with partitions:[]
+02/12/2019 15:44:35.352  INFO [pool-3-thread-1] SMSGW_Thread: Called onPartitionsAssigned with partitions:[mt_pubdate-0]
+02/12/2019 15:44:49.704  INFO [pool-1-thread-1] ReceiveSMS: -------------- START RECEIVE MO SMS -----------
+02/12/2019 15:44:49.864  INFO [pool-1-thread-1] ReceiveSMS: SMS Receive : {
+  "transaction_id" : "4ad44087-1512-11ea-8007-c1c287c5bdcd",
+  "service_id" : "CHOCHO",
+  "message_id" : null,
+  "sender" : "4477665544",
+  "receiver" : "8755",
+  "content" : "CHO1",
+  "exchange_mode" : "SMS"
+}
+02/12/2019 15:44:49.864  INFO [pool-1-thread-1] ReceiveSMS: SUCCESS SEND TO APPLICATION : topic -->mo-chocho | 4477665544 --> 8755 [msg = CHO1 ]
+02/12/2019 15:44:50.098  INFO [kafka-producer-network-thread | SMSGW_Producer] ReceiveSMS: Producer client ID :  SMSGW_Producer -- Topic: mo-chocho -- Partition: 8 -- offset: 0

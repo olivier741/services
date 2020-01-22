@@ -1,0 +1,298 @@
+10/04/2018 09:26:41.681  INFO [main] TCP_clientMain: Load log4j config file done.
+10/04/2018 09:26:42.204  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+10/04/2018 09:26:42.254  INFO [main] TCP_clientMain: TCP Client is launch ........
+10/04/2018 09:26:42.586  INFO [NioProcessor-5] LoggingFilter: CREATED
+10/04/2018 09:26:42.586  INFO [NioProcessor-5] LoggingFilter: OPENED
+10/04/2018 09:26:42.587  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000001: nio socket, client, /127.0.0.1:51519 => /127.0.0.1:8623)}
+10/04/2018 09:26:42.591  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:26:42.680  INFO [NioProcessor-5] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:26:42.680  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:26:42.680  INFO [NioProcessor-5] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:26:42.739  INFO [NioProcessor-5] LoggingFilter: RECEIVED: SMS_Message{user=user2, password=pass_user2, content=Hello from SMPPSim bonjour 8
+, receiver=8966, sender=4477665544}
+10/04/2018 09:26:42.740  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - SMS Receive From SMSGW : 4477665544 --> 8966( msg =Hello from SMPPSim bonjour 8
+ | IP =127.0.0.1 )
+10/04/2018 09:26:42.740  INFO [NioProcessor-5] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+10/04/2018 09:26:44.603  INFO [NioProcessor-9] LoggingFilter: CREATED
+10/04/2018 09:26:44.604  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:26:44.604  INFO [NioProcessor-9] LoggingFilter: OPENED
+10/04/2018 09:26:44.604  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000002: nio socket, client, /127.0.0.1:51528 => /127.0.0.1:8623)}
+10/04/2018 09:26:44.605  INFO [NioProcessor-9] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:26:44.606  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:26:44.606  INFO [NioProcessor-9] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:26:46.610  INFO [NioProcessor-10] LoggingFilter: CREATED
+10/04/2018 09:26:46.611  INFO [NioProcessor-10] LoggingFilter: OPENED
+10/04/2018 09:26:46.611  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:26:46.611  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000003: nio socket, client, /127.0.0.1:51537 => /127.0.0.1:8623)}
+10/04/2018 09:26:46.611  INFO [NioProcessor-10] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:26:46.611  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:26:46.612  INFO [NioProcessor-10] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:26:48.623  INFO [NioProcessor-14] LoggingFilter: CREATED
+10/04/2018 09:26:48.623  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:26:48.624  INFO [NioProcessor-14] LoggingFilter: OPENED
+10/04/2018 09:26:48.624  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000004: nio socket, client, /127.0.0.1:51547 => /127.0.0.1:8623)}
+10/04/2018 09:26:48.625  INFO [NioProcessor-14] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:26:48.626  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:26:48.626  INFO [NioProcessor-14] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:30:55.103  INFO [main] TCP_clientMain: Load log4j config file done.
+10/04/2018 09:30:55.365  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+10/04/2018 09:30:55.373  INFO [main] TCP_clientMain: TCP Client is launch ........
+10/04/2018 09:30:55.508  INFO [NioProcessor-5] LoggingFilter: CREATED
+10/04/2018 09:30:55.510  INFO [NioProcessor-5] LoggingFilter: OPENED
+10/04/2018 09:30:55.510  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:30:55.510  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000001: nio socket, client, /127.0.0.1:51684 => /127.0.0.1:8623)}
+10/04/2018 09:30:55.524  INFO [NioProcessor-5] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:30:55.524  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:30:55.525  INFO [NioProcessor-5] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:30:55.558  INFO [NioProcessor-5] LoggingFilter: RECEIVED: SMS_Message{user=user2, password=pass_user2, content=Hello from SMPPSim bonjour 8
+, receiver=8966, sender=4477665544}
+10/04/2018 09:30:55.558  INFO [NioProcessor-5] TCP_CLientHandler: pool-1-thread-1 - SMS Receive From SMSGW : 4477665544 --> 8966( msg =Hello from SMPPSim bonjour 8
+ | IP =127.0.0.1 )
+10/04/2018 09:30:55.558  INFO [NioProcessor-5] TCP_CLientHandler: -------------------------------------------------------------------------------------------------------------
+10/04/2018 09:30:57.519  INFO [NioProcessor-9] LoggingFilter: CREATED
+10/04/2018 09:30:57.519  INFO [NioProcessor-9] LoggingFilter: OPENED
+10/04/2018 09:30:57.519  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:30:57.520  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000002: nio socket, client, /127.0.0.1:51693 => /127.0.0.1:8623)}
+10/04/2018 09:30:57.524  INFO [NioProcessor-9] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:30:57.524  INFO [NioProcessor-9] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:30:57.524  INFO [NioProcessor-9] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:30:59.532  INFO [NioProcessor-10] LoggingFilter: CREATED
+10/04/2018 09:30:59.532  INFO [NioProcessor-10] LoggingFilter: OPENED
+10/04/2018 09:30:59.532  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:30:59.533  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000003: nio socket, client, /127.0.0.1:51702 => /127.0.0.1:8623)}
+10/04/2018 09:30:59.534  INFO [NioProcessor-10] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:30:59.534  INFO [NioProcessor-10] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:30:59.534  INFO [NioProcessor-10] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:31:01.545  INFO [NioProcessor-14] LoggingFilter: CREATED
+10/04/2018 09:31:01.545  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:31:01.546  INFO [NioProcessor-14] LoggingFilter: OPENED
+10/04/2018 09:31:01.546  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000004: nio socket, client, /127.0.0.1:51712 => /127.0.0.1:8623)}
+10/04/2018 09:31:01.547  INFO [NioProcessor-14] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:31:01.547  INFO [NioProcessor-14] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:31:01.547  INFO [NioProcessor-14] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:31:03.558  INFO [NioProcessor-18] LoggingFilter: CREATED
+10/04/2018 09:31:03.559  INFO [NioProcessor-18] LoggingFilter: OPENED
+10/04/2018 09:31:03.559  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:31:03.559  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000005: nio socket, client, /127.0.0.1:51721 => /127.0.0.1:8623)}
+10/04/2018 09:31:03.561  INFO [NioProcessor-18] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:31:03.561  INFO [NioProcessor-18] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:31:03.561  INFO [NioProcessor-18] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:31:05.571  INFO [NioProcessor-19] LoggingFilter: CREATED
+10/04/2018 09:31:05.571  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:31:05.572  INFO [NioProcessor-19] LoggingFilter: OPENED
+10/04/2018 09:31:05.572  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - session opened {(0x00000006: nio socket, client, /127.0.0.1:51731 => /127.0.0.1:8623)}
+10/04/2018 09:31:05.573  INFO [NioProcessor-19] LoggingFilter: SENT: SMS_Message{user=user2, password=pass_user2, content=null, receiver=null, sender=null}
+10/04/2018 09:31:05.573  INFO [NioProcessor-19] TCP_CLientHandler: pool-1-thread-1 - TCP Authentication Request : User =user2 -- Password= pass_user2
+10/04/2018 09:31:05.573  INFO [NioProcessor-19] TCP_CLientHandler: ------------------------------------------
+10/04/2018 09:36:05.328  INFO [main] TCP_clientMain: Load log4j config file done.
+10/04/2018 09:36:05.475  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+10/04/2018 09:36:05.484  INFO [main] TCP_clientMain: TCP Client is launch ........
+10/04/2018 09:36:06.642 ERROR [pool-1-thread-1] TCP_ClientThread: Connection refused.
+10/04/2018 09:36:06.677 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:08.678 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:08.678  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:11.689 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:36:11.692 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:13.694 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:13.694  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:16.710 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:36:16.711 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:18.711 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:18.711  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:21.723 ERROR [pool-1-thread-1] TCP_ClientThread: Connection refused.
+10/04/2018 09:36:21.723 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:23.723 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:23.724  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:26.727 ERROR [pool-1-thread-1] TCP_ClientThread: Connection refused.
+10/04/2018 09:36:26.727 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:28.729 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:28.729  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:31.740 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:36:31.741 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:33.741 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:33.741  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:36.751 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:36:36.752 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:38.753 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:38.753  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:41.755 ERROR [pool-1-thread-1] TCP_ClientThread: Connection refused.
+10/04/2018 09:36:41.756 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:43.756 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:43.756  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:46.797 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:36:46.798 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:48.799 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:48.800  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:51.806 ERROR [pool-1-thread-1] TCP_ClientThread: Connection refused.
+10/04/2018 09:36:51.807 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:53.807 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:53.807  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:36:56.817 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:36:56.819 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:36:58.820 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:36:58.820  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:01.830 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:37:01.831 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:37:03.831 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:37:03.831  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:06.836 ERROR [pool-1-thread-1] TCP_ClientThread: Connection refused.
+10/04/2018 09:37:06.837 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:37:08.837 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:37:08.837  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:24.850  INFO [main] TCP_clientMain: Load log4j config file done.
+10/04/2018 09:37:25.121  INFO [main] TCP_clientMain: Load of tcp_listener.xml config file is done.
+10/04/2018 09:37:25.129  INFO [main] TCP_clientMain: TCP Client is launch ........
+10/04/2018 09:37:26.379 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:37:26.382 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:37:28.382 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:37:28.382  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:31.397 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:37:31.397 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:37:33.398 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:37:33.398  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:36.407 ERROR [pool-1-thread-1] TCP_ClientThread: Connection refused.
+10/04/2018 09:37:36.408 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:37:38.408 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:37:38.408  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:41.422 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:37:41.424 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:37:43.424 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:37:43.424  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:46.434 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:37:46.435 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
+10/04/2018 09:37:48.435 ERROR [pool-1-thread-1] TCP_ClientThread: done waiting.
+10/04/2018 09:37:48.435  INFO [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before get new SMS...
+10/04/2018 09:37:51.446 ERROR [pool-1-thread-1] TCP_ClientThread: Failed to connect:
+org.apache.mina.core.RuntimeIoException: Failed to get the session.
+	at org.apache.mina.core.future.DefaultConnectFuture.getSession(DefaultConnectFuture.java:68)
+	at com.olivier.tcp_client.TCP_ClientThread.run(TCP_ClientThread.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection timed out.
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.processTimedOutSessions(AbstractPollingIoConnector.java:599)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector$Connector.run(AbstractPollingIoConnector.java:459)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	... 3 more
+10/04/2018 09:37:51.447 ERROR [pool-1-thread-1] TCP_ClientThread: Waiting 2000ms before retrying...
