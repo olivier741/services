@@ -1,0 +1,16 @@
+<kafka_topic_crud>
+	<!-- zookeeper_addr format is IP:Port  If multiple zookeeper then -> "192.168.1.1:2181,192.168.1.2:2181" -->
+	<zookeeper_addr>10.124.160.67:2181</zookeeper_addr>
+	<replication>2</replication>
+	<partitions>10</partitions>
+    
+	<!-- by seconde-->
+	<sessionTimeOutInMs>15</sessionTimeOutInMs>
+	<connectionTimeOutInMs>10</connectionTimeOutInMs>
+
+    <ussd_menu_files>
+        <path>etc/ussd_menu/ussd_500.xml</path>
+        <path>etc/ussd_menu/ussd_500_1.xml</path>
+    </ussd_menu_files>
+
+</kafka_topic_crud>

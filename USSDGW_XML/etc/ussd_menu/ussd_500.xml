@@ -1,0 +1,81 @@
+<ussd>
+    <!-- flow of *500# -->
+    <ussd_flow service="PERSONALITE" kafka_topic="mo_topic">
+        <menu input ="*500#" status = "START-MENU">
+            <resp>
+            1.toi
+            2.moi
+            3.nous
+            4.vous
+            </resp>
+            <action></action>
+            <desc>fist menue</desc>
+            <next_menu>
+                <menu input ="1" status="END">
+                    <action>TOI</action>
+                    <desc>command register to TOI</desc>
+                </menu>
+
+                <menu input ="2" status="END">
+                    <action>MOI</action>
+                    <desc>command register to MOI</desc>
+                </menu>
+
+                <menu input ="3" status="MENU">
+                    <resp>
+                    1- indetity
+                    2- CNI
+                    3- passport
+                    </resp>
+                    <desc>second Menu after select nous</desc>
+                    <next_menu>
+                        <menu input ="1" status="END">
+                            <action>ID</action>
+                            <desc>command register to ID</desc>
+                        </menu>
+
+                        <menu input ="2" status="END">
+                            <action>CNI</action>
+                            <desc>command register to CNI</desc>
+                        </menu>
+
+                        <menu input ="3" status="END">
+                            <action>PASSPORT</action>
+                            <desc>command register to PASSPORT</desc>
+                        </menu>
+                    </next_menu>
+                </menu>
+                <menu input ="4" status="MENU">
+                    <resp>
+                    1- comment
+                    2- passe
+                    3- voila
+                    </resp>
+                    <next_menu>
+                        <menu input ="1" status="END">
+                            <action>COMMENT</action>
+                            <desc>command register to COMMENT</desc>
+                        </menu>
+
+                        <menu input ="2" status="END">
+                            <action>PASS</action>
+                            <desc>command register to PASS</desc>
+                        </menu>
+
+                        <menu input ="3" status="END">
+                            <action>VOILA</action>
+                            <desc>command register to VOILA</desc>
+                        </menu>
+                    </next_menu>
+                </menu>
+            </next_menu>
+        </menu>
+    </ussd_flow>
+
+    <!-- flow of *500*5# -->
+    <ussd_flow service="AFFICHAGE" kafka_topic="mk_topic">
+        <menu input ="*500*5#" status = "START-END">
+            <action>TOUS</action>
+        </menu>
+    </ussd_flow>
+</ussd>
