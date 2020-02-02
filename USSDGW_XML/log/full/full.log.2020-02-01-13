@@ -1,0 +1,295 @@
+01/02/2020 13:05:07.243  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:05:07.483  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:07:12.849  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:07:13.105  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:07:13.155  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:07:13.170  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+01/02/2020 13:08:33.411  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:08:33.643  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:08:33.693  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:08:33.711  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+01/02/2020 13:08:33.717  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:08:33.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:08:33.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:08:33.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:08:33.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:08:33.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:08:33.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:08:33.719  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:08:33.719  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:08:33.719  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:08:33.719  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:08:33.719  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:08:33.719  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:08:33.720  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:08:33.720  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:08:33.720  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:08:33.720  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:08:33.720  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:08:33.721  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:08:33.721  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:08:33.721  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:08:33.721  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:08:33.721  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:08:33.721  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:22:01.385  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:22:01.588  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:22:01.631  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:22:01.647  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+01/02/2020 13:22:01.651  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:22:01.652  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:22:01.653  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:22:01.653  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:22:01.653  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:22:01.653  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:22:01.653  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:22:01.653  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:22:01.654  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:22:01.654  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:22:01.654  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:22:01.654  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:22:01.654  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:22:01.655  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:22:01.655  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:22:01.655  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:22:01.655  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:26:18.068  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:26:22.501  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:26:22.632  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:26:22.696  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+01/02/2020 13:26:22.706  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:26:22.706  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:26:22.707  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:26:22.707  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:26:22.708  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:26:22.708  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:26:22.709  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:26:22.710  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:26:22.710  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:26:22.711  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:26:22.711  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:26:22.712  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:26:22.712  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:26:22.713  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:26:22.713  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:26:22.714  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:26:22.714  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:26:22.715  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:26:22.716  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:26:22.716  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:26:22.717  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:26:22.717  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:26:22.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:26:22.718  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:35:24.072  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:35:24.284  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:35:24.332  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:35:24.349  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+01/02/2020 13:35:24.354  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:35:24.355  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:35:24.355  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:35:24.355  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:35:24.355  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:35:24.355  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:35:24.356  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:35:24.356  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:35:24.356  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:35:24.356  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:35:24.356  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:35:24.356  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:35:24.357  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:35:24.357  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:35:24.357  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:35:24.357  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:35:24.357  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:35:24.357  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:35:24.358  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:35:24.358  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:35:24.358  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:35:24.358  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:35:24.358  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:35:24.359  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:40:01.133  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:40:01.334  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:40:01.384  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:40:01.404  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+01/02/2020 13:40:01.412  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:40:01.412  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:40:01.413  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:40:01.413  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:40:01.413  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:40:01.413  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:40:01.413  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:40:01.414  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:40:01.414  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:40:01.414  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:40:01.414  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:40:01.414  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:40:01.415  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:40:01.415  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:40:01.415  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:40:01.415  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:40:01.415  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:40:01.415  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:40:01.416  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:40:01.416  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:40:01.416  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:40:01.416  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:40:01.416  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:40:01.416  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:51:19.010  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:51:19.193  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:51:19.247  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:51:19.257 ERROR [main] ConfigLoader: ERROR in config fileC:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+org.simpleframework.xml.core.ElementException: Element 'next_me' does not have a match in class com.tatsinktechnologic.xml.ussd.Menu at line 8
+	at org.simpleframework.xml.core.Composite.readElement(Composite.java:527)
+	at org.simpleframework.xml.core.Composite.readElements(Composite.java:445)
+	at org.simpleframework.xml.core.Composite.access$400(Composite.java:59)
+	at org.simpleframework.xml.core.Composite$Injector.read(Composite.java:1433)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:201)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:148)
+	at org.simpleframework.xml.core.Composite.readVariable(Composite.java:623)
+	at org.simpleframework.xml.core.Composite.readInstance(Composite.java:573)
+	at org.simpleframework.xml.core.Composite.readUnion(Composite.java:549)
+	at org.simpleframework.xml.core.Composite.readElement(Composite.java:532)
+	at org.simpleframework.xml.core.Composite.readElements(Composite.java:445)
+	at org.simpleframework.xml.core.Composite.access$400(Composite.java:59)
+	at org.simpleframework.xml.core.Composite$Injector.read(Composite.java:1433)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:201)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:148)
+	at org.simpleframework.xml.core.Traverser.read(Traverser.java:92)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:190)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:167)
+	at org.simpleframework.xml.core.CompositeInlineList.read(CompositeInlineList.java:124)
+	at org.simpleframework.xml.core.Composite.readVariable(Composite.java:623)
+	at org.simpleframework.xml.core.Composite.readInstance(Composite.java:573)
+	at org.simpleframework.xml.core.Composite.readUnion(Composite.java:549)
+	at org.simpleframework.xml.core.Composite.readElement(Composite.java:532)
+	at org.simpleframework.xml.core.Composite.readElements(Composite.java:445)
+	at org.simpleframework.xml.core.Composite.access$400(Composite.java:59)
+	at org.simpleframework.xml.core.Composite$Injector.read(Composite.java:1433)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:201)
+	at org.simpleframework.xml.core.Composite.read(Composite.java:148)
+	at org.simpleframework.xml.core.Traverser.read(Traverser.java:92)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:625)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:606)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:584)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:543)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:521)
+	at org.simpleframework.xml.core.Persister.read(Persister.java:426)
+	at com.tatsinktechnologic.config.ConfigLoader.<init>(ConfigLoader.java:74)
+	at com.tatsinktechnologic.config.ConfigLoader.<init>(ConfigLoader.java:41)
+	at com.tatsinktechnologic.config.ConfigLoader$SingletonConfig.<clinit>(ConfigLoader.java:117)
+	at com.tatsinktechnologic.config.ConfigLoader.getConfigurationLoader(ConfigLoader.java:121)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:43)
+01/02/2020 13:51:19.281  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:51:19.282  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:51:19.282  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:51:19.282  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:51:19.282  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:51:19.282  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+01/02/2020 13:51:19.283  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+01/02/2020 13:51:19.283  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+01/02/2020 13:51:19.283  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+01/02/2020 13:51:19.283  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+01/02/2020 13:51:19.283  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+01/02/2020 13:51:19.284  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+01/02/2020 13:57:28.294  INFO [main] USSDGW: Load log4j config file done.
+01/02/2020 13:57:28.974  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+01/02/2020 13:57:29.106  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+01/02/2020 13:57:29.168  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+01/02/2020 13:57:37.044  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+01/02/2020 13:58:17.484  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+01/02/2020 13:58:42.226  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+01/02/2020 13:58:58.201  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+01/02/2020 13:59:27.633  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+01/02/2020 13:59:48.146  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}

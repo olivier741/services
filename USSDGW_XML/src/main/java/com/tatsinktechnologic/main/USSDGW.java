@@ -15,6 +15,13 @@
  */
 package com.tatsinktechnologic.main;
 
+import com.tatsinktechnologic.config.ConfigLoader;
+import com.tatsinktechnologic.xml.ussd.Ussd;
+import java.io.File;
+import java.util.List;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 /**
  *
  * @author olivier.tatsinkou
@@ -24,8 +31,22 @@ public class USSDGW {
     /**
      * @param args the command line arguments
      */
+    
+    private static Logger logger = Logger.getLogger(USSDGW.class);
+    private static ConfigLoader communConf;
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        
+         PropertyConfigurator.configure("etc" + File.separator + "log4j.cfg");
+        logger.info("Load log4j config file done.");
+        communConf = ConfigLoader.getConfigurationLoader();
+        List<Ussd> listUssd = communConf.getListUssd();
+        
+        for(Ussd ussd : listUssd){
+            
+        }
+        
     }
     
 }

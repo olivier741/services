@@ -8,9 +8,4 @@
 	<sessionTimeOutInMs>15</sessionTimeOutInMs>
 	<connectionTimeOutInMs>10</connectionTimeOutInMs>
 
-    <ussd_menu_files>
-        <path>etc/ussd_menu/ussd_500.xml</path>
-        <path>etc/ussd_menu/ussd_500_1.xml</path>
-    </ussd_menu_files>
-
 </kafka_topic_crud>
