@@ -1,0 +1,14 @@
+02/02/2020 16:00:14.166 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+02/02/2020 16:00:14.168 ERROR [main] ConfigLoader: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+02/02/2020 16:00:14.168 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+02/02/2020 16:00:14.169 ERROR [main] ConfigLoader: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+03/02/2020 08:42:17.506 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+03/02/2020 08:42:17.507 ERROR [main] ConfigLoader: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+03/02/2020 08:42:17.507 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+03/02/2020 08:42:17.507 ERROR [main] ConfigLoader: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}

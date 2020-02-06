@@ -22,8 +22,8 @@ import org.simpleframework.xml.Root;
  *
  * @author olivier.tatsinkou
  */
-@Root(name="kafka_topic_crud")
-public class Kafka_Topic_Crud {
+@Root(name="kafka_conf")
+public class KAFKA_Conf {
     @Element(name="zookeeper_addr",required = false) 
     private String zookeeper_addr;
     
@@ -41,7 +41,7 @@ public class Kafka_Topic_Crud {
     
    
 
-    public Kafka_Topic_Crud(    @Element(name="zookeeper_addr",required = false) String zookeeper_addr,
+    public KAFKA_Conf(    @Element(name="zookeeper_addr",required = false) String zookeeper_addr,
                                 @Element(name="replication",required = false) int replication, 
                                 @Element(name="partitions",required = false) int partitions,
                                 @Element(name="sessionTimeOutInMs",required = false)  int sessionTimeOutInMs,   

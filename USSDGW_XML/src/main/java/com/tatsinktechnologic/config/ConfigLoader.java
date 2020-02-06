@@ -17,7 +17,8 @@ package com.tatsinktechnologic.config;
 
 import com.tatsinktechnologic.beans.UssdMenu;
 import com.tatsinktechnologic.utils.FileManagement;
-import com.tatsinktechnologic.xml.kafka.Kafka_Topic_Crud;
+import com.tatsinktechnologic.xml.kafka.KAFKA_Conf;
+import com.tatsinktechnologic.xml.kafka.USSD_Conf;
 import com.tatsinktechnologic.xml.ussd.Menu;
 import com.tatsinktechnologic.xml.ussd.NextMenu;
 import com.tatsinktechnologic.xml.ussd.Ussd;
@@ -42,22 +43,25 @@ public class ConfigLoader {
 
     private static Logger logger = Logger.getLogger(ConfigLoader.class);
 
-    private Kafka_Topic_Crud kafka_Topic_Crud;
+    private USSD_Conf ussdconfig;
+    private KAFKA_Conf kafka_conf;
     private List<Ussd> listUssd;
-    private  HashMap<String,UssdMenu> setUssdMenu;
+    private HashMap<String,UssdMenu> setUssdMenu;
+    private List<String> listTopic;
 
     private Properties consumer_props;
     private Properties product_props;
 
     private ConfigLoader() {
 
-        File file_kafka_config_listener = new File("etc" + File.separator + "kafka_config.xml");
+        File file_ussd_config_listener = new File("etc" + File.separator + "kafka_config.xml");
 
-        Serializer serializer_kafka_config_listener = new Persister();
+        Serializer serializer_ussd_config_listener = new Persister();
 
         // get configuration of service_listener.xml
         try {
-            kafka_Topic_Crud = serializer_kafka_config_listener.read(Kafka_Topic_Crud.class, file_kafka_config_listener);
+            ussdconfig = serializer_ussd_config_listener.read(USSD_Conf.class, file_ussd_config_listener);
+            kafka_conf = ussdconfig.getKafka_conf();
             logger.info("successfull load : etc" + File.separator + "kafka_config.xml");
         } catch (Exception e) {
             logger.error("ERROR in config file kafka_config.xml", e);
@@ -87,9 +91,11 @@ public class ConfigLoader {
         if (listUssd != null && !listUssd.isEmpty()) {
             for (Ussd ussd : listUssd) {
                 List<UssdFlow> listUssdFlow = ussd.getListUssdFlow();
+                listTopic = new ArrayList<String>();
                 for (UssdFlow ussdflow : listUssdFlow) {
+                    listTopic.add(ussdflow.getKafka_topic());
                     Menu menu = ussdflow.getMenu();
-                    loadSetUssdMenu(menu, "");
+                    loadSetUssdMenu(menu, "",ussdflow.getKafka_topic(),ussdflow.getService());
                 }
 
             }
@@ -121,12 +127,21 @@ public class ConfigLoader {
         return SingletonConfig._configLoad;
     }
 
-    public Kafka_Topic_Crud getKafka_Topic_Crud() {
-        return kafka_Topic_Crud;
+    public USSD_Conf getUssdconfig() {
+        return ussdconfig;
     }
 
+    public KAFKA_Conf getKafka_conf() {
+        return kafka_conf;
+    }
+
+   
     public List<Ussd> getListUssd() {
         return listUssd;
+    }
+
+    public List<String> getListTopic() {
+        return listTopic;
     }
 
     public Properties getConsumer_props() {
@@ -151,7 +166,7 @@ public class ConfigLoader {
     
     
 
-    private void loadSetUssdMenu(Menu menu, String pre_input) {
+    private void loadSetUssdMenu(Menu menu, String pre_input,String topic, String service) {
         String input = menu.getInput();
         String status = menu.getStatus();
         String resp = menu.getResp();
@@ -166,7 +181,7 @@ public class ConfigLoader {
             resp = resp.replace("_eof_", "\n");
         }
 
-        UssdMenu ussdMenu = new UssdMenu(input, status, resp, action, desc);
+        UssdMenu ussdMenu = new UssdMenu(service,input, status, resp, action, desc,topic);
         if (!setUssdMenu.containsKey(input)) {
             setUssdMenu.put(input, ussdMenu);
             logger.info("successfull load Menu: " + ussdMenu);
@@ -175,7 +190,7 @@ public class ConfigLoader {
                 List<Menu> listMenu = nextMenu.getListMenu();
                 if (listMenu != null && !listMenu.isEmpty()) {
                     for (Menu menu1 : listMenu) {
-                        loadSetUssdMenu(menu1, input);
+                        loadSetUssdMenu(menu1, input,topic,service);
                     }
                 }
             }

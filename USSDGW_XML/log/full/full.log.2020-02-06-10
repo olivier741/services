@@ -1,0 +1,94 @@
+06/02/2020 10:01:10.615  INFO [main] USSDGW: Load log4j config file done.
+06/02/2020 10:01:10.775  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+06/02/2020 10:01:10.813  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+06/02/2020 10:01:10.824  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+06/02/2020 10:01:10.830  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+06/02/2020 10:01:10.835  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI, topic=mo_topic}
+06/02/2020 10:01:10.835  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI, topic=mo_topic}
+06/02/2020 10:01:10.835  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous, topic=mo_topic}
+06/02/2020 10:01:10.835  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID, topic=mo_topic}
+06/02/2020 10:01:10.835  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI, topic=mo_topic}
+06/02/2020 10:01:10.836  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT, topic=mo_topic}
+06/02/2020 10:01:10.836  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null, topic=mo_topic}
+06/02/2020 10:01:10.837  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT, topic=mo_topic}
+06/02/2020 10:01:10.838  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS, topic=mo_topic}
+06/02/2020 10:01:10.839  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA, topic=mo_topic}
+06/02/2020 10:01:10.839  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+06/02/2020 10:01:10.840 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:01:10.842 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+06/02/2020 10:01:10.842 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:01:10.843 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+06/02/2020 10:01:45.240 ERROR [main] USSDGW: cannot create topic : mo_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 10:01:58.863 ERROR [main] USSDGW: cannot create topic : mk_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 10:01:59.480  INFO [main] USSDGW: ############# USSD APPLICATION IS UP ##############
+06/02/2020 10:04:42.675  INFO [main] USSDGW: Load log4j config file done.
+06/02/2020 10:04:42.842  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+06/02/2020 10:04:42.904  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+06/02/2020 10:04:42.918  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+06/02/2020 10:04:42.923  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+06/02/2020 10:04:42.923  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI, topic=mo_topic}
+06/02/2020 10:04:42.923  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI, topic=mo_topic}
+06/02/2020 10:04:42.923  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous, topic=mo_topic}
+06/02/2020 10:04:42.923  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID, topic=mo_topic}
+06/02/2020 10:04:42.924  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI, topic=mo_topic}
+06/02/2020 10:04:42.924  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT, topic=mo_topic}
+06/02/2020 10:04:42.924  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null, topic=mo_topic}
+06/02/2020 10:04:42.924  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT, topic=mo_topic}
+06/02/2020 10:04:42.924  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS, topic=mo_topic}
+06/02/2020 10:04:42.925  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA, topic=mo_topic}
+06/02/2020 10:04:42.925  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+06/02/2020 10:04:42.925 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:04:42.925 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+06/02/2020 10:04:42.926 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:04:42.926 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+06/02/2020 10:05:17.272 ERROR [main] USSDGW: cannot create topic : mo_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 10:05:33.881 ERROR [main] USSDGW: cannot create topic : mk_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 10:05:34.395  INFO [main] USSDGW: ############# USSD APPLICATION IS UP ##############

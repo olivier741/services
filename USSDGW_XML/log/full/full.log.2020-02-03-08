@@ -1,0 +1,60 @@
+02/02/2020 16:00:13.517  INFO [main] USSDGW: Load log4j config file done.
+02/02/2020 16:00:13.831  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+02/02/2020 16:00:14.066  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+02/02/2020 16:00:14.097  INFO [main] ConfigLoader: successfull load : C:\Users\olivier\Documents\NetBeansProjects\services\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+02/02/2020 16:00:14.163  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+02/02/2020 16:00:14.163  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+02/02/2020 16:00:14.164  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+02/02/2020 16:00:14.164  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+02/02/2020 16:00:14.164  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+02/02/2020 16:00:14.164  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+02/02/2020 16:00:14.165  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+02/02/2020 16:00:14.165  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+02/02/2020 16:00:14.165  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+02/02/2020 16:00:14.165  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+02/02/2020 16:00:14.166  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+02/02/2020 16:00:14.166  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+02/02/2020 16:00:14.166 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+02/02/2020 16:00:14.168 ERROR [main] ConfigLoader: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+02/02/2020 16:00:14.168 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+02/02/2020 16:00:14.169 ERROR [main] ConfigLoader: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+03/02/2020 08:42:17.332  INFO [main] USSDGW: Load log4j config file done.
+03/02/2020 08:42:17.455  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+03/02/2020 08:42:17.489  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+03/02/2020 08:42:17.500  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+03/02/2020 08:42:17.504  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+03/02/2020 08:42:17.504  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI}
+03/02/2020 08:42:17.505  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI}
+03/02/2020 08:42:17.505  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous}
+03/02/2020 08:42:17.505  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID}
+03/02/2020 08:42:17.505  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI}
+03/02/2020 08:42:17.505  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT}
+03/02/2020 08:42:17.505  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null}
+03/02/2020 08:42:17.506  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT}
+03/02/2020 08:42:17.506  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS}
+03/02/2020 08:42:17.506  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA}
+03/02/2020 08:42:17.506  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}
+03/02/2020 08:42:17.506 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+03/02/2020 08:42:17.507 ERROR [main] ConfigLoader: UssdMenu{input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue}
+03/02/2020 08:42:17.507 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+03/02/2020 08:42:17.507 ERROR [main] ConfigLoader: UssdMenu{input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null}

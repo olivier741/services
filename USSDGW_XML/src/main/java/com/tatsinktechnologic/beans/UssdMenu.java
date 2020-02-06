@@ -13,18 +13,32 @@ import java.util.Objects;
  */
 public class UssdMenu {
     
+    private String service;
     private String input;
     private String status;
     private String resp;
     private String action;
     private String desc;
+    private String topic;
 
-    public UssdMenu(String input, String status, String resp, String action, String desc) {
+    public UssdMenu(String service, String input, String status, String resp, String action, String desc, String topic) {
+        this.service = service;
         this.input = input;
         this.status = status;
         this.resp = resp;
         this.action = action;
         this.desc = desc;
+        this.topic = topic;
+    }
+    
+    
+
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
     }
 
     public String getInput() {
@@ -67,14 +81,24 @@ public class UssdMenu {
         this.desc = desc;
     }
 
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 47 * hash + Objects.hashCode(this.input);
-        hash = 47 * hash + Objects.hashCode(this.status);
-        hash = 47 * hash + Objects.hashCode(this.resp);
-        hash = 47 * hash + Objects.hashCode(this.action);
-        hash = 47 * hash + Objects.hashCode(this.desc);
+        int hash = 5;
+        hash = 79 * hash + Objects.hashCode(this.service);
+        hash = 79 * hash + Objects.hashCode(this.input);
+        hash = 79 * hash + Objects.hashCode(this.status);
+        hash = 79 * hash + Objects.hashCode(this.resp);
+        hash = 79 * hash + Objects.hashCode(this.action);
+        hash = 79 * hash + Objects.hashCode(this.desc);
+        hash = 79 * hash + Objects.hashCode(this.topic);
         return hash;
     }
 
@@ -90,6 +114,9 @@ public class UssdMenu {
             return false;
         }
         final UssdMenu other = (UssdMenu) obj;
+        if (!Objects.equals(this.service, other.service)) {
+            return false;
+        }
         if (!Objects.equals(this.input, other.input)) {
             return false;
         }
@@ -105,15 +132,17 @@ public class UssdMenu {
         if (!Objects.equals(this.desc, other.desc)) {
             return false;
         }
+        if (!Objects.equals(this.topic, other.topic)) {
+            return false;
+        }
         return true;
     }
-    
-    
 
     @Override
     public String toString() {
-        return "UssdMenu{" + "input=" + input + ", status=" + status + ", resp=" + resp + ", action=" + action + ", desc=" + desc + '}';
+        return "UssdMenu{" + "service=" + service + ", input=" + input + ", status=" + status + ", resp=" + resp + ", action=" + action + ", desc=" + desc + ", topic=" + topic + '}';
     }
-    
-    
+
+  
+   
 }

@@ -1,11 +1,34 @@
-<kafka_topic_crud>
-	<!-- zookeeper_addr format is IP:Port  If multiple zookeeper then -> "192.168.1.1:2181,192.168.1.2:2181" -->
-	<zookeeper_addr>10.124.160.67:2181</zookeeper_addr>
-	<replication>2</replication>
-	<partitions>10</partitions>
+<ussd_config>
+    <!-- 
+        connect_type = API   mean ussdgw will interact by Rest API 
+        connect_type = SMPP  mean ussdgw will interact by SMPP
+        connect_type = BOTH  mean ussdgw will interact by Rest API and SMPP
+    -->
+    <connect_type>API</connect_type>
     
-	<!-- by seconde-->
-	<sessionTimeOutInMs>15</sessionTimeOutInMs>
-	<connectionTimeOutInMs>10</connectionTimeOutInMs>
+    <kafka_conf>
+        <!-- zookeeper_addr format is IP:Port  If multiple zookeeper then -> "192.168.1.1:2181,192.168.1.2:2181" -->
+        <zookeeper_addr>10.124.160.67:2181</zookeeper_addr>
+        <replication>2</replication>
+        <partitions>10</partitions>
 
-</kafka_topic_crud>
+        <!-- by seconde-->
+        <sessionTimeOutInMs>15</sessionTimeOutInMs>
+        <connectionTimeOutInMs>10</connectionTimeOutInMs>
+
+    </kafka_conf>
+
+    <api_conf>
+        <!-- API host-->
+        <URL>http://10.124.160.118:8190/</URL>
+
+        <!-- duration of ussd Message in customer side-->
+        <ussdMessage_Timeout>90</ussdMessage_Timeout>
+    </api_conf>
+
+    <smpp_conf>
+        <deliviery_topic>delv_topic</deliviery_topic>
+        <enable_delivery>1</enable_delivery>
+        <date_format>yyMMddHHmm</date_format>
+    </smpp_conf>
+</ussd_config>
