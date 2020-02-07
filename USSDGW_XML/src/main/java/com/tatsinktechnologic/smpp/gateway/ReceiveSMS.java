@@ -94,6 +94,8 @@ public class ReceiveSMS implements MessageReceiverListener {
     private static String smpp_dateFormat;
     private static String delv_topic;
 
+    private SMSGateway senderGateway;
+
     static {
         setUssdMenu = communConf.getSetUssdMenu();
         props = communConf.getProduct_props();
@@ -104,6 +106,7 @@ public class ReceiveSMS implements MessageReceiverListener {
         smpp_dateFormat = ussd_conf.getSmpp_conf().getDate_format();
         delv_topic = ussd_conf.getSmpp_conf().getDeliviery_topic();
         SET_STATE = new HashMap<String, String>();
+
     }
 
     public ReceiveSMS(String user, String id) {
@@ -117,6 +120,7 @@ public class ReceiveSMS implements MessageReceiverListener {
         producerprops.put("client.id", new_client_id);
 
         producer = new KafkaProducer<String, String>(producerprops);
+        senderGateway = SMSGateway.getSenderGateway();
     }
 
     public ReceiveSMS(Session s, String id) {
@@ -183,244 +187,15 @@ public class ReceiveSMS implements MessageReceiverListener {
 
                 logger.info("SMSC_DEL_RECEIPT : " + arg0.toString());
             } else {
-
-                String transaction_id = ussdRequest.getTransId();
-                int message_type = ussdRequest.getType();
-                String msisdn = ussdRequest.getMsisdn();
-                String ussd_message = ussdRequest.getUssdString().trim();
-
-                UssdMessage ussdResponse = new UssdMessage();
-
-                ussdResponse.setCharSet(ussdRequest.getCharSet());
-                ussdResponse.setConnectorId(ussdRequest.getConnectorId());
-                ussdResponse.setDlgId(ussdRequest.getDlgId());
-                ussdResponse.setEncryptedUssdString(ussdRequest.getEncryptedUssdString());
-                ussdResponse.setHlrGT(ussdRequest.getHlrGT());
-                ussdResponse.setImsi(ussdRequest.getImsi());
-                ussdResponse.setLoggedString(ussdRequest.getLoggedString());
-                ussdResponse.setMsisdn(ussdRequest.getMsisdn());
-                ussdResponse.setSendRecvTime(ussdRequest.getSendRecvTime());
-                ussdResponse.setTransId(ussdRequest.getTransId());
-                String stateMenu_key;
-                UssdMenu ussdMenu;
-                StateMenu state;
-                String shorCode;
-                switch (message_type) {
-
-                    case USSDType.USSDMSG_TYPE_SUB_SEND_REQ:  // first message 
-                        stateMenu_key = ussd_message;
-                        shorCode = getShortCode(ussd_message);
-
-                        state = new StateMenu();
-                        state.setShort_code(shorCode);
-                        state.setMsisdn(msisdn);
-                        state.setInput(stateMenu_key);
-                        state.setTransaction_id(transaction_id);
-
-                        if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && PROCESSING_STATE.containsKey(transaction_id)) {
-                            logger.info("FIST REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
-                            PROCESSING_STATE.remove(transaction_id);
-                        }
-
-                        ussdMenu = setUssdMenu.get(stateMenu_key);
-
-                        if (ussdMenu != null) {                     // check if menu exist
-                            String menuResp = ussdMenu.getResp();
-                            String menuAct = ussdMenu.getAction();
-                            String menuTopic = ussdMenu.getTopic();
-                            String menuServ = ussdMenu.getService();
-                            String menuStatus = ussdMenu.getStatus();
-
-                            if (menuStatus.equals("START-MENU")) {
-                                PROCESSING_STATE.put(transaction_id, state);
-
-                                if (!StringUtils.isBlank(menuResp)) {
-                                    ussdResponse.setUssdString(menuResp);
-                                    ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_MENU);
-                                }
-
-                                if (!StringUtils.isBlank(menuAct)) {
-                                    processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
-                                }
-
-                                logger.info("START-MENU USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
-
-                            } else if (menuStatus.equals("START-END")) {
-                                if (!StringUtils.isBlank(menuResp)) {
-                                    ussdResponse.setUssdString(menuResp);
-                                    ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_RSP);
-                                }
-
-                                if (!StringUtils.isBlank(menuAct)) {
-                                    processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
-                                }
-                                logger.info("START-END USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
-                            } else {
-                                logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
-                            }
-                        } else {
-                            logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
-                        }
-
-                        break;
-
-                    case USSDType.USSDMSG_TYPE_SUB_SEND_RSP:
-
-                        if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && !PROCESSING_STATE.containsKey(transaction_id)) {
-                            logger.info("FIST REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
-                            state = PROCESSING_STATE.get(transaction_id);
-                            stateMenu_key = state.getInput() + "-" + ussd_message;
-
-                            shorCode = state.getShort_code();
-                            state.setInput(stateMenu_key);
-
-                            ussdMenu = setUssdMenu.get(stateMenu_key);
-
-                            if (ussdMenu != null) {
-                                String menuResp = ussdMenu.getResp();
-                                String menuAct = ussdMenu.getAction();
-                                String menuTopic = ussdMenu.getTopic();
-                                String menuServ = ussdMenu.getService();
-                                String menuStatus = ussdMenu.getStatus();
-
-                                if (menuStatus.equals("MENU")) {
-                                    PROCESSING_STATE.put(transaction_id, state);
-
-                                    if (!StringUtils.isBlank(menuResp)) {
-                                        ussdResponse.setUssdString(menuResp);
-                                        ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_MENU);
-                                    }
-
-                                    if (!StringUtils.isBlank(menuAct)) {
-                                        processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
-                                    }
-
-                                    logger.info("USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
-
-                                } else if (menuStatus.equals("END")) {
-                                    if (!StringUtils.isBlank(menuResp)) {
-                                        ussdResponse.setUssdString(menuResp);
-                                        ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_RSP);
-                                    }
-
-                                    if (!StringUtils.isBlank(menuAct)) {
-                                        processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
-                                    }
-                                    logger.info("END USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
-                                } else {
-                                    logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
-                                }
-                            } else {
-                                logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
-                            }
-                        }
-
-                        break;
-
-                    case USSDType.USSDMSG_TYPE_SUB_CANCEL:
-                        if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && !PROCESSING_STATE.containsKey(transaction_id)) {
-                            logger.info("CANCEL REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
-                            PROCESSING_STATE.remove(transaction_id);
-                        } else {
-                            logger.info("TRANSACTION NOT EXIST :   -----> Transaction : " + transaction_id);
-                        }
-
-                        break;
-
-                    case USSDType.USSDMSG_TYPE_SUB_RECV_OK:
-
-                        break;
-
-                    case USSDType.USSDMSG_TYPE_TRANS_ERR:
-
-                        if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && !PROCESSING_STATE.containsKey(transaction_id)) {
-                            logger.info("ERROR REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
-                            PROCESSING_STATE.remove(transaction_id);
-                        } else {
-                            logger.info("TRANSACTION NOT EXIST :   -----> Transaction : " + transaction_id);
-                        }
-                        break;
-
-                    default:
-                        logger.info("USSDMSG_TYPE NOT DEFINE :  " + message_type + " -----> Transaction : " + transaction_id);
-                        break;
-                }
-
                 logger.info("-------------- START RECEIVE MO SMS -----------");
-
-                String receiver = arg0.getDestAddress();
-                String sender = arg0.getSourceAddr();
-                byte[] data = arg0.getShortMessage();
-                String content = null;
-                if (arg0.getShortMessage() != null) {
-                    if (arg0.getDataCoding() == (byte) 8) {
-                        content = HexUtil.convertBytesToHexString(data, 0, data.length);
-                    } else {
-                        content = new String(data);
-                    }
-                }
-
-                List<Service> listservices = Service_listener.getSMS_ServiceMo(content.trim().toUpperCase(), receiver.trim().toUpperCase(), sender.trim().toUpperCase(), service_listener.getServices());
-
-                if (listservices.size() > 0) {
-                    for (Service service : listservices) {
-                        service = listservices.get(0);
-                        String service_id = service.getService_id();
-                        String topic_kafka = service.getMofilter().getTopic();
-                        Message_Exchg msg_exch = new Message_Exchg(Generator.getTransaction(), service_id, arg0.getId(), sender, receiver, content, "SMS");
-
-                        // get and check user from config file 
-                        String message_send = ConverterJSON.convertMsgExchToJson(msg_exch);
-                        kafka_data = new ProducerRecord<String, String>(topic_kafka, message_send);
-                        producer.send(kafka_data, callback);
-                        logger.info("SMS Receive : " + message_send);
-                        logger.info("SUCCESS SEND TO APPLICATION : topic -->" + topic_kafka + " | " + sender + " --> " + receiver + " [msg = " + content + " ]");
-                    }
-
-                } else {
-                    logger.warn("No Service provide to process this SMS");
-                    logger.warn("Lossing SMS: " + sender + " --> " + receiver + " [msg = " + content + " ]");
-                }
-
+                runUSSD(arg0);
             }
 
         } else {
             if (!MessageType.SMSC_DEL_RECEIPT.containedIn(arg0.getEsmClass())) {
                 logger.info("-------------- START RECEIVE MO SMS -----------");
 
-                String receiver = arg0.getDestAddress();
-                String sender = arg0.getSourceAddr();
-                byte[] data = arg0.getShortMessage();
-                String content = null;
-                if (arg0.getShortMessage() != null) {
-                    if (arg0.getDataCoding() == (byte) 8) {
-                        content = HexUtil.convertBytesToHexString(data, 0, data.length);
-                    } else {
-                        content = new String(data);
-                    }
-                }
-
-                List<Service> listservices = Service_listener.getSMS_ServiceMo(content.trim().toUpperCase(), receiver.trim().toUpperCase(), sender.trim().toUpperCase(), service_listener.getServices());
-
-                if (listservices.size() > 0) {
-                    for (Service service : listservices) {
-                        service = listservices.get(0);
-                        String service_id = service.getService_id();
-                        String topic_kafka = service.getMofilter().getTopic();
-                        Message_Exchg msg_exch = new Message_Exchg(Generator.getTransaction(), service_id, arg0.getId(), sender, receiver, content, "SMS");
-
-                        // get and check user from config file 
-                        String message_send = ConverterJSON.convertMsgExchToJson(msg_exch);
-                        kafka_data = new ProducerRecord<String, String>(topic_kafka, message_send);
-                        producer.send(kafka_data, callback);
-                        logger.info("SMS Receive : " + message_send);
-                        logger.info("SUCCESS SEND TO APPLICATION : topic -->" + topic_kafka + " | " + sender + " --> " + receiver + " [msg = " + content + " ]");
-                    }
-
-                } else {
-                    logger.warn("No Service provide to process this SMS");
-                    logger.warn("Lossing SMS: " + sender + " --> " + receiver + " [msg = " + content + " ]");
-                }
+                runUSSD(arg0);
             } else {
                 try {
                     DeliveryReceipt delReceipt = arg0.getShortMessageAsDeliveryReceipt();
@@ -434,7 +209,7 @@ public class ReceiveSMS implements MessageReceiverListener {
                      */
                     DeliveryMessage delivery_msg = null;
 
-                    String delivery_topic = service_listener.getDelivery_topic();
+                   
 
                     delivery_msg = new DeliveryMessage(messageId,
                             arg0.getDestAddress(),
@@ -452,7 +227,7 @@ public class ReceiveSMS implements MessageReceiverListener {
                     String message_send = ConverterJSON.convertDeliveryToJson(delivery_msg);
                     logger.info("########## SMSGW ARE NOT SETTING TO FOWARD DELIVERY REPORT ################## ");
                     logger.info("Delivery Receive : " + message_send);
-                    logger.info("SUCCESS DELIVERY report  topic -->" + delivery_topic + " |   message: msg_id = " + messageId + " from " + arg0.getSourceAddr() + " --> " + arg0.getDestAddress());
+                    logger.info("SUCCESS DELIVERY report  topic -->" + delv_topic + " |   message: msg_id = " + messageId + " from " + arg0.getSourceAddr() + " --> " + arg0.getDestAddress());
                     logger.info("SUCCESS DELIVERY information : " + delReceipt);
                     logger.info("SUCCESS  send delivery report : " + delivery_msg);
                 } catch (Exception e) {
@@ -462,6 +237,187 @@ public class ReceiveSMS implements MessageReceiverListener {
             }
         }
 
+    }
+
+    private void runUSSD(DeliverSm arg0) {
+        
+        String shortcode = arg0.getDestAddress();
+        String msisdn = arg0.getSourceAddr();
+        byte[] data = arg0.getShortMessage();
+        String ussd_message = null;
+        if (arg0.getShortMessage() != null) {
+            if (arg0.getDataCoding() == (byte) 8) {
+                ussd_message = HexUtil.convertBytesToHexString(data, 0, data.length);
+            } else {
+                ussd_message = new String(data);
+            }
+        }
+        String menuServ = "";
+        UssdMessage ussdRequest = new UssdMessage();
+
+        ussdRequest.setMsisdn(msisdn);
+
+        String transaction_id = ussdRequest.getTransId();
+        int message_type = ussdRequest.getType();
+
+        UssdMessage ussdResponse = new UssdMessage();
+
+        ussdResponse.setCharSet(ussdRequest.getCharSet());
+        ussdResponse.setConnectorId(ussdRequest.getConnectorId());
+        ussdResponse.setDlgId(ussdRequest.getDlgId());
+        ussdResponse.setEncryptedUssdString(ussdRequest.getEncryptedUssdString());
+        ussdResponse.setHlrGT(ussdRequest.getHlrGT());
+        ussdResponse.setImsi(ussdRequest.getImsi());
+        ussdResponse.setLoggedString(ussdRequest.getLoggedString());
+        ussdResponse.setMsisdn(ussdRequest.getMsisdn());
+        ussdResponse.setSendRecvTime(ussdRequest.getSendRecvTime());
+        ussdResponse.setTransId(ussdRequest.getTransId());
+        String stateMenu_key;
+        UssdMenu ussdMenu;
+        StateMenu state;
+        String shorCode;
+        switch (message_type) {
+
+            case USSDType.USSDMSG_TYPE_SUB_SEND_REQ:  // first message 
+                stateMenu_key = ussd_message;
+                shorCode = getShortCode(ussd_message);
+
+                state = new StateMenu();
+                state.setShort_code(shorCode);
+                state.setMsisdn(msisdn);
+                state.setInput(stateMenu_key);
+                state.setTransaction_id(transaction_id);
+
+                if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && PROCESSING_STATE.containsKey(transaction_id)) {
+                    logger.info("FIST REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
+                    PROCESSING_STATE.remove(transaction_id);
+                }
+
+                ussdMenu = setUssdMenu.get(stateMenu_key);
+
+                if (ussdMenu != null) {                     // check if menu exist
+                    String menuResp = ussdMenu.getResp();
+                    String menuAct = ussdMenu.getAction();
+                    String menuTopic = ussdMenu.getTopic();
+                    menuServ = ussdMenu.getService();
+                    String menuStatus = ussdMenu.getStatus();
+
+                    if (menuStatus.equals("START-MENU")) {
+                        PROCESSING_STATE.put(transaction_id, state);
+
+                        if (!StringUtils.isBlank(menuResp)) {
+                            ussdResponse.setUssdString(menuResp);
+                            ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_MENU);
+                        }
+
+                        if (!StringUtils.isBlank(menuAct)) {
+                            processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
+                        }
+
+                        logger.info("START-MENU USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
+
+                    } else if (menuStatus.equals("START-END")) {
+                        if (!StringUtils.isBlank(menuResp)) {
+                            ussdResponse.setUssdString(menuResp);
+                            ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_RSP);
+                        }
+
+                        if (!StringUtils.isBlank(menuAct)) {
+                            processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
+                        }
+                        logger.info("START-END USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
+                    } else {
+                        logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
+                    }
+                } else {
+                    logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
+                }
+
+                break;
+
+            case USSDType.USSDMSG_TYPE_SUB_SEND_RSP:
+
+                if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && !PROCESSING_STATE.containsKey(transaction_id)) {
+                    logger.info("FIST REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
+                    state = PROCESSING_STATE.get(transaction_id);
+                    stateMenu_key = state.getInput() + "-" + ussd_message;
+
+                    shorCode = state.getShort_code();
+                    state.setInput(stateMenu_key);
+
+                    ussdMenu = setUssdMenu.get(stateMenu_key);
+
+                    if (ussdMenu != null) {
+                        String menuResp = ussdMenu.getResp();
+                        String menuAct = ussdMenu.getAction();
+                        String menuTopic = ussdMenu.getTopic();
+                        menuServ = ussdMenu.getService();
+                        String menuStatus = ussdMenu.getStatus();
+
+                        if (menuStatus.equals("MENU")) {
+                            PROCESSING_STATE.put(transaction_id, state);
+
+                            if (!StringUtils.isBlank(menuResp)) {
+                                ussdResponse.setUssdString(menuResp);
+                                ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_MENU);
+                            }
+
+                            if (!StringUtils.isBlank(menuAct)) {
+                                processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
+                            }
+
+                            logger.info("USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
+
+                        } else if (menuStatus.equals("END")) {
+                            if (!StringUtils.isBlank(menuResp)) {
+                                ussdResponse.setUssdString(menuResp);
+                                ussdResponse.setType(USSDType.USSDMSG_TYPE_APP_SEND_RSP);
+                            }
+
+                            if (!StringUtils.isBlank(menuAct)) {
+                                processAction(menuTopic, menuServ, msisdn, shorCode, menuAct);
+                            }
+                            logger.info("END USSD MENU : " + ussdMenu + " -----> Transaction : " + transaction_id);
+                        } else {
+                            logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
+                        }
+                    } else {
+                        logger.info("THIS USSD REQUEST CANNOT BE PROCESS : " + ussdMenu + " -----> Transaction : " + transaction_id);
+                    }
+                }
+
+                break;
+
+            case USSDType.USSDMSG_TYPE_SUB_CANCEL:
+                if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && !PROCESSING_STATE.containsKey(transaction_id)) {
+                    logger.info("CANCEL REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
+                    PROCESSING_STATE.remove(transaction_id);
+                } else {
+                    logger.info("TRANSACTION NOT EXIST :   -----> Transaction : " + transaction_id);
+                }
+
+                break;
+
+            case USSDType.USSDMSG_TYPE_SUB_RECV_OK:
+
+                break;
+
+            case USSDType.USSDMSG_TYPE_TRANS_ERR:
+
+                if (PROCESSING_STATE != null && PROCESSING_STATE.size() > 0 && !PROCESSING_STATE.containsKey(transaction_id)) {
+                    logger.info("ERROR REQUEST : Remove --> state : " + PROCESSING_STATE.get(transaction_id) + " -----> Transaction : " + transaction_id);
+                    PROCESSING_STATE.remove(transaction_id);
+                } else {
+                    logger.info("TRANSACTION NOT EXIST :   -----> Transaction : " + transaction_id);
+                }
+                break;
+
+            default:
+                logger.info("USSDMSG_TYPE NOT DEFINE :  " + message_type + " -----> Transaction : " + transaction_id);
+                break;
+        }
+
+        List<String> response = senderGateway.sendSMS(menuServ, shortcode, msisdn, ussdResponse.getUssdString(), "ussd_client");
     }
 
     private String convertToDate(Date dateValue) {

@@ -1,53 +1,120 @@
-06/02/2020 10:01:10.840 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
-06/02/2020 10:01:10.842 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+07/02/2020 09:46:47.569 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 09:46:47.571 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
 2.moi
 3.nous
 4.vous, action=null, desc=fist menue, topic=mo_topic}
-06/02/2020 10:01:10.842 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
-06/02/2020 10:01:10.843 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
-06/02/2020 10:01:45.240 ERROR [main] USSDGW: cannot create topic : mo_topic
-org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
-	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
-	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
-	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
-06/02/2020 10:01:58.863 ERROR [main] USSDGW: cannot create topic : mk_topic
-org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
-	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
-	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
-	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
-06/02/2020 10:04:42.925 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
-06/02/2020 10:04:42.925 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+07/02/2020 09:46:47.571 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 09:46:47.571 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:20:40.726 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:20:40.726 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
 2.moi
 3.nous
 4.vous, action=null, desc=fist menue, topic=mo_topic}
-06/02/2020 10:04:42.926 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
-06/02/2020 10:04:42.926 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
-06/02/2020 10:05:17.272 ERROR [main] USSDGW: cannot create topic : mo_topic
-org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
-	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
-	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
-	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
-06/02/2020 10:05:33.881 ERROR [main] USSDGW: cannot create topic : mk_topic
-org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
-	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
-	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
-	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
-	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
-06/02/2020 11:12:11.040 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
-06/02/2020 11:12:11.040 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+07/02/2020 13:20:40.726 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:20:40.727 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:25:52.535 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:25:52.535 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
 2.moi
 3.nous
 4.vous, action=null, desc=fist menue, topic=mo_topic}
-06/02/2020 11:12:11.041 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
-06/02/2020 11:12:11.041 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:25:52.536 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:25:52.536 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:31:45.161 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:31:45.161 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+07/02/2020 13:31:45.161 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:31:45.161 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:32:02.658 ERROR [main] USSDGW: cannot create topic : mo_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:145)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:72)
+07/02/2020 13:32:14.876 ERROR [main] USSDGW: cannot create topic : mk_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:145)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:72)
+07/02/2020 13:32:27.104 ERROR [main] USSDGW: cannot create topic : delv_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:145)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:104)
+07/02/2020 13:35:47.934 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:35:47.934 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+07/02/2020 13:35:47.935 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:35:47.936 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:36:05.163 ERROR [main] USSDGW: cannot create topic : mo_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:149)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:74)
+07/02/2020 13:36:17.569 ERROR [main] USSDGW: cannot create topic : mk_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:149)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:74)
+07/02/2020 13:36:29.961 ERROR [main] USSDGW: cannot create topic : delv_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:149)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:107)
+07/02/2020 13:38:22.334 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:38:22.334 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+07/02/2020 13:38:22.335 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:38:22.337 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:41:05.158 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:41:05.158 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+07/02/2020 13:41:05.158 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 13:41:05.159 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 13:41:28.105 ERROR [main] SMSGateway: cannot get session connection
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.jsmpp.session.connection.socket.SocketConnectionFactory.createConnection(SocketConnectionFactory.java:40)
+	at org.jsmpp.session.SMPPSession.connectAndBind(SMPPSession.java:222)
+	at org.jsmpp.session.SMPPSession.connectAndBind(SMPPSession.java:201)
+	at org.jsmpp.session.SMPPSession.<init>(SMPPSession.java:140)
+	at com.tatsinktechnologic.smpp.gateway.SMSGateway.newSession(SMSGateway.java:309)
+	at com.tatsinktechnologic.smpp.gateway.SMSGateway.<init>(SMSGateway.java:84)
+	at com.tatsinktechnologic.smpp.gateway.SMSGateway.<init>(SMSGateway.java:54)
+	at com.tatsinktechnologic.smpp.gateway.SMSGateway$SingletonSenderGateway.<clinit>(SMSGateway.java:104)
+	at com.tatsinktechnologic.smpp.gateway.SMSGateway.getSenderGateway(SMSGateway.java:110)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:113)

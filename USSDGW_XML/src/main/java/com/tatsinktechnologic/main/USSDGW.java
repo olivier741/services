@@ -16,6 +16,7 @@
 package com.tatsinktechnologic.main;
 
 import com.tatsinktechnologic.config.ConfigLoader;
+import com.tatsinktechnologic.config.Smpp_ConfigLoader;
 import com.tatsinktechnologic.resfull.services.API_USSDService;
 import com.tatsinktechnologic.smpp.gateway.SMSGateway;
 import com.tatsinktechnologic.xml.kafka.API_Conf;
@@ -51,6 +52,7 @@ public class USSDGW {
      */
     private static Logger logger = Logger.getLogger(USSDGW.class);
     private static ConfigLoader communConf;
+     private static Smpp_ConfigLoader configLoad;
 
     public static void main(String[] args) {
         // TODO code application logic here
@@ -75,6 +77,7 @@ public class USSDGW {
         String connect_type = ussd_conf.getConnect_type();
         if (!StringUtils.isBlank(connect_type)) {
             if (connect_type.equals("API")) {
+               logger.info("############# REST API SELECTED ##############");
                 // start API 
                 JAXRSServerFactoryBean factoryBean = new JAXRSServerFactoryBean();
                 factoryBean.setResourceClasses(API_USSDService.class);
@@ -84,6 +87,8 @@ public class USSDGW {
                 factoryBean.setAddress(api_conf.getURL());
                 Server server = factoryBean.create();
             } else if (connect_type.equals("SMPP")) {
+                logger.info("############# SMPP SELECTED ##############");
+                configLoad = Smpp_ConfigLoader.getConfigurationLoader();
                 // create delivery topic 
                 String delv_topic =smpp_conf.getDeliviery_topic();
                 if (!StringUtils.isBlank(delv_topic)){
@@ -94,6 +99,7 @@ public class USSDGW {
                 SMSGateway.getSenderGateway();
 
             } else if (connect_type.equals("BOTH")) {
+                logger.info("############# BOTH (REST API and SMPP SELECTED ##############");
                 
                  // create delivery topic 
                 String delv_topic =smpp_conf.getDeliviery_topic();
@@ -101,9 +107,17 @@ public class USSDGW {
                     createTopicIfNotExists(delv_topic, kafka_conf);
                 }
                 
-                //process receiver
-                SMSGateway.getSenderGateway();
+                logger.info("############# START SMPP ##############");
+                try {
+                    configLoad = Smpp_ConfigLoader.getConfigurationLoader();
+                    SMSGateway.getSenderGateway();
+                } catch (Exception e) {
+                    logger.error("SMPP NOT LAUNCH",e);
+                }
                 
+                
+                
+                 logger.info("############# START API ##############");
                 // start API 
                 JAXRSServerFactoryBean factoryBean = new JAXRSServerFactoryBean();
                 factoryBean.setResourceClasses(API_USSDService.class);

@@ -1,0 +1,53 @@
+06/02/2020 10:01:10.840 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:01:10.842 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+06/02/2020 10:01:10.842 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:01:10.843 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+06/02/2020 10:01:45.240 ERROR [main] USSDGW: cannot create topic : mo_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 10:01:58.863 ERROR [main] USSDGW: cannot create topic : mk_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 10:04:42.925 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:04:42.925 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+06/02/2020 10:04:42.926 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 10:04:42.926 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+06/02/2020 10:05:17.272 ERROR [main] USSDGW: cannot create topic : mo_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 10:05:33.881 ERROR [main] USSDGW: cannot create topic : mk_topic
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server '10.124.160.67:2181' with timeout of 10000 ms
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1233)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:157)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:131)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:98)
+	at com.tatsinktechnologic.main.USSDGW.createTopicIfNotExists(USSDGW.java:100)
+	at com.tatsinktechnologic.main.USSDGW.main(USSDGW.java:68)
+06/02/2020 11:12:11.040 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 11:12:11.040 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+06/02/2020 11:12:11.041 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+06/02/2020 11:12:11.041 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}

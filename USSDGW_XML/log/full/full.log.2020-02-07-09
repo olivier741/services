@@ -1,0 +1,36 @@
+07/02/2020 09:45:46.776  INFO [main] USSDGW: Load log4j config file done.
+07/02/2020 09:45:46.957  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+07/02/2020 09:46:47.276  INFO [main] USSDGW: Load log4j config file done.
+07/02/2020 09:46:47.488  INFO [main] ConfigLoader: successfull load : etc\kafka_config.xml
+07/02/2020 09:46:47.548  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500.xml
+07/02/2020 09:46:47.561  INFO [main] ConfigLoader: successfull load : C:\Users\olivier.tatsinkou\Documents\NetBeansProjects\jsmpp-2.3.6\USSDGW_XML\etc\ussd_menu\ussd_500_1.xml
+07/02/2020 09:46:47.566  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+07/02/2020 09:46:47.567  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-1, status=END, resp=null, action=TOI, desc=command register to TOI, topic=mo_topic}
+07/02/2020 09:46:47.567  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-2, status=END, resp=null, action=MOI, desc=command register to MOI, topic=mo_topic}
+07/02/2020 09:46:47.567  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3, status=MENU, resp=1- indetity
+2- CNI
+3- passport, action=null, desc=second Menu after select nous, topic=mo_topic}
+07/02/2020 09:46:47.567  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-1, status=END, resp=null, action=ID, desc=command register to ID, topic=mo_topic}
+07/02/2020 09:46:47.567  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-2, status=END, resp=null, action=CNI, desc=command register to CNI, topic=mo_topic}
+07/02/2020 09:46:47.568  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-3-3, status=END, resp=null, action=PASSPORT, desc=command register to PASSPORT, topic=mo_topic}
+07/02/2020 09:46:47.568  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4, status=MENU, resp=1- comment
+2- passe
+3- voila, action=null, desc=null, topic=mo_topic}
+07/02/2020 09:46:47.568  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-1, status=END, resp=null, action=COMMENT, desc=command register to COMMENT, topic=mo_topic}
+07/02/2020 09:46:47.568  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-2, status=END, resp=null, action=PASS, desc=command register to PASS, topic=mo_topic}
+07/02/2020 09:46:47.569  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=PERSONALITE, input=*500#-4-3, status=END, resp=null, action=VOILA, desc=command register to VOILA, topic=mo_topic}
+07/02/2020 09:46:47.569  INFO [main] ConfigLoader: successfull load Menu: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 09:46:47.569 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 09:46:47.571 ERROR [main] ConfigLoader: UssdMenu{service=PERSONALITE, input=*500#, status=START-MENU, resp=1.toi
+2.moi
+3.nous
+4.vous, action=null, desc=fist menue, topic=mo_topic}
+07/02/2020 09:46:47.571 ERROR [main] ConfigLoader: -------------Error: ussd flow already exist----------------
+07/02/2020 09:46:47.571 ERROR [main] ConfigLoader: UssdMenu{service=AFFICHAGE, input=*500*5#, status=START-END, resp=null, action=TOUS, desc=null, topic=mk_topic}
+07/02/2020 09:47:01.225  INFO [main] USSDGW: ############ Topic mo_topic already exists #################
+07/02/2020 09:47:05.774  INFO [main] USSDGW: ############ Topic mk_topic already exists #################
+07/02/2020 09:47:05.781  INFO [main] USSDGW: ############# REST API SELECTED ##############
+07/02/2020 09:47:06.381  INFO [main] USSDGW: ############# USSD APPLICATION IS UP ##############

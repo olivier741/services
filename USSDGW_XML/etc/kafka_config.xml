@@ -4,7 +4,7 @@
         connect_type = SMPP  mean ussdgw will interact by SMPP
         connect_type = BOTH  mean ussdgw will interact by Rest API and SMPP
     -->
-    <connect_type>API</connect_type>
+    <connect_type>BOTH</connect_type>
     
     <kafka_conf>
         <!-- zookeeper_addr format is IP:Port  If multiple zookeeper then -> "192.168.1.1:2181,192.168.1.2:2181" -->
@@ -20,7 +20,7 @@
 
     <api_conf>
         <!-- API host-->
-        <URL>http://10.124.160.118:8190/</URL>
+        <URL>http://10.124.160.118:8080/</URL>
 
         <!-- duration of ussd Message in customer side-->
         <ussdMessage_Timeout>90</ussdMessage_Timeout>
