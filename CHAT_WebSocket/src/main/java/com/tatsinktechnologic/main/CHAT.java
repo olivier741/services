@@ -19,6 +19,7 @@ public class CHAT {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) throws InterruptedException, IOException {
         int port = 8887; // 843 flash policy port
         try {
