@@ -7,17 +7,7 @@
     <version>2.3.6</version>
     <packaging>pom</packaging>
 
-    <name>jSMPP - Parent</name>
-    <description>SMPP library for Java</description>
-    <url>http://jsmpp.org</url>
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
+    <name>Service</name>
 
     <modules>
         <module>jsmpp</module>
@@ -27,29 +17,13 @@
         <module>API_GATEWAY</module>
         <module>GATEWAY_API</module>
         <module>Extend_Process_Kafka</module>
+        <module>CMS-SERVICE</module>
+        <module>USSD_GATEWAY_KAFKA</module>
     </modules>
 
-    <developers>
-        <developer>
-            <name>Denis Kostousov</name>
-        </developer>
-        <developer>
-            <name>Nuruddin Ashr</name>
-        </developer>
-        <developer>
-            <name>Daniel Pocock</name>
-            <email>daniel@pocock.pro</email>
-            <url>http://danielpocock.com</url>
-        </developer>
-        <developer>
-            <name>Pim Moerenhout</name>
-            <email>pim.moerenhout@gmail.com</email>
-        </developer>
-    </developers>
+  
 
     <properties>
-        <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
-        <buildNumber>${maven.build.timestamp}</buildNumber>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.25</slf4j.version>
         <log4j.version>1.2.17</log4j.version>

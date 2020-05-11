@@ -48,7 +48,7 @@ public class AuthenticationFilter implements Filter{
                if (SecurityUtils.getSubject().getPrincipal() != null){
 
                    String username = SecurityUtils.getSubject().getPrincipal().toString();
-                   User user = commun_controller.getOneByUsername(username);
+                   User user = commun_controller.getSET_USER_USERNAME().get(username);
                    
                    if (user.isIsReset()) {
                        ((HttpServletResponse)resp).sendRedirect(newPath + "/Login/reset_password.xhtml");
@@ -69,7 +69,7 @@ public class AuthenticationFilter implements Filter{
            }else{
               if (SecurityUtils.getSubject().getPrincipal() != null){
                    String username = SecurityUtils.getSubject().getPrincipal().toString();
-                   User user = commun_controller.getOneByUsername(username);
+                   User user = commun_controller.getSET_USER_USERNAME().get(username);
                    
                    if (user.isIsReset()){
                         SecurityUtils.getSubject().logout();

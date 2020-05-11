@@ -175,7 +175,7 @@ public class LogonMB extends AdminSession implements Serializable {
         try {
             currentUser.login(token);
             
-            user = commun_controller.getOneByUsername(email);
+            user = commun_controller.getSET_USER_USERNAME().get(email);
             if (user.isIsReset()){
               
                 FacesMessage facesMessage = new FacesMessage("YOU MUST RESET PASSWORD OF : " + email );

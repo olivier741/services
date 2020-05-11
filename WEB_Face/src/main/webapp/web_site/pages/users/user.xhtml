@@ -34,7 +34,7 @@
                                 <h:form id="form1">
                                     <p:growl id="messages" showDetail="true"/>
                                     <p:panel header="List of User and related Role and Contact" > 
-                                        <p:panelGrid id="rolecrud"  columns="8">
+                                        <p:panelGrid id="rolecrud"  columns="4">
 
                                             <h:outputLabel value="User Name :" />
                                             <p:inputText  value="#{userMB.selectedUser.username}" required="true" disabled="#{userMB.do_view or userMB.do_edit}"/>
@@ -52,7 +52,7 @@
                                             <h:outputLabel value="Age :"/> 
                                             <p:inputText  value="#{userMB.selectedUser.age}" disabled="#{userMB.do_view}"/>
 
-                                            <h:outputLabel value="Sexe :"/> 
+                                            <h:outputLabel value="Sexe :" style="width:100px"/> 
                                             <h:selectOneMenu value="#{userMB.selectedUser.sexe}" disabled="#{userMB.do_view}" style="width:180px">
                                                 <f:selectItem itemValue="MALE" itemLabel="MALE" />
                                                 <f:selectItem itemValue="FEMALE" itemLabel="FEMALE" />
@@ -60,11 +60,11 @@
 
 
                                             
-                                            <p:outputLabel value="Locking Account :" />
+                                            <p:outputLabel value="Locking Account :" style="width:100px"/>
                                             <p:inputSwitch value="#{userMB.selectedUser.islock}" onLabel="LOCK " offLabel="UNLOCK" disabled="#{userMB.do_view or userMB.do_create}" />
 
-                                            <p:outputLabel value="Reset Password :" />
-                                            <p:inputSwitch value="#{userMB.selectedUser.isReset}" onLabel="RESET PASSWORD" offLabel="CURRENT PASSOWRD" disabled="#{userMB.do_view or userMB.do_create}"/>
+                                            <p:outputLabel value="Reset Password :" style="width:100px"/>
+                                            <p:inputSwitch value="#{userMB.selectedUser.isReset}" onLabel="RESET PWD" offLabel="SAVE PWD" disabled="#{userMB.do_view or userMB.do_create}"/>
 
 
                                             <h:outputLabel value="Role :" />

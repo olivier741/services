@@ -3,7 +3,7 @@
   <wsdl:types>
 <xs:schema xmlns:tns="http://com.tatsinktechnologic.Sender_SMS" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://com.tatsinktechnologic.Sender_SMS" version="1.0">
 
-  <xs:element name="MyResponse" type="tns:responseMsg"/>
+  <xs:element name="MyResponse" type="tns:senderResponse"/>
 
   <xs:element name="send_sms" type="tns:send_sms"/>
 
@@ -19,11 +19,11 @@
 
   <xs:complexType name="send_smsResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:responseMsg"/>
+      <xs:element minOccurs="0" name="return" type="tns:senderResponse"/>
     </xs:sequence>
   </xs:complexType>
 
-  <xs:complexType name="responseMsg">
+  <xs:complexType name="senderResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="description" type="xs:string"/>
       <xs:element minOccurs="0" name="message_id" type="xs:string"/>

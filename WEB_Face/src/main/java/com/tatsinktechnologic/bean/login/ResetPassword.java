@@ -62,7 +62,7 @@ public class ResetPassword implements Serializable{
         HttpServletRequest origRequest = (HttpServletRequest)facesContext.getExternalContext().getRequest();
         String contextPath = origRequest.getContextPath();
         
-        User user = commun_controller.getOneByUsername(login);
+        User user = commun_controller.getSET_USER_USERNAME().get(login);
         try {
             
             TwoTuple<String, String> hashAndSalt = CredentialEncrypter.saltedHash(changed_password);
@@ -163,7 +163,7 @@ public class ResetPassword implements Serializable{
         String id = (String) component.getAttributes().get("username");
 
         if (id !=null){
-             User user = commun_controller.getOneByUsername(id);
+             User user = commun_controller.getSET_USER_USERNAME().get(id);
 
             if (user!=null){
 

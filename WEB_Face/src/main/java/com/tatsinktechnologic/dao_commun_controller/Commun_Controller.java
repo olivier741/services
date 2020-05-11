@@ -36,14 +36,17 @@ import com.tatsinktechnologic.entities.registration.Service;
 import com.tatsinktechnologic.persistence.EntityManagerFactoryBean;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import javax.annotation.Resource;
 import javax.ejb.Singleton;
 import javax.ejb.TransactionManagement;
 import javax.ejb.TransactionManagementType;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaDelete;
@@ -61,8 +64,124 @@ import javax.transaction.UserTransaction;
 @TransactionManagement(TransactionManagementType.BEAN)
 public class Commun_Controller extends EntityManagerFactoryBean implements Serializable {
 
+    private static HashMap<String, Set<String>> SET_ROLE_USERNAME = new HashMap<String, Set<String>>();
+    private static HashMap<String, Set<String>> SET_PERM_ROLENAME = new HashMap<String, Set<String>>();
+    private static HashMap<String, Set<String>> SET_PERM_USERNAME = new HashMap<String, Set<String>>();
+    
+    private static HashMap<String, User> SET_USER_USERNAME = new HashMap<String, User>();
+
     @Resource
     private UserTransaction utx;
+
+    public static HashMap<String, Set<String>> getSET_ROLE_USERNAME() {
+        return SET_ROLE_USERNAME;
+    }
+
+    public static HashMap<String, Set<String>> getSET_PERM_ROLENAME() {
+        return SET_PERM_ROLENAME;
+    }
+
+    public static HashMap<String, Set<String>> getSET_PERM_USERNAME() {
+        return SET_PERM_USERNAME;
+    }
+
+    public static HashMap<String, User> getSET_USER_USERNAME() {
+        return SET_USER_USERNAME;
+    }
+    
+    
+     public void LoadUserByUsername() {
+         
+        EntityManager em = emf.createEntityManager();
+        try {
+            CriteriaBuilder builder = em.getCriteriaBuilder();
+            CriteriaQuery<User> criteria = builder.createQuery(User.class);
+            Root<User> entityRoot = criteria.from(User.class);
+            criteria.select(entityRoot);
+            Query query = em.createQuery(criteria);
+
+            List<User> listEntity = query.getResultList();
+
+            SET_USER_USERNAME.clear();
+            for (User user :listEntity ){
+                SET_USER_USERNAME.put(user.getUsername(), user);
+            }
+           
+        } finally {
+            em.close();
+        }
+    }
+
+    public void loadRolesPermByUsername() {
+
+        EntityManager em = emf.createEntityManager();
+        try {
+            CriteriaBuilder builder = em.getCriteriaBuilder();
+
+            CriteriaQuery<RolePermissionRel> criteria_rolperm = builder.createQuery(RolePermissionRel.class);
+            Root<RolePermissionRel> entityRoot_rolperm = criteria_rolperm.from(RolePermissionRel.class);
+            criteria_rolperm.select(entityRoot_rolperm);
+
+            Query query_rolperm = em.createQuery(criteria_rolperm);
+
+            List<RolePermissionRel> listEntity_rolperm = query_rolperm.getResultList();
+
+            SET_PERM_ROLENAME.clear();
+            for (RolePermissionRel rolePerm : listEntity_rolperm) {
+                String perm_name = rolePerm.getPermission().getPermissionStr();
+                String role_name = rolePerm.getRole().getRoleName();
+                if (SET_PERM_ROLENAME.containsKey(role_name)) {
+                    SET_PERM_ROLENAME.get(role_name).add(perm_name);
+                } else {
+                    Set<String> set_perm = new HashSet<>();
+                    set_perm.add(perm_name);
+                    SET_PERM_ROLENAME.put(role_name, set_perm);
+                }
+
+            }
+
+            CriteriaQuery<UserRoleRel> criteria = builder.createQuery(UserRoleRel.class);
+            Root<UserRoleRel> entityRoot = criteria.from(UserRoleRel.class);
+            criteria.select(entityRoot);
+            Query query = em.createQuery(criteria);
+
+            List<UserRoleRel> listUserRole = query.getResultList();
+
+            SET_ROLE_USERNAME.clear();
+            for (UserRoleRel user_role : listUserRole) {
+                String user_name = user_role.getUser().getUsername();
+                String role_name = user_role.getRole().getRoleName();
+                if (SET_ROLE_USERNAME.containsKey(user_name)) {
+                    SET_ROLE_USERNAME.get(user_name).add(role_name);
+                } else {
+                    Set<String> set_role = new HashSet<>();
+                    set_role.add(role_name);
+                    SET_ROLE_USERNAME.put(user_name, set_role);
+                }
+            }
+
+            SET_PERM_USERNAME.clear();
+            for (Map.Entry<String, Set<String>> variable : SET_ROLE_USERNAME.entrySet()) {
+                String user_name = variable.getKey();
+                Set<String> set_role = variable.getValue();
+                Set<String> set_perm = new HashSet<String>();
+
+                for (String role_name : set_role) {
+                    if (SET_PERM_ROLENAME.containsKey(role_name)) {
+                        set_perm.addAll(SET_PERM_ROLENAME.get(role_name));
+                    }
+                }
+
+                if (set_perm != null && !set_perm.isEmpty()) {
+                    SET_PERM_USERNAME.put(user_name, set_perm);
+                }
+
+            }
+
+        } finally {
+            em.close();
+        }
+    }
 
     public boolean checkPromotionTable(String table_name, String msisdn) {
         boolean result = false;
@@ -153,28 +272,7 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
         return result;
     }
 
-    public User getOneByUsername(String user_name) {
-        User result = null;
-        EntityManager em = emf.createEntityManager();
-        try {
-            CriteriaBuilder builder = em.getCriteriaBuilder();
-            CriteriaQuery<User> criteria = builder.createQuery(User.class);
-            Root<User> entityRoot = criteria.from(User.class);
-            criteria.select(entityRoot);
-            criteria.where(builder.equal(entityRoot.get("username"), user_name));
-            Query query = em.createQuery(criteria);
-
-            List<User> listEntity = query.getResultList();
-
-            if (listEntity != null && listEntity.size() != 0) {
-                result = listEntity.get(0);
-            }
-        } finally {
-            em.close();
-        }
-
-        return result;
-    }
+   
 
     public Contact getOneByContact(String contact_name) {
         Contact result = null;
@@ -359,9 +457,8 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
         return result;
     }
-    
-    
-     public ContentMessage getOneByContent(String content_label) {
+
+    public ContentMessage getOneByContent(String content_label) {
         ContentMessage result = null;
         EntityManager em = emf.createEntityManager();
         try {
@@ -499,8 +596,7 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
         return result;
     }
-    
-    
+
     public ChatGroup getOneByChatGroup(String chatGrp_channel) {
         ChatGroup result = null;
         EntityManager em = emf.createEntityManager();
@@ -731,9 +827,8 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
         return result;
     }
-    
-    
-  public List<WS_Header_Param> getHeader_ParamByWebservice(String webservice_name) {
+
+    public List<WS_Header_Param> getHeader_ParamByWebservice(String webservice_name) {
         List<WS_Header_Param> result = null;
 
         EntityManager em = emf.createEntityManager();
@@ -753,10 +848,8 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
         }
 
         return result;
-    }  
-  
-  
-  
+    }
+
 //  
 //  public List<User> getUserByChatGroup(String chatgrp_channel) {
 //        List<User> result = null;
@@ -786,8 +879,6 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 //
 //        return result;
 //    }
-    
-
     public Action getActionByCommand(String command_name) {
         Action result = null;
 
@@ -860,8 +951,8 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
         return result;
     }
-    
-     public Service getServiceByContent(String content_label) {
+
+    public Service getServiceByContent(String content_label) {
         Service result = null;
 
         EntityManager em = emf.createEntityManager();
@@ -1008,8 +1099,7 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
         return result;
     }
-    
-    
+
     public User getUserByChatGroup(String chatGrp_channel) {
         User result = null;
 
@@ -1033,8 +1123,7 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
         return result;
     }
-    
-    
+
     public ChatGroup getChatGroupByUser(String user_name) {
         ChatGroup result = null;
 
@@ -1047,83 +1136,13 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
             criteria.where(builder.equal(entityRoot.get("user").get("username"), user_name));
             Query query = em.createQuery(criteria);
 
-             List<ChatGroup> listentity = query.getResultList();
+            List<ChatGroup> listentity = query.getResultList();
             if (listentity != null && !listentity.isEmpty()) {
                 result = listentity.get(0);
             }
-           
 
         } finally {
             em.close();
-        }
-
-        return result;
-    }
-
-    public Set<String> listRolesByUsername(String user_name) {
-        Set<String> result = null;
-
-        EntityManager em = emf.createEntityManager();
-        try {
-            CriteriaBuilder builder = em.getCriteriaBuilder();
-            CriteriaQuery<UserRoleRel> criteria = builder.createQuery(UserRoleRel.class);
-            Root<UserRoleRel> entityRoot = criteria.from(UserRoleRel.class);
-            criteria.select(entityRoot);
-            criteria.where(builder.equal(entityRoot.get("user").get("username"), user_name)
-            );
-            Query query = em.createQuery(criteria);
-
-            List<UserRoleRel> listEntity = query.getResultList();
-            result = new HashSet<>();
-
-            for (UserRoleRel user_role : listEntity) {
-                if (user_role.getRole() != null) {
-                    result.add(user_role.getRole().getRoleName());
-                }
-            }
-
-        } finally {
-            em.close();
-        }
-
-        return result;
-    }
-
-    public Set<String> listPermissionsByUsername(String user_name) {
-        Set<String> result = null;
-
-        List<Role> list_role_user = getRolesByUsername(user_name);
-
-        if (list_role_user != null && !list_role_user.isEmpty()) {
-            EntityManager em = emf.createEntityManager();
-
-            try {
-
-                CriteriaBuilder builder = em.getCriteriaBuilder();
-
-                CriteriaQuery<RolePermissionRel> criteria = builder.createQuery(RolePermissionRel.class);
-                Root<RolePermissionRel> entityRoot = criteria.from(RolePermissionRel.class);
-                criteria.select(entityRoot);
-
-                Expression<Role> entity_roleExpression = entityRoot.get(RolePermissionRel_.role);
-                Predicate entiy_rolePredicate = entity_roleExpression.in(list_role_user);
-
-                criteria.where(entiy_rolePredicate);
-                Query query = em.createQuery(criteria);
-
-                List<RolePermissionRel> listEntity = query.getResultList();
-                result = new HashSet<>();
-
-                for (RolePermissionRel rolePerm : listEntity) {
-                    if (rolePerm.getPermission() != null) {
-                        result.add(rolePerm.getPermission().getPermissionStr());
-                    }
-                }
-
-            } finally {
-                em.close();
-            }
-
         }
 
         return result;
@@ -1165,7 +1184,7 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
     public void deleteUserRoleRelByUser(String user_name) throws NonexistentEntityException, RollbackFailureException, Exception {
         EntityManager em = null;
-        User user = getOneByUsername(user_name);
+        User user = SET_USER_USERNAME.get(user_name);
         try {
 
             utx.begin();
@@ -1233,7 +1252,7 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
 
     public void deleteUserContactRelByUser(String user_name) throws NonexistentEntityException, RollbackFailureException, Exception {
         EntityManager em = null;
-        User user = getOneByUsername(user_name);
+        User user = SET_USER_USERNAME.get(user_name);
         try {
 
             utx.begin();
@@ -1332,8 +1351,8 @@ public class Commun_Controller extends EntityManagerFactoryBean implements Seria
             }
         }
     }
-    
-     public void deleteHeaderParamByWebservice(String webservice_name) throws NonexistentEntityException, RollbackFailureException, Exception {
+
+    public void deleteHeaderParamByWebservice(String webservice_name) throws NonexistentEntityException, RollbackFailureException, Exception {
         EntityManager em = null;
         WS_Webservice websrv = getOneByWS_Webservice(webservice_name);
         try {

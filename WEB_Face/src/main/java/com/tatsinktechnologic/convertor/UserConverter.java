@@ -38,7 +38,7 @@ public class UserConverter implements Converter{
 
     @Override
     public User getAsObject(FacesContext context, UIComponent component, String uuid) {
-        User action = commun_controller.getOneByUsername(uuid);
+        User action = commun_controller.getSET_USER_USERNAME().get(uuid);
         return action;
     }
 }

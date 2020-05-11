@@ -10,7 +10,7 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class EntityManagerFactoryBean {
     
-    @PersistenceUnit(unitName = "DB_PU1")
+   @PersistenceUnit(unitName = "DB_PU1")
     protected EntityManagerFactory emf;
     
     @Produces 

@@ -9,15 +9,14 @@ package com.tatsinktechnologic.shiro.realm;
  *
  * @author olivier
  */
-
 import com.tatsinktechnologic.dao_commun_controller.Commun_Controller;
 import com.tatsinktechnologic.entities.account.User;
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.enterprise.context.spi.CreationalContext;
 import javax.enterprise.inject.spi.Bean;
 import javax.enterprise.inject.spi.BeanManager;
-import javax.inject.Inject;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
@@ -35,62 +34,67 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.SimpleByteSource;
 
-
 public class DBRealm extends AuthorizingRealm {
+
+    private static boolean isRoleNameLoad = false;
 
     private Commun_Controller commune_controller;
 
     public DBRealm() {
         commune_controller = lookupUserService();
+        if (!isRoleNameLoad) {
+            commune_controller.loadRolesPermByUsername();
+            commune_controller.LoadUserByUsername();
+            isRoleNameLoad= true;
+        }
     }
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 
         if (principals == null) {
-		throw new AuthorizationException("Principal is not null!");
-	}
+            throw new AuthorizationException("Principal is not null!");
+        }
 
         String username = StringUtils.trim((String) principals.getPrimaryPrincipal());
 
-        Set<String> roles = commune_controller.listRolesByUsername(username);
-        Set<String> permissions = commune_controller.listPermissionsByUsername(username);
-        
+//        Set<String> roles = commune_controller.listRolesByUsername(username);
+        Set<String> roles = commune_controller.getSET_ROLE_USERNAME().get(username);
+        Set<String> permissions = commune_controller.getSET_PERM_USERNAME().get(username);
+
         SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
         authorizationInfo.setRoles(roles);
         authorizationInfo.setStringPermissions(permissions);
-        
+
         return authorizationInfo;
     }
 
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 
-              
         String username = StringUtils.trim((String) token.getPrincipal());
         if (StringUtils.isEmpty(username)) {
             throw new AuthenticationException();
         }
 
-        User user = commune_controller.getOneByUsername(username);
-        
+        User user = commune_controller.getSET_USER_USERNAME().get(username);
+
         if (user == null) {
             throw new AuthenticationException();
         }
-        
-        System.out.println("----------------------------- islock1 = "+user.isIslock());
-        
-        if (user.isIslock()){
-            System.out.println("----------------------------- islock 2 = "+user.isIslock());
+
+        System.out.println("----------------------------- islock1 = " + user.isIslock());
+
+        if (user.isIslock()) {
+            System.out.println("----------------------------- islock 2 = " + user.isIslock());
             throw new LockedAccountException("YOUR ACCOUNT IS LOCK");
         }
-        
-        SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(username, user.getPassword(),new SimpleByteSource(Base64.decode(user.getSalt())), getName());
+
+        SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(username, user.getPassword(), new SimpleByteSource(Base64.decode(user.getSalt())), getName());
 
         return authenticationInfo;
     }
-    
-    
+
     @Override
     public void clearCachedAuthorizationInfo(PrincipalCollection principals) {
 
@@ -104,7 +108,6 @@ public class DBRealm extends AuthorizingRealm {
         super.clearCachedAuthenticationInfo(principals);
 
     }
-
 
     @Override
     public void clearCache(PrincipalCollection principals) {
@@ -130,8 +133,6 @@ public class DBRealm extends AuthorizingRealm {
         clearAllCachedAuthorizationInfo();
 
     }
-
-
 
     @SuppressWarnings("rawtypes")
     private Commun_Controller lookupUserService() {

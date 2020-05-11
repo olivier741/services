@@ -5,7 +5,7 @@
               jdbcDriver = org.mariadb.jdbc.Driver
               userName = olivier
               password = abc@1234
-              jdbcUrl = jdbc:mariadb://10.124.160.67:3306/olivier_test
+              jdbcUrl = jdbc:mariadb://127.0.0.1:3306/olivier_test
               DefaultAutoCommit = true 
               InitialSize = 1
               MaxActive = 10

@@ -233,6 +233,7 @@ public class UserMB implements Serializable {
 
     @PostConstruct
     public void init() {
+        commun_controller.LoadUserByUsername();
         List<Contact> contactSource = new ArrayList<Contact>();
         List<Contact> contactTarget = new ArrayList<Contact>();
 
@@ -408,6 +409,7 @@ public class UserMB implements Serializable {
                         user_contact_controller.create(userCont);
                     }
                     listUser = user_controller.findUserEntities();
+                    commun_controller.LoadUserByUsername();
                     msg = new FacesMessage("Success Update", user_name);
                 } catch (Exception e) {
                     msg = new FacesMessage("ERROR during  updating Row", user_name);
@@ -465,12 +467,13 @@ public class UserMB implements Serializable {
             user_controller.destroy(selectedUser.getUser_id());
 
             listUser = user_controller.findUserEntities();
+            commun_controller.LoadUserByUsername();
             msg = new FacesMessage("Success Delete", user_name);
         } catch (Exception e) {
             msg = new FacesMessage("ERROR during  Cancellation Row", user_name);
             e.printStackTrace();
         }
-
+         
         FacesContext.getCurrentInstance().addMessage(null, msg);
         List<Contact> contactTarget = new ArrayList<Contact>();
         List<Role> roleTarget = new ArrayList<Role>();
@@ -493,7 +496,7 @@ public class UserMB implements Serializable {
             if (user_name == null || user_name.equals("")) {
                 msg = new FacesMessage("You must provide User Name", "");
             } else {
-                User user = commun_controller.getOneByUsername(user_name);
+                User user = commun_controller.getSET_USER_USERNAME().get(user_name);
                 if (user != null) {
                     msg = new FacesMessage("This User already exist", "");
                 } else {
@@ -513,7 +516,7 @@ public class UserMB implements Serializable {
                         commun_controller.deleteUserRoleRelByUser(selectedUser.getUsername());
                         commun_controller.deleteUserContactRelByUser(selectedUser.getUsername());
 
-                        user = commun_controller.getOneByUsername(user_name);
+                        user = commun_controller.getSET_USER_USERNAME().get(user_name);
 
                         List<Role> roleTarget = dualListModelroles.getTarget();
 
@@ -535,6 +538,7 @@ public class UserMB implements Serializable {
                         msg = new FacesMessage("New User added", user_name);
                         listUser = user_controller.findUserEntities();
                         selectedUser = new User();
+                        commun_controller.LoadUserByUsername();
                     } catch (Exception e) {
                         msg = new FacesMessage("ERROR during add row", user_name);
                         e.printStackTrace();
@@ -546,6 +550,7 @@ public class UserMB implements Serializable {
         } else {
             msg = new FacesMessage("ERROR : you must provide User", "");
         }
+        
         FacesContext.getCurrentInstance().addMessage(null, msg);
 
         List<Contact> contactTarget = new ArrayList<Contact>();
@@ -555,7 +560,7 @@ public class UserMB implements Serializable {
         dualListModelcontacts = new DualListModel<Contact>(listContact, contactTarget);
         dualListModelroles = new DualListModel<Role>(listRoles, roleTarget);
         selectedUser = new User();
-
+        
         do_create = true;
         do_view = false;
         do_edit = false;
@@ -577,7 +582,7 @@ public class UserMB implements Serializable {
         curPass = value.toString();
         user_name = (String) component.getAttributes().get("login");
 
-        User user = commun_controller.getOneByUsername(user_name);
+        User user = commun_controller.getSET_USER_USERNAME().get(user_name);
 
         String curPassEncrypt = new Sha256Hash(curPass, Base64.decode(user.getSalt()), 1024).toBase64();
 
@@ -592,7 +597,7 @@ public class UserMB implements Serializable {
         FacesMessage msg = null;
         String page = "/web_site/index.xhtml?faces-redirect=true";
 
-        User user = commun_controller.getOneByUsername(user_name);
+        User user = commun_controller.getSET_USER_USERNAME().get(user_name);
 
         try {
             java.sql.Timestamp date = new java.sql.Timestamp(Calendar.getInstance().getTime().getTime());
@@ -608,7 +613,7 @@ public class UserMB implements Serializable {
             msg = new FacesMessage("ERROR : You  Cannot Change Your Password", user.getUsername());
             e.printStackTrace();
         }
-
+        commun_controller.LoadUserByUsername();
         FacesContext.getCurrentInstance().addMessage(null, msg);
         user_name = null;
         return page;
